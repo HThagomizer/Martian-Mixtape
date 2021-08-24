@@ -23,7 +23,7 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Probed', 'Lazerz', 'Brainfuck', 'Annihilation-LOL'],
-		['Confidential', 'Hey', 'Shades'],
+		['Confidential', 'Argis', 'Crack', 'Enforcement'],
 		['Marrow', "Pelvic", "Spinal Tap"],
 		['Tinfoil', 'Itch', "Exclusion Zone"]
 	];
