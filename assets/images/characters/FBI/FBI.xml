@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="FBI.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="grunt alt singDOWN0000" x="0" y="0" width="739" height="600" frameX="0" frameY="0" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0001" x="739" y="0" width="739" height="600" frameX="0" frameY="0" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0002" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0003" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0004" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0005" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0006" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0007" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0008" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0009" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0010" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0011" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0012" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0013" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0014" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0015" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0016" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0017" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0018" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0019" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0020" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0021" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0022" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0023" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0024" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0025" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0026" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0027" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0028" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0029" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0030" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0031" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0032" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0033" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0034" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0035" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0036" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0037" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0038" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0039" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0040" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0041" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0042" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0043" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0044" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0045" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0046" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0047" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0048" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0049" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0050" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0051" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0052" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0053" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0054" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0055" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0056" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0057" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0058" x="1478" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0059" x="2221" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0060" x="2964" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singDOWN0061" x="3707" y="0" width="743" height="594" frameX="-6" frameY="-4" frameWidth="749" frameHeight="600"/>
+	<SubTexture name="grunt alt singLEFT0000" x="4450" y="0" width="763" height="718" frameX="-15" frameY="0" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0001" x="5213" y="0" width="763" height="718" frameX="-15" frameY="0" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0002" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0003" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0004" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0005" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0006" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0007" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0008" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0009" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0010" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0011" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0012" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0013" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0014" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0015" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0016" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0017" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0018" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0019" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0020" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0021" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0022" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0023" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0024" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0025" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0026" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0027" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0028" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0029" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0030" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0031" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0032" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0033" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0034" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0035" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0036" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0037" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0038" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0039" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0040" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0041" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0042" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0043" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0044" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0045" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0046" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0047" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0048" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0049" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0050" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0051" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0052" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0053" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0054" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0055" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0056" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0057" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0058" x="5976" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0059" x="6751" y="0" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0060" x="0" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singLEFT0061" x="775" y="718" width="775" height="710" frameX="0" frameY="-7" frameWidth="778" frameHeight="718"/>
+	<SubTexture name="grunt alt singRIGHT0000" x="1550" y="718" width="793" height="693" frameX="0" frameY="0" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0001" x="2343" y="718" width="793" height="693" frameX="0" frameY="0" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0002" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0003" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0004" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0005" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0006" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0007" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0008" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0009" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0010" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0011" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0012" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0013" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0014" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0015" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0016" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0017" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0018" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0019" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0020" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0021" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0022" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0023" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0024" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0025" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0026" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0027" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0028" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0029" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0030" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0031" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0032" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0033" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0034" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0035" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0036" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0037" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0038" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0039" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0040" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0041" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0042" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0043" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0044" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0045" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0046" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0047" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0048" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0049" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0050" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0051" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0052" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0053" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0054" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0055" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0056" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0057" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0058" x="3136" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0059" x="3922" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0060" x="4708" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singRIGHT0061" x="5494" y="718" width="786" height="691" frameX="-11" frameY="-2" frameWidth="797" frameHeight="693"/>
+	<SubTexture name="grunt alt singUP0000" x="6280" y="718" width="708" height="755" frameX="0" frameY="0" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0001" x="6988" y="718" width="708" height="755" frameX="0" frameY="0" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0002" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0003" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0004" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0005" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0006" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0007" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0008" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0009" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0010" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0011" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0012" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0013" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0014" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0015" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0016" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0017" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0018" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0019" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0020" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0021" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0022" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0023" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0024" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0025" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0026" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0027" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0028" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0029" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0030" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0031" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0032" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0033" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0034" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0035" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0036" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0037" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0038" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0039" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0040" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0041" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0042" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0043" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0044" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0045" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0046" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0047" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0048" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0049" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0050" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0051" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0052" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0053" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0054" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0055" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0056" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0057" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0058" x="0" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0059" x="702" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0060" x="1404" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt alt singUP0061" x="2106" y="1473" width="702" height="735" frameX="-9" frameY="-19" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt idle0000" x="2808" y="1473" width="662" height="689" frameX="-14" frameY="-4" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0001" x="2808" y="1473" width="662" height="689" frameX="-14" frameY="-4" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0002" x="3470" y="1473" width="683" height="679" frameX="-5" frameY="-14" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0003" x="3470" y="1473" width="683" height="679" frameX="-5" frameY="-14" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0004" x="4153" y="1473" width="693" height="678" frameX="0" frameY="-15" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0005" x="4153" y="1473" width="693" height="678" frameX="0" frameY="-15" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0006" x="4846" y="1473" width="671" height="691" frameX="-7" frameY="-2" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0007" x="4846" y="1473" width="671" height="691" frameX="-7" frameY="-2" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0008" x="5517" y="1473" width="665" height="694" frameX="-9" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0009" x="5517" y="1473" width="665" height="694" frameX="-9" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0010" x="6182" y="1473" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0011" x="6182" y="1473" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0012" x="6182" y="1473" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0013" x="6182" y="1473" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt idle0014" x="6182" y="1473" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt singDOWN0000" x="6845" y="1473" width="700" height="600" frameX="0" frameY="0" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0001" x="6845" y="1473" width="700" height="600" frameX="0" frameY="0" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0002" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0003" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0004" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0005" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0006" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0007" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0008" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0009" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0010" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0011" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0012" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0013" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0014" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0015" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0016" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0017" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0018" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0019" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0020" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0021" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0022" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0023" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0024" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0025" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0026" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0027" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0028" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0029" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0030" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0031" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0032" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0033" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0034" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0035" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0036" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0037" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0038" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0039" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0040" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0041" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0042" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0043" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0044" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0045" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0046" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0047" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0048" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0049" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0050" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0051" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0052" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0053" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0054" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0055" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0056" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0057" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0058" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0059" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0060" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singDOWN0061" x="0" y="2208" width="704" height="593" frameX="-6" frameY="-5" frameWidth="710" frameHeight="600"/>
+	<SubTexture name="grunt singLEFT0000" x="704" y="2208" width="657" height="718" frameX="-5" frameY="0" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0001" x="704" y="2208" width="657" height="718" frameX="-5" frameY="0" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0002" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0003" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0004" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0005" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0006" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0007" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0008" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0009" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0010" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0011" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0012" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0013" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0014" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0015" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0016" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0017" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0018" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0019" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0020" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0021" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0022" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0023" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0024" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0025" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0026" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0027" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0028" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0029" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0030" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0031" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0032" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0033" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0034" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0035" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0036" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0037" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0038" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0039" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0040" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0041" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0042" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0043" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0044" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0045" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0046" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0047" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0048" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0049" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0050" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0051" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0052" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0053" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0054" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0055" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0056" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0057" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0058" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0059" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0060" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singLEFT0061" x="1361" y="2208" width="651" height="711" frameX="0" frameY="-6" frameWidth="662" frameHeight="718"/>
+	<SubTexture name="grunt singRIGHT0000" x="2012" y="2208" width="758" height="693" frameX="0" frameY="0" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0001" x="2012" y="2208" width="758" height="693" frameX="0" frameY="0" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0002" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0003" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0004" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0005" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0006" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0007" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0008" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0009" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0010" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0011" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0012" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0013" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0014" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0015" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0016" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0017" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0018" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0019" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0020" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0021" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0022" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0023" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0024" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0025" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0026" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0027" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0028" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0029" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0030" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0031" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0032" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0033" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0034" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0035" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0036" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0037" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0038" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0039" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0040" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0041" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0042" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0043" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0044" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0045" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0046" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0047" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0048" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0049" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0050" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0051" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0052" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0053" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0054" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0055" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0056" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0057" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0058" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0059" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0060" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singRIGHT0061" x="2770" y="2208" width="756" height="691" frameX="-11" frameY="-2" frameWidth="767" frameHeight="693"/>
+	<SubTexture name="grunt singUP0000" x="3526" y="2208" width="708" height="755" frameX="0" frameY="0" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0001" x="3526" y="2208" width="708" height="755" frameX="0" frameY="0" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0002" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0003" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0004" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0005" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0006" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0007" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0008" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0009" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0010" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0011" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0012" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0013" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0014" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0015" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0016" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0017" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0018" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0019" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0020" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0021" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0022" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0023" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0024" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0025" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0026" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0027" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0028" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0029" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0030" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0031" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0032" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0033" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0034" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0035" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0036" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0037" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0038" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0039" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0040" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0041" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0042" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0043" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0044" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0045" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0046" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0047" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0048" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0049" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0050" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0051" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0052" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0053" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0054" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0055" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0056" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0057" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0058" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0059" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0060" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+	<SubTexture name="grunt singUP0061" x="4234" y="2208" width="702" height="738" frameX="-9" frameY="-16" frameWidth="711" frameHeight="755"/>
+</TextureAtlas>

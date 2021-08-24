@@ -91,6 +91,152 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					park_ground.active = false;
 					add(park_ground);
 				}
+			case 'raveyard':
+				{
+					defaultCamZoom = 0.9;
+					curStage = 'raveyard';
+					var raveyard_bg:FlxSprite = new FlxSprite(-550, -500).loadGraphic(Paths.image('backgrounds/$curStage/sky'));
+					raveyard_bg.antialiasing = true;
+					raveyard_bg.scrollFactor.set(0.1, 0.1);
+					raveyard_bg.active = false;
+					add(raveyard_bg);
+
+					var raveyard_shrubs:FlxSprite = new FlxSprite(-500, 100).loadGraphic(Paths.image('backgrounds/$curStage/shrubs'));
+					raveyard_shrubs.setGraphicSize(Std.int(raveyard_shrubs.width * 0.9));
+					raveyard_shrubs.updateHitbox();
+					raveyard_shrubs.antialiasing = true;
+					raveyard_shrubs.scrollFactor.set(0.8, 0.8);
+					raveyard_shrubs.active = false;
+					add(raveyard_shrubs);
+
+					var raveyard_belltower = new FlxSprite(500, -300);
+					raveyard_belltower.frames = Paths.getSparrowAtlas('backgrounds/$curStage/belltower');
+					raveyard_belltower.animation.addByPrefix('idle', 'belltower', 24, true);
+					raveyard_belltower.animation.addByPrefix('ringLEFT', 'LEFT belltower ring', 24, false);
+					raveyard_belltower.animation.addByPrefix('ringRIGHT', 'RIGHT belltower ring', 24, false);
+					raveyard_belltower.scrollFactor.set(0.8, 0.8);
+					raveyard_belltower.animation.play('idle');
+					add(raveyard_belltower);
+
+					var raveyard_ground:FlxSprite = new FlxSprite(-900, 400).loadGraphic(Paths.image('backgrounds/$curStage/ground'));
+					raveyard_ground.setGraphicSize(Std.int(raveyard_ground.width * 1.1));
+					raveyard_ground.updateHitbox();
+					raveyard_ground.antialiasing = true;
+					raveyard_ground.scrollFactor.set(0.9, 0.9);
+					raveyard_ground.active = false;
+					add(raveyard_ground);
+
+					var raveyard_gravesbacker:FlxSprite = new FlxSprite(-650, 300).loadGraphic(Paths.image('backgrounds/$curStage/gravesbacker'));
+					raveyard_gravesbacker.updateHitbox();
+					raveyard_gravesbacker.antialiasing = true;
+					raveyard_gravesbacker.scrollFactor.set(0.9, 0.9);
+					raveyard_gravesbacker.active = false;
+					add(raveyard_gravesbacker);
+
+					var raveyard_gravesback:FlxSprite = new FlxSprite(-650, 450).loadGraphic(Paths.image('backgrounds/$curStage/gravesback'));
+					raveyard_gravesback.updateHitbox();
+					raveyard_gravesback.antialiasing = true;
+					raveyard_gravesback.scrollFactor.set(0.9, 0.9);
+					raveyard_gravesback.active = false;
+					add(raveyard_gravesback);
+
+					// if ((curSong == 'pelvic' || curSong == 'spinal tap'))
+					// 	{
+					// 		var danced:Bool = false;
+					// 		var bgSkeletons = new FlxSprite(-250, 260);
+					// 		var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
+					// 		bgSkeletons.frames = skeletex;
+					// 		bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
+					// 		bgSkeletons.animation.addByPrefix('idle', 'skeletons idle', 24, true);
+					// 		bgSkeletons.animation.addByPrefix('danceLEFT', 'skeletons dance left', 24, false);
+					// 		bgSkeletons.animation.addByPrefix('danceRIGHT', 'skeletons dance right', 24, false);
+					// 		bgSkeletons.animation.addByPrefix('fear cutscene', 'skeletons cutscene fear', 24, false);
+					// 		bgSkeletons.animation.addByPrefix('fear', 'skeletons fear', 24, false);
+					// 		if (curSong == 'pelvic')
+					// 		{
+					// 			bgSkeletons.animation.play('rise');
+					// 		} else if (curSong == 'spinal tap')
+					// 		{
+					// 			bgSkeletons.animation.play('fear');
+					// 		}
+					// 		bgSkeletons.scrollFactor.set(0.9, 0.9);
+					// 		add(bgSkeletons);
+					// 	}
+
+					var raveyard_graves:FlxSprite = new FlxSprite(-400, 450).loadGraphic(Paths.image('backgrounds/$curStage/graves'));
+					raveyard_graves.updateHitbox();
+					raveyard_graves.antialiasing = true;
+					raveyard_graves.scrollFactor.set(0.9, 0.9);
+					raveyard_graves.active = false;
+					add(raveyard_graves);
+
+					var gravesfront:FlxSprite = new FlxSprite(-650, 400).loadGraphic(Paths.image('backgrounds/$curStage/gravesfront'));
+					gravesfront.updateHitbox();
+					gravesfront.antialiasing = true;
+					gravesfront.scrollFactor.set(0.9, 0.9);
+					gravesfront.active = false;
+
+					// if (curSong == 'spinal tap')
+					// {
+					// 	var spinaltapbeam = new FlxSprite(100, -100);
+					// 	spinaltapbeam.frames = Paths.getSparrowAtlas('cutscenes/w2/spinaltap-beamup');
+					// 	spinaltapbeam.animation.addByPrefix('idle', 'beam up', 24, false);
+					// }
+				}
+
+			case 'freak':
+				{
+					curStage = 'freak';
+					var bg:FlxSprite = new FlxSprite(-500, -700).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
+					bg.antialiasing = true;
+					bg.setGraphicSize(Std.int(bg.width * 1.3));
+					bg.updateHitbox();
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					add(bg);
+
+					var pinboard:FlxSprite = new FlxSprite(450, -200).loadGraphic(Paths.image('backgrounds/$curStage/pinboard'));
+					pinboard.antialiasing = true;
+					pinboard.updateHitbox();
+					pinboard.scrollFactor.set(0.9, 0.9);
+					pinboard.active = false;
+					add(pinboard);
+
+					var backboard:FlxSprite = new FlxSprite(1150, -100).loadGraphic(Paths.image('backgrounds/$curStage/backmost pinboard'));
+					backboard.antialiasing = true;
+					backboard.updateHitbox();
+					backboard.scrollFactor.set(0.9, 0.9);
+					backboard.active = false;
+					add(backboard);
+
+					var whiteboard:FlxSprite = new FlxSprite(-200, -100).loadGraphic(Paths.image('backgrounds/$curStage/whiteboard'));
+					whiteboard.antialiasing = true;
+					whiteboard.updateHitbox();
+					whiteboard.scrollFactor.set(0.9, 0.9);
+					whiteboard.active = false;
+					add(whiteboard);
+
+					var desk:FlxSprite = new FlxSprite(800, 230).loadGraphic(Paths.image('backgrounds/$curStage/desk'));
+					desk.antialiasing = true;
+					desk.updateHitbox();
+					desk.scrollFactor.set(0.9, 0.9);
+					desk.active = false;
+					add(desk);
+
+					var board:FlxSprite = new FlxSprite(200, 300).loadGraphic(Paths.image('backgrounds/$curStage/board'));
+					board.antialiasing = true;
+					board.updateHitbox();
+					board.scrollFactor.set(0.9, 0.9);
+					board.active = false;
+					add(board);
+
+					var lights:FlxSprite = new FlxSprite(200, -100).loadGraphic(Paths.image('backgrounds/$curStage/lights'));
+					lights.antialiasing = true;
+					lights.updateHitbox();
+					lights.scrollFactor.set(1.3, 1.3);
+					lights.active = false;
+					add(lights);
+				}
 
 			case 'sky':
 				{

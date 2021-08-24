@@ -145,6 +145,45 @@ class Character extends FNFSprite
 
 				flipX = true;
 
+			case 'bf-hominid':
+				var tex = Paths.getSparrowAtlas('characters/bfHominid/bfHominid');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+				animation.addByPrefix('hey', 'BF HEY', 24, false);
+	
+				animation.addByPrefix('firstDeath', "BF dies", 24, false);
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
+	
+				animation.addByPrefix('scared', 'BF idle shaking', 24);
+	
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				addOffset("hey", 7, 4);
+				addOffset('firstDeath', 37, 11);
+				addOffset('deathLoop', 37, 5);
+				addOffset('deathConfirm', 37, 69);
+				addOffset('scared', -4);
+	
+				playAnim('idle');
+	
+				flipX = true;
+
 			case 'bf-dead':
 				frames = Paths.getSparrowAtlas('characters/BF_DEATH');
 
@@ -242,6 +281,171 @@ class Character extends FNFSprite
 				addOffset("singRIGHT", 40, -30);
 				addOffset("singLEFT", 40, -31);
 				addOffset("singDOWN", 2, -37);
+
+				playAnim('idle');
+			case 'bones':
+				tex = Paths.getSparrowAtlas('characters/bones/own_bones');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'singUP', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 34, 9);
+				addOffset("singRIGHT", 8, -8);
+				addOffset("singLEFT", 36, 41);
+				addOffset("singDOWN", 18, -57);
+
+				playAnim('idle');
+			case 'bones-cool':
+				tex = Paths.getSparrowAtlas('characters/bones/cool_bones');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle cool', 24);
+				animation.addByPrefix('singUP', 'cool singUP', 24);
+				animation.addByPrefix('singRIGHT', 'cool singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'cool singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'cool singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 4, 9);
+				addOffset("singRIGHT", 28, 2);
+				addOffset("singLEFT", 26, 2);
+				addOffset("singDOWN", -14, -17);
+
+				playAnim('idle');
+			case 'bones-spectral':
+				tex = Paths.getSparrowAtlas('characters/bones/spectral_bones');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'singUP spectral', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT spectral', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN spectral', 24, false);
+				animation.addByPrefix('singLEFT', 'singLEFT spectral', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 24, -21);
+				addOffset("singRIGHT", -2, 12);
+				addOffset("singLEFT", 66, 12);
+				addOffset("singDOWN", 6, -87);
+
+				playAnim('idle');
+			case 'harold':
+				tex = Paths.getSparrowAtlas('characters/harold/harold');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('singUP', 'singUP', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24);
+				animation.addByPrefix('singDOWN-alt', 'ach', 24, false);
+				animation.addByPrefix('swig', 'swig', 24, false);
+				animation.addByPrefix('short swig', 'short swig', 24, false);
+	
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", -5, 7);
+				addOffset("singLEFT", 49, 3);
+				addOffset("singDOWN", -4, -22);
+				addOffset('singDOWN-alt', 2, 5);
+				addOffset('swig', 2, 5);
+	
+				playAnim('idle');
+			case 'harold-caffeinated':
+				tex = Paths.getSparrowAtlas('characters/harold/harold');
+				frames = tex;
+				animation.addByPrefix('idle', 'twitchy idle', 24);
+				animation.addByPrefix('singUP', 'twitchy singUP', 24);
+				animation.addByPrefix('singRIGHT', 'twitchy singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'twitchy singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'twitchy singLEFT', 24);
+				animation.addByPrefix('swig', 'twitchy swig', 24, false);
+				animation.addByPrefix('singUP-alt', 'alt twitchy singUP', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'alt twitchy singDOWN', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'alt twitchy singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'alt twitchy singRIGHT', 24, false);
+	
+				addOffset('idle');
+				addOffset("singUP", 14, 40);
+				addOffset("singRIGHT", -5, -23);
+				addOffset("singLEFT", 39, -7);
+				addOffset("singDOWN", 26, -22);
+				addOffset("singUP-alt", 14, 40);
+				addOffset("singRIGHT-alt", -5, -23);
+				addOffset("singLEFT-alt", 39, -7);
+				addOffset("singDOWN-alt", 26, -22);
+				addOffset('swig', 2, 5);
+	
+				playAnim('idle');
+			case 'FBI':
+				frames = Paths.getSparrowAtlas('characters/FBI/FBI');
+				animation.addByPrefix('idle', 'grunt idle', 24, false);
+				animation.addByPrefix('singUP', 'grunt singUP', 24, false);
+				animation.addByPrefix('singDOWN', 'grunt singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'grunt singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'grunt singRIGHT', 24, false);
+				animation.addByPrefix('singUP-alt', 'grunt alt singUP', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'grunt alt singDOWN', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'grunt alt singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'grunt alt singRIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -25, 58);
+				addOffset("singRIGHT", -31, -3);
+				addOffset("singLEFT", 61, 21);
+				addOffset("singDOWN", -31, -99);
+				addOffset("singUP-alt", -37, 59);
+				addOffset("singRIGHT-alt", -24, -3);
+				addOffset("singLEFT-alt", 70, 24);
+				addOffset("singDOWN-alt", 12, -93);
+				
+				playAnim('idle');
+			case 'FBIbodyguard':
+				frames = Paths.getSparrowAtlas('characters/FBI/FBIbodyguard');
+				animation.addByPrefix('idle', 'bodyguard idle', 24, false);
+				animation.addByPrefix('singUP', 'bodyguard singUP', 24, false);
+				animation.addByPrefix('singDOWN', 'bodyguard singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'bodyguard singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'bodyguard singRIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -125, 78);
+				addOffset("singRIGHT", -31, 17);
+				addOffset("singLEFT", 51, 21);
+				addOffset("singDOWN", -111, -69);
+				
+				playAnim('idle');
+			case 'xigman':
+				frames = Paths.getSparrowAtlas('characters/xigman/XIGMAN');
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'singUP', 24, false);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -62, 115);
+				addOffset("singRIGHT", 29, -53);
+				addOffset("singLEFT", -9, 21);
+				addOffset("singDOWN", 19, -89);
+
+				playAnim('idle');
+			case 'cowborg':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST');
+				frames = tex;
+				animation.addByPrefix('idle', 'Dad idle dance', 24);
+				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
+				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
 		}

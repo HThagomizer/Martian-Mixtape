@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="harold.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ach0000" x="0" y="0" width="334" height="621" frameX="-3" frameY="0" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0001" x="0" y="0" width="334" height="621" frameX="-3" frameY="0" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0002" x="334" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0003" x="334" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0004" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0005" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0006" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0007" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0008" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0009" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0010" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0011" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0012" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0013" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0014" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0015" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0016" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0017" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0018" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0019" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0020" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0021" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0022" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0023" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0024" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0025" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0026" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0027" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0028" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0029" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0030" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0031" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0032" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0033" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0034" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0035" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0036" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0037" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0038" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0039" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0040" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0041" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0042" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0043" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0044" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0045" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0046" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0047" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0048" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0049" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0050" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0051" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0052" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0053" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0054" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0055" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0056" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0057" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0058" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0059" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0060" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="ach0061" x="670" y="0" width="336" height="618" frameX="0" frameY="-3" frameWidth="337" frameHeight="621"/>
+	<SubTexture name="alt twitchy singDOWN0000" x="1006" y="0" width="372" height="601"/>
+	<SubTexture name="alt twitchy singDOWN0001" x="1006" y="0" width="372" height="601"/>
+	<SubTexture name="alt twitchy singDOWN0002" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0003" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0004" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0005" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0006" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0007" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0008" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0009" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0010" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0011" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0012" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0013" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0014" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0015" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0016" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0017" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0018" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0019" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0020" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0021" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0022" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0023" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0024" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0025" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0026" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0027" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0028" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0029" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0030" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0031" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0032" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0033" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0034" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0035" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0036" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0037" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0038" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0039" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0040" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0041" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0042" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0043" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0044" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0045" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0046" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0047" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0048" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0049" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0050" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0051" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0052" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0053" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0054" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0055" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0056" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0057" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0058" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0059" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0060" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singDOWN0061" x="1378" y="0" width="355" height="597" frameX="-14" frameY="-3" frameWidth="372" frameHeight="601"/>
+	<SubTexture name="alt twitchy singLEFT0000" x="1733" y="0" width="383" height="618"/>
+	<SubTexture name="alt twitchy singLEFT0001" x="1733" y="0" width="383" height="618"/>
+	<SubTexture name="alt twitchy singLEFT0002" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0003" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0004" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0005" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0006" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0007" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0008" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0009" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0010" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0011" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0012" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0013" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0014" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0015" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0016" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0017" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0018" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0019" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0020" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0021" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0022" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0023" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0024" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0025" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0026" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0027" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0028" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0029" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0030" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0031" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0032" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0033" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0034" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0035" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0036" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0037" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0038" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0039" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0040" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0041" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0042" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0043" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0044" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0045" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0046" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0047" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0048" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0049" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0050" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0051" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0052" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0053" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0054" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0055" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0056" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0057" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0058" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0059" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0060" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singLEFT0061" x="2116" y="0" width="378" height="615" frameX="-1" frameY="-3" frameWidth="383" frameHeight="618"/>
+	<SubTexture name="alt twitchy singRIGHT0000" x="2494" y="0" width="426" height="611" frameX="-2" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0001" x="2494" y="0" width="426" height="611" frameX="-2" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0002" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0003" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0004" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0005" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0006" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0007" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0008" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0009" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0010" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0011" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0012" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0013" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0014" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0015" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0016" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0017" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0018" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0019" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0020" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0021" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0022" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0023" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0024" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0025" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0026" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0027" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0028" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0029" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0030" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0031" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0032" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0033" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0034" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0035" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0036" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0037" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0038" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0039" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0040" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0041" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0042" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0043" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0044" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0045" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0046" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0047" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0048" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0049" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0050" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0051" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0052" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0053" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0054" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0055" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0056" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0057" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0058" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0059" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0060" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singRIGHT0061" x="2920" y="0" width="421" height="611" frameX="0" frameY="0" frameWidth="428" frameHeight="611"/>
+	<SubTexture name="alt twitchy singUP0000" x="3341" y="0" width="383" height="658" frameX="0" frameY="0" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0001" x="3341" y="0" width="383" height="658" frameX="0" frameY="0" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0002" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0003" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0004" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0005" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0006" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0007" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0008" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0009" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0010" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0011" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0012" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0013" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0014" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0015" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0016" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0017" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0018" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0019" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0020" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0021" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0022" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0023" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0024" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0025" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0026" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0027" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0028" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0029" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0030" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0031" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0032" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0033" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0034" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0035" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0036" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0037" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0038" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0039" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0040" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0041" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0042" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0043" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0044" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0045" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0046" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0047" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0048" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0049" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0050" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0051" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0052" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0053" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0054" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0055" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0056" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0057" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0058" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0059" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0060" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="alt twitchy singUP0061" x="3724" y="0" width="384" height="647" frameX="-4" frameY="-10" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="idle0000" x="4108" y="0" width="370" height="613" frameX="-2" frameY="-5" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0001" x="4478" y="0" width="371" height="613" frameX="-3" frameY="-5" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0002" x="4849" y="0" width="369" height="600" frameX="-2" frameY="-17" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0003" x="5218" y="0" width="370" height="601" frameX="-3" frameY="-16" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0004" x="5588" y="0" width="369" height="595" frameX="-2" frameY="-22" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0005" x="5957" y="0" width="370" height="596" frameX="-3" frameY="-21" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0006" x="6327" y="0" width="369" height="610" frameX="-2" frameY="-8" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0007" x="6696" y="0" width="370" height="611" frameX="-3" frameY="-7" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0008" x="7066" y="0" width="369" height="615" frameX="-2" frameY="-3" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0009" x="7435" y="0" width="370" height="616" frameX="-3" frameY="-2" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0010" x="7805" y="0" width="371" height="618" frameX="-1" frameY="0" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0011" x="0" y="658" width="372" height="618" frameX="-2" frameY="0" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0012" x="372" y="658" width="367" height="617" frameX="-2" frameY="-1" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="idle0013" x="739" y="658" width="372" height="618" frameX="0" frameY="0" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="short swig0000" x="7805" y="0" width="371" height="618" frameX="-12" frameY="-11" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="short swig0001" x="1111" y="658" width="349" height="604" frameX="-6" frameY="-24" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0002" x="1460" y="658" width="324" height="615" frameX="-11" frameY="-13" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0003" x="1784" y="658" width="332" height="630" frameX="-6" frameY="0" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0004" x="2116" y="658" width="332" height="603" frameX="-6" frameY="-25" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0005" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0006" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0007" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0008" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0009" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0010" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0011" x="2780" y="658" width="404" height="626" frameX="-1" frameY="-3" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0012" x="3184" y="658" width="393" height="625" frameX="0" frameY="-4" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0013" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0014" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0015" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0016" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0017" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0018" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0019" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0020" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0021" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="short swig0022" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="singDOWN0000" x="3966" y="658" width="362" height="596"/>
+	<SubTexture name="singDOWN0001" x="3966" y="658" width="362" height="596"/>
+	<SubTexture name="singDOWN0002" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0003" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0004" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0005" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0006" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0007" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0008" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0009" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0010" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0011" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0012" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0013" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0014" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0015" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0016" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0017" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0018" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0019" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0020" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0021" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0022" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0023" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0024" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0025" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0026" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0027" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0028" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0029" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0030" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0031" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0032" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0033" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0034" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0035" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0036" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0037" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0038" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0039" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0040" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0041" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0042" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0043" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0044" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0045" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0046" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0047" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0048" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0049" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0050" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0051" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0052" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0053" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0054" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0055" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0056" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0057" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0058" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0059" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0060" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singDOWN0061" x="4328" y="658" width="359" height="593" frameX="-1" frameY="-2" frameWidth="362" frameHeight="596"/>
+	<SubTexture name="singLEFT0000" x="4687" y="658" width="397" height="620"/>
+	<SubTexture name="singLEFT0001" x="4687" y="658" width="397" height="620"/>
+	<SubTexture name="singLEFT0002" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0003" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0004" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0005" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0006" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0007" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0008" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0009" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0010" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0011" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0012" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0013" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0014" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0015" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0016" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0017" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0018" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0019" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0020" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0021" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0022" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0023" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0024" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0025" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0026" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0027" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0028" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0029" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0030" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0031" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0032" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0033" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0034" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0035" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0036" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0037" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0038" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0039" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0040" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0041" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0042" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0043" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0044" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0045" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0046" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0047" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0048" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0049" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0050" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0051" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0052" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0053" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0054" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0055" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0056" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0057" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0058" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0059" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0060" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singLEFT0061" x="5084" y="658" width="392" height="620" frameX="-3" frameY="0" frameWidth="397" frameHeight="620"/>
+	<SubTexture name="singRIGHT0000" x="5476" y="658" width="460" height="624" frameX="-1" frameY="0" frameWidth="472" frameHeight="624"/>
+	<SubTexture name="singRIGHT0001" x="5476" y="658" width="460" height="624" frameX="-1" frameY="0" frameWidth="472" frameHeight="624"/>
+	<SubTexture name="singRIGHT0002" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0003" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0004" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0005" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0006" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0007" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0008" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0009" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0010" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0011" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0012" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0013" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0014" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0015" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0016" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0017" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0018" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0019" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0020" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0021" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0022" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0023" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0024" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0025" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0026" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0027" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0028" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0029" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0030" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0031" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0032" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0033" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0034" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0035" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0036" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0037" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0038" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0039" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0040" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0041" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0042" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0043" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0044" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0045" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0046" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0047" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0048" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0049" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0050" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0051" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0052" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0053" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0054" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0055" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0056" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0057" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0058" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0059" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0060" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singRIGHT0061" x="5936" y="658" width="472" height="624"/>
+	<SubTexture name="singUP0000" x="6408" y="658" width="386" height="670"/>
+	<SubTexture name="singUP0001" x="6408" y="658" width="386" height="670"/>
+	<SubTexture name="singUP0002" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0003" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0004" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0005" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0006" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0007" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0008" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0009" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0010" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0011" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0012" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0013" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0014" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0015" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0016" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0017" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0018" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0019" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0020" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0021" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0022" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0023" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0024" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0025" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0026" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0027" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0028" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0029" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0030" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0031" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0032" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0033" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0034" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0035" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0036" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0037" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0038" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0039" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0040" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0041" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0042" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0043" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0044" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0045" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0046" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0047" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0048" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0049" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0050" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0051" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0052" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0053" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0054" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0055" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0056" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0057" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0058" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0059" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0060" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="singUP0061" x="6794" y="658" width="385" height="661" frameX="0" frameY="-8" frameWidth="386" frameHeight="670"/>
+	<SubTexture name="swig0000" x="7805" y="0" width="371" height="618" frameX="-12" frameY="-11" frameWidth="374" frameHeight="618"/>
+	<SubTexture name="swig0001" x="1111" y="658" width="349" height="604" frameX="-6" frameY="-24" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0002" x="1460" y="658" width="324" height="615" frameX="-11" frameY="-13" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0003" x="1784" y="658" width="332" height="630" frameX="-6" frameY="0" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0004" x="2116" y="658" width="332" height="603" frameX="-6" frameY="-25" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0005" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0006" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0007" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0008" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0009" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0010" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0011" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0012" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0013" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0014" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0015" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0016" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0017" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0018" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0019" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0020" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0021" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0022" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0023" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0024" x="7179" y="658" width="332" height="630" frameX="-6" frameY="0" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0025" x="7511" y="658" width="332" height="604" frameX="-6" frameY="-24" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0026" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0027" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0028" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0029" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0030" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0031" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0032" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0033" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0034" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0035" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0036" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0037" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0038" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0039" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0040" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0041" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0042" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0043" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0044" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0045" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0046" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0047" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0048" x="7843" y="658" width="332" height="629" frameX="-6" frameY="0" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0049" x="0" y="1328" width="332" height="605" frameX="-6" frameY="-23" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0050" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0051" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0052" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0053" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0054" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0055" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0056" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0057" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0058" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0059" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0060" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0061" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0062" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0063" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0064" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0065" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0066" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0067" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0068" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0069" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0070" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0071" x="2448" y="658" width="332" height="615" frameX="-6" frameY="-14" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0072" x="2780" y="658" width="404" height="626" frameX="-1" frameY="-3" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0073" x="3184" y="658" width="393" height="625" frameX="0" frameY="-4" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0074" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0075" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0076" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0077" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0078" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0079" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0080" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0081" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0082" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0083" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="swig0084" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-7" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy idle0000" x="332" y="1328" width="373" height="613" frameX="0" frameY="-5" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0001" x="705" y="1328" width="369" height="605" frameX="0" frameY="-13" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0002" x="1074" y="1328" width="374" height="600" frameX="0" frameY="-17" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0003" x="1448" y="1328" width="370" height="591" frameX="0" frameY="-26" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0004" x="1818" y="1328" width="373" height="595" frameX="0" frameY="-22" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0005" x="2191" y="1328" width="369" height="586" frameX="0" frameY="-31" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0006" x="2560" y="1328" width="375" height="610" frameX="0" frameY="-8" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0007" x="2935" y="1328" width="373" height="602" frameX="0" frameY="-16" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0008" x="3308" y="1328" width="377" height="615" frameX="0" frameY="-3" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0009" x="3685" y="1328" width="375" height="608" frameX="0" frameY="-10" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0010" x="4060" y="1328" width="377" height="618"/>
+	<SubTexture name="twitchy idle0011" x="4437" y="1328" width="374" height="610" frameX="0" frameY="-8" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0012" x="4811" y="1328" width="375" height="618" frameX="0" frameY="0" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy idle0013" x="5186" y="1328" width="371" height="610" frameX="0" frameY="-8" frameWidth="377" frameHeight="618"/>
+	<SubTexture name="twitchy singDOWN0000" x="5557" y="1328" width="372" height="596" frameX="0" frameY="0" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0001" x="5557" y="1328" width="372" height="596" frameX="0" frameY="0" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0002" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0003" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0004" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0005" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0006" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0007" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0008" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0009" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0010" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0011" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0012" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0013" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0014" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0015" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0016" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0017" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0018" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0019" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0020" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0021" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0022" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0023" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0024" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0025" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0026" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0027" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0028" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0029" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0030" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0031" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0032" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0033" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0034" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0035" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0036" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0037" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0038" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0039" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0040" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0041" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0042" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0043" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0044" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0045" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0046" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0047" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0048" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0049" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0050" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0051" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0052" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0053" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0054" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0055" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0056" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0057" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0058" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0059" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0060" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singDOWN0061" x="5929" y="1328" width="370" height="586" frameX="-14" frameY="-9" frameWidth="384" frameHeight="596"/>
+	<SubTexture name="twitchy singLEFT0000" x="6299" y="1328" width="383" height="604" frameX="0" frameY="-1" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0001" x="6299" y="1328" width="383" height="604" frameX="0" frameY="-1" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0002" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0003" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0004" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0005" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0006" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0007" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0008" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0009" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0010" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0011" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0012" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0013" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0014" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0015" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0016" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0017" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0018" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0019" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0020" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0021" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0022" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0023" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0024" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0025" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0026" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0027" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0028" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0029" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0030" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0031" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0032" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0033" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0034" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0035" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0036" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0037" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0038" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0039" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0040" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0041" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0042" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0043" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0044" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0045" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0046" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0047" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0048" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0049" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0050" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0051" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0052" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0053" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0054" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0055" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0056" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0057" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0058" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0059" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0060" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singLEFT0061" x="6682" y="1328" width="378" height="605" frameX="-1" frameY="0" frameWidth="383" frameHeight="605"/>
+	<SubTexture name="twitchy singRIGHT0000" x="7060" y="1328" width="426" height="589" frameX="-2" frameY="0" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0001" x="7060" y="1328" width="426" height="589" frameX="-2" frameY="0" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0002" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0003" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0004" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0005" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0006" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0007" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0008" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0009" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0010" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0011" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0012" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0013" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0014" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0015" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0016" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0017" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0018" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0019" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0020" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0021" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0022" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0023" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0024" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0025" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0026" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0027" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0028" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0029" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0030" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0031" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0032" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0033" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0034" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0035" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0036" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0037" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0038" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0039" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0040" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0041" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0042" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0043" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0044" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0045" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0046" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0047" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0048" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0049" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0050" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0051" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0052" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0053" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0054" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0055" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0056" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0057" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0058" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0059" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0060" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singRIGHT0061" x="7486" y="1328" width="421" height="579" frameX="0" frameY="-10" frameWidth="428" frameHeight="589"/>
+	<SubTexture name="twitchy singUP0000" x="0" y="1946" width="383" height="658" frameX="0" frameY="0" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0001" x="0" y="1946" width="383" height="658" frameX="0" frameY="0" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0002" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0003" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0004" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0005" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0006" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0007" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0008" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0009" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0010" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0011" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0012" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0013" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0014" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0015" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0016" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0017" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0018" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0019" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0020" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0021" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0022" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0023" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0024" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0025" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0026" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0027" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0028" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0029" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0030" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0031" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0032" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0033" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0034" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0035" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0036" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0037" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0038" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0039" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0040" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0041" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0042" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0043" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0044" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0045" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0046" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0047" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0048" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0049" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0050" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0051" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0052" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0053" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0054" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0055" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0056" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0057" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0058" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0059" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0060" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy singUP0061" x="383" y="1946" width="384" height="652" frameX="-4" frameY="-5" frameWidth="388" frameHeight="658"/>
+	<SubTexture name="twitchy swig0000" x="767" y="1946" width="373" height="618" frameX="-17" frameY="-25" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0001" x="1140" y="1946" width="340" height="604" frameX="-7" frameY="-38" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0002" x="1480" y="1946" width="324" height="615" frameX="-11" frameY="-27" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0003" x="1804" y="1946" width="332" height="634" frameX="-6" frameY="-10" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0004" x="2136" y="1946" width="332" height="607" frameX="-6" frameY="-35" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0005" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0006" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0007" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0008" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0009" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0010" x="2800" y="1946" width="332" height="635" frameX="-6" frameY="-9" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0011" x="3132" y="1946" width="332" height="609" frameX="-6" frameY="-33" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0012" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0013" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0014" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0015" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0016" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0017" x="3464" y="1946" width="332" height="633" frameX="-6" frameY="-10" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0018" x="3796" y="1946" width="332" height="610" frameX="-6" frameY="-32" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0019" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0020" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0021" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0022" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0023" x="2468" y="1946" width="332" height="620" frameX="-6" frameY="-23" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0024" x="4128" y="1946" width="332" height="634" frameX="-6" frameY="-10" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0025" x="4460" y="1946" width="332" height="611" frameX="-6" frameY="-31" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0026" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0027" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0028" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0029" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0030" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0031" x="5124" y="1946" width="332" height="643" frameX="-6" frameY="-1" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0032" x="5456" y="1946" width="332" height="614" frameX="-6" frameY="-28" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0033" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0034" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0035" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0036" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0037" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0038" x="5788" y="1946" width="332" height="639" frameX="-6" frameY="-5" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0039" x="6120" y="1946" width="332" height="607" frameX="-6" frameY="-35" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0040" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0041" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0042" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0043" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0044" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0045" x="6452" y="1946" width="332" height="637" frameX="-6" frameY="-7" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0046" x="6784" y="1946" width="332" height="610" frameX="-6" frameY="-32" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0047" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0048" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0049" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0050" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0051" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0052" x="7116" y="1946" width="332" height="637" frameX="-6" frameY="-7" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0053" x="7448" y="1946" width="332" height="609" frameX="-6" frameY="-33" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0054" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0055" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0056" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0057" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0058" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0059" x="7780" y="1946" width="332" height="644" frameX="-6" frameY="0" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0060" x="6120" y="1946" width="332" height="607" frameX="-6" frameY="-35" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0061" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0062" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0063" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0064" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0065" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0066" x="0" y="2604" width="332" height="640" frameX="-6" frameY="-4" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0067" x="332" y="2604" width="332" height="613" frameX="-6" frameY="-29" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0068" x="4792" y="1946" width="332" height="619" frameX="-6" frameY="-24" frameWidth="405" frameHeight="644"/>
+	<SubTexture name="twitchy swig0069" x="2780" y="658" width="404" height="626" frameX="-1" frameY="-17" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0070" x="3184" y="658" width="393" height="625" frameX="0" frameY="-18" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0071" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0072" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0073" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0074" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0075" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0076" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+	<SubTexture name="twitchy swig0077" x="3577" y="658" width="389" height="622" frameX="-3" frameY="-21" frameWidth="405" frameHeight="630"/>
+</TextureAtlas>

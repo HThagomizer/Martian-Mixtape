@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="skeletons.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="skeletons cutscene fear0000" x="0" y="0" width="1882" height="433" frameX="-51" frameY="0" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0001" x="0" y="0" width="1882" height="433" frameX="-51" frameY="0" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0002" x="1882" y="0" width="1984" height="418" frameX="-1" frameY="-13" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0003" x="1882" y="0" width="1984" height="418" frameX="-1" frameY="-13" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0004" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0005" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0006" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0007" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0008" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0009" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0010" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0011" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0012" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0013" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0014" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0015" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0016" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0017" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0018" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0019" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0020" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0021" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0022" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons cutscene fear0023" x="3866" y="0" width="1983" height="422" frameX="0" frameY="-9" frameWidth="1985" frameHeight="433"/>
+	<SubTexture name="skeletons dance left0000" x="5849" y="0" width="1916" height="403" frameX="-10" frameY="-12" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0001" x="5849" y="0" width="1916" height="403" frameX="-10" frameY="-12" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0002" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0003" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0004" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0005" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0006" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0007" x="0" y="433" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0008" x="1929" y="433" width="1883" height="425" frameX="-38" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0009" x="1929" y="433" width="1883" height="425" frameX="-38" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0010" x="3812" y="433" width="1883" height="422" frameX="-38" frameY="-2" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0011" x="3812" y="433" width="1883" height="422" frameX="-38" frameY="-2" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0012" x="5695" y="433" width="1883" height="424" frameX="-38" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance left0013" x="5695" y="433" width="1883" height="424" frameX="-38" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0000" x="0" y="858" width="1916" height="403" frameX="-3" frameY="-12" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0001" x="0" y="858" width="1916" height="403" frameX="-3" frameY="-12" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0002" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0003" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0004" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0005" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0006" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0007" x="1916" y="858" width="1929" height="410" frameX="0" frameY="-5" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0008" x="3845" y="858" width="1882" height="425" frameX="-15" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0009" x="3845" y="858" width="1882" height="425" frameX="-15" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0010" x="3812" y="433" width="1883" height="422" frameX="-15" frameY="-2" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0011" x="3812" y="433" width="1883" height="422" frameX="-15" frameY="-2" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0012" x="5695" y="433" width="1883" height="424" frameX="-15" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons dance right0013" x="5695" y="433" width="1883" height="424" frameX="-15" frameY="0" frameWidth="1929" frameHeight="425"/>
+	<SubTexture name="skeletons fear0000" x="5727" y="858" width="1983" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0001" x="5727" y="858" width="1983" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0002" x="0" y="1283" width="1989" height="415" frameX="-1" frameY="-7" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0003" x="0" y="1283" width="1989" height="415" frameX="-1" frameY="-7" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0004" x="1989" y="1283" width="1989" height="414" frameX="-1" frameY="-8" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0005" x="1989" y="1283" width="1989" height="414" frameX="-1" frameY="-8" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0006" x="3978" y="1283" width="1984" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0007" x="3978" y="1283" width="1984" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0008" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0009" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0010" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0011" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0012" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0013" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0014" x="5727" y="858" width="1983" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0015" x="5727" y="858" width="1983" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0016" x="0" y="1283" width="1989" height="415" frameX="-1" frameY="-7" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0017" x="0" y="1283" width="1989" height="415" frameX="-1" frameY="-7" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0018" x="1989" y="1283" width="1989" height="414" frameX="-1" frameY="-8" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0019" x="1989" y="1283" width="1989" height="414" frameX="-1" frameY="-8" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0020" x="3978" y="1283" width="1984" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0021" x="3978" y="1283" width="1984" height="418" frameX="-1" frameY="-4" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0022" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons fear0023" x="5962" y="1283" width="1982" height="422" frameX="0" frameY="0" frameWidth="1990" frameHeight="422"/>
+	<SubTexture name="skeletons idle0000" x="0" y="1705" width="1882" height="425" frameX="0" frameY="-8" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0001" x="0" y="1705" width="1882" height="425" frameX="0" frameY="-8" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0002" x="1882" y="1705" width="1882" height="422" frameX="0" frameY="-10" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0003" x="1882" y="1705" width="1882" height="422" frameX="0" frameY="-10" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0004" x="3764" y="1705" width="1882" height="424" frameX="0" frameY="-8" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0005" x="3764" y="1705" width="1882" height="424" frameX="0" frameY="-8" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0006" x="5646" y="1705" width="1882" height="430" frameX="0" frameY="-3" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0007" x="5646" y="1705" width="1882" height="430" frameX="0" frameY="-3" frameWidth="1882" frameHeight="433"/>
+	<SubTexture name="skeletons idle0008" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons idle0009" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons idle0010" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons idle0011" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons idle0012" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons idle0013" x="0" y="2135" width="1882" height="433"/>
+	<SubTexture name="skeletons rise0000" x="1882" y="2135" width="1919" height="44" frameX="0" frameY="-405" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0001" x="3801" y="2135" width="1919" height="47" frameX="0" frameY="-402" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0002" x="5720" y="2135" width="1920" height="47" frameX="0" frameY="-402" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0003" x="0" y="2568" width="1920" height="50" frameX="0" frameY="-399" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0004" x="1920" y="2568" width="1924" height="50" frameX="0" frameY="-399" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0005" x="3844" y="2568" width="1924" height="53" frameX="0" frameY="-396" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0006" x="5768" y="2568" width="1923" height="59" frameX="0" frameY="-390" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0007" x="0" y="2627" width="1923" height="65" frameX="0" frameY="-384" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0008" x="1923" y="2627" width="1919" height="71" frameX="0" frameY="-378" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0009" x="3842" y="2627" width="1919" height="77" frameX="0" frameY="-372" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0010" x="5761" y="2627" width="1920" height="83" frameX="0" frameY="-366" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0011" x="0" y="2710" width="1920" height="89" frameX="0" frameY="-360" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0012" x="1920" y="2710" width="1924" height="95" frameX="0" frameY="-354" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0013" x="3844" y="2710" width="1924" height="101" frameX="0" frameY="-348" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0014" x="5768" y="2710" width="1923" height="107" frameX="0" frameY="-342" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0015" x="0" y="2817" width="1923" height="113" frameX="0" frameY="-336" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0016" x="1923" y="2817" width="1919" height="119" frameX="0" frameY="-330" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0017" x="3842" y="2817" width="1919" height="125" frameX="0" frameY="-324" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0018" x="5761" y="2817" width="1920" height="131" frameX="0" frameY="-318" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0019" x="0" y="2948" width="1920" height="137" frameX="0" frameY="-312" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0020" x="1920" y="2948" width="1924" height="143" frameX="0" frameY="-306" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0021" x="3844" y="2948" width="1924" height="149" frameX="0" frameY="-300" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0022" x="5768" y="2948" width="1923" height="155" frameX="0" frameY="-294" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0023" x="0" y="3103" width="1923" height="161" frameX="0" frameY="-288" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0024" x="1923" y="3103" width="1919" height="167" frameX="0" frameY="-282" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0025" x="3842" y="3103" width="1919" height="173" frameX="0" frameY="-276" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0026" x="5761" y="3103" width="1920" height="179" frameX="0" frameY="-270" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0027" x="0" y="3282" width="1920" height="185" frameX="0" frameY="-264" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0028" x="1920" y="3282" width="1924" height="191" frameX="0" frameY="-258" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0029" x="3844" y="3282" width="1924" height="197" frameX="0" frameY="-252" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0030" x="5768" y="3282" width="1923" height="203" frameX="0" frameY="-246" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0031" x="0" y="3485" width="1923" height="209" frameX="0" frameY="-240" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0032" x="1923" y="3485" width="1919" height="215" frameX="0" frameY="-234" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0033" x="3842" y="3485" width="1919" height="221" frameX="0" frameY="-228" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0034" x="5761" y="3485" width="1920" height="227" frameX="0" frameY="-222" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0035" x="0" y="3712" width="1920" height="233" frameX="0" frameY="-216" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0036" x="1920" y="3712" width="1924" height="239" frameX="0" frameY="-210" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0037" x="3844" y="3712" width="1924" height="245" frameX="0" frameY="-204" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0038" x="5768" y="3712" width="1923" height="251" frameX="0" frameY="-198" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0039" x="0" y="3963" width="1923" height="257" frameX="0" frameY="-192" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0040" x="1923" y="3963" width="1919" height="263" frameX="0" frameY="-186" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0041" x="3842" y="3963" width="1919" height="269" frameX="0" frameY="-180" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0042" x="5761" y="3963" width="1920" height="275" frameX="0" frameY="-174" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0043" x="0" y="4238" width="1920" height="281" frameX="0" frameY="-168" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0044" x="1920" y="4238" width="1924" height="288" frameX="0" frameY="-161" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0045" x="3844" y="4238" width="1924" height="294" frameX="0" frameY="-155" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0046" x="5768" y="4238" width="1923" height="300" frameX="0" frameY="-149" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0047" x="0" y="4538" width="1923" height="306" frameX="0" frameY="-143" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0048" x="1923" y="4538" width="1919" height="312" frameX="0" frameY="-137" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0049" x="3842" y="4538" width="1919" height="318" frameX="0" frameY="-131" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0050" x="5761" y="4538" width="1920" height="324" frameX="0" frameY="-125" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0051" x="0" y="4862" width="1920" height="330" frameX="0" frameY="-119" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0052" x="1920" y="4862" width="1924" height="336" frameX="0" frameY="-113" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0053" x="3844" y="4862" width="1924" height="342" frameX="0" frameY="-107" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0054" x="5768" y="4862" width="1923" height="348" frameX="0" frameY="-101" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0055" x="0" y="5210" width="1923" height="354" frameX="0" frameY="-95" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0056" x="1923" y="5210" width="1919" height="360" frameX="0" frameY="-89" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0057" x="3842" y="5210" width="1919" height="366" frameX="0" frameY="-83" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0058" x="5761" y="5210" width="1920" height="372" frameX="0" frameY="-77" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0059" x="0" y="5582" width="1920" height="378" frameX="0" frameY="-71" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0060" x="1920" y="5582" width="1924" height="384" frameX="0" frameY="-65" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0061" x="3844" y="5582" width="1924" height="390" frameX="0" frameY="-59" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0062" x="5768" y="5582" width="1923" height="396" frameX="0" frameY="-53" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0063" x="0" y="5978" width="1923" height="402" frameX="0" frameY="-47" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0064" x="1923" y="5978" width="1919" height="408" frameX="0" frameY="-41" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0065" x="3842" y="5978" width="1919" height="414" frameX="0" frameY="-35" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0066" x="5761" y="5978" width="1920" height="419" frameX="0" frameY="-30" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0067" x="0" y="6397" width="1920" height="425" frameX="0" frameY="-24" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0068" x="1920" y="6397" width="1924" height="431" frameX="0" frameY="-18" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0069" x="3844" y="6397" width="1924" height="437" frameX="0" frameY="-12" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0070" x="5768" y="6397" width="1923" height="443" frameX="0" frameY="-6" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0071" x="0" y="6840" width="1919" height="449" frameX="0" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0072" x="1919" y="6840" width="1919" height="449" frameX="0" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0073" x="3838" y="6840" width="1920" height="449" frameX="0" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0074" x="5758" y="6840" width="1912" height="436" frameX="-8" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0075" x="0" y="7289" width="1916" height="436" frameX="-8" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0076" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0077" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0078" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0079" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0080" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0081" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0082" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0083" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0084" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0085" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0086" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0087" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0088" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0089" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0090" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0091" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0092" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0093" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0094" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+	<SubTexture name="skeletons rise0095" x="1916" y="7289" width="1883" height="432" frameX="-12" frameY="0" frameWidth="1924" frameHeight="449"/>
+</TextureAtlas>

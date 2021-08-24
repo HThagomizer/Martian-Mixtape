@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="belltower.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="belltower0000" x="0" y="0" width="442" height="962"/>
+	<SubTexture name="LEFT belltower ring0000" x="442" y="0" width="442" height="962"/>
+	<SubTexture name="LEFT belltower ring0001" x="884" y="0" width="442" height="962"/>
+	<SubTexture name="LEFT belltower ring0002" x="1326" y="0" width="442" height="962"/>
+	<SubTexture name="LEFT belltower ring0003" x="1768" y="0" width="442" height="962"/>
+	<SubTexture name="LEFT belltower ring0004" x="0" y="0" width="442" height="962"/>
+	<SubTexture name="RIGHT belltower ring0000" x="2210" y="0" width="442" height="962"/>
+	<SubTexture name="RIGHT belltower ring0001" x="2652" y="0" width="442" height="962"/>
+	<SubTexture name="RIGHT belltower ring0002" x="3094" y="0" width="442" height="962"/>
+	<SubTexture name="RIGHT belltower ring0003" x="3536" y="0" width="442" height="962"/>
+	<SubTexture name="RIGHT belltower ring0004" x="0" y="0" width="442" height="962"/>
+</TextureAtlas>
