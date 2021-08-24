@@ -46,6 +46,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			{
 				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol':
 					curStage = 'park';
+				case 'marrow' | 'pelvic' | 'spinal tap':
+					curStage = 'raveyard';
+				case 'tinfoil' | 'pelvic' | 'exclusion zone':
+					curStage = 'freak';
 				default:
 					curStage = 'stage';
 			}
@@ -140,28 +144,28 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					raveyard_gravesback.active = false;
 					add(raveyard_gravesback);
 
-					// if ((curSong == 'pelvic' || curSong == 'spinal tap'))
-					// 	{
-					// 		var danced:Bool = false;
-					// 		var bgSkeletons = new FlxSprite(-250, 260);
-					// 		var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
-					// 		bgSkeletons.frames = skeletex;
-					// 		bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
-					// 		bgSkeletons.animation.addByPrefix('idle', 'skeletons idle', 24, true);
-					// 		bgSkeletons.animation.addByPrefix('danceLEFT', 'skeletons dance left', 24, false);
-					// 		bgSkeletons.animation.addByPrefix('danceRIGHT', 'skeletons dance right', 24, false);
-					// 		bgSkeletons.animation.addByPrefix('fear cutscene', 'skeletons cutscene fear', 24, false);
-					// 		bgSkeletons.animation.addByPrefix('fear', 'skeletons fear', 24, false);
-					// 		if (curSong == 'pelvic')
-					// 		{
-					// 			bgSkeletons.animation.play('rise');
-					// 		} else if (curSong == 'spinal tap')
-					// 		{
-					// 			bgSkeletons.animation.play('fear');
-					// 		}
-					// 		bgSkeletons.scrollFactor.set(0.9, 0.9);
-					// 		add(bgSkeletons);
-					// 	}
+					if ((PlayState.SONG.song.toLowerCase() == 'pelvic' || PlayState.SONG.song.toLowerCase() == 'spinal tap'))
+						{
+							var danced:Bool = false;
+							var bgSkeletons = new FlxSprite(-250, 260);
+							var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
+							bgSkeletons.frames = skeletex;
+							bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
+							bgSkeletons.animation.addByPrefix('idle', 'skeletons idle', 24, true);
+							bgSkeletons.animation.addByPrefix('danceLEFT', 'skeletons dance left', 24, false);
+							bgSkeletons.animation.addByPrefix('danceRIGHT', 'skeletons dance right', 24, false);
+							bgSkeletons.animation.addByPrefix('fear cutscene', 'skeletons cutscene fear', 24, false);
+							bgSkeletons.animation.addByPrefix('fear', 'skeletons fear', 24, false);
+							if (PlayState.SONG.song.toLowerCase() == 'pelvic')
+							{
+								bgSkeletons.animation.play('rise');
+							} else if (PlayState.SONG.song.toLowerCase() == 'spinal tap')
+							{
+								bgSkeletons.animation.play('fear');
+							}
+							bgSkeletons.scrollFactor.set(0.9, 0.9);
+							add(bgSkeletons);
+						}
 
 					var raveyard_graves:FlxSprite = new FlxSprite(-400, 450).loadGraphic(Paths.image('backgrounds/$curStage/graves'));
 					raveyard_graves.updateHitbox();
@@ -176,12 +180,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					gravesfront.scrollFactor.set(0.9, 0.9);
 					gravesfront.active = false;
 
-					// if (curSong == 'spinal tap')
-					// {
-					// 	var spinaltapbeam = new FlxSprite(100, -100);
-					// 	spinaltapbeam.frames = Paths.getSparrowAtlas('cutscenes/w2/spinaltap-beamup');
-					// 	spinaltapbeam.animation.addByPrefix('idle', 'beam up', 24, false);
-					// }
+					if (PlayState.SONG.song.toLowerCase() == 'spinal tap')
+					{
+						var spinaltapbeam = new FlxSprite(100, -100);
+						spinaltapbeam.frames = Paths.getSparrowAtlas('cutscenes/w2/spinaltap-beamup');
+						spinaltapbeam.animation.addByPrefix('idle', 'beam up', 24, false);
+					}
 				}
 
 			case 'freak':
