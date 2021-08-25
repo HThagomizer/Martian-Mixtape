@@ -1306,7 +1306,7 @@ class PlayState extends MusicBeatState
 
 		if (character == dadOpponent && dadOpponent.curCharacter == 'FBI' && health > 1.2)
 			altString = '-alt';
-		
+
 		if ((curSong == 'Annihilation-Lol') && (character == dadOpponent))
 		{
 			switch (curStep)
@@ -1326,7 +1326,7 @@ class PlayState extends MusicBeatState
 		character.playAnim(stringArrow, true);
 
 		if (character == dadOpponent  && uiHUD.healthBar.percent > 50 && dadOpponent.curCharacter == 'FBI')
-			health -= 0.02;
+			health -= 0.03;
 
 		character.holdTimer = 0;
 	}
