@@ -158,13 +158,13 @@ class Character extends FNFSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
-	
+
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
-	
+
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
-	
+
 				addOffset('idle', -5);
 				addOffset("singUP", -29, 27);
 				addOffset("singRIGHT", -38, -7);
@@ -179,9 +179,9 @@ class Character extends FNFSprite
 				addOffset('deathLoop', 37, 5);
 				addOffset('deathConfirm', 37, 69);
 				addOffset('scared', -4);
-	
+
 				playAnim('idle');
-	
+
 				flipX = true;
 
 			case 'bf-dead':
@@ -342,7 +342,7 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN-alt', 'ach', 24, false);
 				animation.addByPrefix('swig', 'swig', 24, false);
 				animation.addByPrefix('short swig', 'short swig', 24, false);
-	
+
 				addOffset('idle');
 				addOffset("singUP", -6, 50);
 				addOffset("singRIGHT", -5, 7);
@@ -350,7 +350,7 @@ class Character extends FNFSprite
 				addOffset("singDOWN", -4, -22);
 				addOffset('singDOWN-alt', 2, 5);
 				addOffset('swig', 2, 5);
-	
+
 				playAnim('idle');
 			case 'harold-caffeinated':
 				tex = Paths.getSparrowAtlas('characters/harold/harold');
@@ -365,7 +365,7 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN-alt', 'alt twitchy singDOWN', 24, false);
 				animation.addByPrefix('singLEFT-alt', 'alt twitchy singLEFT', 24, false);
 				animation.addByPrefix('singRIGHT-alt', 'alt twitchy singRIGHT', 24, false);
-	
+
 				addOffset('idle');
 				addOffset("singUP", 14, 40);
 				addOffset("singRIGHT", -5, -23);
@@ -376,7 +376,7 @@ class Character extends FNFSprite
 				addOffset("singLEFT-alt", 39, -7);
 				addOffset("singDOWN-alt", 26, -22);
 				addOffset('swig', 2, 5);
-	
+
 				playAnim('idle');
 			case 'FBI':
 				frames = Paths.getSparrowAtlas('characters/FBI/FBI');
@@ -399,7 +399,7 @@ class Character extends FNFSprite
 				addOffset("singRIGHT-alt", -24, -3);
 				addOffset("singLEFT-alt", 70, 24);
 				addOffset("singDOWN-alt", 12, -93);
-				
+
 				playAnim('idle');
 			case 'FBIbodyguard':
 				frames = Paths.getSparrowAtlas('characters/FBI/FBIbodyguard');
@@ -414,7 +414,7 @@ class Character extends FNFSprite
 				addOffset("singRIGHT", -31, 17);
 				addOffset("singLEFT", 51, 21);
 				addOffset("singDOWN", -111, -69);
-				
+
 				playAnim('idle');
 			case 'xigman':
 				frames = Paths.getSparrowAtlas('characters/xigman/XIGMAN');

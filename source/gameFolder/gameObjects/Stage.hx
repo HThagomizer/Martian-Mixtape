@@ -25,11 +25,12 @@ using StringTools;
 **/
 class Stage extends FlxTypedGroup<FlxBasic>
 {
-	
 	public var raveyard_belltower:FlxSprite;
 	public var bgSkeletons:FlxSprite;
 	public var danced:Bool = false;
 	public var spinaltapbeam:FlxSprite;
+
+	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
 	var defaultCamZoom:Float = 1.05;
 
@@ -54,7 +55,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'park';
 				case 'marrow' | 'pelvic' | 'spinal tap':
 					curStage = 'raveyard';
-				case 'tinfoil' | 'pelvic' | 'exclusion zone':
+				case 'tinfoil' | 'itch' | 'exclusion zone':
 					curStage = 'freak';
 				default:
 					curStage = 'stage';
@@ -76,6 +77,19 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					park_bg.scrollFactor.set(0.1, 0.1);
 					park_bg.active = false;
 					add(park_bg);
+
+					// lazerz in lazerz!
+					if (PlayState.SONG.song.toLowerCase() == 'lazerz')
+					{
+						lazerzfromlazerz = new FlxTypedGroup<FlxSprite>();
+
+						var lazer = new FlxSprite(200, 0).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						lazerzfromlazerz.add(lazer);
+						var lazer2 = new FlxSprite(600, 0).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						lazer2.flipX = true;
+						lazerzfromlazerz.add(lazer2);
+						add(lazerzfromlazerz);
+					}
 
 					var park_shrubs:FlxSprite = new FlxSprite(-500, 200).loadGraphic(Paths.image('backgrounds/$curStage/park_shrubs'));
 					park_shrubs.setGraphicSize(Std.int(park_shrubs.width * 0.9));
@@ -118,7 +132,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					raveyard_shrubs.scrollFactor.set(0.8, 0.8);
 					raveyard_shrubs.active = false;
 					add(raveyard_shrubs);
-					
+
 					raveyard_belltower = new FlxSprite(500, -300);
 					raveyard_belltower.frames = Paths.getSparrowAtlas('backgrounds/$curStage/belltower');
 					raveyard_belltower.animation.addByPrefix('idle', 'belltower', 24, true);
@@ -151,26 +165,27 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					add(raveyard_gravesback);
 
 					if ((PlayState.SONG.song.toLowerCase() == 'pelvic' || PlayState.SONG.song.toLowerCase() == 'spinal tap'))
+					{
+						bgSkeletons = new FlxSprite(-250, 260);
+						var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
+						bgSkeletons.frames = skeletex;
+						bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
+						bgSkeletons.animation.addByPrefix('idle', 'skeletons idle', 24, true);
+						bgSkeletons.animation.addByPrefix('danceLEFT', 'skeletons dance left', 24, false);
+						bgSkeletons.animation.addByPrefix('danceRIGHT', 'skeletons dance right', 24, false);
+						bgSkeletons.animation.addByPrefix('fear cutscene', 'skeletons cutscene fear', 24, false);
+						bgSkeletons.animation.addByPrefix('fear', 'skeletons fear', 24, false);
+						if (PlayState.SONG.song.toLowerCase() == 'pelvic')
 						{
-							bgSkeletons = new FlxSprite(-250, 260);
-							var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
-							bgSkeletons.frames = skeletex;
-							bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
-							bgSkeletons.animation.addByPrefix('idle', 'skeletons idle', 24, true);
-							bgSkeletons.animation.addByPrefix('danceLEFT', 'skeletons dance left', 24, false);
-							bgSkeletons.animation.addByPrefix('danceRIGHT', 'skeletons dance right', 24, false);
-							bgSkeletons.animation.addByPrefix('fear cutscene', 'skeletons cutscene fear', 24, false);
-							bgSkeletons.animation.addByPrefix('fear', 'skeletons fear', 24, false);
-							if (PlayState.SONG.song.toLowerCase() == 'pelvic')
-							{
-								bgSkeletons.animation.play('rise');
-							} else if (PlayState.SONG.song.toLowerCase() == 'spinal tap')
-							{
-								bgSkeletons.animation.play('fear');
-							}
-							bgSkeletons.scrollFactor.set(0.9, 0.9);
-							add(bgSkeletons);
+							bgSkeletons.animation.play('rise');
 						}
+						else if (PlayState.SONG.song.toLowerCase() == 'spinal tap')
+						{
+							bgSkeletons.animation.play('fear');
+						}
+						bgSkeletons.scrollFactor.set(0.9, 0.9);
+						add(bgSkeletons);
+					}
 
 					var raveyard_graves:FlxSprite = new FlxSprite(-400, 450).loadGraphic(Paths.image('backgrounds/$curStage/graves'));
 					raveyard_graves.updateHitbox();

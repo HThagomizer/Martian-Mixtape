@@ -188,45 +188,5 @@ class Note extends FNFSprite
 		}
 	}
 
-	public function callMods()
-	{
-		// call upon the note end functions
-		trace('call upon mods');
-		for (mods in foreverMods.keys())
-		{
-			if (foreverMods.get(mods)[0])
-			{
-				switch (mods)
-				{
-					case 'zoom':
-						var amount = foreverMods.get(mods)[1];
-						if (amount != 0)
-							PlayState.forceZoom[0] += amount;
-					case 'camZoom':
-						var amount = foreverMods.get(mods)[1];
-						if (amount != 0)
-							PlayState.forceZoom[1] += amount;
-					case 'angle':
-						var amount = foreverMods.get(mods)[1];
-						if (amount != 0)
-							PlayState.forceZoom[2] += amount;
-					case 'camAngle':
-						var amount = foreverMods.get(mods)[1];
-						if (amount != 0)
-							PlayState.forceZoom[3] += amount;
-
-					// these get real repetitive so heres a divider
-					case 'moveStrumarrow':
-						PlayState.strumLineNotes.members[foreverMods.get(mods)[1]].xTo += foreverMods.get(mods)[2];
-						PlayState.strumLineNotes.members[foreverMods.get(mods)[1]].yTo += foreverMods.get(mods)[3];
-						PlayState.strumLineNotes.members[foreverMods.get(mods)[1]].angleTo += foreverMods.get(mods)[4];
-				}
-				//
-
-				// trace('$mods $amount');
-			}
-		}
-
-		// finish actions!
-	}
+	public function callMods() {}
 }

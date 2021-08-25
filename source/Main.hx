@@ -80,7 +80,7 @@ class Main extends Sprite
 
 	public static function framerateAdjust(input:Float)
 	{
-		return input * (120 / framerate);
+		return input * (60 / framerate);
 	}
 
 	private function setupGame():Void

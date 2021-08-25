@@ -333,10 +333,12 @@ class PlayState extends MusicBeatState
 		if (isStoryMode)
 			songIntroCutscene();
 		else
-			switch(curSong.toLowerCase())
+			switch (curSong.toLowerCase())
 			{
 				case 'marrow':
+					isCutscene = true;
 					FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
+					FlxTween.tween(uiHUD.iconP2, {color: 0x000000}, 0.1);
 					camFollow.setPosition(dadOpponent.getMidpoint().x + 350, -300);
 					FlxG.camera.focusOn(camFollow.getPosition());
 					FlxG.camera.zoom = 1.5;
@@ -348,6 +350,7 @@ class PlayState extends MusicBeatState
 						}
 					});
 				case 'pelvic':
+					uiHUD.iconP2.loadIcon('bones');
 					remove(dadOpponent);
 					dadOpponent = new Character(100, 100, 'bones');
 					add(dadOpponent);
@@ -1232,7 +1235,7 @@ class PlayState extends MusicBeatState
 
 				if (!coolNote.isSustainNote)
 				{
-					coolNote.callMods();
+					// coolNote.callMods();
 					coolNote.kill();
 					notes.remove(coolNote, true);
 					coolNote.destroy();
@@ -1458,17 +1461,6 @@ class PlayState extends MusicBeatState
 		vocals.play();
 	}
 
-	override function stepHit()
-	{
-		super.stepHit();
-		///*
-		if (songMusic.time > Conductor.songPosition + 20 || songMusic.time < Conductor.songPosition - 20)
-		{
-			resyncVocals();
-		}
-		//*/
-	}
-
 	private function charactersDance(curBeat:Int)
 	{
 		if ((curBeat % gfSpeed == 0) && (!gf.animation.curAnim.name.startsWith("sing")))
@@ -1538,7 +1530,7 @@ class PlayState extends MusicBeatState
 					{
 						remove(dadOpponent);
 						dadOpponent = new Character(100, 100, 'alien-pissed');
-						uiHUD.iconP2 = new HealthIcon('alien-pissed');
+						uiHUD.iconP2.loadIcon('alien-pissed');
 						FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
 						add(dadOpponent);
 						dadOpponent.alpha = 1;
@@ -1582,67 +1574,84 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Pelvic') 
-			{
-				switch(curStep)
-				{
-					case 252 | 1020:
-						//GF and BF cheers
-						//SHUBS NOTE: GF is also meant to cheer at different parts of the song but they arent on beat so i dunno how to do that
-						vocals.volume = 1;
-						boyfriend.playAnim('hey', true);
-						gf.playAnim('cheer', true);
-	
-					case 64:
-						//big flashy
-						stageBuild.bgSkeletons.animation.play('idle');
-						FlxG.camera.zoom = 1.2;
-						remove(dadOpponent);
-						var yellow:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.YELLOW);
-						yellow.scrollFactor.set();
-						add(yellow);
-						dadOpponent = new Character(100, 100, 'bones-cool');
-						dadOpponent.x += 320;
-						dadOpponent.y += 220;
-						add(dadOpponent);
-						//SHUBS NOTE: using the code from the port of lazerz, which means this is gonna break too
-						uiHUD.iconP2 = new HealthIcon('alien-pissed');
-						dadOpponent.playAnim('singUP');
-						FlxTween.tween(yellow, {alpha: 0}, 1, {
-							onComplete: function(twn:FlxTween)
-							{
-								FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.5);
-							}
-						});
-						FlxG.log.add('FLIP');
-						
-	
-					case 50 | 52 | 54 | 56 | 58 | 60 | 62:
-						//record scratches
-						FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
-						FlxG.log.add('FLOP');
-						
-				}
-			}
-
 		if (curSong == 'Marrow')
+		{
+			// again i apologize to programmers everywhere
+			// i could easily reprogram this to use GF animation code. but i dont WAAAAAAANT to
+			switch (curBeat)
 			{
-				//again i apologize to programmers everywhere
-				//i could easily reprogram this to use GF animation code. but i dont WAAAAAAANT to
-				switch (curBeat)
-				{
-					case 8 | 12 | 20:
-						stageBuild.raveyard_belltower.animation.play('ringLEFT');
-						FlxG.log.add('DONG');
+				case 8 | 12 | 20:
+					stageBuild.raveyard_belltower.animation.play('ringLEFT');
+				// FlxG.log.add('DONG');
 
-					case 10 | 16 | 22:
-						stageBuild.raveyard_belltower.animation.play('ringRIGHT');
-						FlxG.log.add('DING');
-					
-					case 24:
-						FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
-				}
+				case 10 | 16 | 22:
+					stageBuild.raveyard_belltower.animation.play('ringRIGHT');
+				// FlxG.log.add('DING');
+
+				case 24:
+					FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
+					FlxTween.color(uiHUD.iconP2, 0.5, FlxColor.BLACK, FlxColor.WHITE);
 			}
+		}
+	}
+
+	override function stepHit()
+	{
+		super.stepHit();
+
+		///*
+		if (songMusic.time > Conductor.songPosition + 20 || songMusic.time < Conductor.songPosition - 20)
+		{
+			resyncVocals();
+		}
+		//*/
+
+		if (curSong == 'Pelvic')
+		{
+			switch (curStep)
+			{
+				case 252 | 1020:
+					// GF and BF cheers
+					// SHUBS NOTE: GF is also meant to cheer at different parts of the song but they arent on beat so i dunno how to do that
+
+					// it works for me I think???
+					vocals.volume = 1;
+					boyfriend.playAnim('hey', true);
+					gf.playAnim('cheer', true);
+
+				case 84 | 87 | 94 | 116 | 119 | 126:
+					gf.playAnim('cheer', true);
+
+				case 64:
+					// big flashy
+					stageBuild.bgSkeletons.animation.play('idle');
+					FlxG.camera.zoom = 1.2;
+					remove(dadOpponent);
+					var yellow:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.YELLOW);
+					yellow.scrollFactor.set();
+					add(yellow);
+					dadOpponent = new Character(100, 100, 'bones-cool');
+					dadOpponent.x += 320;
+					dadOpponent.y += 220;
+					add(dadOpponent);
+					// SHUBS NOTE: using the code from the port of lazerz, which means this is gonna break too
+					// fixed B)
+					uiHUD.iconP2.loadIcon('bones-cool');
+					dadOpponent.playAnim('singUP');
+					FlxTween.tween(yellow, {alpha: 0}, 1, {
+						onComplete: function(twn:FlxTween)
+						{
+							FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.5);
+						}
+					});
+				// FlxG.log.add('FLIP');
+
+				case 50 | 52 | 54 | 56 | 58 | 60 | 62:
+					// record scratches
+					FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
+					// FlxG.log.add('FLOP');
+			}
+		}
 	}
 
 	//
@@ -1937,7 +1946,7 @@ class PlayState extends MusicBeatState
 				remove(dadOpponent);
 				remove(gf);
 				remove(boyfriend);
-	
+
 				var bonesIntro:FlxSprite = new FlxSprite(100, -100);
 				var cutsceneGrave:FlxSprite = new FlxSprite(100, -100);
 				bonesIntro.frames = Paths.getSparrowAtlas('cutscenes/w2/bonesrise');
@@ -1947,17 +1956,17 @@ class PlayState extends MusicBeatState
 				add(cutsceneGrave);
 				cutsceneGrave.x += 500;
 				cutsceneGrave.y += 600;
-	
+
 				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 				black.scrollFactor.set();
 				add(black);
-	
+
 				camFollow.x += 500;
 				camFollow.y += 300;
-				
+
 				isCutscene = true;
 				camHUD.visible = false;
-	
+
 				FlxTween.tween(black, {alpha: 0}, 2.5, {
 					onComplete: function(twn:FlxTween)
 					{
@@ -1970,7 +1979,7 @@ class PlayState extends MusicBeatState
 							bonesIntro.y += 900;
 							bonesIntro.animation.play('idle');
 						});
-	
+
 						new FlxTimer().start(14, function(swagTimer:FlxTimer)
 						{
 							FlxTween.tween(black, {alpha: 1}, 0.2, {
@@ -1981,9 +1990,9 @@ class PlayState extends MusicBeatState
 									add(gf);
 									add(dadOpponent);
 									add(boyfriend);
-									
+
 									camFollow.setPosition(dadOpponent.getMidpoint().x + 350, -300);
-	
+
 									FlxTween.tween(black, {alpha: 0}, 0.2, {
 										onComplete: function(twn:FlxTween)
 										{
@@ -2043,9 +2052,6 @@ class PlayState extends MusicBeatState
 					ready.scrollFactor.set();
 					ready.updateHitbox();
 
-					if (assetModifier == 'basepixel' || assetModifier == 'foreverpixel')
-						ready.setGraphicSize(Std.int(ready.width * PlayState.daPixelZoom));
-
 					ready.screenCenter();
 					add(ready);
 					FlxTween.tween(ready, {y: ready.y += 100, alpha: 0}, Conductor.crochet / 1000, {
@@ -2060,9 +2066,6 @@ class PlayState extends MusicBeatState
 					var set:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[1]));
 					set.scrollFactor.set();
 
-					if (assetModifier == 'basepixel' || assetModifier == 'foreverpixel')
-						set.setGraphicSize(Std.int(set.width * PlayState.daPixelZoom));
-
 					set.screenCenter();
 					add(set);
 					FlxTween.tween(set, {y: set.y += 100, alpha: 0}, Conductor.crochet / 1000, {
@@ -2076,9 +2079,6 @@ class PlayState extends MusicBeatState
 				case 3:
 					var go:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[2]));
 					go.scrollFactor.set();
-
-					if (assetModifier == 'basepixel' || assetModifier == 'foreverpixel')
-						go.setGraphicSize(Std.int(go.width * PlayState.daPixelZoom));
 
 					go.updateHitbox();
 
