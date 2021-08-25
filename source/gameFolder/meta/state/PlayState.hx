@@ -333,7 +333,31 @@ class PlayState extends MusicBeatState
 		if (isStoryMode)
 			songIntroCutscene();
 		else
-			startCountdown();
+			switch(curSong.toLowerCase())
+			{
+				case 'marrow':
+					FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
+					camFollow.setPosition(dadOpponent.getMidpoint().x + 350, -300);
+					FlxG.camera.focusOn(camFollow.getPosition());
+					FlxG.camera.zoom = 1.5;
+					FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 2.5, {
+						ease: FlxEase.quadInOut,
+						onComplete: function(twn:FlxTween)
+						{
+							startCountdown();
+						}
+					});
+				case 'pelvic':
+					remove(dadOpponent);
+					dadOpponent = new Character(100, 100, 'bones');
+					add(dadOpponent);
+					dadOpponent.x += 320;
+					dadOpponent.y += 260;
+					FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
+					startCountdown();
+				default:
+					startCountdown();
+			}
 
 		super.create();
 	}
@@ -1557,6 +1581,68 @@ class PlayState extends MusicBeatState
 					}
 			}
 		}
+
+		if (curSong == 'Pelvic') 
+			{
+				switch(curStep)
+				{
+					case 252 | 1020:
+						//GF and BF cheers
+						//SHUBS NOTE: GF is also meant to cheer at different parts of the song but they arent on beat so i dunno how to do that
+						vocals.volume = 1;
+						boyfriend.playAnim('hey', true);
+						gf.playAnim('cheer', true);
+	
+					case 64:
+						//big flashy
+						stageBuild.bgSkeletons.animation.play('idle');
+						FlxG.camera.zoom = 1.2;
+						remove(dadOpponent);
+						var yellow:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.YELLOW);
+						yellow.scrollFactor.set();
+						add(yellow);
+						dadOpponent = new Character(100, 100, 'bones-cool');
+						dadOpponent.x += 320;
+						dadOpponent.y += 220;
+						add(dadOpponent);
+						//SHUBS NOTE: using the code from the port of lazerz, which means this is gonna break too
+						uiHUD.iconP2 = new HealthIcon('alien-pissed');
+						dadOpponent.playAnim('singUP');
+						FlxTween.tween(yellow, {alpha: 0}, 1, {
+							onComplete: function(twn:FlxTween)
+							{
+								FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.5);
+							}
+						});
+						FlxG.log.add('FLIP');
+						
+	
+					case 50 | 52 | 54 | 56 | 58 | 60 | 62:
+						//record scratches
+						FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
+						FlxG.log.add('FLOP');
+						
+				}
+			}
+
+		if (curSong == 'Marrow')
+			{
+				//again i apologize to programmers everywhere
+				//i could easily reprogram this to use GF animation code. but i dont WAAAAAAANT to
+				switch (curBeat)
+				{
+					case 8 | 12 | 20:
+						stageBuild.raveyard_belltower.animation.play('ringLEFT');
+						FlxG.log.add('DONG');
+
+					case 10 | 16 | 22:
+						stageBuild.raveyard_belltower.animation.play('ringRIGHT');
+						FlxG.log.add('DING');
+					
+					case 24:
+						FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
+				}
+			}
 	}
 
 	//
@@ -1843,6 +1929,79 @@ class PlayState extends MusicBeatState
 										});
 									}
 								});
+							});
+						});
+					}
+				});
+			case 'marrow':
+				remove(dadOpponent);
+				remove(gf);
+				remove(boyfriend);
+	
+				var bonesIntro:FlxSprite = new FlxSprite(100, -100);
+				var cutsceneGrave:FlxSprite = new FlxSprite(100, -100);
+				bonesIntro.frames = Paths.getSparrowAtlas('cutscenes/w2/bonesrise');
+				cutsceneGrave.frames = Paths.getSparrowAtlas('cutscenes/w2/grave');
+				bonesIntro.animation.addByPrefix('idle', 'xigcutscene', 24, false);
+				cutsceneGrave.animation.addByPrefix('idle', 'Symbol 1 instance ', 24, false);
+				add(cutsceneGrave);
+				cutsceneGrave.x += 500;
+				cutsceneGrave.y += 600;
+	
+				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+				black.scrollFactor.set();
+				add(black);
+	
+				camFollow.x += 500;
+				camFollow.y += 300;
+				
+				isCutscene = true;
+				camHUD.visible = false;
+	
+				FlxTween.tween(black, {alpha: 0}, 2.5, {
+					onComplete: function(twn:FlxTween)
+					{
+						FlxG.sound.play(Paths.sound('bones_rise'), 1, false, null, true);
+						new FlxTimer().start(5, function(swagTimer:FlxTimer)
+						{
+							camFollow.y += 50;
+							add(bonesIntro);
+							bonesIntro.x += 600;
+							bonesIntro.y += 900;
+							bonesIntro.animation.play('idle');
+						});
+	
+						new FlxTimer().start(14, function(swagTimer:FlxTimer)
+						{
+							FlxTween.tween(black, {alpha: 1}, 0.2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(bonesIntro);
+									remove(cutsceneGrave);
+									add(gf);
+									add(dadOpponent);
+									add(boyfriend);
+									
+									camFollow.setPosition(dadOpponent.getMidpoint().x + 350, -300);
+	
+									FlxTween.tween(black, {alpha: 0}, 0.2, {
+										onComplete: function(twn:FlxTween)
+										{
+											camHUD.visible = true;
+											FlxG.camera.zoom = defaultCamZoom;
+											FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
+											FlxG.camera.focusOn(camFollow.getPosition());
+											FlxG.camera.zoom = 1.5;
+											FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 2.5, {
+												ease: FlxEase.quadInOut,
+												onComplete: function(twn:FlxTween)
+												{
+													startCountdown();
+												}
+											});
+										}
+									});
+								}
 							});
 						});
 					}

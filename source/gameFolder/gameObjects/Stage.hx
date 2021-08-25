@@ -25,6 +25,12 @@ using StringTools;
 **/
 class Stage extends FlxTypedGroup<FlxBasic>
 {
+	
+	public var raveyard_belltower:FlxSprite;
+	public var bgSkeletons:FlxSprite;
+	public var danced:Bool = false;
+	public var spinaltapbeam:FlxSprite;
+
 	var defaultCamZoom:Float = 1.05;
 
 	public var curStage:String;
@@ -112,8 +118,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					raveyard_shrubs.scrollFactor.set(0.8, 0.8);
 					raveyard_shrubs.active = false;
 					add(raveyard_shrubs);
-
-					var raveyard_belltower = new FlxSprite(500, -300);
+					
+					raveyard_belltower = new FlxSprite(500, -300);
 					raveyard_belltower.frames = Paths.getSparrowAtlas('backgrounds/$curStage/belltower');
 					raveyard_belltower.animation.addByPrefix('idle', 'belltower', 24, true);
 					raveyard_belltower.animation.addByPrefix('ringLEFT', 'LEFT belltower ring', 24, false);
@@ -146,8 +152,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 					if ((PlayState.SONG.song.toLowerCase() == 'pelvic' || PlayState.SONG.song.toLowerCase() == 'spinal tap'))
 						{
-							var danced:Bool = false;
-							var bgSkeletons = new FlxSprite(-250, 260);
+							bgSkeletons = new FlxSprite(-250, 260);
 							var skeletex = Paths.getSparrowAtlas('backgrounds/$curStage/skeletons');
 							bgSkeletons.frames = skeletex;
 							bgSkeletons.animation.addByPrefix('rise', 'skeletons rise', 24, false);
@@ -182,7 +187,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 					if (PlayState.SONG.song.toLowerCase() == 'spinal tap')
 					{
-						var spinaltapbeam = new FlxSprite(100, -100);
+						spinaltapbeam = new FlxSprite(100, -100);
 						spinaltapbeam.frames = Paths.getSparrowAtlas('cutscenes/w2/spinaltap-beamup');
 						spinaltapbeam.animation.addByPrefix('idle', 'beam up', 24, false);
 					}
