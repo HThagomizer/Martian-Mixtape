@@ -1257,9 +1257,9 @@ class PlayState extends MusicBeatState
 		{
 			//
 			var trueHealth = healthBase * 0.75;
-			if ((coolNote.isSustainNote) && (coolNote.animation.name.endsWith('holdend')))
+			if ((coolNote.isSustainNote) && (coolNote.animation.name.endsWith('holdend')) && dadOpponent.curCharacter != 'FBIbodyguard')
 				health += trueHealth;
-			else if (!coolNote.isSustainNote)
+			else if (!coolNote.isSustainNote && dadOpponent.curCharacter != 'FBIbodyguard')
 				health += trueHealth * (ratingMultiplier / 100);
 		}
 		else
@@ -1304,6 +1304,9 @@ class PlayState extends MusicBeatState
 				altString = '';
 		}
 
+		if (character == dadOpponent && dadOpponent.curCharacter == 'FBI' && health > 1.2)
+			altString = '-alt';
+		
 		if ((curSong == 'Annihilation-Lol') && (character == dadOpponent))
 		{
 			switch (curStep)
@@ -1321,6 +1324,9 @@ class PlayState extends MusicBeatState
 			stringArrow = coolNote.noteString;
 
 		character.playAnim(stringArrow, true);
+
+		if (character == dadOpponent  && uiHUD.healthBar.percent > 50 && dadOpponent.curCharacter == 'FBI')
+			health -= 0.02;
 
 		character.holdTimer = 0;
 	}

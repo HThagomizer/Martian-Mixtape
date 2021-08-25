@@ -354,6 +354,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'FBIbodyguard':
 				dad.y -= 70;
 				dad.x -= 200;
+				PlayState.health = 2;
 			case 'xigman':
 				dad.y -= 50;
 		}

@@ -33,7 +33,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 	var scoreDisplay:String;
 
 	private var healthBarBG:FlxSprite;
-	private var healthBar:FlxBar;
+	public var healthBar:FlxBar;
 
 	private var SONG = PlayState.SONG;
 
@@ -73,7 +73,11 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8));
 		healthBar.scrollFactor.set();
-		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		if (PlayState.dadOpponent.curCharacter != 'FBIbodyguard') {
+			healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		} else {
+			healthBar.createFilledBar(0xFF444444, 0xFF66FF33);
+		}
 		// healthBar
 		add(healthBar);
 
@@ -116,7 +120,9 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		else
 			iconP1.animation.curAnim.curFrame = 0;
 
-		if (healthBar.percent > 80)
+		if (healthBar.percent > 60 && PlayState.dadOpponent.curCharacter == 'FBI')
+			iconP2.animation.curAnim.curFrame = 1;
+		else if (healthBar.percent > 80)
 			iconP2.animation.curAnim.curFrame = 1;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
