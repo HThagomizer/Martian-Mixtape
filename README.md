@@ -36,7 +36,7 @@ CONTRIBUTORS:
 
 These are people who have helped on the mod at some point in the past, who are no longer contributing to the development of the mod.
 
-Jungkle - Concept art (Week 1)
+Junkgle - Concept art (Week 1)
 
 kevenandsoki - Composer (Week 1 - Lazerz, Brainfuck, Annihilation-Lol, week 3 - Pelvic)
 

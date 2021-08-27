@@ -1476,7 +1476,7 @@ class PlayState extends MusicBeatState
 			boyfriend.dance();
 
 		// added this for opponent cus it wasn't here before and skater would just freeze
-		if ((!dadOpponent.animation.curAnim.name.startsWith("sing")) && (!dadOpponent.animation.curAnim.name.endsWith("death")))
+		if ((!dadOpponent.animation.curAnim.name.startsWith("sing")) && (!dadOpponent.animation.curAnim.name.endsWith("death")) && (!dadOpponent.animation.curAnim.name.endsWith("swig")))
 			dadOpponent.dance();
 	}
 
@@ -1526,7 +1526,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Lazerz')
+		if (curSong == 'Lazerz' && dadOpponent.curCharacter == 'alien')
 		{
 			switch (curBeat)
 			{
@@ -1599,6 +1599,58 @@ class PlayState extends MusicBeatState
 					FlxTween.color(uiHUD.iconP2, 0.5, FlxColor.BLACK, FlxColor.WHITE);
 			}
 		}
+
+		if (curSong == 'Pelvic')
+			{
+				if (curBeat % 2 == 0 && curBeat >= 64)
+					{
+						stageBuild.danced = !stageBuild.danced;
+	
+						if (stageBuild.danced)
+							stageBuild.bgSkeletons.animation.play('danceRIGHT');
+						else
+							stageBuild.bgSkeletons.animation.play('danceLEFT');
+					}
+			}
+
+		if (curSong == 'Spinal Tap')
+			{
+				if (curBeat % 2 == 0)
+					{
+						stageBuild.bgSkeletons.animation.play('fear');
+					}
+			
+				switch (curBeat)
+				{
+					case 236:
+						add(stageBuild.spinaltapbeam);
+						stageBuild.spinaltapbeam.x = dadOpponent.x - 100;
+						stageBuild.spinaltapbeam.y = dadOpponent.y - 1100;
+						remove(dadOpponent);
+						stageBuild.spinaltapbeam.animation.play('idle');
+				}
+			}
+
+		if (curSong == 'Exclusion Zone' && (dadOpponent.curCharacter == 'harold' || dadOpponent.curCharacter == 'harold-caffeinated')) 
+			{
+				switch(curStep)
+				{
+					case 376:
+						dadOpponent.playAnim("short swig");
+						new FlxTimer().start(0.8, function(tmr:FlxTimer)
+							{
+								remove(dadOpponent);
+								dadOpponent = new Character(100, 100, 'harold-caffeinated');
+								dadOpponent.x += 200;
+								dadOpponent.y += 150;
+								add(dadOpponent);
+								uiHUD.iconP2.loadIcon('harold-caffeinated');
+							});
+	
+					case 896:
+						dadOpponent.playAnim("swig");
+				}
+			}
 	}
 
 	override function stepHit()
@@ -1642,6 +1694,7 @@ class PlayState extends MusicBeatState
 					add(dadOpponent);
 					// SHUBS NOTE: using the code from the port of lazerz, which means this is gonna break too
 					// fixed B)
+					// thank you shubs :)
 					uiHUD.iconP2.loadIcon('bones-cool');
 					dadOpponent.playAnim('singUP');
 					FlxTween.tween(yellow, {alpha: 0}, 1, {
@@ -1652,7 +1705,7 @@ class PlayState extends MusicBeatState
 					});
 				// FlxG.log.add('FLIP');
 
-				case 50 | 52 | 54 | 56 | 58 | 60 | 62:
+				case 50 | 54 | 58 | 62:
 					// record scratches
 					FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);
 					// FlxG.log.add('FLOP');
@@ -2014,6 +2067,101 @@ class PlayState extends MusicBeatState
 													startCountdown();
 												}
 											});
+										}
+									});
+								}
+							});
+						});
+					}
+				});
+			case 'spinal tap':
+				remove(dadOpponent);
+	
+				var bonesFuck:FlxSprite = new FlxSprite(100, -100);
+				bonesFuck.frames = Paths.getSparrowAtlas('cutscenes/w2/spinaltap-intro-xig');
+				bonesFuck.animation.addByPrefix('idle', 'cutscene spinal tap FULL', 24, false);
+				add(bonesFuck);
+				bonesFuck.x += 100;
+				bonesFuck.y += 200;
+	
+				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+				black.scrollFactor.set();
+				add(black);
+	
+				camFollow.x = (dadOpponent.getMidpoint().x + 150);
+				camFollow.y += 20;
+
+				stageBuild.bgSkeletons.animation.play('idle');
+				
+				isCutscene = true;
+				camHUD.visible = false;
+	
+				FlxTween.tween(black, {alpha: 0}, 2.5, {
+					onComplete: function(twn:FlxTween)
+					{
+						bonesFuck.animation.play('idle');
+						FlxG.sound.play(Paths.sound('bones_bonk'), 1, false, null, true);
+						new FlxTimer().start(0.7, function(swagTimer:FlxTimer)
+						{
+							stageBuild.bgSkeletons.animation.play("fear cutscene");
+						});
+						new FlxTimer().start(9, function(swagTimer:FlxTimer)
+						{
+							FlxTween.tween(black, {alpha: 1}, 0.2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(bonesFuck);
+									add(dadOpponent);
+	
+									FlxTween.tween(black, {alpha: 0}, 0.2, {
+										onComplete: function(twn:FlxTween)
+										{
+											startCountdown();
+											camHUD.visible = true;
+											FlxG.camera.zoom = defaultCamZoom;
+										}
+									});
+								}
+							});
+						});
+					}
+				});
+			case 'itch':
+				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+				black.scrollFactor.set();
+				add(black);
+				remove(dadOpponent);
+				dadOpponent = new Character(100, 100, 'harold');
+				add(dadOpponent);
+				dadOpponent.x += 200;
+				dadOpponent.y += 150;
+				camFollow.x = (dadOpponent.getMidpoint().x + 150);
+		
+				isCutscene = true;
+				camHUD.visible = false;
+		
+				FlxTween.tween(black, {alpha: 0}, 1, {
+					onComplete: function(twn:FlxTween)
+					{
+						FlxG.sound.play(Paths.sound('drinka_boy'), 1, false, null, true);
+						dadOpponent.playAnim('swig');
+						new FlxTimer().start(4, function(swagTimer:FlxTimer)
+						{
+							FlxTween.tween(black, {alpha: 1}, 0.2, {
+								onComplete: function(twn:FlxTween)
+								{
+									remove(dadOpponent);
+									dadOpponent = new Character(100, 100, 'harold-caffeinated');
+									add(dadOpponent);
+									dadOpponent.x += 200;
+									dadOpponent.y += 150;
+									dadOpponent.playAnim('idle');
+									FlxTween.tween(black, {alpha: 0}, 0.2, {
+										onComplete: function(twn:FlxTween)
+										{
+											camHUD.visible = true;
+											FlxG.camera.zoom = defaultCamZoom;
+											startCountdown();
 										}
 									});
 								}
