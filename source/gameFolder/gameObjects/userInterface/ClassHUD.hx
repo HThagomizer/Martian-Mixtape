@@ -33,10 +33,10 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 	var scoreDisplay:String;
 
 	private var healthBarBG:FlxSprite;
-	public var healthBar:FlxBar;
 
 	private var SONG = PlayState.SONG;
 
+	public var healthBar:FlxBar;
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
 
@@ -48,34 +48,27 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		// call the initializations and stuffs
 		super();
 
-		// small info bar, kinda like the KE watermark
-		// based on scoretxt which I will set up as well
-		var infoDisplay:String = CoolUtil.dashToSpace(PlayState.SONG.song) + ' - ' + CoolUtil.difficultyFromNumber(PlayState.storyDifficulty)
-			+ " - Forever BETA v" + Main.gameVersion;
-
-		infoBar = new FlxText(5, FlxG.height - 30, 0, infoDisplay, 20);
-		infoBar.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		infoBar.scrollFactor.set();
-		add(infoBar);
-
 		// fnf mods
 		var scoreDisplay:String = 'beep bop bo skdkdkdbebedeoop brrapadop';
 
 		// le healthbar setup
 		var barY = FlxG.height * 0.875;
-		if (Init.gameSettings.get('Downscroll')[0])
+		if (Init.trueSettings.get('Downscroll')[0])
 			barY = 64;
 
-		healthBarBG = new FlxSprite(0, barY).loadGraphic(Paths.image('UI/base/healthBar'));
+		healthBarBG = new FlxSprite(0, barY).loadGraphic(Paths.image('UI/default/base/healthBar'));
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8));
 		healthBar.scrollFactor.set();
-		if (PlayState.dadOpponent.curCharacter != 'FBIbodyguard') {
+		if (PlayState.dadOpponent.curCharacter != 'FBIbodyguard')
+		{
 			healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
-		} else {
+		}
+		else
+		{
 			healthBar.createFilledBar(0xFF444444, 0xFF66FF33);
 		}
 		// healthBar
@@ -94,6 +87,16 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		updateScoreText();
 		scoreBar.scrollFactor.set();
 		add(scoreBar);
+
+		// small info bar, kinda like the KE watermark
+		// based on scoretxt which I will set up as well
+		var infoDisplay:String = CoolUtil.dashToSpace(PlayState.SONG.song) + ' - ' + CoolUtil.difficultyFromNumber(PlayState.storyDifficulty)
+			+ " - Forever BETA v" + Main.gameVersion;
+
+		infoBar = new FlxText(5, FlxG.height - 30, 0, infoDisplay, 20);
+		infoBar.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		infoBar.scrollFactor.set();
+		add(infoBar);
 	}
 
 	override public function update(elapsed:Float)
@@ -135,10 +138,10 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		var importMisses = PlayState.misses;
 		scoreBar.text = 'Score: $importSongScore';
 		// testing purposes
-		var displayAccuracy:Bool = Init.gameSettings.get('Display Accuracy')[0];
+		var displayAccuracy:Bool = Init.trueSettings.get('Display Accuracy');
 		if (displayAccuracy)
 		{
-			scoreBar.text += ' // Accuracy: ' + Std.string(Math.floor(Timings.getAccuracy() * 100) / 100) + '%';
+			scoreBar.text += ' // Accuracy: ' + Std.string(Math.floor(Timings.getAccuracy() * 100) / 100) + '%' + Timings.comboDisplay;
 			scoreBar.text += ' // Rank: ' + Std.string(Timings.returnScoreRating().toUpperCase());
 		}
 
@@ -147,7 +150,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 	public function beatHit()
 	{
-		if (!Init.gameSettings.get('Reduced Movements')[0])
+		if (!Init.trueSettings.get('Reduced Movements'))
 		{
 			iconP1.setGraphicSize(Std.int(iconP1.width + 45));
 			iconP2.setGraphicSize(Std.int(iconP2.width + 45));

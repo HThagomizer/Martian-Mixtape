@@ -79,13 +79,15 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					add(park_bg);
 
 					// lazerz in lazerz!
-					if (PlayState.SONG.song.toLowerCase() == 'lazerz')
+					if (PlayState.SONG.song.toLowerCase() != 'probed')
 					{
 						lazerzfromlazerz = new FlxTypedGroup<FlxSprite>();
 
-						var lazer = new FlxSprite(200, 0).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						var lazer = new FlxSprite(300, -300).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						lazer.offset.set(lazer.width, lazer.height);
 						lazerzfromlazerz.add(lazer);
-						var lazer2 = new FlxSprite(600, 0).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						var lazer2 = new FlxSprite(700, -300).loadGraphic(Paths.image('backgrounds/$curStage/lights2'));
+						lazer2.offset.set(0, lazer2.height);
 						lazer2.flipX = true;
 						lazerzfromlazerz.add(lazer2);
 						add(lazerzfromlazerz);
@@ -400,6 +402,18 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 	public function stageUpdateConstant(elapsed:Float, boyfriend:Boyfriend, gf:Character, dadOpponent:Character)
 	{
-		switch (PlayState.curStage) {}
+		switch (PlayState.curStage)
+		{
+			case 'park':
+				if (lazerzfromlazerz != null)
+				{
+					var dir = -1;
+					lazerzfromlazerz.forEach(function(lazer)
+					{
+						lazer.angle += dir;
+						dir *= -1;
+					});
+				}
+		}
 	}
 }
