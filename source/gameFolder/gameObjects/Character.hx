@@ -448,6 +448,38 @@ class Character extends FNFSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+			case 'ignignokt':
+				tex = Paths.getSparrowAtlas('characters/mooninites/mooninites');
+				frames = tex;
+				animation.addByPrefix('idle', 'ignignokt idle', 24);
+				animation.addByPrefix('singUP', 'ignignokt singUP', 24);
+				animation.addByPrefix('singRIGHT', 'ignignokt singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'ignignokt singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'ignignokt singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
+			case 'err':
+				tex = Paths.getSparrowAtlas('characters/mooninites/mooninites');
+				frames = tex;
+				animation.addByPrefix('idle', 'err idle', 24);
+				animation.addByPrefix('singUP', 'err singUP', 24);
+				animation.addByPrefix('singRIGHT', 'err singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'err singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'err singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 		}
 
 		// set up offsets cus why not

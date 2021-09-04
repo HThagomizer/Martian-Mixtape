@@ -416,6 +416,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				PlayState.health = 2;
 			case 'xigman':
 				dad.y -= 50;
+			case 'ignignokt':
+				dad.y += 250;
+			case 'err':
+				dad.y += 520;
+				dad.x += 200;
 		}
 	}
 
