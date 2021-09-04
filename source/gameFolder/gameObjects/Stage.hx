@@ -25,12 +25,16 @@ using StringTools;
 **/
 class Stage extends FlxTypedGroup<FlxBasic>
 {
+	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
+
 	public var raveyard_belltower:FlxSprite;
 	public var bgSkeletons:FlxSprite;
 	public var danced:Bool = false;
 	public var spinaltapbeam:FlxSprite;
 
-	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
+	public var fbiSpin1:FlxSprite;
+	public var fbiSpin2:FlxSprite;
+	public var fbiScreen:FlxSprite;
 
 	var defaultCamZoom:Float = 1.05;
 
@@ -57,6 +61,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'raveyard';
 				case 'tinfoil' | 'itch' | 'exclusion zone':
 					curStage = 'freak';
+				case 'boing' | 'freak' | 'breakout':
+					curStage = 'lab';
 				default:
 					curStage = 'stage';
 			}
@@ -264,6 +270,57 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					add(lights);
 				}
 
+			case 'lab':
+				{
+					var bg:FlxSprite = new FlxSprite(-700, -400).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
+					bg.antialiasing = true;
+					bg.setGraphicSize(Std.int(bg.width * 1.3));
+					bg.updateHitbox();
+					bg.scrollFactor.set(0.4, 0.4);
+					bg.active = false;
+					add(bg);
+
+					fbiScreen = new FlxSprite(200, -100);
+					fbiScreen.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvfbi');
+					fbiScreen.animation.addByPrefix('idle', 'tv fbi guy', 24, false);
+					fbiScreen.scrollFactor.set(0.5, 0.5);
+					add(fbiScreen);
+
+					fbiSpin1 = new FlxSprite(-200, 0);
+					fbiSpin1.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvspin');
+					fbiSpin1.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin1.scrollFactor.set(0.5, 0.5);
+					add(fbiSpin1);
+
+					fbiSpin2 = new FlxSprite(1250, 0);
+					fbiSpin2.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvspin');
+					fbiSpin2.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin2.scrollFactor.set(0.5, 0.5);
+					add(fbiSpin2);
+					
+					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/$curStage/rail'));
+					rail.antialiasing = true;
+					rail.updateHitbox();
+					rail.scrollFactor.set(0.9, 0.9);
+					rail.active = false;
+					add(rail);
+
+					var floor:FlxSprite = new FlxSprite(-700, 400).loadGraphic(Paths.image('backgrounds/$curStage/floor'));
+					floor.antialiasing = true;
+					floor.setGraphicSize(Std.int(floor.width * 1.3));
+					floor.updateHitbox();
+					floor.scrollFactor.set(0.9, 0.9);
+					floor.active = false;
+					add(floor);
+
+					var tubes:FlxSprite = new FlxSprite(-600, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
+					tubes.antialiasing = true;
+					tubes.updateHitbox();
+					tubes.scrollFactor.set(0.9, 0.9);
+					tubes.active = false;
+					add(tubes);
+				}
+
 			case 'sky':
 				{
 					// unused secret stage LOL LOL LOL
@@ -381,6 +438,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				dad.y += 150;
 				gf.y += 100;
 				boyfriend.y += 100;
+			case 'lab':
+				gf.y -= 100;
 		}
 	}
 
