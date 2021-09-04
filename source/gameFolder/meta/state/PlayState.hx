@@ -1651,15 +1651,6 @@ class PlayState extends MusicBeatState
 						dadOpponent.playAnim("swig");
 				}
 			}
-
-		if (curStage == 'lab')
-			{
-				if (curBeat % 2 == 0) {
-					stageBuild.fbiSpin1.animation.play("idle");
-					stageBuild.fbiSpin2.animation.play("idle");
-					stageBuild.fbiScreen.animation.play("idle");
-				}
-			}
 	}
 
 	override function stepHit()
