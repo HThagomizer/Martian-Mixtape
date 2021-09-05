@@ -543,6 +543,15 @@ class PlayState extends MusicBeatState
 			if ((unspawnNotes[0].strumTime - Conductor.songPosition) < 3500)
 			{
 				var dunceNote:Note = unspawnNotes[0];
+				if (curSong == 'Exclusion Zone')
+				{
+					var funkySteps:Float = (unspawnNotes[0].strumTime / Conductor.stepCrochet);
+					var coffeeSpeed:Float = 3;
+					if (funkySteps >= 380 && funkySteps <= 640)
+						dunceNote.noteSpeed = coffeeSpeed;
+					else if (funkySteps >= 920 && funkySteps <= 1312)
+						dunceNote.noteSpeed = coffeeSpeed + 0.2;
+				}
 				notes.add(dunceNote);
 
 				unspawnNotes.splice(unspawnNotes.indexOf(dunceNote), 1);
@@ -779,7 +788,7 @@ class PlayState extends MusicBeatState
 					downscrollMultiplier = -1;
 
 				daNote.y = (strumLine.members[Math.floor(daNote.noteData + (otherSide * 4))].y
-					+ (downscrollMultiplier * -((Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(SONG.speed, 2)))));
+					+ (downscrollMultiplier * -((Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(daNote.noteSpeed, 2)))));
 				/*
 					heres the part where I talk about how shitty my downscroll code is
 					mostly because I don't actually understand downscroll and I don't play downscroll so its really more
@@ -1191,7 +1200,8 @@ class PlayState extends MusicBeatState
 					// call updated accuracy stuffs
 					Timings.updateAccuracy(100, true);
 				}
-				healthCall(true, coolNote, daRatings.get(baseRating)[3]);
+
+				healthCall(true, coolNote, daRatings.get(baseRating)[2]);
 			}
 
 			characterPlayAnimation(coolNote, character);
@@ -1219,16 +1229,16 @@ class PlayState extends MusicBeatState
 		var healthBase:Float = 0.024 * 2.5;
 
 		// self explanatory checks
-		if (increase)
+		if (increase && dadOpponent.curCharacter != 'FBIbodyguard')
 		{
 			//
 			var trueHealth = healthBase * 0.75;
-			if ((coolNote.isSustainNote) && (coolNote.animation.name.endsWith('holdend')) && dadOpponent.curCharacter != 'FBIbodyguard')
+			if ((coolNote.isSustainNote) && (coolNote.animation.name.endsWith('holdend')))
 				health += trueHealth;
-			else if (!coolNote.isSustainNote && dadOpponent.curCharacter != 'FBIbodyguard')
+			else if (!coolNote.isSustainNote)
 				health += trueHealth * (ratingMultiplier / 100);
 		}
-		else
+		else if (!increase)
 			health -= healthBase;
 	}
 
@@ -2156,6 +2166,7 @@ class PlayState extends MusicBeatState
 	private function startCountdown():Void
 	{
 		Conductor.songPosition = -(Conductor.crochet * 5);
+		isCutscene = false;
 		swagCounter = 0;
 
 		startTimer = new FlxTimer().start(Conductor.crochet / 1000, function(tmr:FlxTimer)

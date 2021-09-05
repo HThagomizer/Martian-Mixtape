@@ -159,7 +159,7 @@ class Note extends FNFSprite
 			if (prevNote.isSustainNote)
 			{
 				prevNote.animation.play(UIStaticArrow.getColorFromNumber(prevNote.noteData) + 'hold');
-				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.5 * PlayState.SONG.speed;
+				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.5 * prevNote.noteSpeed;
 				prevNote.updateHitbox();
 				// prevNote.setGraphicSize();
 			}
