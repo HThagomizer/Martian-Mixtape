@@ -114,6 +114,20 @@ class Character extends FNFSprite
 
 				playAnim('danceRight');
 
+			case 'gf-xigman':
+				tex = Paths.getSparrowAtlas('characters/xigman gf/background gf xigman');
+				frames = tex;
+				animation.addByPrefix('cheer', 'xigman cheer', 24, false);
+				animation.addByIndices('sad', 'xigman cry', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'xigman dancing beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'xigman dancing beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+
+				addOffset('cheer', -15, -15);
+				addOffset('sad', -21, -7);
+				addOffset('danceLeft');
+				addOffset('danceRight');
+
+				playAnim('danceRight');
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST');

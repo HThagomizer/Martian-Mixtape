@@ -272,7 +272,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 			case 'lab':
 				{
-					var bg:FlxSprite = new FlxSprite(-700, -400).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
+					PlayState.defaultCamZoom = 0.7;
+					var bg:FlxSprite = new FlxSprite(-1000, -400).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
 					bg.antialiasing = true;
 					bg.setGraphicSize(Std.int(bg.width * 1.3));
 					bg.updateHitbox();
@@ -379,6 +380,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 		{
 			case 'park':
 				gfVersion = 'gf-ufo';
+			case 'raveyard':
+				gfVersion = 'gf-tombstone';
+			case 'lab':
+				gfVersion = 'gf-xigman';
 		}
 
 		return gfVersion;
@@ -444,7 +449,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y += 100;
 				boyfriend.y += 100;
 			case 'lab':
-				gf.y -= 100;
+				gf.y -= 350;
+				gf.x += 50;
 		}
 	}
 
