@@ -297,6 +297,24 @@ class Character extends FNFSprite
 				addOffset("singDOWN", 2, -37);
 
 				playAnim('idle');
+
+			case 'alien-rude':
+				tex = Paths.getSparrowAtlas('characters/xigmund/alienrude_assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'xigmund idle', 24);
+				animation.addByPrefix('singUP', 'xigmund singUP', 24, false);
+				animation.addByPrefix('singRIGHT', 'xigmund singRIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'xigmund singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'xigmund singLEFT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT", 0, -6);
+				addOffset("singLEFT", 33, -5);
+				addOffset("singDOWN", 55, -55);
+
+				playAnim('idle');
+
 			case 'bones':
 				tex = Paths.getSparrowAtlas('characters/bones/own_bones');
 				frames = tex;

@@ -45,7 +45,7 @@ class FreeplayState extends MusicBeatState
 	override function create()
 	{
 		///*
-		addWeek(['Probed', 'Lazerz', 'Brainfuck', 'Annihilation'], 1, ['alien', 'alien', 'alien-pissed', 'alien-psychic'], [FlxColor.fromRGB(129, 100, 223)]);
+		addWeek(['Probed', 'Lazerz', 'Brainfuck', 'Annihilation', 'Extermination'], 1, ['alien', 'alien', 'alien-pissed', 'alien-psychic', 'alien-rude'], [FlxColor.fromRGB(129, 100, 223)]);
 		addWeek(['Confidential', 'Aegis', 'Crack', 'Enforcement'], 2, ['FBI', 'FBIbodyguard', 'FBIhacker', 'FBImech'], [FlxColor.fromRGB(20, 20, 20)]);
 		addWeek(['Marrow', 'Pelvic', 'Spinal Tap'], 3, ['bones', 'bones-cool', 'bones-spectral'], [FlxColor.fromRGB(200, 225, 200)]);
 		addWeek(['Tinfoil', 'Jitter', 'Exclusion Zone'], 4, ['harold', 'harold-caffeinated', 'harold-caffeinated'], [FlxColor.fromRGB(50, 50, 200)]);

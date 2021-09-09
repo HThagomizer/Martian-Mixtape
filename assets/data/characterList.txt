@@ -5,6 +5,7 @@ alien
 alien-alt
 alien-pissed
 alien-psychic
+alien-rude
 bones
 bones-cool
 bones-spectral

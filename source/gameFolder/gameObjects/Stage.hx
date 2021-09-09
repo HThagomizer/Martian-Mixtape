@@ -55,11 +55,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			// custom stage stuffs will come with forever charts
 			switch (PlayState.SONG.song.toLowerCase())
 			{
-				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol':
+				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'extermination':
 					curStage = 'park';
 				case 'marrow' | 'pelvic' | 'spinal tap':
 					curStage = 'raveyard';
-				case 'tinfoil' | 'itch' | 'exclusion zone':
+				case 'tinfoil' | 'itch' | 'jitter' | 'exclusion zone':
 					curStage = 'freak';
 				case 'boing' | 'freak' | 'breakout':
 					curStage = 'lab';
@@ -400,6 +400,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'alien' | 'alien-pissed' | 'alien-alt':
 				dad.x += 160;
 				dad.y += 110;
+			case 'alien-rude':
+				dad.x += 80;
+				dad.y += 80;
 			case 'bones':
 				dad.x += 200;
 				dad.y += 130;
