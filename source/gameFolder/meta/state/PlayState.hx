@@ -1484,7 +1484,7 @@ class PlayState extends MusicBeatState
 					{
 						remove(dadOpponent);
 						dadOpponent = new Character(100, 100, 'alien-alt');
-						FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
+						dadOpponent.color = 0xa99dc9;
 						add(dadOpponent);
 						dadOpponent.alpha = 1;
 						dadOpponent.x += 160;
@@ -1494,7 +1494,7 @@ class PlayState extends MusicBeatState
 				case(168):
 					remove(dadOpponent);
 					dadOpponent = new Character(100, 100, 'alien');
-					FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
+					dadOpponent.color = 0xa99dc9;
 					add(dadOpponent);
 					dadOpponent.x += 160;
 					dadOpponent.y += 110;
@@ -1513,7 +1513,7 @@ class PlayState extends MusicBeatState
 						remove(dadOpponent);
 						dadOpponent = new Character(100, 100, 'alien-pissed');
 						uiHUD.iconP2.loadIcon('alien-pissed');
-						FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
+						dadOpponent.color = 0xa99dc9;
 						add(dadOpponent);
 						dadOpponent.alpha = 1;
 						dadOpponent.x += 160;
@@ -1885,8 +1885,8 @@ class PlayState extends MusicBeatState
 
 				boyfriend.dance();
 
-				FlxTween.tween(boyfriend, {color: 0xa99dc9}, 0.0000001);
-				FlxTween.tween(xigIntro, {color: 0xa99dc9}, 0.0000001);
+				boyfriend.color = 0xa99dc9;
+				xigIntro.color = 0xa99dc9;
 
 				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 				black.scrollFactor.set();
@@ -1942,7 +1942,7 @@ class PlayState extends MusicBeatState
 				remove(dadOpponent);
 				dadOpponent = new Character(100, 100, 'alien-pissed');
 				add(dadOpponent);
-				FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
+				dadOpponent.color = 0xa99dc9;
 				dadOpponent.x += 160;
 				dadOpponent.y += 110;
 				camFollow.x -= 300;
@@ -1969,7 +1969,7 @@ class PlayState extends MusicBeatState
 										remove(dadOpponent);
 										dadOpponent = new Character(100, 100, 'alien-psychic');
 										add(dadOpponent);
-										FlxTween.tween(dadOpponent, {color: 0xa99dc9}, 0.0000001);
+										dadOpponent.color = 0xa99dc9;
 										new FlxTimer().start(1, function(swagTimer:FlxTimer)
 										{
 											FlxTween.tween(red, {alpha: 0}, 0.2, {

@@ -61,8 +61,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'raveyard';
 				case 'tinfoil' | 'itch' | 'jitter' | 'exclusion zone':
 					curStage = 'freak';
-				case 'boing' | 'freak' | 'breakout':
+				case 'boing' | 'freak':
 					curStage = 'lab';
+				case 'breakout':
+					curStage = 'breakout';
 				default:
 					curStage = 'stage';
 			}
@@ -123,6 +125,20 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					park_ground.active = false;
 					add(park_ground);
 				}
+			// case 'fbi':
+			// 	{
+			// 		defaultCamZoom = 0.9;
+			// 		curStage = 'fbi';
+
+			// 		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('backgrounds/$curStage/sky'));
+			// 		bg.scrollFactor.set(0.1, 0.1);
+			// 		add(bg);
+
+			// 		var houses:FlxTiledSprite = new FlxTiledSprite(null, 256, 256, true, false).loadGraphic(Paths.image('backgrounds/$curStage/houses'));
+			// 		add(houses);
+
+					
+			// 	}
 			case 'raveyard':
 				{
 					defaultCamZoom = 0.9;
@@ -306,7 +322,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					rail.active = false;
 					add(rail);
 
-					var floor:FlxSprite = new FlxSprite(-700, 400).loadGraphic(Paths.image('backgrounds/$curStage/floor'));
+					var floor:FlxSprite = new FlxSprite(-1100, 400).loadGraphic(Paths.image('backgrounds/$curStage/floor'));
 					floor.antialiasing = true;
 					floor.setGraphicSize(Std.int(floor.width * 1.3));
 					floor.updateHitbox();
@@ -314,14 +330,71 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.active = false;
 					add(floor);
 
-					var tubes:FlxSprite = new FlxSprite(-600, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
+					var tubes:FlxSprite = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
 					tubes.antialiasing = true;
 					tubes.updateHitbox();
 					tubes.scrollFactor.set(0.9, 0.9);
 					tubes.active = false;
 					add(tubes);
 				}
+			case 'breakout':
+				{
+					PlayState.defaultCamZoom = 0.7;
+					var bg:FlxSprite = new FlxSprite(-1000, -400).loadGraphic(Paths.image('backgrounds/lab/wallbg'));
+					bg.antialiasing = true;
+					bg.setGraphicSize(Std.int(bg.width * 1.3));
+					bg.updateHitbox();
+					bg.scrollFactor.set(0.4, 0.4);
+					bg.active = false;
+					bg.color = 0xFF9999;
+					add(bg);
 
+					fbiScreen = new FlxSprite(200, -100);
+					fbiScreen.frames = Paths.getSparrowAtlas('backgrounds/lab/tvfbi');
+					fbiScreen.animation.addByPrefix('idle', 'tv fbi guy', 24, false);
+					fbiScreen.scrollFactor.set(0.5, 0.5);
+					fbiScreen.color = 0xFF9999;
+					add(fbiScreen);
+
+					fbiSpin1 = new FlxSprite(-200, 0);
+					fbiSpin1.frames = Paths.getSparrowAtlas('backgrounds/lab/tvspin');
+					fbiSpin1.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin1.scrollFactor.set(0.5, 0.5);
+					fbiSpin1.color = 0xFF9999;
+					add(fbiSpin1);
+
+					fbiSpin2 = new FlxSprite(1250, 0);
+					fbiSpin2.frames = Paths.getSparrowAtlas('backgrounds/lab/tvspin');
+					fbiSpin2.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin2.scrollFactor.set(0.5, 0.5);
+					fbiSpin2.color = 0xFF9999;
+					add(fbiSpin2);
+
+					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/lab/rail'));
+					rail.antialiasing = true;
+					rail.updateHitbox();
+					rail.scrollFactor.set(0.9, 0.9);
+					rail.active = false;
+					rail.color = 0xFF9999;
+					add(rail);
+
+					var floor:FlxSprite = new FlxSprite(-1100, 400).loadGraphic(Paths.image('backgrounds/lab/floor'));
+					floor.antialiasing = true;
+					floor.setGraphicSize(Std.int(floor.width * 1.3));
+					floor.updateHitbox();
+					floor.scrollFactor.set(0.9, 0.9);
+					floor.active = false;
+					floor.color = 0xFF9999;
+					add(floor);
+
+					var tubes:FlxSprite = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/lab/tubes'));
+					tubes.antialiasing = true;
+					tubes.updateHitbox();
+					tubes.scrollFactor.set(0.9, 0.9);
+					tubes.active = false;
+					tubes.color = 0xFF9999;
+					add(tubes);
+				}
 			case 'sky':
 				{
 					// unused secret stage LOL LOL LOL
@@ -382,7 +455,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gfVersion = 'gf-ufo';
 			case 'raveyard':
 				gfVersion = 'gf-tombstone';
-			case 'lab':
+			case 'breakout':
 				gfVersion = 'gf-xigman';
 		}
 
@@ -441,8 +514,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.x -= 300;
 				gf.y -= 300;
 				boyfriend.y -= 30;
-				FlxTween.tween(boyfriend, {color: 0xa99dc9}, 0.1);
-				FlxTween.tween(dad, {color: 0xa99dc9}, 0.1);
+				boyfriend.color = 0xa99dc9;
+				dad.color = 0xa99dc9;
 			case 'sky':
 				dad.x -= 100;
 				gf.x -= 500;
@@ -454,6 +527,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'lab':
 				gf.y -= 350;
 				gf.x += 50;
+			case 'breakout':
+				gf.y -= 350;
+				gf.x += 50;
+				boyfriend.color = 0xFF9999;
+				gf.color = 0xFF9999;
+				dad.color = 0xFF9999;
 		}
 	}
 
