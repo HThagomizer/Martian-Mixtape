@@ -448,6 +448,21 @@ class Character extends FNFSprite
 				addOffset("singDOWN", -111, -69);
 
 				playAnim('idle');
+			case 'FBIhacker':
+				frames = Paths.getSparrowAtlas('characters/FBI/FBIhacker');
+				animation.addByPrefix('idle', 'hacker idle', 24, false);
+				animation.addByPrefix('singUP', 'hacker singUP', 24, false);
+				animation.addByPrefix('singDOWN', 'hacker singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'hacker singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'hacker singRIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -76, 34);
+				addOffset("singRIGHT", -36, -13);
+				addOffset("singLEFT", -35, -12);
+				addOffset("singDOWN", -20, -16);
+
+				playAnim('idle');
 			case 'xigman':
 				frames = Paths.getSparrowAtlas('characters/xigman/XIGMAN');
 				animation.addByPrefix('idle', 'idle', 24, false);
@@ -461,23 +476,6 @@ class Character extends FNFSprite
 				addOffset("singRIGHT", 29, -53);
 				addOffset("singLEFT", -9, 21);
 				addOffset("singDOWN", 19, -89);
-
-				playAnim('idle');
-			case 'cowborg':
-				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST');
-				frames = tex;
-				animation.addByPrefix('idle', 'Dad idle dance', 24);
-				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
-				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
-				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
-				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
-
-				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
 			case 'ignignokt':
