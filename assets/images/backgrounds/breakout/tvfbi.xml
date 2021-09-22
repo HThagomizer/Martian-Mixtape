@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tvfbi.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="xigman tv0000" x="0" y="0" width="976" height="440"/>
+	<SubTexture name="xigman tv0001" x="0" y="0" width="976" height="440"/>
+	<SubTexture name="xigman tv0002" x="976" y="0" width="976" height="440"/>
+	<SubTexture name="xigman tv0003" x="976" y="0" width="976" height="440"/>
+	<SubTexture name="xigman tv0004" x="0" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0005" x="0" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0006" x="976" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0007" x="976" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0008" x="976" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0009" x="976" y="440" width="976" height="440"/>
+	<SubTexture name="xigman tv0010" x="976" y="440" width="976" height="440"/>
+</TextureAtlas>

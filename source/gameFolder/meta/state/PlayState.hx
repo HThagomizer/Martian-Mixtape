@@ -1628,7 +1628,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curStage == 'lab')
+		if (curStage == 'lab' || curStage == 'breakout')
 		{
 			if (curBeat % 2 == 0)
 			{

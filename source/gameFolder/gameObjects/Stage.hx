@@ -340,7 +340,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'breakout':
 				{
 					PlayState.defaultCamZoom = 0.7;
-					var bg:FlxSprite = new FlxSprite(-1000, -400).loadGraphic(Paths.image('backgrounds/lab/wallbg'));
+					var bg:FlxSprite = new FlxSprite(-1000, -400).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
 					bg.antialiasing = true;
 					bg.setGraphicSize(Std.int(bg.width * 1.3));
 					bg.updateHitbox();
@@ -350,27 +350,27 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					add(bg);
 
 					fbiScreen = new FlxSprite(200, -100);
-					fbiScreen.frames = Paths.getSparrowAtlas('backgrounds/lab/tvfbi');
-					fbiScreen.animation.addByPrefix('idle', 'tv fbi guy', 24, false);
+					fbiScreen.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvfbi');
+					fbiScreen.animation.addByPrefix('idle', 'xigman tv', 24, false);
 					fbiScreen.scrollFactor.set(0.5, 0.5);
 					fbiScreen.color = 0xFF9999;
 					add(fbiScreen);
 
 					fbiSpin1 = new FlxSprite(-200, 0);
-					fbiSpin1.frames = Paths.getSparrowAtlas('backgrounds/lab/tvspin');
-					fbiSpin1.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin1.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvspin');
+					fbiSpin1.animation.addByPrefix('idle', 'hi tv', 24, false);
 					fbiSpin1.scrollFactor.set(0.5, 0.5);
 					fbiSpin1.color = 0xFF9999;
 					add(fbiSpin1);
 
 					fbiSpin2 = new FlxSprite(1250, 0);
-					fbiSpin2.frames = Paths.getSparrowAtlas('backgrounds/lab/tvspin');
-					fbiSpin2.animation.addByPrefix('idle', 'spinny tv', 24, false);
+					fbiSpin2.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tvspin');
+					fbiSpin2.animation.addByPrefix('idle', 'hi tv', 24, false);
 					fbiSpin2.scrollFactor.set(0.5, 0.5);
 					fbiSpin2.color = 0xFF9999;
 					add(fbiSpin2);
 
-					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/lab/rail'));
+					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/$curStage/rail'));
 					rail.antialiasing = true;
 					rail.updateHitbox();
 					rail.scrollFactor.set(0.9, 0.9);
@@ -378,7 +378,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					rail.color = 0xFF9999;
 					add(rail);
 
-					var floor:FlxSprite = new FlxSprite(-1100, 400).loadGraphic(Paths.image('backgrounds/lab/floor'));
+					var floor:FlxSprite = new FlxSprite(-1100, 400).loadGraphic(Paths.image('backgrounds/$curStage/floor'));
 					floor.antialiasing = true;
 					floor.setGraphicSize(Std.int(floor.width * 1.3));
 					floor.updateHitbox();
@@ -387,7 +387,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.color = 0xFF9999;
 					add(floor);
 
-					var tubes:FlxSprite = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/lab/tubes'));
+					var tubes:FlxSprite = new FlxSprite(-500, -60).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
 					tubes.antialiasing = true;
 					tubes.updateHitbox();
 					tubes.scrollFactor.set(0.9, 0.9);
