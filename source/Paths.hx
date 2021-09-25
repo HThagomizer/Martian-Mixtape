@@ -5,14 +5,15 @@ package;
  */
 import flixel.FlxG;
 import flixel.graphics.frames.FlxAtlasFrames;
+import gameFolder.meta.CoolUtil;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
+import sys.FileSystem;
 
 class Paths
 {
 	// Here we set up the paths class. This will be used to
 	// Return the paths of assets and call on those assets as well.
-	// set the current song extension to either OGG or MP3 depending on the client
 	inline public static var SOUND_EXT = "ogg";
 
 	// level we're loading
@@ -97,7 +98,7 @@ class Paths
 
 	inline static public function txt(key:String, ?library:String)
 	{
-		return getPath('data/$key.txt', TEXT, library);
+		return getPath('$key.txt', TEXT, library);
 	}
 
 	inline static public function xml(key:String, ?library:String)
@@ -114,6 +115,9 @@ class Paths
 	{
 		return getPath('data/$key.json', TEXT, library);
 	}
+
+	inline static public function songJson(song:String, secondSong:String, ?library:String)
+		return getPath('songs/${song.toLowerCase()}/${secondSong.toLowerCase()}.json', TEXT, library);
 
 	static public function sound(key:String, ?library:String)
 	{
@@ -132,12 +136,22 @@ class Paths
 
 	inline static public function voices(song:String)
 	{
-		return getPath('songs/${song.toLowerCase()}/Voices.$SOUND_EXT', MUSIC, null);
+		var voicePath = 'songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		if (!FileSystem.exists(getPath(voicePath, MUSIC, null)))
+		{
+			voicePath = 'songs/${CoolUtil.swapSpaceDash(song.toLowerCase())}/Voices.$SOUND_EXT';
+		}
+		return getPath(voicePath, MUSIC, null);
 	}
 
 	inline static public function inst(song:String)
 	{
-		return getPath('songs/${song.toLowerCase()}/Inst.$SOUND_EXT', MUSIC, null);
+		var instPath = 'songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		if (!FileSystem.exists(getPath(instPath, MUSIC, null)))
+		{
+			instPath = 'songs/${CoolUtil.swapSpaceDash(song.toLowerCase())}/Inst.$SOUND_EXT';
+		}
+		return getPath(instPath, MUSIC, null);
 	}
 
 	inline static public function image(key:String, ?library:String)
@@ -159,39 +173,4 @@ class Paths
 	{
 		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('images/$key.txt', library));
 	}
-	/*	Dedicating this section to asset separation and such!
-		way this will work is, frames can be stored and such (from xml files themselves not actual sprites)
-
-		Shoutouts to tricky v2, I'm not a fan of how they do it, but it definitely gave me the idea to implement a system like this
-		I just dont want to preload everything because that would be REALLY bad honestly
-
-		WIP PLEASE STAND BY I WILL CORRECT THE ISSUES LATER
-	 */
-	/*
-		public static var cachedStuffs:Map<String, FlxAtlasFrames> = new Map<String, FlxAtlasFrames>();
-
-		public static function cacheSparrow(key:String)
-		{
-			// alright so here we'd want to cache the atlas for later usage
-			cachedStuffs.set(key, getSparrowAtlas(key));
-			// thats it lmfao
-		}
-
-		inline public static function loadCachedSparrow(key:String)
-		{
-			// return the cached sprite I think
-			if (cachedStuffs.get(key) == null)
-				Paths.cacheSparrow(key);
-
-			var cachedReturn:FlxAtlasFrames = cachedStuffs.get(key);
-			return cachedReturn;
-		}
-
-		public static function dumpCache()
-		{
-			// clear the map of cached stuffs
-			cachedStuffs.clear();
-			
-		}
-	 */
 }

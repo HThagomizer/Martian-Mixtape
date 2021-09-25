@@ -12,6 +12,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import gameFolder.meta.MusicBeat.MusicBeatState;
+import gameFolder.meta.data.dependency.Discord;
 
 using StringTools;
 
@@ -34,12 +35,18 @@ class MainMenuState extends MusicBeatState
 	// the create 'state'
 	override function create()
 	{
+		super.create();
+
 		// set the transitions to the previously set ones
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
 
 		// make sure the music is playing
 		ForeverTools.resetMenuMusic();
+
+		#if !html5
+		Discord.changePresence('MENU SCREEN', 'Main Menu');
+		#end
 
 		// uh
 		persistentUpdate = persistentDraw = true;
@@ -52,7 +59,7 @@ class MainMenuState extends MusicBeatState
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();
 		bg.screenCenter();
-		bg.antialiasing = true;
+		bg.antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
 		add(bg);
 
 		magenta = new FlxSprite(-85).loadGraphic(Paths.image('menus/base/menuDesat'));
@@ -62,7 +69,7 @@ class MainMenuState extends MusicBeatState
 		magenta.updateHitbox();
 		magenta.screenCenter();
 		magenta.visible = false;
-		magenta.antialiasing = true;
+		magenta.antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
 		magenta.color = 0xFFfd719b;
 		add(magenta);
 
@@ -102,7 +109,7 @@ class MainMenuState extends MusicBeatState
 			// actually add the item
 			menuItems.add(menuItem);
 			menuItem.scrollFactor.set();
-			menuItem.antialiasing = true;
+			menuItem.antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
 			menuItem.updateHitbox();
 
 			/*
@@ -116,7 +123,7 @@ class MainMenuState extends MusicBeatState
 		}
 
 		// set the camera to actually follow the camera object that was created before
-		var camLerp = Main.framerateAdjust(0.06);
+		var camLerp = Main.framerateAdjust(0.10);
 		FlxG.camera.follow(camFollow, null, camLerp);
 
 		updateSelection();
@@ -129,8 +136,6 @@ class MainMenuState extends MusicBeatState
 		add(versionShit);
 
 		//
-
-		super.create();
 	}
 
 	// var colorTest:Float = 0;
@@ -231,13 +236,13 @@ class MainMenuState extends MusicBeatState
 						switch (daChoice)
 						{
 							case 'story mode':
-								Main.switchState(new StoryMenuState());
+								Main.switchState(this, new StoryMenuState());
 							case 'freeplay':
-								Main.switchState(new FreeplayState());
+								Main.switchState(this, new FreeplayState());
 							case 'options':
 								transIn = FlxTransitionableState.defaultTransIn;
 								transOut = FlxTransitionableState.defaultTransOut;
-								Main.switchState(new OptionsMenuState());
+								Main.switchState(this, new OptionsMenuState());
 						}
 					});
 				}

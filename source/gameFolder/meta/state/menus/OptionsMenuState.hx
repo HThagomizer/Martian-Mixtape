@@ -11,6 +11,7 @@ import flixel.util.FlxTimer;
 import gameFolder.gameObjects.userInterface.menu.Checkmark;
 import gameFolder.gameObjects.userInterface.menu.Selector;
 import gameFolder.meta.MusicBeat.MusicBeatState;
+import gameFolder.meta.data.dependency.Discord;
 import gameFolder.meta.data.dependency.FNFSprite;
 import gameFolder.meta.data.font.Alphabet;
 import gameFolder.meta.subState.OptionsSubstate;
@@ -32,6 +33,8 @@ class OptionsMenuState extends MusicBeatState
 
 	override public function create():Void
 	{
+		super.create();
+
 		// define the categories
 		/* 
 			To explain how these will work, each main category is just any group of options, the options in the category are defined
@@ -39,6 +42,11 @@ class OptionsMenuState extends MusicBeatState
 			These arrays are within other arrays for information storing purposes, don't worry about that too much.
 			If you plug in a value, the script will run when the option is hovered over.
 		 */
+
+		#if !html5
+		Discord.changePresence('OPTIONS MENU', 'Main Menu');
+		#end
+
 		categoryMap = [
 			'main' => [
 				[
@@ -53,8 +61,10 @@ class OptionsMenuState extends MusicBeatState
 					['Game Settings', null],
 					['', null],
 					['Downscroll', getFromOption],
-					// ['Auto Pause', getFromOption],
+					['Centered Notefield', getFromOption],
+					['Ghost Tapping', getFromOption],
 					['Display Accuracy', getFromOption],
+					['Display Miss Count', getFromOption],
 					//
 					['', null],
 					['Meta Settings', null],
@@ -66,7 +76,8 @@ class OptionsMenuState extends MusicBeatState
 					['', null],
 					['Forever Settings', null],
 					['', null],
-					['Use Forever Chart Editor', getFromOption]
+					['Use Forever Chart Editor', getFromOption],
+					['Custom Titlescreen', getFromOption]
 				]
 			],
 			'appearance' => [
@@ -74,6 +85,8 @@ class OptionsMenuState extends MusicBeatState
 					['Common Settings', null],
 					['', null],
 					['Disable Antialiasing', getFromOption],
+					['No Camera Note Movement', getFromOption],
+					['SM-like Judgements', getFromOption],
 					['', null],
 					['Accessibility Settings', null],
 					['', null],
@@ -115,8 +128,6 @@ class OptionsMenuState extends MusicBeatState
 		infoText.textField.background = true;
 		infoText.textField.backgroundColor = FlxColor.BLACK;
 		add(infoText);
-
-		super.create();
 
 		loadSubgroup('main');
 	}
@@ -289,7 +300,7 @@ class OptionsMenuState extends MusicBeatState
 			if (curCategory != 'main')
 				loadSubgroup('main');
 			else
-				Main.switchState(new MainMenuState());
+				Main.switchState(this, new MainMenuState());
 		}
 	}
 
@@ -339,16 +350,20 @@ class OptionsMenuState extends MusicBeatState
 
 		for (i in 0...categoryMap.get(groupName)[0].length)
 		{
-			var thisOption:Alphabet = new Alphabet(0, 0, categoryMap.get(groupName)[0][i][0], true, false);
-			thisOption.screenCenter();
-			thisOption.y += (90 * (i - Math.floor(categoryMap.get(groupName)[0].length / 2)));
-			thisOption.targetY = i;
-			thisOption.disableX = true;
-			// hardcoded main so it doesnt have scroll
-			if (groupName != 'main')
-				thisOption.isMenuItem = true;
-			thisOption.alpha = 0.6;
-			newGroup.add(thisOption);
+			if (Init.gameSettings.get(categoryMap.get(groupName)[0][i][0]) == null
+				|| Init.gameSettings.get(categoryMap.get(groupName)[0][i][0])[3] != Init.FORCED)
+			{
+				var thisOption:Alphabet = new Alphabet(0, 0, categoryMap.get(groupName)[0][i][0], true, false);
+				thisOption.screenCenter();
+				thisOption.y += (90 * (i - Math.floor(categoryMap.get(groupName)[0].length / 2)));
+				thisOption.targetY = i;
+				thisOption.disableX = true;
+				// hardcoded main so it doesnt have scroll
+				if (groupName != 'main')
+					thisOption.isMenuItem = true;
+				thisOption.alpha = 0.6;
+				newGroup.add(thisOption);
+			}
 		}
 
 		return newGroup;
@@ -371,7 +386,7 @@ class OptionsMenuState extends MusicBeatState
 						extrasMap.set(letter, checkmark);
 					case 1:
 						// selector
-						var selector:Selector = new Selector(10, letter.y, letter.text, Init.gameSettings.get(letter.text)[3],
+						var selector:Selector = new Selector(10, letter.y, letter.text, Init.gameSettings.get(letter.text)[4],
 							(letter.text == 'Framerate Cap') ? true : false);
 
 						extrasMap.set(letter, selector);
@@ -475,6 +490,9 @@ class OptionsMenuState extends MusicBeatState
 			var increase = 15 * updateBy;
 			if (originalFPS + increase < 30)
 				increase = 0;
+			// high fps cap
+			if (originalFPS + increase > 360)
+				increase = 0;
 
 			if (updateBy == -1)
 				selector.selectorPlay('left', 'press');
@@ -527,7 +545,7 @@ class OptionsMenuState extends MusicBeatState
 			lockedMovement = true;
 			FlxFlicker.flicker(activeSubgroup.members[curSelection], 0.5, 0.06 * 2, true, false, function(flick:FlxFlicker)
 			{
-				Main.switchState(new MainMenuState());
+				Main.switchState(this, new MainMenuState());
 				lockedMovement = false;
 			});
 		}

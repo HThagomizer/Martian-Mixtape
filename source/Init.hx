@@ -1,5 +1,6 @@
 import flixel.FlxG;
 import flixel.FlxState;
+import flixel.graphics.FlxGraphic;
 import flixel.input.keyboard.FlxKey;
 import gameFolder.meta.CoolUtil;
 import gameFolder.meta.InfoHud;
@@ -29,25 +30,55 @@ class Init extends FlxState
 		3 - offsets, this is unused but it'd bug me if it were set to 0
 		might redo offset code since I didnt make it and it bugs me that it's hardcoded the the last part of the controls menu
 	 */
+	public static var FORCED = 'forced';
+	public static var NOT_FORCED = 'not forced';
+
 	public static var gameSettings:Map<String, Dynamic> = [
-		'Downscroll' => [false, 0, 'Whether to have the strumline vertically flipped in gameplay.'],
-		'Centered Notefield' => [false, 0, 'Whether to center the strumline in gameplay.'],
-		'Auto Pause' => [true, 0, ''],
-		'FPS Counter' => [true, 0, 'Whether to display the FPS counter.'],
-		'Memory Counter' => [true, 0, 'Whether to display approximately how much memory is being used.'],
-		'Debug Info' => [false, 0, 'Whether to display information like your game state.'],
+		'Downscroll' => [
+			false,
+			0,
+			'Whether to have the strumline vertically flipped in gameplay.',
+			NOT_FORCED
+		],
+		'Auto Pause' => [true, 0, '', NOT_FORCED],
+		'FPS Counter' => [true, 0, 'Whether to display the FPS counter.', NOT_FORCED],
+		'Memory Counter' => [
+			true,
+			0,
+			'Whether to display approximately how much memory is being used.',
+			NOT_FORCED
+		],
+		'Debug Info' => [false, 0, 'Whether to display information like your game state.', NOT_FORCED],
 		'Reduced Movements' => [
 			false,
 			0,
-			'Whether to reduce movements, like icons bouncing or beat zooms in gameplay.'
+			'Whether to reduce movements, like icons bouncing or beat zooms in gameplay.',
+			NOT_FORCED
 		],
-		'Display Accuracy' => [true, 0, 'Whether to display your accuracy on screen.'],
-		'Disable Antialiasing' => [false, 0, 'Whether to disable Anti-aliasing. Helps improve performance in FPS.'],
-		'Use Forever Chart Editor' => [true, 0, 'When enabled, uses the custom Forever Engine chart editor!'],
+		'Display Accuracy' => [true, 0, 'Whether to display your accuracy on screen.', NOT_FORCED],
+		'Disable Antialiasing' => [
+			false,
+			0,
+			'Whether to disable Anti-aliasing. Helps improve performance in FPS.',
+			NOT_FORCED
+		],
+		'No Camera Note Movement' => [
+			false,
+			0,
+			'When enabled, left and right notes no longer move the camera.',
+			NOT_FORCED
+		],
+		'Use Forever Chart Editor' => [
+			true,
+			0,
+			'When enabled, uses the custom Forever Engine chart editor!',
+			NOT_FORCED
+		],
 		'Disable Note Splashes' => [
 			false,
 			0,
-			'Whether to disable note splashes in gameplay. Useful if you find them distracting.'
+			'Whether to disable note splashes in gameplay. Useful if you find them distracting.',
+			NOT_FORCED
 		],
 		// custom ones lol
 		'Offset' => [0, 3],
@@ -55,13 +86,37 @@ class Init extends FlxState
 			'none',
 			1,
 			'Choose a filter for colorblindness.',
+			NOT_FORCED,
 			['none', 'Deuteranopia', 'Protanopia', 'Tritanopia']
 		],
-		"UI Skin" => ['default', 1, 'Choose a UI Skin for ratings, combo, etc.', ''],
-		"Note Skin" => ['default', 1, 'Choose a note skin.', ''],
-		"Framerate Cap" => [120, 1, 'Define your maximum FPS.', ['']],
-		"Opaque Arrows" => [false, 0, "Makes the arrows at the top of the screen opaque again."],
-		"Opaque Holds" => [false, 0, "Huh, why isnt the trail cut off?"],
+		"UI Skin" => ['default', 1, 'Choose a UI Skin for judgements, combo, etc.', NOT_FORCED, ''],
+		"Note Skin" => ['default', 1, 'Choose a note skin.', NOT_FORCED, ''],
+		"Framerate Cap" => [120, 1, 'Define your maximum FPS.', NOT_FORCED, ['']],
+		"Opaque Arrows" => [false, 0, "Makes the arrows at the top of the screen opaque again.", NOT_FORCED],
+		"Opaque Holds" => [false, 0, "Huh, why isnt the trail cut off?", NOT_FORCED],
+		'Ghost Tapping' => [
+			false,
+			0,
+			"Enables Ghost Tapping, allowing you to press inputs without missing.",
+			NOT_FORCED
+		],
+		'Centered Notefield' => [false, 0, "Center the notes, disables the enemy's notes."],
+		"Custom Titlescreen" => [
+			false,
+			0,
+			"Enables the custom Forever Engine titlescreen! (only effective with a restart)",
+			FORCED
+		],
+		'SM-like Judgements' => [
+			false,
+			0,
+			"Fixes the judgements to the camera instead of to the world itself, making them easier to read."
+		],
+		'Display Miss Count' => [
+			false,
+			0,
+			"When enabled, displays the amount of combo breaks you have in a song."
+		],
 	];
 
 	public static var trueSettings:Map<String, Dynamic> = [];
@@ -112,7 +167,7 @@ class Init extends FlxState
 
 	override public function create():Void
 	{
-		FlxG.save.bind('forever', 'engine');
+		FlxG.save.bind('foreverengine-options');
 		Highscore.load();
 
 		loadSettings();
@@ -125,7 +180,22 @@ class Init extends FlxState
 		// apply saved filters
 		FlxG.game.setFilters(filters);
 
-		Main.switchState(new TitleState());
+		// Some additional changes to default HaxeFlixel settings, both for ease of debugging
+		// and usability.
+		FlxG.fixedTimestep = false; // This ensures that the game is not tied to the FPS
+		FlxG.mouse.useSystemCursor = true; // Use system cursor because it's prettier
+		FlxG.mouse.visible = false; // Hide mouse on start
+
+		// Main.switchState(this, new ChartingState());
+		gotoTitleScreen();
+	}
+
+	private function gotoTitleScreen()
+	{
+		if (trueSettings.get("Custom Titlescreen"))
+			Main.switchState(this, new CustomTitlescreen());
+		else
+			Main.switchState(this, new TitleState());
 	}
 
 	public static function loadSettings():Void
@@ -143,19 +213,22 @@ class Init extends FlxState
 		{
 			var settingsMap:Map<String, Dynamic> = FlxG.save.data.settings;
 			for (singularSetting in settingsMap.keys())
-				trueSettings.set(singularSetting, FlxG.save.data.settings.get(singularSetting));
+				if (gameSettings.get(singularSetting) != null && gameSettings.get(singularSetting)[3] != FORCED)
+					trueSettings.set(singularSetting, FlxG.save.data.settings.get(singularSetting));
 		}
 
 		// lemme fix that for you
-		if (!Std.isOfType(trueSettings.get("Framerate Cap"), Int) || trueSettings.get("Framerate Cap") < 30)
+		if (!Std.isOfType(trueSettings.get("Framerate Cap"), Int)
+			|| trueSettings.get("Framerate Cap") < 30
+			|| trueSettings.get("Framerate Cap") > 360)
 			trueSettings.set("Framerate Cap", 30);
 
 		// 'hardcoded' ui skins
-		gameSettings.get("UI Skin")[3] = CoolUtil.returnAssetsLibrary('UI');
-		if (!gameSettings.get("UI Skin")[3].contains(trueSettings.get("UI Skin")))
+		gameSettings.get("UI Skin")[4] = CoolUtil.returnAssetsLibrary('UI');
+		if (!gameSettings.get("UI Skin")[4].contains(trueSettings.get("UI Skin")))
 			trueSettings.set("UI Skin", 'default');
-		gameSettings.get("Note Skin")[3] = CoolUtil.returnAssetsLibrary('noteskins/notes');
-		if (!gameSettings.get("Note Skin")[3].contains(trueSettings.get("Note Skin")))
+		gameSettings.get("Note Skin")[4] = CoolUtil.returnAssetsLibrary('noteskins/notes');
+		if (!gameSettings.get("Note Skin")[4].contains(trueSettings.get("Note Skin")))
 			trueSettings.set("Note Skin", 'default');
 
 		saveSettings();

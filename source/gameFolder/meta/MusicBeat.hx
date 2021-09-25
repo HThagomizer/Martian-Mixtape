@@ -23,8 +23,8 @@ class MusicBeatState extends FNFUIState
 	private var lastBeat:Float = 0;
 	private var lastStep:Float = 0;
 
-	private var curStep:Int = 0;
-	private var curBeat:Int = 0;
+	public var curStep:Int = 0;
+	public var curBeat:Int = 0;
 
 	private var controls(get, never):Controls;
 
@@ -34,10 +34,19 @@ class MusicBeatState extends FNFUIState
 	// class create event
 	override function create()
 	{
+		// dump the cache if you're going elsewhere
+		if (Main.lastState != this)
+			Main.dumpCache();
+
 		if (transIn != null)
 			trace('reg ' + transIn.region);
 
 		super.create();
+
+		// For debugging
+		FlxG.watch.add(Conductor, "songPosition");
+		FlxG.watch.add(this, "curBeat");
+		FlxG.watch.add(this, "curStep");
 	}
 
 	// class 'step' event

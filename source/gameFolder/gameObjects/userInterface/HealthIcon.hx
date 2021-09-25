@@ -14,20 +14,18 @@ class HealthIcon extends FlxSprite
 	public function new(char:String = 'bf', isPlayer:Bool = false)
 	{
 		super();
-
-		loadIcon(char, isPlayer);
+		updateIcon(char, isPlayer);
 	}
 
-	public function loadIcon(char:String = 'bf', isPlayer:Bool = false)
+	public function updateIcon(char:String = 'bf', isPlayer:Bool = false)
 	{
-		// made a cooler system instead of the one from last time
 		if (char.contains('-'))
 		{
 			if (!exclusions.contains(char.substring(char.indexOf('-') + 1, char.length)))
 				char = char.substring(0, char.indexOf('-'));
 		}
 
-		antialiasing = true;
+		antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
 		loadGraphic(Paths.image('icons/icon-' + char), true, 150, 150);
 		animation.add('icon', [0, 1], 0, false, isPlayer);
 		animation.play('icon');

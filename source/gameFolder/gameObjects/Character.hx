@@ -18,6 +18,10 @@ using StringTools;
 
 class Character extends FNFSprite
 {
+	// By default, this option set to FALSE will make it so that the character only dances twice per major beat hit
+	// If set to on, they will dance every beat, such as Skid and Pump
+	public var quickDancer:Bool = false;
+
 	public var debugMode:Bool = false;
 
 	public var isPlayer:Bool = false;
@@ -32,8 +36,29 @@ class Character extends FNFSprite
 		curCharacter = character;
 		this.isPlayer = isPlayer;
 
+		antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
+
+		generateCharacter(x, y, curCharacter);
+
+		if (isPlayer) // fuck you ninjamuffin lmao
+		{
+			flipX = !flipX;
+
+			// Doesn't flip for BF, since his are already in the right place???
+			if (!curCharacter.startsWith('bf'))
+				flipLeftRight();
+			//
+		}
+		else if (curCharacter.startsWith('bf'))
+			flipLeftRight();
+	}
+
+	public function generateCharacter(x, y, curCharacter)
+	{
 		var tex:FlxAtlasFrames;
-		antialiasing = true;
+
+		this.x = x;
+		this.y = y;
 
 		switch (curCharacter)
 		{
@@ -463,6 +488,24 @@ class Character extends FNFSprite
 				addOffset("singDOWN", -20, -16);
 
 				playAnim('idle');
+			case 'FBImech':
+				frames = Paths.getSparrowAtlas('characters/FBI/FBImech');
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'singUP', 24, false);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 84, 140);
+				addOffset("singRIGHT", -74, 9);
+				addOffset("singLEFT", -109, 13);
+				addOffset("singDOWN", -123, -29);
+
+				playAnim('idle');
+
+				setGraphicSize(Std.int(width * 3));
+				updateHitbox();
 			case 'xigman':
 				frames = Paths.getSparrowAtlas('characters/xigman/XIGMAN');
 				animation.addByPrefix('idle', 'idle', 24, false);
@@ -524,18 +567,6 @@ class Character extends FNFSprite
 		}
 
 		dance();
-
-		if (isPlayer) // fuck you ninjamuffin lmao
-		{
-			flipX = !flipX;
-
-			// Doesn't flip for BF, since his are already in the right place???
-			if (!curCharacter.startsWith('bf'))
-				flipLeftRight();
-			//
-		}
-		else if (curCharacter.startsWith('bf'))
-			flipLeftRight();
 	}
 
 	function flipLeftRight():Void
@@ -569,9 +600,6 @@ class Character extends FNFSprite
 			}
 
 			var dadVar:Float = 4;
-
-			if (curCharacter == 'dad')
-				dadVar = 6.1;
 			if (holdTimer >= Conductor.stepCrochet * dadVar * 0.001)
 			{
 				dance();
@@ -589,6 +617,15 @@ class Character extends FNFSprite
 					playAnim('danceLeft');
 		}
 
+		// Post idle animation (think Week 4 and how the player and mom's hair continues to sway after their idle animations are done!)
+		if (animation.curAnim.finished && animation.curAnim.name == 'idle')
+		{
+			// We look for an animation called 'idlePost' to switch to
+			if (animation.getByName('idlePost') != null)
+				// (( WE DON'T USE 'PLAYANIM' BECAUSE WE WANT TO FEED OFF OF THE IDLE OFFSETS! ))
+				animation.play('idlePost', true, false, 0);
+		}
+
 		super.update(elapsed);
 	}
 
@@ -597,7 +634,7 @@ class Character extends FNFSprite
 	/**
 	 * FOR GF DANCING SHIT
 	 */
-	public function dance()
+	public function dance(?forced:Bool = false)
 	{
 		if (!debugMode)
 		{
@@ -610,27 +647,32 @@ class Character extends FNFSprite
 						danced = !danced;
 
 						if (danced)
-							playAnim('danceRight');
+							playAnim('danceRight', forced);
 						else
-							playAnim('danceLeft');
+							playAnim('danceLeft', forced);
 					}
-
-				case 'spooky':
-					danced = !danced;
-
-					if (danced)
-						playAnim('danceRight');
-					else
-						playAnim('danceLeft');
 				default:
-					playAnim('idle');
+					// Left/right dancing, think Skid & Pump
+					if (animation.getByName('danceLeft') != null && animation.getByName('danceRight') != null)
+						playAnim((animation.curAnim.name == 'danceRight') ? 'danceLeft' : 'danceRight', forced);
+					// Play normal idle animations for all other characters
+					else
+						playAnim('idle', forced);
 			}
 		}
 	}
 
 	override public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void
 	{
-		super.playAnim(AnimName, Force, Reversed, Frame);
+		animation.play(AnimName, Force, Reversed, Frame);
+
+		var daOffset = animOffsets.get(AnimName);
+		if (animOffsets.exists(AnimName))
+		{
+			offset.set(daOffset[0] * scale.x, daOffset[1] * scale.y);
+		}
+		else
+			offset.set(0, 0);
 
 		if (curCharacter == 'gf')
 		{

@@ -2,6 +2,8 @@ package gameFolder.gameObjects.userInterface.menu;
 
 import gameFolder.meta.data.dependency.FNFSprite;
 
+using StringTools;
+
 class Checkmark extends FNFSprite
 {
 	public function new(x:Float, y:Float)

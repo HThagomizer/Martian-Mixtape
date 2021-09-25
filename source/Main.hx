@@ -1,15 +1,27 @@
 package;
 
+import flixel.FlxBasic;
 import flixel.FlxG;
 import flixel.FlxGame;
+import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.util.FlxColor;
 import gameFolder.meta.*;
 import gameFolder.meta.data.PlayerSettings;
+import gameFolder.meta.data.dependency.Discord;
+import haxe.CallStack.StackItem;
+import haxe.CallStack;
+import haxe.io.Path;
+import lime.app.Application;
 import openfl.Assets;
 import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
+import openfl.events.UncaughtErrorEvent;
+import sys.FileSystem;
+import sys.io.File;
+import sys.io.Process;
 
 // Here we actually import the states and metadata, and just the metadata.
 // It's nice to have modularity so that we don't have ALL elements loaded at the same time.
@@ -56,11 +68,49 @@ class Main extends Sprite
 	public static var mainClassState:Class<FlxState> = Init; // Determine the main class state of the game
 	public static var framerate:Int = 120; // How many frames per second the game should run at.
 
-	public static var gameVersion:String = '0.2.3';
+	public static var gameVersion:String = '0.2.4';
+
+	public static var loadedAssets:Array<FlxBasic> = [];
 
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var infoCounter:InfoHud; // initialize the heads up display that shows information before creating it.
+
+	// heres gameweeks set up!
+
+	/**
+		Small bit of documentation here, gameweeks are what control everything in my engine
+		this system will eventually be overhauled in favor of using actual week folders within the 
+		assets.
+		Enough of that, here's how it works
+		[ [songs to use], [characters in songs], [color of week], name of week ]
+	**/
+	public static var gameWeeks:Array<Dynamic> = [
+		[
+			['Probed', 'Lazerz', 'Brainfuck', 'Annihilation-LOL'],
+			['alien', 'alien', 'alien-pissed', 'alien-psychic'],
+			[FlxColor.fromRGB(129, 100, 223)],
+			'Martian Mixtape'
+		],
+		[
+			['Confidential', 'Aegis', 'Crack', 'Enforcement'],
+			['FBI', 'FBIbodyguard', 'FBIhacker', 'FBImech'],
+			[FlxColor.fromRGB(20, 20, 20)],
+			'Men in Black'
+		],
+		[
+			['Marrow', "Pelvic", "Spinal Tap"],
+			['bones', 'bones-cool', 'bones-spectral'],
+			[FlxColor.fromRGB(200, 225, 200)],
+			"Boneyard Bash"
+		],
+		[
+			['Tinfoil', 'Itch', "Exclusion Zone"],
+			['harold', 'harold-caffeinated', 'harold-caffeinated'],
+			[FlxColor.fromRGB(50, 50, 200)],
+			"I Don't Want To Believe"
+		]
+	];
 
 	// most of these variables are just from the base game!
 	// be sure to mess around with these if you'd like.
@@ -75,31 +125,6 @@ class Main extends Sprite
 	{
 		super();
 
-		setupGame(); // oh right yeah actually run the game lmfao what a fucking dumbass I am
-	}
-
-	public static function updateFramerate(newFramerate:Int)
-	{
-		// flixel will literally throw errors at me if I dont separate the orders
-		if (newFramerate > FlxG.updateFramerate)
-		{
-			FlxG.updateFramerate = newFramerate;
-			FlxG.drawFramerate = newFramerate;
-		}
-		else
-		{
-			FlxG.drawFramerate = newFramerate;
-			FlxG.updateFramerate = newFramerate;
-		}
-	}
-
-	public static function framerateAdjust(input:Float)
-	{
-		return input * (60 / framerate);
-	}
-
-	private function setupGame():Void
-	{
 		/**
 			ok so, haxe html5 CANNOT do 120 fps. it just cannot.
 			so here i just set the framerate to 60 if its complied in html5.
@@ -107,15 +132,18 @@ class Main extends Sprite
 			note studders and shit its weird.
 		**/
 
+		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
+
 		#if html5
 		framerate = 60;
 		#end
 
-		var stageWidth:Int = Lib.current.stage.stageWidth;
-		var stageHeight:Int = Lib.current.stage.stageHeight;
 		// simply said, a state is like the 'surface' area of the window where everything is drawn.
 		// if you've used gamemaker you'll probably understand the term surface better
 		// this defines the surface bounds
+
+		var stageWidth:Int = Lib.current.stage.stageWidth;
+		var stageHeight:Int = Lib.current.stage.stageHeight;
 
 		if (zoom == -1)
 		{
@@ -136,6 +164,12 @@ class Main extends Sprite
 		// default game FPS settings, I'll probably comment over them later.
 		// addChild(new FPS(10, 3, 0xFFFFFF));
 
+		// begin the discord rich presence
+		#if !html5
+		Discord.initializeRPC();
+		Discord.changePresence('');
+		#end
+
 		// test initialising the player settings
 		PlayerSettings.init();
 
@@ -146,20 +180,117 @@ class Main extends Sprite
 		addChild(infoCounter);
 	}
 
+	public static function framerateAdjust(input:Float)
+	{
+		return input * (60 / FlxG.drawFramerate);
+	}
+
 	/*  This is used to switch "rooms," to put it basically. Imagine you are in the main menu, and press the freeplay button.
 		That would change the game's main class to freeplay, as it is the active class at the moment.
 	 */
-	public static function switchState(target:FlxState)
+	public static var lastState:FlxState;
+
+	public static function switchState(curState:FlxState, target:FlxState)
 	{
 		// this is for a dumb feature that has no use except for cool extra info
-		mainClassState = Type.getClass(target);
 		// though I suppose this could be of use to people who want to load things between classes and such
-		// not that that would be of use to people who aren't already writing their own engines lmfao
 
-		// oh hey i'm using this now thank you past me for making this
-		// Paths.dumpCache();
+		// save the last state for comparison checks
+		lastState = curState;
+
+		// credit for the idea and a bit of the execution https://github.com/ninjamuffin99/Funkin/pull/1083
+		mainClassState = Type.getClass(target);
 
 		// load the state
 		FlxG.switchState(target);
+	}
+
+	public static function updateFramerate(newFramerate:Int)
+	{
+		// flixel will literally throw errors at me if I dont separate the orders
+		if (newFramerate > FlxG.updateFramerate)
+		{
+			FlxG.updateFramerate = newFramerate;
+			FlxG.drawFramerate = newFramerate;
+		}
+		else
+		{
+			FlxG.drawFramerate = newFramerate;
+			FlxG.updateFramerate = newFramerate;
+		}
+	}
+
+	public static function dumpCache()
+	{
+		///* SPECIAL THANKS TO HAYA
+		@:privateAccess
+		for (key in FlxG.bitmap._cache.keys())
+		{
+			var obj = FlxG.bitmap._cache.get(key);
+			if (obj != null)
+			{
+				Assets.cache.removeBitmapData(key);
+				FlxG.bitmap._cache.remove(key);
+				obj.destroy();
+			}
+		}
+		// */
+	}
+
+	function onCrash(e:UncaughtErrorEvent):Void
+	{
+		var errMsg:String = "";
+		var path:String;
+		var callStack:Array<StackItem> = CallStack.exceptionStack(true);
+		var dateNow:String = Date.now().toString();
+
+		dateNow = StringTools.replace(dateNow, " ", "_");
+		dateNow = StringTools.replace(dateNow, ":", "'");
+
+		path = "./crash/" + "FE_" + dateNow + ".txt";
+
+		for (stackItem in callStack)
+		{
+			switch (stackItem)
+			{
+				case FilePos(s, file, line, column):
+					errMsg += file + " (line " + line + ")\n";
+				default:
+					Sys.println(stackItem);
+			}
+		}
+
+		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to the GitHub page: https://github.com/Yoshubs/Forever-Engine";
+
+		if (!FileSystem.exists("./crash/"))
+			FileSystem.createDirectory("./crash/");
+
+		File.saveContent(path, errMsg + "\n");
+
+		Sys.println(errMsg);
+		Sys.println("Crash dump saved in " + Path.normalize(path));
+
+		var crashDialoguePath:String = "FE-CrashDialog";
+
+		#if windows
+		crashDialoguePath += ".exe";
+		#end
+
+		if (FileSystem.exists("./" + crashDialoguePath))
+		{
+			Sys.println("Found crash dialog: " + crashDialoguePath);
+
+			#if linux
+			crashDialoguePath = "./" + crashDialoguePath;
+			#end
+			new Process(crashDialoguePath, [path]);
+		}
+		else
+		{
+			Sys.println("No crash dialog found! Making a simple alert instead...");
+			Application.current.window.alert(errMsg, "Error!");
+		}
+
+		Sys.exit(1);
 	}
 }

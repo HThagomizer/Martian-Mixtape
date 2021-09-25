@@ -23,6 +23,7 @@ import flixel.ui.FlxSpriteButton;
 import flixel.util.FlxColor;
 import gameFolder.gameObjects.*;
 import gameFolder.gameObjects.userInterface.*;
+import gameFolder.gameObjects.userInterface.notes.*;
 import gameFolder.meta.MusicBeat.MusicBeatState;
 import gameFolder.meta.data.*;
 import gameFolder.meta.data.Conductor.BPMChangeEvent;
@@ -83,7 +84,7 @@ class OriginalChartingState extends MusicBeatState
 	**/
 	var curSelectedNote:Array<Dynamic>;
 
-	var tempBpm:Int = 0;
+	var tempBpm:Float = 0;
 
 	var vocals:FlxSound;
 
@@ -92,6 +93,8 @@ class OriginalChartingState extends MusicBeatState
 
 	override function create()
 	{
+		super.create();
+
 		curSection = lastSection;
 
 		gridBG = FlxGridOverlay.create(GRID_SIZE, GRID_SIZE, GRID_SIZE * 8, GRID_SIZE * 16);
@@ -178,8 +181,6 @@ class OriginalChartingState extends MusicBeatState
 
 		add(curRenderedNotes);
 		add(curRenderedSustains);
-
-		super.create();
 	}
 
 	function addSongUI():Void
@@ -473,7 +474,7 @@ class OriginalChartingState extends MusicBeatState
 	}*/
 	function sectionStartTime():Float
 	{
-		var daBPM:Int = _song.bpm;
+		var daBPM:Float = _song.bpm;
 		var daPos:Float = 0;
 		for (i in 0...curSection)
 		{
@@ -564,7 +565,7 @@ class OriginalChartingState extends MusicBeatState
 			PlayState.SONG = _song;
 			FlxG.sound.music.stop();
 			vocals.stop();
-			FlxG.switchState(new PlayState());
+			Main.switchState(this, new PlayState());
 		}
 
 		if (FlxG.keys.justPressed.E)
@@ -848,7 +849,7 @@ class OriginalChartingState extends MusicBeatState
 		else
 		{
 			// get last bpm
-			var daBPM:Int = _song.bpm;
+			var daBPM:Float = _song.bpm;
 			for (i in 0...curSection)
 				if (_song.notes[i].changeBPM)
 					daBPM = _song.notes[i].bpm;
@@ -879,7 +880,7 @@ class OriginalChartingState extends MusicBeatState
 			if (i.length > 2)
 				daNoteType = i[3];
 
-			var note:Note = new Note(daStrumTime, daNoteInfo % 4, daNoteType);
+			var note:Note = ForeverAssets.generateArrow(PlayState.assetModifier, daStrumTime, daNoteInfo % 4, daNoteType, 0);
 			note.sustainLength = daSus;
 			note.noteType = daNoteType;
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);

@@ -6,6 +6,7 @@ import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.addons.display.FlxTiledSprite;
 import flixel.addons.effects.chainable.FlxWaveEffect;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.group.FlxSpriteGroup;
@@ -57,6 +58,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			{
 				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'extermination':
 					curStage = 'park';
+				case 'confidential' | 'aegis' | 'crack' | 'enforcement':
+					curStage = 'fbi';
 				case 'marrow' | 'pelvic' | 'spinal tap':
 					curStage = 'raveyard';
 				case 'tinfoil' | 'itch' | 'jitter' | 'exclusion zone':
@@ -125,20 +128,42 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					park_ground.active = false;
 					add(park_ground);
 				}
-			// case 'fbi':
-			// 	{
-			// 		defaultCamZoom = 0.9;
-			// 		curStage = 'fbi';
+			case 'fbi':
+				{
+					// lazy fix
+					if (PlayState.SONG.song != 'Enforcement')
+						PlayState.defaultCamZoom = 0.7;
+					curStage = 'fbi';
 
-			// 		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('backgrounds/$curStage/sky'));
-			// 		bg.scrollFactor.set(0.1, 0.1);
-			// 		add(bg);
+					var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('backgrounds/$curStage/sky'));
+					bg.setGraphicSize(Std.int(bg.width * 5));
+					bg.updateHitbox();
+					bg.y += 200;
+					bg.screenCenter();
+					bg.scrollFactor.set(0.1, 0.1);
+					add(bg);
 
-			// 		var houses:FlxTiledSprite = new FlxTiledSprite(null, 256, 256, true, false).loadGraphic(Paths.image('backgrounds/$curStage/houses'));
-			// 		add(houses);
+					var buildings:FlxTiledSprite = new FlxTiledSprite(null, 10000, 750, true, false);
+					buildings.loadGraphic(Paths.image('backgrounds/$curStage/houses'));
+					buildings.x -= buildings.width / 2;
+					buildings.y -= 500;
+					buildings.scrollFactor.set(0.7, 0.9);
+					add(buildings);
 
-					
-			// 	}
+					var grass:FlxTiledSprite = new FlxTiledSprite(null, 10000, 750, true, false);
+					grass.loadGraphic(Paths.image('backgrounds/$curStage/grass'));
+					grass.x -= grass.width / 2;
+					grass.y -= 200;
+					grass.scrollFactor.set(0.8, 1);
+					add(grass);
+
+					var road:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1500, true, false);
+					road.loadGraphic(Paths.image('backgrounds/$curStage/road'));
+					road.screenCenter(X);
+					road.y -= 100;
+					road.scrollFactor.set(1, 1);
+					add(road);
+				}
 			case 'raveyard':
 				{
 					defaultCamZoom = 0.9;
@@ -491,6 +516,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'FBI':
 				dad.y += 70;
 				dad.x += 60;
+			case 'FBImech':
+				dad.y -= 1350;
+				dad.x -= 1600;
 			case 'FBIbodyguard':
 				dad.y -= 70;
 				dad.x -= 200;
