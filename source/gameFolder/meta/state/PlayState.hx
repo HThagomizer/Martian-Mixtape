@@ -1509,13 +1509,39 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curStage == 'lab')
+		if (curStage == 'lab' || curStage == 'breakout')
 		{
 			if (curBeat % 2 == 0)
 			{
 				stageBuild.fbiSpin1.animation.play("idle");
 				stageBuild.fbiSpin2.animation.play("idle");
 				stageBuild.fbiScreen.animation.play("idle");
+			}
+		}
+
+		if (curStage == 'fbi')
+		{
+			if (curSong != 'Enforcement')
+			{
+				if (curBeat % 2 == 0)
+				{
+					stageBuild.tank.animation.play("idle");
+					if (curSong == 'Confidential')
+					{
+						stageBuild.bodyguardbopper.animation.play("idle");
+						stageBuild.hackerbopper.animation.play("idle");
+					}
+					else if (curSong == 'Aegis')
+					{
+						stageBuild.gruntbopper.animation.play("idle");
+						stageBuild.hackerbopper.animation.play("idle");
+					}
+					else if (curSong == 'Crack')
+					{
+						stageBuild.bodyguardbopper.animation.play("idle");
+						stageBuild.gruntbopper.animation.play("idle");
+					}
+				}
 			}
 		}
 	}

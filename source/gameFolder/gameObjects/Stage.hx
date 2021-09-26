@@ -26,6 +26,11 @@ using StringTools;
 **/
 class Stage extends FlxTypedGroup<FlxBasic>
 {
+	public var tank:FlxSprite;
+	public var gruntbopper:FlxSprite;
+	public var bodyguardbopper:FlxSprite;
+	public var hackerbopper:FlxSprite;
+
 	public var raveyard_belltower:FlxSprite;
 	public var bgSkeletons:FlxSprite;
 	public var danced:Bool = false;
@@ -143,10 +148,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					bg.scrollFactor.set(0.1, 0.1);
 					add(bg);
 
-					var buildings:FlxTiledSprite = new FlxTiledSprite(null, 10000, 750, true, false);
+					var buildings:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1500, true, false);
 					buildings.loadGraphic(Paths.image('backgrounds/$curStage/houses'));
 					buildings.x -= buildings.width / 2;
-					buildings.y -= 500;
+					buildings.y -= 1200;
 					buildings.scrollFactor.set(0.7, 0.9);
 					add(buildings);
 
@@ -163,6 +168,60 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					road.y -= 100;
 					road.scrollFactor.set(1, 1);
 					add(road);
+
+					if (PlayState.SONG.song.toLowerCase() != 'enforcement')
+					{
+						if (PlayState.SONG.song.toLowerCase() == 'aegis' || PlayState.SONG.song.toLowerCase() == 'crack')
+						{
+							gruntbopper = new FlxSprite(150, 50);
+							gruntbopper.frames = Paths.getSparrowAtlas('backgrounds/$curStage/fbi boppers');
+							gruntbopper.animation.addByPrefix('idle', 'grunt bopper', 24, false);
+							gruntbopper.scrollFactor.set(1, 1);
+							gruntbopper.animation.play('idle');
+							add(gruntbopper);
+						}
+
+						if (PlayState.SONG.song.toLowerCase() == 'confidential' || PlayState.SONG.song.toLowerCase() == 'aegis')
+						{
+							hackerbopper = new FlxSprite(900, 25);
+							hackerbopper.frames = Paths.getSparrowAtlas('backgrounds/$curStage/fbi boppers');
+							hackerbopper.animation.addByPrefix('idle', 'hacker bopper', 24, false);
+							hackerbopper.scrollFactor.set(1, 1);
+							hackerbopper.animation.play('idle');
+							add(hackerbopper);
+						}
+
+						if (PlayState.SONG.song.toLowerCase() == 'confidential' || PlayState.SONG.song.toLowerCase() == 'crack')
+						{
+							if (PlayState.SONG.song.toLowerCase() == 'confidential')
+							{
+								bodyguardbopper = new FlxSprite(0, -25);
+							}
+							else
+							{
+								bodyguardbopper = new FlxSprite(800, -25);
+							}
+							bodyguardbopper.frames = Paths.getSparrowAtlas('backgrounds/$curStage/fbi boppers');
+							bodyguardbopper.animation.addByPrefix('idle', 'bodyguard bopper', 24, false);
+							bodyguardbopper.scrollFactor.set(1, 1);
+							bodyguardbopper.animation.play('idle');
+							add(bodyguardbopper);
+						}
+
+						var van:FlxSprite = new FlxSprite(-1000, 0).loadGraphic(Paths.image('backgrounds/$curStage/van'));
+						van.antialiasing = true;
+						van.updateHitbox();
+						van.scrollFactor.set(1, 1);
+						van.active = false;
+						add(van);
+					}
+
+					tank = new FlxSprite(1100, 100);
+					tank.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tank');
+					tank.animation.addByPrefix('idle', 'tank', 24, false);
+					tank.scrollFactor.set(1, 1);
+					tank.animation.play("idle");
+					add(tank);
 				}
 			case 'raveyard':
 				{

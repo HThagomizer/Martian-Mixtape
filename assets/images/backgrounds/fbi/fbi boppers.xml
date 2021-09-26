@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fbi boppers.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bodyguard bopper0000" x="0" y="0" width="591" height="654" frameX="0" frameY="-48" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0001" x="0" y="0" width="591" height="654" frameX="0" frameY="-48" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0002" x="591" y="0" width="591" height="662" frameX="0" frameY="-40" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0003" x="591" y="0" width="591" height="662" frameX="0" frameY="-40" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0004" x="1182" y="0" width="591" height="692" frameX="0" frameY="-10" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0005" x="1182" y="0" width="591" height="692" frameX="0" frameY="-10" frameWidth="591" frameHeight="702"/>
+	<SubTexture name="bodyguard bopper0006" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0007" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0008" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0009" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0010" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0011" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0012" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="bodyguard bopper0013" x="1773" y="0" width="591" height="702"/>
+	<SubTexture name="grunt bopper0000" x="2364" y="0" width="434" height="569" frameX="0" frameY="-43" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0001" x="2364" y="0" width="434" height="569" frameX="0" frameY="-43" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0002" x="2798" y="0" width="434" height="574" frameX="0" frameY="-38" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0003" x="2798" y="0" width="434" height="574" frameX="0" frameY="-38" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0004" x="3232" y="0" width="434" height="605" frameX="0" frameY="-7" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0005" x="3232" y="0" width="434" height="605" frameX="0" frameY="-7" frameWidth="434" frameHeight="612"/>
+	<SubTexture name="grunt bopper0006" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0007" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0008" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0009" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0010" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0011" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0012" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="grunt bopper0013" x="0" y="702" width="434" height="612"/>
+	<SubTexture name="hacker bopper0000" x="434" y="702" width="381" height="640" frameX="0" frameY="-21" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0001" x="434" y="702" width="381" height="640" frameX="0" frameY="-21" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0002" x="815" y="702" width="381" height="641" frameX="0" frameY="-20" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0003" x="815" y="702" width="381" height="641" frameX="0" frameY="-20" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0004" x="1196" y="702" width="381" height="658" frameX="0" frameY="-3" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0005" x="1196" y="702" width="381" height="658" frameX="0" frameY="-3" frameWidth="381" frameHeight="661"/>
+	<SubTexture name="hacker bopper0006" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0007" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0008" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0009" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0010" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0011" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0012" x="1577" y="702" width="381" height="661"/>
+	<SubTexture name="hacker bopper0013" x="1577" y="702" width="381" height="661"/>
+</TextureAtlas>
