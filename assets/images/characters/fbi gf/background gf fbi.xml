@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="background gf fbi.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fbi cheer0000" x="0" y="0" width="487" height="655" frameX="0" frameY="-9" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0001" x="0" y="0" width="487" height="655" frameX="0" frameY="-9" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0002" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0003" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0004" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0005" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0006" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0007" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0008" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0009" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0010" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0011" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0012" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0013" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0014" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0015" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0016" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0017" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0018" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0019" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0020" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0021" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0022" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0023" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0024" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0025" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0026" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0027" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0028" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cheer0029" x="487" y="0" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi cry0000" x="973" y="0" width="486" height="657" frameX="0" frameY="-1" frameWidth="486" frameHeight="658"/>
+	<SubTexture name="fbi cry0001" x="973" y="0" width="486" height="657" frameX="0" frameY="-1" frameWidth="486" frameHeight="658"/>
+	<SubTexture name="fbi cry0002" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0003" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0004" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0005" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0006" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0007" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0008" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0009" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0010" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0011" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0012" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0013" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0014" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0015" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0016" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0017" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0018" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0019" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0020" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0021" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0022" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0023" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0024" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0025" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0026" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0027" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0028" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0029" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0030" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0031" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0032" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0033" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0034" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0035" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0036" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0037" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0038" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0039" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0040" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0041" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0042" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0043" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0044" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0045" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0046" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0047" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0048" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0049" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0050" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0051" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0052" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0053" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0054" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0055" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0056" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0057" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0058" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0059" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0060" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi cry0061" x="1459" y="0" width="486" height="658"/>
+	<SubTexture name="fbi dancing beat0000" x="0" y="664" width="487" height="651" frameX="0" frameY="-13" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0001" x="0" y="664" width="487" height="651" frameX="0" frameY="-13" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0002" x="487" y="664" width="487" height="653" frameX="0" frameY="-11" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0003" x="487" y="664" width="487" height="653" frameX="0" frameY="-11" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0004" x="974" y="664" width="486" height="659" frameX="-1" frameY="-5" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0005" x="974" y="664" width="486" height="659" frameX="-1" frameY="-5" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0006" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0007" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0008" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0009" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0010" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0011" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0012" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0013" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0014" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0015" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0016" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0017" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0018" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0019" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0020" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0021" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0022" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0023" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0024" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0025" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0026" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0027" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0028" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+	<SubTexture name="fbi dancing beat0029" x="1460" y="664" width="486" height="664" frameX="-1" frameY="0" frameWidth="487" frameHeight="664"/>
+</TextureAtlas>
