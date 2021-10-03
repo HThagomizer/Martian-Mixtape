@@ -153,6 +153,21 @@ class Character extends FNFSprite
 				addOffset('danceRight');
 
 				playAnim('danceRight');
+
+			case 'gf-fbi':
+				tex = Paths.getSparrowAtlas('characters/fbi gf/background gf fbi');
+				frames = tex;
+				animation.addByPrefix('cheer', 'fbi cheer', 24, false);
+				animation.addByIndices('sad', 'fbi cry', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "", 24, false);
+				animation.addByIndices('danceLeft', 'fbi dancing beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'fbi dancing beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+
+				addOffset('cheer');
+				addOffset('sad', 0, -7);
+				addOffset('danceLeft');
+				addOffset('danceRight');
+
+				playAnim('danceRight');
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST');
@@ -509,10 +524,10 @@ class Character extends FNFSprite
 			case 'xigman':
 				frames = Paths.getSparrowAtlas('characters/xigman/XIGMAN');
 				animation.addByPrefix('idle', 'idle', 24, false);
-				animation.addByPrefix('singUP', 'singUP', 24, false);
-				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
-				animation.addByPrefix('singLEFT', 'singLEFT', 24, false);
-				animation.addByPrefix('singRIGHT', 'singRIGHT', 24, false);
+				animation.addByPrefix('singUP', 'singUP', 24);
+				animation.addByPrefix('singDOWN', 'singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'singLEFT', 24);
+				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
 
 				addOffset('idle');
 				addOffset("singUP", -62, 115);

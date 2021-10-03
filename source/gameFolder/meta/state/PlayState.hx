@@ -135,6 +135,7 @@ class PlayState extends MusicBeatState
 	public static var strumHUD:Array<FlxCamera> = [];
 
 	private var isCutscene:Bool = false;
+	private var isStationaryCam:Bool = false;
 
 	// at the beginning of the playstate
 	override public function create()
@@ -319,6 +320,7 @@ class PlayState extends MusicBeatState
 			{
 				case 'marrow':
 					isCutscene = true;
+					isStationaryCam = true;
 					FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
 					FlxTween.tween(uiHUD.iconP2, {color: 0x000000}, 0.1);
 					camFollow.setPosition(dadOpponent.getMidpoint().x + 350, -300);
@@ -328,6 +330,7 @@ class PlayState extends MusicBeatState
 						ease: FlxEase.quadInOut,
 						onComplete: function(twn:FlxTween)
 						{
+							isCutscene = false;
 							startCountdown();
 						}
 					});
@@ -422,7 +425,7 @@ class PlayState extends MusicBeatState
 		// boyfriend.playAnim('singLEFT', true);
 		// */
 
-		if (generatedMusic && !isCutscene && PlayState.SONG.notes[Std.int(curStep / 16)] != null)
+		if (generatedMusic && !isCutscene && !isStationaryCam && PlayState.SONG.notes[Std.int(curStep / 16)] != null)
 		{
 			if (!PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection)
 			{
@@ -1450,6 +1453,9 @@ class PlayState extends MusicBeatState
 				case 10 | 16 | 22:
 					stageBuild.raveyard_belltower.animation.play('ringRIGHT');
 				// FlxG.log.add('DING');
+
+				case 16:
+					isStationaryCam = false;
 
 				case 24:
 					FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);

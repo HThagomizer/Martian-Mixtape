@@ -372,7 +372,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 			case 'lab':
 				{
-					PlayState.defaultCamZoom = 0.7;
+					PlayState.defaultCamZoom = 0.9;
 					var bg:FlxSprite = new FlxSprite(-1000, -400).loadGraphic(Paths.image('backgrounds/$curStage/wallbg'));
 					bg.antialiasing = true;
 					bg.setGraphicSize(Std.int(bg.width * 1.3));
@@ -539,6 +539,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gfVersion = 'gf-ufo';
 			case 'raveyard':
 				gfVersion = 'gf-tombstone';
+			case 'lab':
+				gfVersion = 'gf-fbi';
 			case 'breakout':
 				gfVersion = 'gf-xigman';
 		}
@@ -615,7 +617,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y += 100;
 				boyfriend.y += 100;
 			case 'lab':
-				gf.y -= 350;
+				gf.y -= 150;
 				gf.x += 50;
 			case 'breakout':
 				gf.y -= 350;
