@@ -508,11 +508,11 @@ class PlayState extends MusicBeatState
 			if (curSong == 'Exclusion Zone')
 			{
 				var funkySteps:Float = (unspawnNotes[0].strumTime / Conductor.stepCrochet);
-				var coffeeSpeed:Float = 3;
+				var coffeeSpeed:Float = 2.7;
 				if (funkySteps >= 380 && funkySteps <= 640)
 					dunceNote.noteSpeed = coffeeSpeed;
 				else if (funkySteps >= 920 && funkySteps <= 1312)
-					dunceNote.noteSpeed = coffeeSpeed + 0.2;
+					dunceNote.noteSpeed = coffeeSpeed + 0.3;
 			}
 			// push note to its correct strumline
 			strumLines.members[Math.floor((dunceNote.noteData + (dunceNote.mustPress ? 4 : 0)) / numberOfKeys)].push(dunceNote);
