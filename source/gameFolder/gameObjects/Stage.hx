@@ -148,6 +148,13 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					bg.scrollFactor.set(0.1, 0.1);
 					add(bg);
 
+					var city:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1500, true, false);
+					city.loadGraphic(Paths.image('backgrounds/$curStage/city'));
+					city.x -= city.width / 2;
+					city.y -= 1200;
+					city.scrollFactor.set(0.3, 0.9);
+					add(city);
+
 					var buildings:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1500, true, false);
 					buildings.loadGraphic(Paths.image('backgrounds/$curStage/houses'));
 					buildings.x -= buildings.width / 2;
