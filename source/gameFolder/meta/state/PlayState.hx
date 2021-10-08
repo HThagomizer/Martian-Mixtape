@@ -1770,6 +1770,7 @@ class PlayState extends MusicBeatState
 									FlxTween.tween(black, {alpha: 0}, 0.2, {
 										onComplete: function(twn:FlxTween)
 										{
+											isCutscene = false;
 											camHUD.visible = true;
 											// FlxG.camera.zoom = defaultCamZoom;
 											startCountdown();
@@ -1820,6 +1821,7 @@ class PlayState extends MusicBeatState
 											FlxTween.tween(red, {alpha: 0}, 0.2, {
 												onComplete: function(twn:FlxTween)
 												{
+													isCutscene = false;
 													camHUD.visible = true;
 													FlxG.camera.zoom = defaultCamZoom;
 													startCountdown();
@@ -1895,6 +1897,7 @@ class PlayState extends MusicBeatState
 												ease: FlxEase.quadInOut,
 												onComplete: function(twn:FlxTween)
 												{
+													isCutscene = false;
 													startCountdown();
 												}
 											});
@@ -1947,6 +1950,7 @@ class PlayState extends MusicBeatState
 									FlxTween.tween(black, {alpha: 0}, 0.2, {
 										onComplete: function(twn:FlxTween)
 										{
+											isCutscene = false;
 											startCountdown();
 											camHUD.visible = true;
 											FlxG.camera.zoom = defaultCamZoom;
@@ -1990,6 +1994,7 @@ class PlayState extends MusicBeatState
 									FlxTween.tween(black, {alpha: 0}, 0.2, {
 										onComplete: function(twn:FlxTween)
 										{
+											isCutscene = false;
 											camHUD.visible = true;
 											FlxG.camera.zoom = defaultCamZoom;
 											startCountdown();
