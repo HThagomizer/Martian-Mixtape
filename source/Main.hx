@@ -105,10 +105,16 @@ class Main extends Sprite
 			"Boneyard Bash"
 		],
 		[
-			['Tinfoil', 'Itch', "Exclusion Zone"],
+			['Tinfoil', 'Jitter', "Exclusion Zone"],
 			['harold', 'harold-caffeinated', 'harold-caffeinated'],
 			[FlxColor.fromRGB(50, 50, 200)],
 			"I Don't Want To Believe"
+		],
+		[
+			['Boing', 'Freak', "Breakout"],
+			['xigman', 'xigman', 'xigman'],
+			[FlxColor.fromRGB(10, 255, 10)],
+			"Martian Mistake"
 		]
 	];
 
