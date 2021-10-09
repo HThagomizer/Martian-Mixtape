@@ -601,6 +601,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'err':
 				dad.y += 520;
 				dad.x += 200;
+			case 'hagomizer':
+				dad.y -= 16;
+				dad.x -= 9;
 		}
 	}
 

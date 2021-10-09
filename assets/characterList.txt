@@ -19,3 +19,5 @@ bf-hominid
 xigman
 ignignokt
 err
+hagomizer
+hagomizer-puppet

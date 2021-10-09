@@ -9,7 +9,7 @@ class HealthIcon extends FlxSprite
 	// rewrite using da new icon system as ninjamuffin would say it
 	public var sprTracker:FlxSprite;
 
-	public var exclusions:Array<String> = ['pissed', 'psychic', 'caffeinated', 'cool', 'spectral', 'rude'];
+	public var exclusions:Array<String> = ['pissed', 'psychic', 'caffeinated', 'cool', 'spectral', 'rude', 'puppet'];
 
 	public function new(char:String = 'bf', isPlayer:Bool = false)
 	{

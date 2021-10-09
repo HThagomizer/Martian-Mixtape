@@ -568,6 +568,42 @@ class Character extends FNFSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+			case 'hagomizer':
+				tex = Paths.getSparrowAtlas('characters/secret character/hank');
+				frames = tex;
+				animation.addByPrefix('idle', 'hank idle', 24);
+				animation.addByPrefix('singUP', 'hank singUP', 24);
+				animation.addByPrefix('singRIGHT', 'hank singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'hank singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'hank singLEFT', 24);
+				animation.addByPrefix('cough', 'hank cough', 24);
+				animation.addByPrefix('puppet', 'hank gain puppet', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 88, 32);
+				addOffset("singRIGHT", -5, 6);
+				addOffset("singLEFT", 68, 20);
+				addOffset("singDOWN", 19, -150);
+				addOffset("cough", -12, -9);
+				addOffset("puppet", 8, 18);
+
+				playAnim('idle');
+			case 'hagomizer-puppet':
+				tex = Paths.getSparrowAtlas('characters/secret character/hank');
+				frames = tex;
+				animation.addByPrefix('idle', 'hank puppet idle', 24);
+				animation.addByPrefix('singUP', 'hank puppet singUP', 24);
+				animation.addByPrefix('singRIGHT', 'hank puppet singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'hank puppet singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'hank puppet singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -29, 48);
+				addOffset("singRIGHT", -24, -3);
+				addOffset("singLEFT", -27, 12);
+				addOffset("singDOWN", -24, -20);
+
+				playAnim('idle');
 		}
 
 		// set up offsets cus why not

@@ -1334,7 +1334,8 @@ class PlayState extends MusicBeatState
 		// added this for opponent cus it wasn't here before and skater would just freeze
 		if ((!dadOpponent.animation.curAnim.name.startsWith("sing"))
 			&& (!dadOpponent.animation.curAnim.name.endsWith("death"))
-			&& (!dadOpponent.animation.curAnim.name.endsWith("swig")))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("swig"))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("puppet")))
 			dadOpponent.dance();
 	}
 
@@ -1512,6 +1513,29 @@ class PlayState extends MusicBeatState
 
 				case 896:
 					dadOpponent.playAnim("swig");
+			}
+		}
+
+		if (curSong == 'Egomania' && (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
+		{
+			switch (curBeat)
+			{
+				case 31:
+					dadOpponent.playAnim("cough");
+				case 157:
+					dadOpponent.playAnim("puppet");
+				case 160:
+					remove(dadOpponent);
+					dadOpponent.generateCharacter(100, 100, 'hagomizer-puppet');
+					dadOpponent.x -= 16;
+					dadOpponent.y -= 9;
+					add(dadOpponent);
+				case 192:
+					remove(dadOpponent);
+					dadOpponent.generateCharacter(100, 100, 'hagomizer');
+					dadOpponent.x -= 16;
+					dadOpponent.y -= 9;
+					add(dadOpponent);
 			}
 		}
 
