@@ -337,8 +337,12 @@ class PlayState extends MusicBeatState
 			}
 
 		///*
-		var shader:GraphicsShader = new GraphicsShader("", File.getContent("./assets/shaders/vhs.frag"));
-		FlxG.camera.setFilters([new ShaderFilter(shader)]);
+		if (curSong.toLowerCase() == 'crack')
+		{
+			var shader:GraphicsShader = new GraphicsShader("", File.getContent("./assets/shaders/vhs.frag"));
+			camHUD.setFilters([new ShaderFilter(shader)]);
+		}
+
 		// */
 	}
 
@@ -1193,6 +1197,8 @@ class PlayState extends MusicBeatState
 			songMusic.play();
 			songMusic.onComplete = endSong;
 			vocals.play();
+
+			resyncVocals();
 
 			#if !html5
 			// Song duration in a float, useful for the time left feature
