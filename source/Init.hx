@@ -97,10 +97,11 @@ class Init extends FlxState
 			"Enables the custom Forever Engine titlescreen! (only effective with a restart)",
 			FORCED
 		],
-		'SM-like Judgements' => [
+		'Fixed Judgements' => [
 			false,
 			0,
-			"Fixes the judgements to the camera instead of to the world itself, making them easier to read."
+			"Fixes the judgements to the camera instead of to the world itself, making them easier to read.",
+			NOT_FORCED
 		],
 	];
 
