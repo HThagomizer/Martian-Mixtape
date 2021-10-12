@@ -13,6 +13,19 @@ class BackgroundCloneSpawner extends FlxTypedGroup<BackgroundClone>
 	public function new()
 	{
 		super();
+
+		for (i in 0...8) {
+			var skin:Int = (i % 3) + 1;
+			var newClone:BackgroundClone = new BackgroundClone(
+				0, 
+				200, 
+				1, 
+				Math.round(Math.random() * 100) + 310,
+				skin
+			);
+			newClone.spawner = this;
+			add(newClone);
+		}
 	}
 
 	public override function update(elapsed)
@@ -24,16 +37,14 @@ class BackgroundCloneSpawner extends FlxTypedGroup<BackgroundClone>
 		if (nextSpawn <= 0) {
 			nextSpawn = (Math.random() * 5) + 2;
 
-			var moveDir = (Math.round(Math.random()) == 0) ? -1 : 1;
-			var newClone:BackgroundClone = new BackgroundClone(
-				(1400 * -moveDir) + 400, 
-				200, 
-				moveDir, 
-				Math.round(Math.random() * 100) + 310
-			);
-			newClone.spawner = this;
-
-			add(newClone);
+			var spawnedClone:Bool = false;
+			for (clone in members)
+			{
+				if (!spawnedClone && clone.reusable) {
+					clone.spawn();
+					spawnedClone = true;
+				}
+			}
 		}
 	}
 }
