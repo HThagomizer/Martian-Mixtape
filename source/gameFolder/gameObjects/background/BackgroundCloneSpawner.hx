@@ -14,7 +14,7 @@ class BackgroundCloneSpawner extends FlxTypedGroup<BackgroundClone>
 	{
 		super();
 
-		for (i in 0...8) {
+		for (i in 0...4) {
 			var skin:Int = (i % 3) + 1;
 			var newClone:BackgroundClone = new BackgroundClone(
 				0, 
@@ -43,6 +43,10 @@ class BackgroundCloneSpawner extends FlxTypedGroup<BackgroundClone>
 				if (!spawnedClone && clone.reusable) {
 					clone.spawn();
 					spawnedClone = true;
+
+					// shuffling things around
+					remove(clone);
+					add(clone);
 				}
 			}
 		}
