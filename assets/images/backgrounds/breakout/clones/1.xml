@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="1.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="death0000" x="0" y="0" width="763" height="427"/>
+	<SubTexture name="death0001" x="763" y="0" width="763" height="427"/>
+	<SubTexture name="death0002" x="1526" y="0" width="763" height="427"/>
+	<SubTexture name="death0003" x="2289" y="0" width="763" height="427"/>
+	<SubTexture name="death0004" x="3052" y="0" width="763" height="427"/>
+	<SubTexture name="death0005" x="0" y="427" width="763" height="427"/>
+	<SubTexture name="death0006" x="763" y="427" width="763" height="427"/>
+	<SubTexture name="death0007" x="1526" y="427" width="763" height="427"/>
+	<SubTexture name="death0008" x="2289" y="427" width="763" height="427"/>
+	<SubTexture name="death0009" x="3052" y="427" width="763" height="427"/>
+	<SubTexture name="death0010" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0011" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0012" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0013" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0014" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0015" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0016" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="death0017" x="0" y="854" width="763" height="427"/>
+	<SubTexture name="run0000" x="763" y="854" width="503" height="567"/>
+	<SubTexture name="run0001" x="1266" y="854" width="503" height="567"/>
+	<SubTexture name="run0002" x="1769" y="854" width="503" height="567"/>
+	<SubTexture name="run0003" x="2272" y="854" width="503" height="567"/>
+	<SubTexture name="run0004" x="2775" y="854" width="503" height="567"/>
+	<SubTexture name="run0005" x="3278" y="854" width="503" height="567"/>
+	<SubTexture name="run0006" x="0" y="1421" width="503" height="567"/>
+	<SubTexture name="run0007" x="503" y="1421" width="503" height="567"/>
+</TextureAtlas>
