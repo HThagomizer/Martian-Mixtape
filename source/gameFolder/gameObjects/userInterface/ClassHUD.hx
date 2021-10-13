@@ -80,7 +80,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);
 
-		scoreBar = new FlxText(FlxG.width / 2, healthBarBG.y + 50, 0, scoreDisplay, 20);
+		scoreBar = new FlxText(FlxG.width / 2, healthBarBG.y + 40, 0, scoreDisplay, 20);
 		scoreBar.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		updateScoreText();
 		scoreBar.scrollFactor.set();
@@ -109,8 +109,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		healthBar.percent = (PlayState.health * 50);
 
 		var iconLerp = 0.5;
-		iconP1.setGraphicSize(Std.int(FlxMath.lerp(150, iconP1.width, iconLerp)));
-		iconP2.setGraphicSize(Std.int(FlxMath.lerp(150, iconP2.width, iconLerp)));
+		iconP1.setGraphicSize(Std.int(FlxMath.lerp(iconP1.initialWidth, iconP1.width, iconLerp)));
+		iconP2.setGraphicSize(Std.int(FlxMath.lerp(iconP2.initialWidth, iconP2.width, iconLerp)));
 
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
@@ -133,6 +133,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 			iconP2.animation.curAnim.curFrame = 0;
 	}
 
+	private final divider:String = ' - ';
+
 	public function updateScoreText()
 	{
 		var importSongScore = PlayState.songScore;
@@ -143,10 +145,9 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		var displayAccuracy:Bool = Init.trueSettings.get('Display Accuracy');
 		if (displayAccuracy)
 		{
-			scoreBar.text += ' // Accuracy: ' + Std.string(Math.floor(Timings.getAccuracy() * 100) / 100) + '%' + Timings.comboDisplay;
-			if (Init.trueSettings.get('Display Miss Count'))
-				scoreBar.text += ' // Combo Breaks: ' + Std.string(PlayState.misses);
-			scoreBar.text += ' // Rank: ' + Std.string(Timings.returnScoreRating().toUpperCase());
+			scoreBar.text += divider + 'Accuracy: ' + Std.string(Math.floor(Timings.getAccuracy() * 100) / 100) + '%' + Timings.comboDisplay;
+			scoreBar.text += divider + 'Combo Breaks: ' + Std.string(PlayState.misses);
+			scoreBar.text += divider + 'Rank: ' + Std.string(Timings.returnScoreRating().toUpperCase());
 		}
 
 		scoreBar.x = ((FlxG.width / 2) - (scoreBar.width / 2));
