@@ -22,10 +22,10 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSort;
 import flixel.util.FlxTimer;
 import gameFolder.gameObjects.*;
+import gameFolder.gameObjects.background.BackgroundCloneSpawner;
 import gameFolder.gameObjects.userInterface.*;
 import gameFolder.gameObjects.userInterface.notes.*;
 import gameFolder.gameObjects.userInterface.notes.Strumline.UIStaticArrow;
-import gameFolder.gameObjects.background.BackgroundCloneSpawner;
 import gameFolder.meta.*;
 import gameFolder.meta.MusicBeat.MusicBeatState;
 import gameFolder.meta.data.*;
@@ -33,9 +33,7 @@ import gameFolder.meta.data.Song.SwagSong;
 import gameFolder.meta.state.charting.*;
 import gameFolder.meta.state.menus.*;
 import gameFolder.meta.subState.*;
-import openfl.display.GraphicsShader;
 import openfl.events.KeyboardEvent;
-import openfl.filters.ShaderFilter;
 import openfl.media.Sound;
 import openfl.utils.Assets;
 import sys.io.File;
@@ -51,8 +49,8 @@ class PlayState extends MusicBeatState
 	// fuck you haxe layering
 	public static var bgCloneSpawner:BackgroundCloneSpawner;
 	public static var bgCloneSpawner2:BackgroundCloneSpawner;
-	//
 
+	//
 	public static var startTimer:FlxTimer;
 
 	public static var curStage:String = '';
@@ -249,7 +247,8 @@ class PlayState extends MusicBeatState
 		add(gf);
 
 		// once again fuck you haxe layering
-		if (curStage == 'breakout') {
+		if (curStage == 'breakout')
+		{
 			bgCloneSpawner = new BackgroundCloneSpawner(false);
 			add(bgCloneSpawner);
 		}
@@ -259,7 +258,8 @@ class PlayState extends MusicBeatState
 		add(boyfriend);
 
 		// death
-		if (curStage == 'breakout') {
+		if (curStage == 'breakout')
+		{
 			bgCloneSpawner2 = new BackgroundCloneSpawner(true);
 			add(bgCloneSpawner2);
 		}
@@ -356,13 +356,6 @@ class PlayState extends MusicBeatState
 				default:
 					startCountdown();
 			}
-
-		///*
-		if (curSong.toLowerCase() == 'crack')
-		{
-			var shader:GraphicsShader = new GraphicsShader("", File.getContent("./assets/shaders/vhs.frag"));
-			camHUD.setFilters([new ShaderFilter(shader)]);
-		}
 
 		// */
 	}
