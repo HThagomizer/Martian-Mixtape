@@ -6,13 +6,13 @@ import gameFolder.meta.data.dependency.FNFSprite;
 
 class BackgroundClone extends FNFSprite
 {
-	public function new(x:Float, y:Float, direction:Int, speed:Int, cloneSkin:Int)
+	public function new(x:Float, y:Float, direction:Int, speed:Int, skin:Int)
 	{
-		super(x, y);
+		super(x, y + getYOffset(skin));
 
 		// unclean but whatevs
 		// this just picks a random number from 1 to 3 to load lol
-		frames = Paths.getSparrowAtlas('backgrounds/breakout/clones/' + Std.string(cloneSkin));
+		frames = Paths.getSparrowAtlas('backgrounds/breakout/clones/' + Std.string(skin));
 		color = 0xFF9999;
 		scrollFactor.set(1, 1);
 		antialiasing = true;
@@ -21,9 +21,21 @@ class BackgroundClone extends FNFSprite
 
 		moveDir = direction;
 		moveSpeed = speed;
+		cloneSkin = skin;
 
 		animation.addByPrefix('run', 'run', fps, true);
 		animation.addByPrefix('death', 'death', fps, false);
+	}
+
+	public function getYOffset(skin:Int):Int
+	{
+		switch(skin)
+		{
+			default:
+				return 0;
+			case 2:
+				return -200;
+		}
 	}
 
 	public function spawn() 
@@ -48,8 +60,9 @@ class BackgroundClone extends FNFSprite
 	public var timeUntilDeath:Float = 2;
 	public var timeUntilReusable:Float = 0;
 
-	public var reusable = true;
-	public var dead = true;
+	public var cloneSkin:Int = 0;
+	public var reusable:Bool = true;
+	public var dead:Bool = true;
 	public var spawner:BackgroundCloneSpawner;
 
 	public function die(elapsed:Float)
