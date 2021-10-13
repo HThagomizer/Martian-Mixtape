@@ -40,8 +40,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var fbiSpin2:FlxSprite;
 	public var fbiScreen:FlxSprite;
 
-	public var bgCloneSpawner:BackgroundCloneSpawner;
-
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
 	var defaultCamZoom:Float = 1.05;
@@ -411,7 +409,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/$curStage/rail'));
 					rail.antialiasing = true;
 					rail.updateHitbox();
-					rail.scrollFactor.set(1, 1);
+					rail.scrollFactor.set(0.9, 0.9);
 					rail.active = false;
 					add(rail);
 
@@ -419,14 +417,14 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.antialiasing = true;
 					floor.setGraphicSize(Std.int(floor.width * 1.3));
 					floor.updateHitbox();
-					floor.scrollFactor.set(1, 1);
+					floor.scrollFactor.set(0.9, 0.9);
 					floor.active = false;
 					add(floor);
 
 					var tubes:FlxSprite = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
 					tubes.antialiasing = true;
 					tubes.updateHitbox();
-					tubes.scrollFactor.set(1, 1);
+					tubes.scrollFactor.set(0.9, 0.9);
 					tubes.active = false;
 					add(tubes);
 				}
@@ -466,7 +464,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					var rail:FlxSprite = new FlxSprite(-700, 350).loadGraphic(Paths.image('backgrounds/$curStage/rail'));
 					rail.antialiasing = true;
 					rail.updateHitbox();
-					rail.scrollFactor.set(1, 1);
+					rail.scrollFactor.set(0.9, 0.9);
 					rail.active = false;
 					rail.color = 0xFF9999;
 					add(rail);
@@ -475,7 +473,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.antialiasing = true;
 					floor.setGraphicSize(Std.int(floor.width * 1.3));
 					floor.updateHitbox();
-					floor.scrollFactor.set(1, 1);
+					floor.scrollFactor.set(0.9, 0.9);
 					floor.active = false;
 					floor.color = 0xFF9999;
 					add(floor);
@@ -483,13 +481,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					var tubes:FlxSprite = new FlxSprite(-500, -60).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
 					tubes.antialiasing = true;
 					tubes.updateHitbox();
-					tubes.scrollFactor.set(1, 1);
+					tubes.scrollFactor.set(0.9, 0.9);
 					tubes.active = false;
 					tubes.color = 0xFF9999;
 					add(tubes);
-
-					bgCloneSpawner = new BackgroundCloneSpawner();
-					add(bgCloneSpawner);
 				}
 			case 'sky':
 				{
@@ -673,8 +668,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						dir *= -1;
 					});
 				}
-			case 'breakout':
-				bgCloneSpawner.update(elapsed);
 		}
 	}
 }

@@ -32,12 +32,9 @@ import gameFolder.meta.data.Song.SwagSong;
 import gameFolder.meta.state.charting.*;
 import gameFolder.meta.state.menus.*;
 import gameFolder.meta.subState.*;
-import openfl.display.GraphicsShader;
 import openfl.events.KeyboardEvent;
-import openfl.filters.ShaderFilter;
 import openfl.media.Sound;
 import openfl.utils.Assets;
-import sys.io.File;
 
 using StringTools;
 
@@ -135,6 +132,7 @@ class PlayState extends MusicBeatState
 	private var boyfriendStrums:Strumline;
 
 	public static var strumLines:FlxTypedGroup<Strumline>;
+	public static var strumHUD:Array<FlxCamera> = [];
 
 	private var isCutscene:Bool = false;
 	private var isStationaryCam:Bool = false;
@@ -216,7 +214,7 @@ class PlayState extends MusicBeatState
 
 		// set up characters here too
 		gf = new Character(400, 130, stageBuild.returnGFtype(curStage));
-		gf.scrollFactor.set(1, 1);
+		gf.scrollFactor.set(0.95, 0.95);
 
 		dadOpponent = new Character(100, 100, SONG.player2);
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
@@ -294,7 +292,20 @@ class PlayState extends MusicBeatState
 
 		strumLines.add(dadStrums);
 		strumLines.add(boyfriendStrums);
-		strumLines.cameras = [camHUD];
+
+		// strumline camera setup
+		strumHUD = [];
+		for (i in 0...strumLines.length)
+		{
+			// generate a new strum camera
+			strumHUD[i] = new FlxCamera();
+			strumHUD[i].bgColor.alpha = 0;
+
+			strumHUD[i].cameras = [camHUD];
+			FlxG.cameras.add(strumHUD[i]);
+			// set this strumline's camera to the designated camera
+			strumLines.members[i].cameras = [strumHUD[i]];
+		}
 		add(strumLines);
 
 		uiHUD = new ClassHUD();
@@ -335,15 +346,6 @@ class PlayState extends MusicBeatState
 				default:
 					startCountdown();
 			}
-
-		///*
-		if (curSong.toLowerCase() == 'crack')
-		{
-			var shader:GraphicsShader = new GraphicsShader("", File.getContent("./assets/shaders/vhs.frag"));
-			camHUD.setFilters([new ShaderFilter(shader)]);
-		}
-
-		// */
 	}
 
 	var staticDisplace:Int = 0;
@@ -476,10 +478,14 @@ class PlayState extends MusicBeatState
 		// camera stuffs
 		FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom + forceZoom[0], FlxG.camera.zoom, easeLerp);
 		camHUD.zoom = FlxMath.lerp(1 + forceZoom[1], camHUD.zoom, easeLerp);
+		for (hud in strumHUD)
+			hud.zoom = FlxMath.lerp(1 + forceZoom[1], hud.zoom, easeLerp);
 
 		// not even forcezoom anymore but still
 		FlxG.camera.angle = FlxMath.lerp(0 + forceZoom[2], FlxG.camera.angle, easeLerp);
 		camHUD.angle = FlxMath.lerp(0 + forceZoom[3], camHUD.angle, easeLerp);
+		for (hud in strumHUD)
+			hud.angle = FlxMath.lerp(0 + forceZoom[3], hud.angle, easeLerp);
 
 		if (health <= 0 && startedCountdown)
 		{
@@ -1074,7 +1080,7 @@ class PlayState extends MusicBeatState
 				negative, createdColor, scoreInt);
 			add(numScore);
 			// hardcoded lmao
-			if (Init.trueSettings.get('Fixed Judgements'))
+			if (Init.trueSettings.get('SM-like Judgements'))
 			{
 				numScore.cameras = [camHUD];
 				numScore.x += 100;
@@ -1147,18 +1153,11 @@ class PlayState extends MusicBeatState
 		var rating = ForeverAssets.generateRating('$daRating', (daRating == 'sick' ? allSicks : false), timing, assetModifier, changeableSkin, 'UI');
 		add(rating);
 
-		if (Init.trueSettings.get('Fixed Judgements'))
+		if (Init.trueSettings.get('SM-like Judgements'))
 		{
 			// bound to camera
 			rating.cameras = [camHUD];
 			rating.screenCenter();
-		}
-
-		// set new smallest rating
-		if (Timings.smallestRating != daRating)
-		{
-			if (Timings.judgementsMap.get(Timings.smallestRating)[0] < Timings.judgementsMap.get(daRating)[0])
-				Timings.smallestRating = daRating;
 		}
 
 		if (cache)
@@ -1197,8 +1196,6 @@ class PlayState extends MusicBeatState
 			songMusic.play();
 			songMusic.onComplete = endSong;
 			vocals.play();
-
-			resyncVocals();
 
 			#if !html5
 			// Song duration in a float, useful for the time left feature
@@ -1422,6 +1419,8 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(dadOpponent, {color: 0xFFFFFF}, 0.0000001);
 					isCutscene = true;
 					camHUD.visible = false;
+					for (i in strumHUD)
+						i.visible = false;
 					dadOpponent.playAnim('xigdeath', true);
 			}
 		}
@@ -1454,8 +1453,10 @@ class PlayState extends MusicBeatState
 
 				case 10 | 16 | 22:
 					stageBuild.raveyard_belltower.animation.play('ringRIGHT');
-					if (curBeat == 16)
-						isStationaryCam = false;
+				// FlxG.log.add('DING');
+
+				case 16:
+					isStationaryCam = false;
 
 				case 24:
 					FlxTween.color(dadOpponent, 0.5, FlxColor.BLACK, FlxColor.WHITE);

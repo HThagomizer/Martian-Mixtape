@@ -64,6 +64,7 @@ class OptionsMenuState extends MusicBeatState
 					['Centered Notefield', getFromOption],
 					['Ghost Tapping', getFromOption],
 					['Display Accuracy', getFromOption],
+					['Display Miss Count', getFromOption],
 					//
 					['', null],
 					['Meta Settings', null],
@@ -72,6 +73,11 @@ class OptionsMenuState extends MusicBeatState
 					['FPS Counter', getFromOption],
 					['Memory Counter', getFromOption],
 					['Debug Info', getFromOption],
+					['', null],
+					['Forever Settings', null],
+					['', null],
+					['Use Forever Chart Editor', getFromOption],
+					['Custom Titlescreen', getFromOption]
 				]
 			],
 			'appearance' => [
@@ -80,7 +86,7 @@ class OptionsMenuState extends MusicBeatState
 					['', null],
 					['Disable Antialiasing', getFromOption],
 					['No Camera Note Movement', getFromOption],
-					['Fixed Judgements', getFromOption],
+					['SM-like Judgements', getFromOption],
 					['', null],
 					['Accessibility Settings', null],
 					['', null],
