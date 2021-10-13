@@ -25,6 +25,7 @@ import gameFolder.gameObjects.*;
 import gameFolder.gameObjects.userInterface.*;
 import gameFolder.gameObjects.userInterface.notes.*;
 import gameFolder.gameObjects.userInterface.notes.Strumline.UIStaticArrow;
+import gameFolder.gameObjects.background.BackgroundCloneSpawner;
 import gameFolder.meta.*;
 import gameFolder.meta.MusicBeat.MusicBeatState;
 import gameFolder.meta.data.*;
@@ -47,6 +48,11 @@ import gameFolder.meta.data.dependency.Discord;
 
 class PlayState extends MusicBeatState
 {
+	// fuck you haxe layering
+	public static var bgCloneSpawner:BackgroundCloneSpawner;
+	public static var bgCloneSpawner2:BackgroundCloneSpawner;
+	//
+
 	public static var startTimer:FlxTimer;
 
 	public static var curStage:String = '';
@@ -241,8 +247,23 @@ class PlayState extends MusicBeatState
 
 		// add characters
 		add(gf);
+
+		// once again fuck you haxe layering
+		if (curStage == 'breakout') {
+			bgCloneSpawner = new BackgroundCloneSpawner(false);
+			add(bgCloneSpawner);
+		}
+		//
+
 		add(dadOpponent);
 		add(boyfriend);
+
+		// death
+		if (curStage == 'breakout') {
+			bgCloneSpawner2 = new BackgroundCloneSpawner(true);
+			add(bgCloneSpawner2);
+		}
+		///
 
 		// force them to dance
 		dadOpponent.dance();

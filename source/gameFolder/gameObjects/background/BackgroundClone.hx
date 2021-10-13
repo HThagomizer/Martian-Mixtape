@@ -6,7 +6,7 @@ import gameFolder.meta.data.dependency.FNFSprite;
 
 class BackgroundClone extends FNFSprite
 {
-	public function new(x:Float, y:Float, direction:Int, speed:Int, skin:Int)
+	public function new(x:Float, y:Float, direction:Int, speed:Int, skin:Int, isFront:Bool)
 	{
 		super(x, y + getYOffset(skin));
 
@@ -25,6 +25,11 @@ class BackgroundClone extends FNFSprite
 
 		animation.addByPrefix('run', 'run', fps, true);
 		animation.addByPrefix('death', 'death', fps, false);
+
+		if (isFront)
+			setGraphicSize(Math.round(width * 1.2), Math.round(height * 1.2));
+		
+		die(0);
 	}
 
 	public function getYOffset(skin:Int):Int

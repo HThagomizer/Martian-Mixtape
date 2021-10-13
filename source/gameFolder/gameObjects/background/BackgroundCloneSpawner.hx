@@ -10,18 +10,27 @@ class BackgroundCloneSpawner extends FlxTypedGroup<BackgroundClone>
 {
 	public var nextSpawn:Float = 2;
 
-	public function new()
+	public function new(isBottom:Bool)
 	{
 		super();
 
+		if (isBottom)
+			nextSpawn += 2;
+
 		for (i in 0...4) {
-			var skin:Int = (i % 3) + 1;
+			var cloneNum = i;
+
+			if (isBottom)
+				cloneNum += 2;
+
+			var skin:Int = (cloneNum % 3) + 1;
 			var newClone:BackgroundClone = new BackgroundClone(
 				0, 
-				200, 
+				(isBottom ? 600 : 200), 
 				1, 
 				Math.round(Math.random() * 100) + 310,
-				skin
+				skin,
+				isBottom
 			);
 			newClone.spawner = this;
 			add(newClone);

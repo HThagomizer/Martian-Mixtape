@@ -40,8 +40,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var fbiSpin2:FlxSprite;
 	public var fbiScreen:FlxSprite;
 
-	public var bgCloneSpawner:BackgroundCloneSpawner;
-
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
 	var defaultCamZoom:Float = 1.05;
@@ -487,9 +485,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					tubes.active = false;
 					tubes.color = 0xFF9999;
 					add(tubes);
-
-					bgCloneSpawner = new BackgroundCloneSpawner();
-					add(bgCloneSpawner);
 				}
 			case 'sky':
 				{
@@ -674,7 +669,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					});
 				}
 			case 'breakout':
-				bgCloneSpawner.update(elapsed);
+				PlayState.bgCloneSpawner.update(elapsed);
+				PlayState.bgCloneSpawner2.update(elapsed);
 		}
 	}
 }
