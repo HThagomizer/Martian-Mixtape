@@ -62,12 +62,7 @@ class Init extends FlxState
 			'Whether to disable Anti-aliasing. Helps improve performance in FPS.',
 			NOT_FORCED
 		],
-		'No Camera Note Movement' => [
-			false,
-			0,
-			'When enabled, left and right notes no longer move the camera.',
-			NOT_FORCED
-		],
+		'No Camera Note Movement' => [true, 0, 'When enabled, left and right notes no longer move the camera.', FORCED],
 		'Use Forever Chart Editor' => [false, 0, 'When enabled, uses the custom Forever Engine chart editor!', FORCED],
 		'Disable Note Splashes' => [
 			false,
@@ -102,10 +97,11 @@ class Init extends FlxState
 			"Enables the custom Forever Engine titlescreen! (only effective with a restart)",
 			FORCED
 		],
-		'SM-like Judgements' => [
+		'Fixed Judgements' => [
 			false,
 			0,
-			"Fixes the judgements to the camera instead of to the world itself, making them easier to read."
+			"Fixes the judgements to the camera instead of to the world itself, making them easier to read.",
+			NOT_FORCED
 		],
 	];
 

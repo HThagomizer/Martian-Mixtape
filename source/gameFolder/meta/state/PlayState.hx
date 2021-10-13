@@ -1074,7 +1074,7 @@ class PlayState extends MusicBeatState
 				negative, createdColor, scoreInt);
 			add(numScore);
 			// hardcoded lmao
-			if (Init.trueSettings.get('SM-like Judgements'))
+			if (Init.trueSettings.get('Fixed Judgements'))
 			{
 				numScore.cameras = [camHUD];
 				numScore.x += 100;
@@ -1147,7 +1147,7 @@ class PlayState extends MusicBeatState
 		var rating = ForeverAssets.generateRating('$daRating', (daRating == 'sick' ? allSicks : false), timing, assetModifier, changeableSkin, 'UI');
 		add(rating);
 
-		if (Init.trueSettings.get('SM-like Judgements'))
+		if (Init.trueSettings.get('Fixed Judgements'))
 		{
 			// bound to camera
 			rating.cameras = [camHUD];
