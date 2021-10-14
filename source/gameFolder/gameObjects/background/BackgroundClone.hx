@@ -40,6 +40,8 @@ class BackgroundClone extends FNFSprite
 				return 0;
 			case 2:
 				return -200;
+			case 3:
+				return -192;
 		}
 	}
 
