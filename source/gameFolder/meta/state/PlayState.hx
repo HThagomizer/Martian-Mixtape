@@ -37,6 +37,7 @@ import openfl.events.KeyboardEvent;
 import openfl.media.Sound;
 import openfl.utils.Assets;
 import sys.io.File;
+import sys.FileSystem;
 
 using StringTools;
 
@@ -111,6 +112,7 @@ class PlayState extends MusicBeatState
 
 	public static var camHUD:FlxCamera;
 	public static var camGame:FlxCamera;
+	public static var dialogueHUD:FlxCamera;
 
 	public var camDisplaceX:Float = 0;
 	public var camDisplaceY:Float = 0; // might not use depending on result
@@ -322,6 +324,11 @@ class PlayState extends MusicBeatState
 		add(uiHUD);
 		uiHUD.cameras = [camHUD];
 		//
+		
+		// create a hud over the hud camera for dialogue
+		dialogueHUD = new FlxCamera();
+		dialogueHUD.bgColor.alpha = 0;
+		FlxG.cameras.add(dialogueHUD);
 
 		if (isStoryMode)
 			songIntroCutscene();
@@ -354,7 +361,7 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
 					startCountdown();
 				default:
-					startCountdown();
+					callTextbox();
 			}
 
 		// */
@@ -372,6 +379,27 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
+			
+		// dialogue checks
+		if (dialogueBox != null && dialogueBox.alive) {
+			// the change I made was just so that it would only take accept inputs
+			if (controls.ACCEPT && dialogueBox.textStarted)
+			{
+				FlxG.sound.play(Paths.sound('cancelMenu'));
+				dialogueBox.curPage += 1;
+
+				if (dialogueBox.curPage == dialogueBox.dialogueData.dialogue.length)
+				{
+					isCutscene = false;
+					startedCountdown = true;
+							
+					dialogueBox.closeDialog();
+				}
+				else
+					dialogueBox.updateDialog();
+			}
+
+		}
 
 		// pause the game if the game is allowed to pause and enter is pressed
 		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause && !isCutscene)
@@ -1737,6 +1765,8 @@ class PlayState extends MusicBeatState
 		// deliberately did not use the main.switchstate as to not unload the assets
 		FlxG.switchState(new PlayState());
 	}
+	
+	var dialogueBox:DialogueBox;
 
 	public function songIntroCutscene()
 	{
@@ -2043,10 +2073,29 @@ class PlayState extends MusicBeatState
 					}
 				});
 			default:
-				startCountdown();
+				callTextbox();
+				
 		}
 		//
 	}
+	
+	function callTextbox() {
+		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
+		if (sys.FileSystem.exists(dialogPath))
+		{
+			isCutscene = true;
+			startedCountdown = false;
+
+			dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
+			dialogueBox.cameras = [dialogueHUD];
+			dialogueBox.whenDaFinish = startCountdown;
+
+			add(dialogueBox);
+		}
+		else
+			startCountdown();
+	}
+
 
 	public static var swagCounter:Int = 0;
 
