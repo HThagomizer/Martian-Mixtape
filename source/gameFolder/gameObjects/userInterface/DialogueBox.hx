@@ -88,6 +88,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	public var whenDaFinish:Void->Void;
 
+	public var finishedTyping:Bool = false;
 	public var textStarted:Bool = false;
 
 	public static function createDialogue(thisDialogue:String):DialogueBox
@@ -151,13 +152,12 @@ class DialogueBox extends FlxSpriteGroup
 		add(alphabetText);
 
 		// skip text
-		var skipText = new FlxText(100, 670, 1000, "PRESS SHIFT TO SKIP", 20);
+		var skipText = new FlxText(100, 670, 1000, "PRESS [SPACE] TO CONTINUE", 20);
 		skipText.alignment = FlxTextAlign.CENTER;
 
 		skipText.borderStyle = FlxTextBorderStyle.OUTLINE;
 		skipText.borderColor = FlxColor.BLACK;
 		skipText.borderSize = 3;
-		skipText.visible = false; // we do a little trolling
 
 		skipText.screenCenter(X);
 		add(skipText);
@@ -185,9 +185,9 @@ class DialogueBox extends FlxSpriteGroup
 
 		// change speed
 		if (pageData.speed != null)
-			alphabetText.textSpeed = 0.06 / pageData.speed;
+			alphabetText.textSpeed = 0.045 / pageData.speed;
 		else
-			alphabetText.textSpeed = 0.06;
+			alphabetText.textSpeed = 0.045;
 
 		// change size
 		if (pageData.scale != null)
@@ -487,11 +487,28 @@ class DialogueBox extends FlxSpriteGroup
 		}
 	}
 
+	public function finishTyping() {
+		var pageData = dialogueData.dialogue[curPage];
+		var textToDisplay = "lol u need text for dialog";
+
+		if (pageData.text != null)
+			textToDisplay = pageData.text;
+
+		alphabetText.textSpeed = 0;
+		alphabetText.startText('', true);
+		alphabetText.startText(textToDisplay, false);
+
+		new FlxTimer().start(0.025, function(tmr:FlxTimer)
+			{
+				alphabetText.textSpeed = 0.045;
+			});
+	}
+
 	// mario
 	// WOAH THE CODIST I LOVE MARIO!!!
 	public function closeDialog()
 	{
-		whenDaFinish();
+		//whenDaFinish();
 		alphabetText.playSounds = false;
 		kill();
 	}
@@ -520,6 +537,7 @@ class DialogueBox extends FlxSpriteGroup
 		}
 
 		portrait.animation.paused = alphabetText.finishedLine;
+		finishedTyping = alphabetText.finishedLine;
 		if (portrait.animation.paused)
 			portrait.animation.finish();
 

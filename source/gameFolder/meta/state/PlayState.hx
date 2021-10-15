@@ -128,6 +128,7 @@ class PlayState extends MusicBeatState
 	public static var iconRPC:String = "";
 
 	public static var songLength:Float = 0;
+	public static var volumeMultiplier:Float = 0;
 
 	private var stageBuild:Stage;
 
@@ -385,18 +386,30 @@ class PlayState extends MusicBeatState
 			// the change I made was just so that it would only take accept inputs
 			if (controls.ACCEPT && dialogueBox.textStarted)
 			{
-				FlxG.sound.play(Paths.sound('cancelMenu'));
-				dialogueBox.curPage += 1;
-
-				if (dialogueBox.curPage == dialogueBox.dialogueData.dialogue.length)
+				if (dialogueBox.finishedTyping) 
 				{
-					isCutscene = false;
-					startedCountdown = true;
-							
-					dialogueBox.closeDialog();
-				}
+					FlxG.sound.play(Paths.sound('cancelMenu'));
+					dialogueBox.curPage += 1;
+					
+					if (dialogueBox.curPage == dialogueBox.dialogueData.dialogue.length)
+					{			
+						dialogueBox.closeDialog();
+						volumeMultiplier = 1;
+
+						songMusic.volume = 1 * volumeMultiplier;
+						vocals.volume = 1 * volumeMultiplier;
+						distractionVisible1 = false;
+
+						isCutscene = false;
+						startedCountdown = true;
+					}
+					else
+						dialogueBox.updateDialog();
+					}
 				else
-					dialogueBox.updateDialog();
+				{
+					dialogueBox.finishTyping();
+				}
 			}
 
 		}
@@ -785,7 +798,7 @@ class PlayState extends MusicBeatState
 		if (!coolNote.wasGoodHit)
 		{
 			coolNote.wasGoodHit = true;
-			vocals.volume = 1;
+			vocals.volume = 1 * volumeMultiplier;
 
 			characterPlayAnimation(coolNote, character);
 			if (characterStrums.receptors.members[coolNote.noteData] != null)
@@ -1328,7 +1341,7 @@ class PlayState extends MusicBeatState
 					// SHUBS NOTE: GF is also meant to cheer at different parts of the song but they arent on beat so i dunno how to do that
 
 					// it works for me I think???
-					vocals.volume = 1;
+					vocals.volume = 1 * volumeMultiplier;
 					boyfriend.playAnim('hey', true);
 					gf.playAnim('cheer', true);
 
@@ -1401,6 +1414,13 @@ class PlayState extends MusicBeatState
 
 		// stage stuffs
 		stageBuild.stageUpdate(curBeat, boyfriend, gf, dadOpponent);
+
+		if (curSong == 'Egomania') 
+		{
+			if (((curBeat % 24) == 0) && !distractionVisible1) {
+				spawnDistraction();
+			}
+		}
 
 		if (curSong == 'Probed' && dadOpponent.curCharacter == 'alien' || dadOpponent.curCharacter == 'alien-alt')
 		{
@@ -1767,6 +1787,7 @@ class PlayState extends MusicBeatState
 	}
 	
 	var dialogueBox:DialogueBox;
+	var distractionVisible1 = false;
 
 	public function songIntroCutscene()
 	{
@@ -2094,6 +2115,19 @@ class PlayState extends MusicBeatState
 		}
 		else
 			startCountdown();
+	}
+
+	function spawnDistraction() {
+		volumeMultiplier = 0.15;
+		songMusic.volume = 1 * volumeMultiplier;
+		vocals.volume = 1 * volumeMultiplier;
+
+		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
+		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
+		dialogueBox.cameras = [dialogueHUD];
+
+		distractionVisible1 = true;
+		add(dialogueBox);
 	}
 
 

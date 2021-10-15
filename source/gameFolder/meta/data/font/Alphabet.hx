@@ -93,6 +93,7 @@ class Alphabet extends FlxSpriteGroup
 			else
 			{
 				addText();
+				finishedLine = true;
 			}
 		}
 		else
@@ -117,57 +118,84 @@ class Alphabet extends FlxSpriteGroup
 
 	public function addText()
 	{
+		_finalText = text;
 		doSplitWords();
 
-		arrayLetters = [];
+		// Remove all the old garbage
+		destroyText();
+
+		var loopNum:Int = 0;
+
 		var xPos:Float = 0;
-		for (character in splitWords)
+		var curRow:Int = 0;
+
+		while (loopNum < splitWords.length)
 		{
-			if (character == " " || character == "-")
-				lastWasSpace = true;
-
-			var isNumber:Bool = AlphaCharacter.numbers.contains(character);
-			var isSymbol:Bool = AlphaCharacter.symbols.contains(character);
-
-			if ((AlphaCharacter.alphabet.indexOf(character.toLowerCase()) != -1) || (AlphaCharacter.numbers.contains(character)))
+			if (_finalText.fastCodeAt(loopNum) == "\n".code)
 			{
-				if (xPosResetted)
+				yMulti += 1;
+				xPosResetted = true;
+				curRow += 1;
+			}
+
+			if (splitWords[loopNum] == " ")
+			{
+				lastWasSpace = true;
+			}
+
+			#if (haxe >= "4.0.0")
+			var isNumber:Bool = AlphaCharacter.numbers.contains(splitWords[loopNum]);
+			var isSymbol:Bool = AlphaCharacter.symbols.contains(splitWords[loopNum]);
+			#else
+			var isNumber:Bool = AlphaCharacter.numbers.indexOf(splitWords[loopNum]) != -1;
+			var isSymbol:Bool = AlphaCharacter.symbols.indexOf(splitWords[loopNum]) != -1;
+			#end
+
+			if (AlphaCharacter.alphabet.indexOf(splitWords[loopNum].toLowerCase()) != -1 || isNumber || isSymbol)
+			{
+				if (lastSprite != null && !xPosResetted)
+				{
+					lastSprite.updateHitbox();
+					xPos += lastSprite.width + 3;
+				}
+				else
 				{
 					xPos = 0;
 					xPosResetted = false;
 				}
-				else
-				{
-					if (lastSprite != null)
-						xPos += lastSprite.width;
-				}
 
 				if (lastWasSpace)
 				{
-					xPos += 40;
+					xPos += 20;
 					lastWasSpace = false;
 				}
-
-				var letter:AlphaCharacter = new AlphaCharacter(xPos, 0, textSize);
-
+				var letter:AlphaCharacter = new AlphaCharacter(xPos, 55 * yMulti, textSize);
+				letter.row = curRow;
 				if (isBold)
-					letter.createBold(character);
+				{
+					letter.createBold(splitWords[loopNum]);
+				}
 				else
 				{
 					if (isNumber)
-						letter.createNumber(character);
+						letter.createNumber(splitWords[loopNum]);
 					else if (isSymbol)
-						letter.createSymbol(character);
+						letter.createSymbol(splitWords[loopNum]);
 					else
-						letter.createLetter(character);
+						letter.createLetter(splitWords[loopNum]);
+
+					letter.x += 90;
 				}
 
-				arrayLetters.push(letter);
 				add(letter);
 
 				lastSprite = letter;
 			}
+
+			loopNum += 1;
 		}
+
+		finishedLine = true;
 	}
 
 	function doSplitWords():Void
