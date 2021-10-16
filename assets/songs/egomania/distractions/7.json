@@ -5,11 +5,11 @@
         {
             "portrait": "hank",
             "expression": "normal",
-            "text": "Have you noticed how pearly white my teeth are yet?"
+            "text": "Have you noticed how pearly white my teeth \nare yet?"
         },
         {
             "expression": "laugh",
-            "text": "You know, I spent more money on them than I spent on my parents' retirement home."
+            "text": "You know, I spent more money on them than I \nspent on my parents' retirement home."
         }
     ]
 }
