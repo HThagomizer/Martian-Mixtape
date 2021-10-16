@@ -1,0 +1,15 @@
+{
+    "box": "dialogueBox-pixel",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "What's your voice so high-pitched for, \nanyways?"
+        },
+        {
+            "expression": "laugh",
+            "text": "Do you make your girlfriend stomp your \nballs before every rap battle?"
+        }
+    ]
+}

@@ -2122,7 +2122,7 @@ class PlayState extends MusicBeatState
 		songMusic.volume = 1 * volumeMultiplier;
 		vocals.volume = 1 * volumeMultiplier;
 
-		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
+		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/' + FlxG.random.int(0, 2));
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 		dialogueBox.cameras = [dialogueHUD];
 
