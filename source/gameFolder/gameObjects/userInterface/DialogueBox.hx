@@ -496,7 +496,7 @@ class DialogueBox extends FlxSpriteGroup
 
 		alphabetText.textSpeed = 0;
 		alphabetText.startText('', true);
-		alphabetText.startText(textToDisplay, false);
+		alphabetText.startText(textToDisplay, false, true);
 
 		new FlxTimer().start(0.025, function(tmr:FlxTimer)
 			{
