@@ -3,16 +3,21 @@
     "boxState": "normal",
     "dialogue": [
         {
-            "portrait": "senpai",
-            "expression": "mad",
-            "text": "Not bad for an ugly worm."
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "You're the little freak who keeps rap \nbattling people, aren't you?"
         },
         {
-            "text": "But this time I'll rip your nuts off \nright after your girlfriend \nfinishes gargling mine."
+            "text": "I'm guessing you want to rap battle me \ntoo, huh? I should warn you. I'm \na really good rapper."
         },
         {
-            "portrait": "bf-pixel",
-            "text": "Bop beep be be skdoo bep"
+            "portrait": "bf",
+            "text": "Beep"
+        },
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "What?"
         }
     ]
 }
