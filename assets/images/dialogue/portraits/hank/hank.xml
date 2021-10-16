@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hank.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hank dialogue laugh0000" x="0" y="0" width="296" height="520" frameX="-14" frameY="0" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0001" x="0" y="0" width="296" height="520" frameX="-14" frameY="0" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0002" x="296" y="0" width="323" height="493" frameX="0" frameY="-27" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0003" x="296" y="0" width="323" height="493" frameX="0" frameY="-27" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0004" x="619" y="0" width="310" height="504" frameX="-6" frameY="-16" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0005" x="619" y="0" width="310" height="504" frameX="-6" frameY="-16" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0006" x="929" y="0" width="314" height="505" frameX="-4" frameY="-15" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue laugh0007" x="929" y="0" width="314" height="505" frameX="-4" frameY="-15" frameWidth="323" frameHeight="520"/>
+	<SubTexture name="hank dialogue normal0000" x="1243" y="0" width="327" height="515" frameX="-14" frameY="0" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0001" x="1243" y="0" width="327" height="515" frameX="-14" frameY="0" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0002" x="1570" y="0" width="354" height="488" frameX="0" frameY="-27" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0003" x="1570" y="0" width="354" height="488" frameX="0" frameY="-27" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0004" x="0" y="520" width="340" height="500" frameX="-6" frameY="-15" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0005" x="0" y="520" width="340" height="500" frameX="-6" frameY="-15" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0006" x="340" y="520" width="337" height="501" frameX="-4" frameY="-14" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue normal0007" x="340" y="520" width="337" height="501" frameX="-4" frameY="-14" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0000" x="677" y="520" width="327" height="515" frameX="-14" frameY="0" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0001" x="677" y="520" width="327" height="515" frameX="-14" frameY="0" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0002" x="1004" y="520" width="354" height="488" frameX="0" frameY="-27" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0003" x="1004" y="520" width="354" height="488" frameX="0" frameY="-27" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0004" x="1358" y="520" width="340" height="500" frameX="-6" frameY="-15" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0005" x="1358" y="520" width="340" height="500" frameX="-6" frameY="-15" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0006" x="1698" y="520" width="337" height="501" frameX="-4" frameY="-14" frameWidth="354" frameHeight="515"/>
+	<SubTexture name="hank dialogue nugh0007" x="1698" y="520" width="337" height="501" frameX="-4" frameY="-14" frameWidth="354" frameHeight="515"/>
+</TextureAtlas>

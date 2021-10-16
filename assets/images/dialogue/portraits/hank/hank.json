@@ -1,0 +1,11 @@
+{
+    "name": "hank",
+    "expressions": {
+        "normal": "hank dialogue normal",
+        "laugh": "hank dialogue laugh",
+        "ugh": "hank dialogue nugh"
+    },
+    "position": "right",
+
+    "sounds": ["hank_1", "hank_2", "hank_3"]
+}
