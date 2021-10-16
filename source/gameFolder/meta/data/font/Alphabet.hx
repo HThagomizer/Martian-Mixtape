@@ -74,7 +74,7 @@ class Alphabet extends FlxSpriteGroup
 		startText(text, typed);
 	}
 
-	public function startText(newText, typed)
+	public function startText(newText, typed, isDialogue:Bool = false)
 	{
 		yMulti = 1;
 		finishedLine = false;
@@ -92,7 +92,14 @@ class Alphabet extends FlxSpriteGroup
 			}
 			else
 			{
-				addText();
+				if (isDialogue) 
+				{
+					addDialogueText();
+				}
+				else
+				{
+					addText();
+				}
 				finishedLine = true;
 			}
 		}
@@ -117,6 +124,61 @@ class Alphabet extends FlxSpriteGroup
 	public var arrayLetters:Array<AlphaCharacter>;
 
 	public function addText()
+	{
+		doSplitWords();
+
+		arrayLetters = [];
+		var xPos:Float = 0;
+		for (character in splitWords)
+		{
+			if (character == " " || character == "-")
+				lastWasSpace = true;
+
+			var isNumber:Bool = AlphaCharacter.numbers.contains(character);
+			var isSymbol:Bool = AlphaCharacter.symbols.contains(character);
+
+			if ((AlphaCharacter.alphabet.indexOf(character.toLowerCase()) != -1) || (AlphaCharacter.numbers.contains(character)))
+			{
+				if (xPosResetted)
+				{
+					xPos = 0;
+					xPosResetted = false;
+				}
+				else
+				{
+					if (lastSprite != null)
+						xPos += lastSprite.width;
+				}
+
+				if (lastWasSpace)
+				{
+					xPos += 40;
+					lastWasSpace = false;
+				}
+
+				var letter:AlphaCharacter = new AlphaCharacter(xPos, 0, textSize);
+
+				if (isBold)
+					letter.createBold(character);
+				else
+				{
+					if (isNumber)
+						letter.createNumber(character);
+					else if (isSymbol)
+						letter.createSymbol(character);
+					else
+						letter.createLetter(character);
+				}
+
+				arrayLetters.push(letter);
+				add(letter);
+
+				lastSprite = letter;
+			}
+		}
+	}	
+
+	public function addDialogueText()
 	{
 		_finalText = text;
 		doSplitWords();
