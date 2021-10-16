@@ -5,10 +5,24 @@
         {
             "portrait": "hank",
             "expression": "normal",
-            "text": "You're the little freak who keeps rap \nbattling people, aren't you?"
+            "text": "Hey! You! You're the little freak who \nkeeps rap battling people, aren't you?"
         },
         {
-            "text": "I'm guessing you want to rap battle me \ntoo, huh? I should warn you. I'm \na really good rapper."
+            "text": "I've been looking everywhere for you. \nYou think you can get away with this? \nWalking around and just rap battling people?"
+        },
+        {
+            "text": "I HATE rapping."
+        },
+        {
+            "expression": "laugh",
+            "text": "People need to talk things out. \nWith their words."
+        },
+        {
+            "expression": "normal",
+            "text": "I don't know if you know this, \nbut I OWN this joint, freakazoid."
+        },
+        {
+            "text": "I'm the master. I'm the best. \nEverybody knows my name."
         },
         {
             "portrait": "bf",
@@ -16,8 +30,51 @@
         },
         {
             "portrait": "hank",
+            "expression": "laugh",
+            "text": "Oh-ho-ho. You think you're slick."
+        },
+        {
             "expression": "ugh",
-            "text": "What?"
+            "text": "WELL."
+        },
+        {
+            "text": "YOU'RE."
+        },
+        {
+            "text": "NOT."
+        },
+        {
+            "expression": "normal",
+            "text": "I'll rap battle you. Here are my \nterms."
+        },
+        {
+            "text": "If I win, you never rap again. \nAnd you have to TALK to people."
+        },
+        {
+            "text": "And if YOU win..."
+        },
+        {
+            "text": "You get nothing."
+        },
+        {
+            "expression": "laugh",
+            "text": "LOL"
+        },
+        {
+            "expression": "normal",
+            "text": "So what about it? I doubt you \ncould beat someone as cool as me."
+        },
+        {
+            "portrait": "bf",
+            "text": "bopeebo"
+        },
+        {
+            "portrait": "hank",
+            "expression": "laugh",
+            "text": "Great! Be careful, though!"
+        },
+        {
+            "text": "I don't go easy!"
         }
     ]
 }
