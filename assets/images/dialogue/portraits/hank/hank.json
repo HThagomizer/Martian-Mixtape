@@ -5,7 +5,10 @@
         "laugh": "hank dialogue laugh",
         "ugh": "hank dialogue nugh"
     },
-    "position": "right",
+    "position": [170, 100],
+    "flipX": false,
 
-    "sounds": ["hank_1", "hank_2", "hank_3"]
+    "sounds": ["pixelText"],
+    "soundChance": 100,
+    "soundPath": "sounds/"
 }
