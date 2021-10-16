@@ -1,0 +1,15 @@
+{
+    "box": "dialogueBox-pixel",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "Who would wear a stupid shirt like that, \nanyways? A stop sign?"
+        },
+        {
+            "expression": "laugh",
+            "text": "Maybe you just need to stop rapping!!!"
+        }
+    ]
+}

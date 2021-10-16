@@ -1,0 +1,15 @@
+{
+    "box": "dialogueBox-pixel",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "Whys your hair like that? Are you trying \nto make a statement?"
+        },
+        {
+            "expression": "laugh",
+            "text": "The only statement you're making is an \nincredibly stupid one!"
+        }
+    ]
+}

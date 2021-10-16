@@ -1,0 +1,15 @@
+{
+    "box": "dialogueBox-pixel",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "I might repeat myself sometimes. Not \ngonna apologize for it though."
+        },
+        {
+            "expression": "laugh",
+            "text": "Every word I say is worth it anyways!"
+        }
+    ]
+}
