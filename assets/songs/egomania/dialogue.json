@@ -1,14 +1,14 @@
 {
-    "box": "dialogueBox-pixel",
+    "box": "speech_bubble_talking",
     "boxState": "normal",
     "dialogue": [
         {
             "portrait": "hank",
             "expression": "normal",
-            "text": "Hey! You! You're the little freak who \nkeeps rap battling people, aren't you?"
+            "text": "Hey! You! You're the little freak who keeps \nrap battling people, aren't you?"
         },
         {
-            "text": "I've been looking everywhere for you. \nYou think you can get away with this? \nWalking around and just rap battling people?"
+            "text": "I've been looking everywhere for you. You \nthink you can get away with this? Walking \naround and just rap battling people?"
         },
         {
             "text": "I HATE rapping."
@@ -45,7 +45,7 @@
         },
         {
             "expression": "normal",
-            "text": "I'll rap battle you. Here are my \nterms."
+            "text": "I'll rap battle you. Here are my terms."
         },
         {
             "text": "If I win, you never rap again. \nAnd you have to TALK to people."

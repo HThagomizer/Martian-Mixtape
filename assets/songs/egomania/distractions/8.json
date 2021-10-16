@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "Why are you tampering with my dialogue?"
+        },
+        {
+            "expression": "ugh",
+            "text": "Stop cheating and play the song correctly."
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 {
-    "box": "dialogueBox-pixel",
+    "box": "speech_bubble_talking",
     "boxState": "normal",
     "dialogue": [
         {
             "portrait": "hank",
             "expression": "normal",
-            "text": "I might repeat myself sometimes. Not \ngonna apologize for it though."
+            "text": "I might repeat myself sometimes. Not gonna \napologize for it though."
         },
         {
             "expression": "laugh",

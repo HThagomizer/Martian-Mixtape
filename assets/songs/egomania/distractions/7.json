@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Have you noticed how pearly white my teeth are yet?"
+        },
+        {
+            "expression": "laugh",
+            "text": "You know, I spent more money on them than I spent on my parents' retirement home."
+        }
+    ]
+}

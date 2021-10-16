@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "Sometimes I wonder if the world really is a \nsimulation..."
+        },
+        {
+            "expression": "ugh",
+            "text": "...What am I even saying? I really need my \ncoffee."
+        }
+    ]
+}

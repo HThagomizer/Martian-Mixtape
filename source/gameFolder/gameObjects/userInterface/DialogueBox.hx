@@ -135,7 +135,7 @@ class DialogueBox extends FlxSpriteGroup
 
 		// thank u sammu for fixing alphabet.hx
 		// i dont wanna touch it ever
-		alphabetText = new Alphabet(100, 425, "cool", false, true, 0.7);
+		alphabetText = new Alphabet(25, 425, "cool", false, true, 0.7);
 
 		// text
 		text = new FlxText(100, 480, 1000, "", 35);
@@ -181,6 +181,7 @@ class DialogueBox extends FlxSpriteGroup
 				textToDisplay = pageData.text;
 
 			alphabetText.startText(textToDisplay, true);
+			alphabetText.x = 25;
 		}
 
 		// change speed
@@ -389,7 +390,8 @@ class DialogueBox extends FlxSpriteGroup
 				if (portraitData.flipX != null)
 					newFlip = portraitData.flipX;
 
-				portrait.flipX = newFlip;
+				if (curCharacter != "hank")
+					portrait.flipX = newFlip;
 
 				// update bloops
 				if (portraitData.sounds != null)
@@ -497,6 +499,7 @@ class DialogueBox extends FlxSpriteGroup
 		alphabetText.textSpeed = 0;
 		alphabetText.startText('', true);
 		alphabetText.startText(textToDisplay, false, true);
+		alphabetText.x = 25;
 
 		new FlxTimer().start(0.025, function(tmr:FlxTimer)
 			{

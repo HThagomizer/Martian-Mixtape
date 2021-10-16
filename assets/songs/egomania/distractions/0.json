@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "You probably shouldn't read everything I say \nhere."
+        },
+        {
+            "text": "Just a hunch, but I'm pretty sure it'll make \nyou lose faster. Not that I mind."
+        }
+    ]
+}

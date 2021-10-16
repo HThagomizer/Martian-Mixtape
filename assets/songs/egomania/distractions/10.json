@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "I HATE conspiracy theorists. All they EVER do is point at their whiteboard and make STUPID nerd noises."
+        },
+        {
+            "expression": "ugh",
+            "text": "Just SHUT UP already, aliens don't even EXIST."
+        }
+    ]
+}

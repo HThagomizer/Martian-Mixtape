@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "I'm letting you rap battle me out of the \ngoodness of my heart, and you won't even read what I have to say."
+        },
+        {
+            "expression": "ugh",
+            "text": "You truly are an ungrateful brat. Why do I \neven bother putting up with you?"
+        }
+    ]
+}

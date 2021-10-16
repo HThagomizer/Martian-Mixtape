@@ -2118,11 +2118,11 @@ class PlayState extends MusicBeatState
 	}
 
 	function spawnDistraction() {
-		volumeMultiplier = 0.15;
+		volumeMultiplier = 0.25;
 		songMusic.volume = 1 * volumeMultiplier;
 		vocals.volume = 1 * volumeMultiplier;
 
-		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/' + FlxG.random.int(0, 4));
+		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/distractions/' + FlxG.random.int(0, 12, [8]));
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 		dialogueBox.cameras = [dialogueHUD];
 

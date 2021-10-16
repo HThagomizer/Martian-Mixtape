@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "I ONLY get freaky on friday nights."
+        },
+        {
+            "expression": "normal",
+            "text": "Any other weekday is off-limits in my eyes."
+        }
+    ]
+}
