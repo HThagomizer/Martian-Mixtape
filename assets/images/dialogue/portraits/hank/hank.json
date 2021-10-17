@@ -8,7 +8,6 @@
     "position": [0, 100],
     "flipX": true,
 
-    "sounds": ["pixelText"],
-    "soundChance": 100,
-    "soundPath": "sounds/"
+    "sounds": ["HANK_1", "HANK_2", "HANK_3"],
+    "soundChance": 20
 }
