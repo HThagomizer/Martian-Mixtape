@@ -128,7 +128,7 @@ class PlayState extends MusicBeatState
 	public static var iconRPC:String = "";
 
 	public static var songLength:Float = 0;
-	public static var volumeMultiplier:Float = 0;
+	public static var volumeMultiplier:Float = 1;
 
 	private var stageBuild:Stage;
 
