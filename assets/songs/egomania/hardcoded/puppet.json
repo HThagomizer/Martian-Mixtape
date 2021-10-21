@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "laugh",
+            "text": "Look, now i'm everyone's favorite loveable green \nmartian! Bo dee ba dee bee do ba do!!"
+        },
+        {
+            "expression": "ugh",
+            "text": "...You're not supposed to stay silent. \nLaugh... NOW."
+        }
+    ]
+}

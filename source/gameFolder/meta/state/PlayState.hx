@@ -1415,13 +1415,6 @@ class PlayState extends MusicBeatState
 		// stage stuffs
 		stageBuild.stageUpdate(curBeat, boyfriend, gf, dadOpponent);
 
-		if (curSong == 'Egomania') 
-		{
-			if (((curBeat % 24) == 0) && !distractionVisible1) {
-				spawnDistraction();
-			}
-		}
-
 		if (curSong == 'Probed' && dadOpponent.curCharacter == 'alien' || dadOpponent.curCharacter == 'alien-alt')
 		{
 			switch (curBeat)
@@ -1579,8 +1572,13 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'Egomania' && (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
 		{
+			if (((curBeat % 24) == 0) && !distractionVisible1) {
+				spawnDistraction();
+			}
+
 			switch (curBeat)
 			{
+				
 				case 31:
 					dadOpponent.playAnim("cough");
 				case 157:
@@ -1591,6 +1589,8 @@ class PlayState extends MusicBeatState
 					dadOpponent.x -= 16;
 					dadOpponent.y -= 9;
 					add(dadOpponent);
+
+					spawnDistraction('/hardcoded/puppet', true);
 				case 192:
 					remove(dadOpponent);
 					dadOpponent.generateCharacter(100, 100, 'hagomizer');
@@ -2117,12 +2117,20 @@ class PlayState extends MusicBeatState
 			startCountdown();
 	}
 
-	function spawnDistraction() {
+	function spawnDistraction(path:String = "", force:Bool = false) {
 		volumeMultiplier = 0.25;
 		songMusic.volume = 1 * volumeMultiplier;
 		vocals.volume = 1 * volumeMultiplier;
 
-		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/distractions/' + FlxG.random.int(0, 12, [8]));
+		if (path == "") {
+			path = ('/distractions/' + FlxG.random.int(0, 12, [8]));
+		}
+
+		if (force) {
+			dialogueBox.destroy();
+		}
+
+		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 		dialogueBox.cameras = [dialogueHUD];
 
