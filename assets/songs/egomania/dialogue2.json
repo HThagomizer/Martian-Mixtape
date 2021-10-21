@@ -1,0 +1,26 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Okay! Uhh... I ran out of verses."
+        },
+        {
+            "text": "I guess that kinda means you win, then. Cool..."
+        },
+        {
+            "text": "You can leave now, then!"
+        },
+        {
+            "portrait": "bf",
+            "text": "Bop beep be be skdoo bep"
+        },
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "The fuck did you say about my hair?"
+        }
+    ]
+}

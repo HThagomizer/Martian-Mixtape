@@ -1590,7 +1590,7 @@ class PlayState extends MusicBeatState
 					dadOpponent.y -= 9;
 					add(dadOpponent);
 
-					spawnDistraction('/hardcoded/puppet', true);
+					spawnDistraction('/hardcoded/puppet');
 				case 192:
 					remove(dadOpponent);
 					dadOpponent.generateCharacter(100, 100, 'hagomizer');
@@ -1710,7 +1710,7 @@ class PlayState extends MusicBeatState
 			Highscore.saveScore(SONG.song, songScore, storyDifficulty);
 
 		if (!isStoryMode)
-			Main.switchState(this, new FreeplayState());
+			songEndSpecificActions();
 		else
 		{
 			// set the campaign's score higher
@@ -1765,6 +1765,9 @@ class PlayState extends MusicBeatState
 				{
 					callDefaultSongEnd();
 				}, 1);
+			
+			case 'egomania':
+				callTextbox(Paths.json('egomania/dialogue2'));
 
 			default:
 				callDefaultSongEnd();
@@ -1773,17 +1776,24 @@ class PlayState extends MusicBeatState
 
 	private function callDefaultSongEnd()
 	{
-		var difficulty:String = '-' + CoolUtil.difficultyFromNumber(storyDifficulty).toLowerCase();
-		difficulty = difficulty.replace('-normal', '');
+		if (isStoryMode) 
+		{
+			var difficulty:String = '-' + CoolUtil.difficultyFromNumber(storyDifficulty).toLowerCase();
+			difficulty = difficulty.replace('-normal', '');
 
-		FlxTransitionableState.skipNextTransIn = true;
-		FlxTransitionableState.skipNextTransOut = true;
+			FlxTransitionableState.skipNextTransIn = true;
+			FlxTransitionableState.skipNextTransOut = true;
 
-		PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
-		ForeverTools.killMusic([songMusic, vocals]);
+			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
+			ForeverTools.killMusic([songMusic, vocals]);
 
-		// deliberately did not use the main.switchstate as to not unload the assets
-		FlxG.switchState(new PlayState());
+			// deliberately did not use the main.switchstate as to not unload the assets
+			FlxG.switchState(new PlayState());
+		}
+		else 
+		{
+			Main.switchState(this, new FreeplayState());
+		}
 	}
 	
 	var dialogueBox:DialogueBox;
@@ -2100,8 +2110,11 @@ class PlayState extends MusicBeatState
 		//
 	}
 	
-	function callTextbox() {
-		var dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
+	function callTextbox(dialogPath:String = "") {
+		if (dialogPath == "") {
+			dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
+		}
+		
 		if (sys.FileSystem.exists(dialogPath))
 		{
 			isCutscene = true;
@@ -2117,7 +2130,7 @@ class PlayState extends MusicBeatState
 			startCountdown();
 	}
 
-	function spawnDistraction(path:String = "", force:Bool = false) {
+	function spawnDistraction(path:String = "") {
 		volumeMultiplier = 0.25;
 		songMusic.volume = 1 * volumeMultiplier;
 		vocals.volume = 1 * volumeMultiplier;
@@ -2126,10 +2139,7 @@ class PlayState extends MusicBeatState
 			path = ('/distractions/' + FlxG.random.int(0, 12, [8]));
 		}
 
-		if (force) {
-			dialogueBox.destroy();
-		}
-
+		dialogueBox.destroy();
 		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 		dialogueBox.cameras = [dialogueHUD];
