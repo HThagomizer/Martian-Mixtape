@@ -604,6 +604,22 @@ class Character extends FNFSprite
 				addOffset("singDOWN", -24, -20);
 
 				playAnim('idle');
+			case 'hagomizer-rage':
+				tex = Paths.getSparrowAtlas('characters/secret character/hank-RAGE');
+				frames = tex;
+				animation.addByPrefix('idle', 'hank RAGE idle', 24);
+				animation.addByPrefix('singUP', 'hank RAGE singUP', 24);
+				animation.addByPrefix('singRIGHT', 'hank RAGE singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'hank RAGE singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'hank RAGE singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 136, 71);
+				addOffset("singRIGHT", 7, 64);
+				addOffset("singLEFT", 87, 58);
+				addOffset("singDOWN", 54, -104);
+
+				playAnim('idle');
 		}
 
 		// set up offsets cus why not
