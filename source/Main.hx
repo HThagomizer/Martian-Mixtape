@@ -115,6 +115,12 @@ class Main extends Sprite
 			['xigman', 'xigman', 'xigman'],
 			[FlxColor.fromRGB(10, 255, 10)],
 			"Martian Mistake"
+		],
+		[
+			['Extermination', 'Craniotomy'],
+			['alien-rude', 'alien-rude', 'alien-rude'],
+			[FlxColor.fromRGB(10, 255, 10)],
+			"Martian Mistake"
 		]
 	];
 
