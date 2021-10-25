@@ -596,11 +596,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				dad.y -= 20;
 			case 'xigman':
 				dad.y -= 50;
-			case 'ignignokt':
-				dad.y += 250;
-			case 'err':
-				dad.y += 520;
-				dad.x += 200;
+			case 'mooninites':
+				dad.y += 225;
 			case 'hagomizer' | 'hagomizer-rage':
 				dad.y -= 16;
 				dad.x -= 9;

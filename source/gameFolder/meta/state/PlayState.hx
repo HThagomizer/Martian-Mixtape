@@ -491,6 +491,8 @@ class PlayState extends MusicBeatState
 					case 'FBImech':
 						getCenterY = char.getMidpoint().y - 850;
 						getCenterX = char.getMidpoint().x - 500;
+					case 'mooninites':
+						getCenterY = char.getMidpoint().y;
 				}
 
 				camFollow.setPosition(getCenterX + (camDisplaceX * 8), getCenterY);

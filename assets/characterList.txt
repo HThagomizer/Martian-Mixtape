@@ -17,7 +17,7 @@ FBIhacker
 FBImech
 bf-hominid
 xigman
-ignignokt
-err
+mooninites
 hagomizer
 hagomizer-puppet
+hagomizer-rage

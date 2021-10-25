@@ -536,36 +536,30 @@ class Character extends FNFSprite
 				addOffset("singDOWN", 19, -89);
 
 				playAnim('idle');
-			case 'ignignokt':
+			case 'mooninites':
 				tex = Paths.getSparrowAtlas('characters/mooninites/mooninites');
 				frames = tex;
-				animation.addByPrefix('idle', 'ignignokt idle', 24);
-				animation.addByPrefix('singUP', 'ignignokt singUP', 24);
-				animation.addByPrefix('singRIGHT', 'ignignokt singRIGHT', 24);
-				animation.addByPrefix('singDOWN', 'ignignokt singDOWN', 24);
-				animation.addByPrefix('singLEFT', 'ignignokt singLEFT', 24);
+				animation.addByPrefix('idle', 'duo IDLE', 24);
+				animation.addByPrefix('singUP', 'duo ignignokt singUP', 24);
+				animation.addByPrefix('singRIGHT', 'duo ignignokt singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'duo ignignokt singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'duo ignignokt singLEFT', 24);
+				
+				animation.addByPrefix('singUP-alt', 'duo err singUP', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'duo err singDOWN', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'duo err singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'duo err singRIGHT', 24, false);
 
 				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
+				addOffset("singUP", 0, 14);
+				addOffset("singRIGHT", -9, 0);
+				addOffset("singLEFT", 8, 0);
+				addOffset("singDOWN", 0, -13);
 
-				playAnim('idle');
-			case 'err':
-				tex = Paths.getSparrowAtlas('characters/mooninites/mooninites');
-				frames = tex;
-				animation.addByPrefix('idle', 'err idle', 24);
-				animation.addByPrefix('singUP', 'err singUP', 24);
-				animation.addByPrefix('singRIGHT', 'err singRIGHT', 24);
-				animation.addByPrefix('singDOWN', 'err singDOWN', 24);
-				animation.addByPrefix('singLEFT', 'err singLEFT', 24);
-
-				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
-				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
+				addOffset("singUP-alt");
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
 
 				playAnim('idle');
 			case 'hagomizer':
