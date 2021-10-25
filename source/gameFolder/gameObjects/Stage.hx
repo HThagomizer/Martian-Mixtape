@@ -73,6 +73,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'lab';
 				case 'breakout':
 					curStage = 'breakout';
+				case 'spacecataz':
+					curStage = 'mooninites';
 				default:
 					curStage = 'stage';
 			}
@@ -501,6 +503,20 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 					// fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('week1_bg/sky/fastPlaneLol'));
 				}
+			case 'mooninites':
+				PlayState.defaultCamZoom = 0.9;
+				curStage = 'mooninites';
+				var space:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('backgrounds/' + curStage + '/space'));
+				space.antialiasing = true;
+				space.scrollFactor.set(0.3, 0.3);
+				space.active = false;
+				add(space);
+
+				var ship:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('backgrounds/' + curStage + '/ship'));
+				ship.antialiasing = true;
+				ship.scrollFactor.set(1, 1);
+				ship.active = false;
+				add(ship);
 
 			default:
 				PlayState.defaultCamZoom = 0.9;
