@@ -50,6 +50,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	var mountainbg2:FlxSprite;
 	var trees2:FlxSprite;
 
+	var face:FlxTiledSprite;
+
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
 	var defaultCamZoom:Float = 1.05;
@@ -589,11 +591,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 			case 'mylair':
 				PlayState.defaultCamZoom = 0.7;
-				var face:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1400, true, true);
+				face = new FlxTiledSprite(null, 10000, 1400, true, true);
 				face.loadGraphic(Paths.image('backgrounds/$curStage/me'));
-				face.screenCenter(X);
-				face.y -= 200;
-				face.x -= 600;
+				face.x -= 500;
+				face.y -= 500;
 				face.scrollFactor.set(0.3, 0.3);
 				add(face);
 
@@ -805,6 +806,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				{
 					clouds.x = posThreshold;
 					clouds2.x = clouds.x + clouds2.width;
+				}
+			case 'mylair':
+				var basePos = -500;
+
+				face.x += 5 * (elapsed * 20);
+				face.y += 5 * (elapsed * 20);
+
+				if (face.x > (basePos + 150)) {
+					face.x = basePos;
+					face.y = basePos;
 				}
 		}
 	}
