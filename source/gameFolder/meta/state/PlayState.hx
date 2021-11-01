@@ -137,6 +137,10 @@ class PlayState extends MusicBeatState
 	public static var daPixelZoom:Float = 6;
 	public static var determinedChartType:String = "";
 
+	public var repositionTime:Float = 0.0;
+	public var hudPositionX:Int = 0;
+	public var hudPositionY:Int = 0;
+
 	// strumlines
 	private var dadStrums:Strumline;
 	private var boyfriendStrums:Strumline;
@@ -288,6 +292,7 @@ class PlayState extends MusicBeatState
 		// create the game camera
 		camFollow = new FlxObject(0, 0, 1, 1);
 		camFollow.setPosition(camPos.x, camPos.y);
+
 		// check if the camera was following someone previouslyw
 		if (prevCamFollow != null)
 		{
@@ -325,7 +330,7 @@ class PlayState extends MusicBeatState
 		add(uiHUD);
 		uiHUD.cameras = [camHUD];
 		//
-		
+
 		// create a hud over the hud camera for dialogue
 		dialogueHUD = new FlxCamera();
 		dialogueHUD.bgColor.alpha = 0;
@@ -380,6 +385,19 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
+
+		if (repositionTime > 0) {
+			camHUD.x = FlxMath.lerp(camHUD.x, hudPositionX, elapsed * 2);
+			camHUD.y = FlxMath.lerp(camHUD.y, hudPositionY, elapsed * 2);
+			repositionTime -= elapsed;
+			if (repositionTime <= 0) {
+				repositionTime = 0;
+			} 
+		}
+		else {
+			camHUD.x = FlxMath.lerp(camHUD.x, 0, elapsed * 2);
+			camHUD.y = FlxMath.lerp(camHUD.y, 0, elapsed * 2);
+		}
 			
 		// dialogue checks
 		if (dialogueBox != null && dialogueBox.alive) {
@@ -1505,6 +1523,24 @@ class PlayState extends MusicBeatState
 							FlxG.sound.play(Paths.sound('coward'), 1, false, null, true);
 						});
 					}
+			}
+		}
+
+		if (curSong == 'Crack')
+		{
+			if ((curBeat % 32) == 0) 
+			{
+				switch (FlxG.random.int(0, 3))
+				{
+					case 0:
+						FlxG.sound.toggleMuted();
+					case 1:
+						uiHUD.noiseTime = 8.0;
+					case 2:
+						repositionTime = 8.0;
+						hudPositionX = FlxG.random.int(-300, 300);
+						hudPositionY = FlxG.random.int(-300, 300);
+				}
 			}
 		}
 

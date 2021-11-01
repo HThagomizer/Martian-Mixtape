@@ -43,6 +43,9 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 	private var stupidHealth:Float = 0;
 
+	public var noise:FlxSprite;
+	public var noiseTime:Float = 0.0;
+
 	// eep
 	public function new()
 	{
@@ -101,10 +104,18 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		infoBar.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		infoBar.scrollFactor.set();
 		add(infoBar);
+
+		noise = new FlxSprite(0, 0).loadGraphic(Paths.image('backgrounds/fbi/noise'), true, 1280, 720);
+		noise.scrollFactor.set(0, 0);
+		noise.animation.add("static", [0, 1, 2, 3], 16, true);
+		noise.animation.play("static", true);
+		noise.alpha = 0;
+		add(noise);
 	}
 
 	override public function update(elapsed:Float)
 	{
+		super.update(elapsed);
 		// pain, this is like the 7th attempt
 		healthBar.percent = (PlayState.health * 50);
 
@@ -131,6 +142,17 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 			iconP2.animation.curAnim.curFrame = 1;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
+		
+		if (noiseTime > 0) {
+			noise.alpha = FlxMath.lerp(noise.alpha, 0.9, elapsed * 4);
+			noiseTime -= elapsed;
+			if (noiseTime <= 0) {
+				noiseTime = 0;
+			} 
+		}
+		else {
+			noise.alpha = FlxMath.lerp(noise.alpha, 0, elapsed * 4);
+		}
 	}
 
 	private final divider:String = ' - ';
