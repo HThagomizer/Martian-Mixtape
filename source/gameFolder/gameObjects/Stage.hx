@@ -40,6 +40,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var fbiSpin2:FlxSprite;
 	public var fbiScreen:FlxSprite;
 
+	var clouds:FlxSprite;
+	var mountainfg:FlxSprite;
+	var mountainbg:FlxSprite;
+	var trees:FlxSprite;
+
+	var clouds2:FlxSprite;
+	var mountainfg2:FlxSprite;
+	var mountainbg2:FlxSprite;
+	var trees2:FlxSprite;
+
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
 	var defaultCamZoom:Float = 1.05;
@@ -61,7 +71,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			// custom stage stuffs will come with forever charts
 			switch (PlayState.SONG.song.toLowerCase())
 			{
-				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'rude' | 'extermination' | 'craniotomy' | 'aerodynamix':
+				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'rude' | 'extermination' | 'craniotomy':
 					curStage = 'park';
 				case 'confidential' | 'aegis' | 'crack' | 'enforcement':
 					curStage = 'fbi';
@@ -77,6 +87,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'mooninites';
 				case 'egomania' | 'egomani2':
 					curStage = 'mylair';
+				case 'aerodynamix':
+					curStage = 'sky';
 				default:
 					curStage = 'stage';
 			}
@@ -492,18 +504,73 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				}
 			case 'sky':
 				{
-					// unused secret stage LOL LOL LOL
-					// looked sorta shit anyways
-					PlayState.defaultCamZoom = 0.9;
+					PlayState.defaultCamZoom = 0.55;
 					curStage = 'sky';
 
-					var sky_bg:FlxSprite = new FlxSprite(-600, -500).loadGraphic(Paths.image('backgrounds/$curStage/skybg'));
-					sky_bg.antialiasing = true;
-					sky_bg.scrollFactor.set(0.1, 0.1);
-					sky_bg.active = false;
-					add(sky_bg);
+					var skybg:FlxSprite = new FlxSprite(-1075, -350).loadGraphic(Paths.image('backgrounds/$curStage/skybg'));
+					skybg.antialiasing = true;
+					skybg.updateHitbox();
+					skybg.scrollFactor.set(1, 1);
+					skybg.active = false;
+					add(skybg);
 
-					// fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('week1_bg/sky/fastPlaneLol'));
+					mountainbg = new FlxSprite(-1075, -850).loadGraphic(Paths.image('backgrounds/$curStage/mountain2'));
+					mountainbg.antialiasing = true;
+					mountainbg.updateHitbox();
+					mountainbg.scrollFactor.set(1, 1);
+					mountainbg.active = false;
+					add(mountainbg);
+					mountainbg2 = mountainbg.clone();
+					mountainbg2.x = mountainbg.x + mountainbg.width;
+					mountainbg2.y = mountainbg.y;
+					mountainbg2.scrollFactor.set(1, 1);
+					add(mountainbg2);
+
+					mountainfg = new FlxSprite(-1075, -900).loadGraphic(Paths.image('backgrounds/$curStage/mountain1'));
+					mountainfg.antialiasing = true;
+					mountainfg.updateHitbox();
+					mountainfg.scrollFactor.set(1, 1);
+					mountainfg.active = false;
+					add(mountainfg);
+					mountainfg2 = mountainfg.clone();
+					mountainfg2.x = mountainfg.x + mountainfg.width;
+					mountainfg2.y = mountainfg.y;
+					mountainfg2.scrollFactor.set(1, 1);
+					add(mountainfg2);
+
+					trees = new FlxSprite(-1075, -950).loadGraphic(Paths.image('backgrounds/$curStage/trees'));
+					trees.antialiasing = true;
+					trees.updateHitbox();
+					trees.scrollFactor.set(1, 1);
+					trees.active = false;
+					add(trees);
+					trees2 = trees.clone();
+					trees2.x = trees.x + trees.width;
+					trees2.y = trees.y;
+					trees2.scrollFactor.set(1, 1);
+					add(trees2);
+
+					clouds = new FlxSprite(-1075, -450).loadGraphic(Paths.image('backgrounds/$curStage/clouds'));
+					clouds.antialiasing = true;
+					clouds.updateHitbox();
+					clouds.scrollFactor.set(1, 1);
+					clouds.active = false;
+					add(clouds);
+					clouds2 = clouds.clone();
+					clouds2.x = clouds.x + clouds.width;
+					clouds2.y = clouds.y;
+					clouds2.scrollFactor.set(1, 1);
+					add(clouds2);
+
+					var ufo:FlxSprite = new FlxSprite(-1075, -550).loadGraphic(Paths.image('backgrounds/$curStage/ufo'));
+					ufo.antialiasing = true;
+					ufo.updateHitbox();
+					ufo.scrollFactor.set(1, 1);
+					ufo.active = false;
+					add(ufo);
+
+					
+
 				}
 			case 'mooninites':
 				PlayState.defaultCamZoom = 0.9;
@@ -572,6 +639,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 		{
 			case 'park':
 				gfVersion = 'gf-ufo';
+			case 'sky':
+				gfVersion = 'gf-speakerless';
 			case 'raveyard':
 				gfVersion = 'gf-tombstone';
 			case 'lab':
@@ -645,8 +714,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				dad.color = 0xa99dc9;
 			case 'sky':
 				dad.x -= 100;
-				gf.x -= 500;
-				gf.y -= 100;
+				gf.y -= 75;
+				gf.x += 25;
+				boyfriend.color = 0xa99dc9;
+				dad.color = 0xa99dc9;
 			case 'raveyard':
 				dad.y += 150;
 				gf.y += 100;
@@ -696,6 +767,45 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'breakout':
 				PlayState.bgCloneSpawner.update(elapsed);
 				PlayState.bgCloneSpawner2.update(elapsed);
+			case 'sky':
+
+				var posThreshold:Int = -1075;
+
+				mountainbg.x -= 5 * (elapsed * 20);
+				mountainbg2.x -= 5 * (elapsed * 20);
+
+				if (mountainbg2.x <= posThreshold)
+				{
+					mountainbg.x = posThreshold;
+					mountainbg2.x = mountainbg.x + mountainbg2.width;
+				}
+
+				mountainfg.x -= 25 * (elapsed * 20);
+				mountainfg2.x -= 25 * (elapsed * 20);
+
+				if (mountainfg2.x <= posThreshold)
+					{
+						mountainfg.x = posThreshold;
+						mountainfg2.x = mountainfg.x + mountainfg2.width;
+					}
+
+				trees.x -= 50 * (elapsed * 20);
+				trees2.x -= 50 * (elapsed * 20);
+
+				if (trees2.x <= posThreshold)
+				{
+					trees.x = posThreshold;
+					trees2.x = trees.x + trees2.width;
+				}
+
+				clouds.x -= 1 * (elapsed * 20);
+				clouds2.x -= 1 * (elapsed * 20);
+
+				if (clouds2.x <= posThreshold)
+				{
+					clouds.x = posThreshold;
+					clouds2.x = clouds.x + clouds2.width;
+				}
 		}
 	}
 }

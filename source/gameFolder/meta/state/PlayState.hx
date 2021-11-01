@@ -527,6 +527,15 @@ class PlayState extends MusicBeatState
 				camFollow.setPosition(getCenterX + (camDisplaceX * 8), getCenterY);
 				//*/
 			}
+
+			if (curStage == 'sky') {
+				var char = gf;
+
+				var getCenterX = char.getMidpoint().x + 75;
+				var getCenterY = char.getMidpoint().y + 300;
+
+				camFollow.setPosition(getCenterX, getCenterY);
+			}
 		}
 
 		var easeLerp = 0.95;

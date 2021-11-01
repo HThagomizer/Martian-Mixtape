@@ -79,6 +79,16 @@ class Character extends FNFSprite
 				animation.addByPrefix('scared', 'GF FEAR', 24);
 
 				playAnim('danceRight');
+			case 'gf-speakerless':
+				// GIRLFRIEND CODE
+				tex = Paths.getSparrowAtlas('characters/speakerless_gf');
+				frames = tex;
+				animation.addByIndices('singUP', 'GF Dancing Beat Hair blowing CAR', [0], "", 24, false);
+				animation.addByIndices('danceLeft', 'GF Dancing Beat Hair blowing CAR', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
+				animation.addByIndices('danceRight', 'GF Dancing Beat Hair blowing CAR', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24,
+					false);
+
+				playAnim('danceRight');
 			case 'gf-ufo':
 				// GIRLFRIEND CODE
 				tex = Paths.getSparrowAtlas('characters/UFO/ufoGF_assets');
@@ -194,6 +204,33 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				playAnim('idle');
+
+				flipX = true;
+
+			case 'bf-car':
+				var tex = Paths.getSparrowAtlas('characters/bfCar');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
 
 				playAnim('idle');
 
