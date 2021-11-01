@@ -75,6 +75,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'breakout';
 				case 'spacecataz':
 					curStage = 'mooninites';
+				case 'egomania' | 'egomani2':
+					curStage = 'mylair';
 				default:
 					curStage = 'stage';
 			}
@@ -517,6 +519,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				ship.scrollFactor.set(1, 1);
 				ship.active = false;
 				add(ship);
+
+			case 'mylair':
+				PlayState.defaultCamZoom = 0.7;
+				var face:FlxTiledSprite = new FlxTiledSprite(null, 10000, 1400, true, true);
+				face.loadGraphic(Paths.image('backgrounds/$curStage/me'));
+				face.screenCenter(X);
+				face.y -= 200;
+				face.x -= 600;
+				face.scrollFactor.set(0.3, 0.3);
+				add(face);
 
 			default:
 				PlayState.defaultCamZoom = 0.9;
