@@ -137,6 +137,7 @@ class PlayState extends MusicBeatState
 	public static var daPixelZoom:Float = 6;
 	public static var determinedChartType:String = "";
 
+	public var mutingTime:Float = 0.0;
 	public var repositionTime:Float = 0.0;
 	public var hudPositionX:Int = 0;
 	public var hudPositionY:Int = 0;
@@ -397,6 +398,13 @@ class PlayState extends MusicBeatState
 		else {
 			camHUD.x = FlxMath.lerp(camHUD.x, 0, elapsed * 2);
 			camHUD.y = FlxMath.lerp(camHUD.y, 0, elapsed * 2);
+		}
+
+		if (mutingTime > 0) {
+			mutingTime -= elapsed;
+			if (mutingTime <= 0) {
+				mutingTime = 0;
+			} 
 		}
 			
 		// dialogue checks
@@ -1528,12 +1536,18 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'Crack')
 		{
+			if (mutingTime > 0) {
+				if ((curBeat % 2) == 0) {
+					FlxG.sound.changeVolume(-0.1);
+				}
+			}
+
 			if ((curBeat % 32) == 0) 
 			{
 				switch (FlxG.random.int(0, 3))
 				{
 					case 0:
-						FlxG.sound.toggleMuted();
+						mutingTime = 10.0;
 					case 1:
 						uiHUD.noiseTime = 8.0;
 					case 2:
