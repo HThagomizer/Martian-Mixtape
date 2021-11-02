@@ -612,6 +612,8 @@ class Character extends FNFSprite
 				addOffset("singDOWN-alt");
 
 				playAnim('idle');
+
+				antialiasing = false;
 			case 'hagomizer':
 				tex = Paths.getSparrowAtlas('characters/secret character/hank');
 				frames = tex;

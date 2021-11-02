@@ -584,7 +584,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				add(space);
 
 				var ship:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('backgrounds/' + curStage + '/ship'));
-				ship.antialiasing = true;
+				ship.antialiasing = false;
 				ship.scrollFactor.set(1, 1);
 				ship.active = false;
 				add(ship);
