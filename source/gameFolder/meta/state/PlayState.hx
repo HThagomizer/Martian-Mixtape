@@ -2181,6 +2181,9 @@ class PlayState extends MusicBeatState
 		
 		if (sys.FileSystem.exists(dialogPath))
 		{
+			if (dialogueBox != null)
+				dialogueBox.destroy();
+
 			isCutscene = true;
 			startedCountdown = false;
 

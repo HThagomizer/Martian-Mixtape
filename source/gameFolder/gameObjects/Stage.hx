@@ -571,8 +571,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					ufo.active = false;
 					add(ufo);
 
-					
-
 				}
 			case 'mooninites':
 				PlayState.defaultCamZoom = 0.9;
