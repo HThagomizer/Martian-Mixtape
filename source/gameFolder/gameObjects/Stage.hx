@@ -590,7 +590,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				add(ship);
 
 			case 'mylair':
-				PlayState.defaultCamZoom = 0.7;
+				PlayState.defaultCamZoom = 0.8;
 				face = new FlxTiledSprite(null, 10000, 1400, true, true);
 				face.loadGraphic(Paths.image('backgrounds/$curStage/me'));
 				face.x -= 500;
@@ -648,6 +648,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gfVersion = 'gf-fbi';
 			case 'breakout':
 				gfVersion = 'gf-xigman';
+			case 'mylair':
+				gfVersion = 'gf-gold';
 		}
 
 		return gfVersion;
@@ -661,6 +663,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'gf':
 				dad.setPosition(gf.x, gf.y);
 				gf.visible = false;
+			case 'gf-gold':
+				gf.y -= 20;
 			case 'alien' | 'alien-pissed' | 'alien-alt':
 				dad.x += 160;
 				dad.y += 110;

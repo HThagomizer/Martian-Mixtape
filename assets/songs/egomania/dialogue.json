@@ -5,24 +5,25 @@
         {
             "portrait": "hank",
             "expression": "normal",
-            "text": "Hey! You! You're the little freak who keeps \nrap battling people, aren't you?"
+            "text": "So!! You finally found my lair!"
         },
         {
-            "text": "I've been looking everywhere for you. You \nthink you can get away with this? Walking \naround and just singing?"
+            "text": "Take a seat, make yourself comfortable. \nTake a look around if you want."
         },
         {
-            "text": "I HATE rapping."
+            "expression": "ugh",
+            "text": "Huh? The statue?"
         },
         {
             "expression": "laugh",
-            "text": "People need to talk things out. \nWith their words!!!!"
+            "text": "Oh, the statue! I have no idea what's \nup with it. Looks cool though, right?"
         },
         {
             "expression": "normal",
-            "text": "I don't know if you know this, \nbut I OWN this joint, freakazoid."
+            "text": "Mostly because it has my face on it."
         },
         {
-            "text": "I'm the master. I'm the best. \nEverybody knows my name."
+            "text": "You like to rap, right?"
         },
         {
             "portrait": "bf",
@@ -31,24 +32,23 @@
         {
             "portrait": "hank",
             "expression": "laugh",
-            "text": "Oh-ho-ho. You think you're slick."
-        },
-        {
-            "expression": "ugh",
-            "text": "WELL."
-        },
-        {
-            "text": "YOU'RE."
-        },
-        {
-            "text": "NOT."
+            "text": "Okay! Cool! I guess I can do that, if you \nwant!"
         },
         {
             "expression": "normal",
+            "text": "I'm much more of a speaker, though."
+        },
+        {
+            "text": "And a gambler, too."
+        },
+        {
+            "text": "Say, how about a wager?"
+        },
+        {
             "text": "I'll rap battle you. Here are my terms."
         },
         {
-            "text": "If I win, you never rap again. \nAnd you have to TALK to people."
+            "text": "If I win, you never rap again. \nAnd you have to sit down and talk to me \nfor a week."
         },
         {
             "text": "And if YOU win..."

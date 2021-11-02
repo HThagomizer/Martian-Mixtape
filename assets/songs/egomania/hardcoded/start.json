@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Oh, also! Are you fine with me talking \nwhile we rap?"
+        },
+        {
+            "text": "No answer? I take that as a yes!"
+        }
+    ]
+}
