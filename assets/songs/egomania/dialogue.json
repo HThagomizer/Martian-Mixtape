@@ -11,6 +11,11 @@
             "text": "Take a seat, make yourself comfortable. \nTake a look around if you want."
         },
         {
+            "portrait": "bf",
+            "text": "be be po beebo"
+        },
+        {
+            "portrait": "hank",
             "expression": "ugh",
             "text": "Huh? The statue?"
         },
@@ -23,11 +28,20 @@
             "text": "Mostly because it has my face on it."
         },
         {
-            "text": "You like to rap, right?"
+            "portrait": "bf",
+            "text": "Beep"
+        },
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Does it look like your girlfriend? That's \nflattering."
+        },
+        {
+            "text": "Say, you like to rap, right?"
         },
         {
             "portrait": "bf",
-            "text": "Beep"
+            "text": "beep"
         },
         {
             "portrait": "hank",
