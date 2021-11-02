@@ -1538,7 +1538,7 @@ class PlayState extends MusicBeatState
 		if (curSong == 'Crack')
 		{
 			if (mutingTime > 0) {
-				if ((curBeat % 2) == 0) {
+				if ((curBeat % 1) == 0) {
 					FlxG.sound.changeVolume(-0.1);
 				}
 			}
@@ -1548,7 +1548,7 @@ class PlayState extends MusicBeatState
 				switch (FlxG.random.int(0, 3))
 				{
 					case 0:
-						mutingTime = 10.0;
+						mutingTime = 5.0;
 					case 1:
 						uiHUD.noiseTime = 8.0;
 					case 2:
@@ -1839,6 +1839,7 @@ class PlayState extends MusicBeatState
 
 	private function callDefaultSongEnd()
 	{
+		uiHUD.staticSound.stop();
 		if (isStoryMode) 
 		{
 			var difficulty:String = '-' + CoolUtil.difficultyFromNumber(storyDifficulty).toLowerCase();

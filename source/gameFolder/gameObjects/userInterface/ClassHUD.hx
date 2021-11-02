@@ -48,7 +48,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 	public var noise:FlxSprite;
 	public var noiseTime:Float = 0.0;
 
-	public static var staticSound:FlxSound;
+	public var staticSound:FlxSound;
 
 	// eep
 	public function new()
