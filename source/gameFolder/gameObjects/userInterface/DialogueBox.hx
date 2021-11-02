@@ -12,6 +12,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import gameFolder.meta.data.dependency.FNFSprite;
 import gameFolder.meta.data.font.Alphabet;
+import flixel.input.keyboard.FlxKey;
 
 typedef PortraitDataDef =
 {
@@ -91,10 +92,12 @@ class DialogueBox extends FlxSpriteGroup
 	public var finishedTyping:Bool = false;
 	public var textStarted:Bool = false;
 
-	public static function createDialogue(thisDialogue:String):DialogueBox
+	public var pressKey:String;
+
+	public static function createDialogue(thisDialogue:String, setKey:String = "SPACE"):DialogueBox
 	{
 		//
-		var newDialogue = new DialogueBox(false, thisDialogue);
+		var newDialogue = new DialogueBox(false, thisDialogue, setKey);
 		return newDialogue;
 	}
 
@@ -110,11 +113,13 @@ class DialogueBox extends FlxSpriteGroup
 			return truePath;
 	}
 
-	public function new(?talkingRight:Bool = false, ?daDialogue:String)
+	public function new(?talkingRight:Bool = false, ?daDialogue:String, setKey:String = "SPACE")
 	{
 		super();
 
 		trace("start");
+		
+		pressKey = setKey;
 
 		// get dialog data from dialogue.json
 		dialogueData = haxe.Json.parse(daDialogue);
@@ -151,8 +156,10 @@ class DialogueBox extends FlxSpriteGroup
 
 		add(alphabetText);
 
+
+
 		// skip text
-		var skipText = new FlxText(100, 670, 1000, "PRESS [SPACE] TO CONTINUE", 20);
+		var skipText = new FlxText(100, 670, 1000, "PRESS [" + pressKey + "] TO CONTINUE", 20);
 		skipText.alignment = FlxTextAlign.CENTER;
 
 		skipText.borderStyle = FlxTextBorderStyle.OUTLINE;
@@ -406,7 +413,7 @@ class DialogueBox extends FlxSpriteGroup
 					if (portraitData.soundChance != null)
 						alphabetText.soundChance = portraitData.soundChance;
 					else
-						alphabetText.soundChance = 40;
+						alphabetText.soundChance = 20;
 				}
 				else
 					alphabetText.soundChance = 0;

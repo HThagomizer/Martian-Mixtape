@@ -9,5 +9,5 @@
     "flipX": true,
 
     "sounds": ["HANK_1", "HANK_2", "HANK_3"],
-    "soundChance": 20
+    "soundChance": 5
 }

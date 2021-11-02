@@ -343,7 +343,7 @@ class Alphabet extends FlxSpriteGroup
 					letter.x += 90;
 				}
 
-				if (FlxG.random.bool(soundChance) || lastPlayed > 2)
+				if ((FlxG.random.bool(soundChance) && lastPlayed > 0.3) || lastPlayed > 2)
 				{
 					if (playSounds)
 					{

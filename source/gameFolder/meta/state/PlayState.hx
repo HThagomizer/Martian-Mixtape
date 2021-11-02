@@ -37,6 +37,7 @@ import openfl.events.KeyboardEvent;
 import openfl.media.Sound;
 import openfl.utils.Assets;
 import sys.io.File;
+import flixel.input.keyboard.FlxKey;
 import sys.FileSystem;
 
 using StringTools;
@@ -410,7 +411,7 @@ class PlayState extends MusicBeatState
 		// dialogue checks
 		if (dialogueBox != null && dialogueBox.alive) {
 			// the change I made was just so that it would only take accept inputs
-			if (controls.ACCEPT && dialogueBox.textStarted)
+			if (FlxG.keys.anyJustPressed([dialogueBox.pressKey]) && dialogueBox.textStarted)
 			{
 				if (dialogueBox.finishedTyping) 
 				{
@@ -2202,8 +2203,17 @@ class PlayState extends MusicBeatState
 		}
 
 		dialogueBox.destroy();
+
+		var pressKey:String = String.fromCharCode(
+			FlxG.random.int(
+				65,
+				90,
+				[65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
+			)
+		);
+
 		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
-		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
+		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath), pressKey);
 		dialogueBox.cameras = [dialogueHUD];
 
 		distractionVisible1 = true;
