@@ -15,11 +15,13 @@ import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+import flixel.system.FlxSound;
 import gameFolder.meta.CoolUtil;
 import gameFolder.meta.InfoHud;
 import gameFolder.meta.data.Conductor;
 import gameFolder.meta.data.Timings;
 import gameFolder.meta.state.PlayState;
+import openfl.media.Sound;
 
 using StringTools;
 
@@ -45,6 +47,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 	public var noise:FlxSprite;
 	public var noiseTime:Float = 0.0;
+
+	public static var staticSound:FlxSound;
 
 	// eep
 	public function new()
@@ -111,6 +115,10 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		noise.animation.play("static", true);
 		noise.alpha = 0;
 		add(noise);
+
+		staticSound = new FlxSound().loadEmbedded(Sound.fromFile(Paths.sound("static")), true, false);
+		staticSound.volume = 0;
+		staticSound.play();
 	}
 
 	override public function update(elapsed:Float)
@@ -145,6 +153,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		
 		if (noiseTime > 0) {
 			noise.alpha = FlxMath.lerp(noise.alpha, 0.9, elapsed * 4);
+			staticSound.volume = FlxMath.lerp(staticSound.volume, 0.2, elapsed * 4);
 			noiseTime -= elapsed;
 			if (noiseTime <= 0) {
 				noiseTime = 0;
@@ -152,6 +161,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		}
 		else {
 			noise.alpha = FlxMath.lerp(noise.alpha, 0, elapsed * 4);
+			staticSound.volume = FlxMath.lerp(staticSound.volume, 0, elapsed * 4);
 		}
 	}
 
