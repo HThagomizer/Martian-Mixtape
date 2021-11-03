@@ -774,8 +774,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 				var posThreshold:Int = -1075;
 
-				mountainbg.x -= 5 * (elapsed * 20);
-				mountainbg2.x -= 5 * (elapsed * 20);
+				mountainbg.x -= 15 * (elapsed * 20);
+				mountainbg2.x -= 15 * (elapsed * 20);
 
 				if (mountainbg2.x <= posThreshold)
 				{
@@ -783,8 +783,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					mountainbg2.x = mountainbg.x + mountainbg2.width;
 				}
 
-				mountainfg.x -= 25 * (elapsed * 20);
-				mountainfg2.x -= 25 * (elapsed * 20);
+				mountainfg.x -= 75 * (elapsed * 20);
+				mountainfg2.x -= 75 * (elapsed * 20);
 
 				if (mountainfg2.x <= posThreshold)
 					{
@@ -792,8 +792,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						mountainfg2.x = mountainfg.x + mountainfg2.width;
 					}
 
-				trees.x -= 50 * (elapsed * 20);
-				trees2.x -= 50 * (elapsed * 20);
+				trees.x -= 150 * (elapsed * 20);
+				trees2.x -= 150 * (elapsed * 20);
 
 				if (trees2.x <= posThreshold)
 				{
@@ -801,8 +801,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					trees2.x = trees.x + trees2.width;
 				}
 
-				clouds.x -= 1 * (elapsed * 20);
-				clouds2.x -= 1 * (elapsed * 20);
+				clouds.x -= 3 * (elapsed * 20);
+				clouds2.x -= 3 * (elapsed * 20);
 
 				if (clouds2.x <= posThreshold)
 				{
