@@ -1635,17 +1635,17 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'Egomania' && (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
 		{
-			if ((((curBeat % 24) == 0) && (curBeat > 25)) && !distractionVisible1) {
+			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible1) {
 				spawnDistraction();
 			}
 
 			switch (curBeat)
 			{
-				case 20:
+				case 14:
 					spawnDistraction('/hardcoded/start');
 				case 31:
 					dadOpponent.playAnim("cough");
-				case 100:
+				case 96:
 					egomaniaRandom = true;
 					spawnDistraction('/hardcoded/random');
 				case 157:
