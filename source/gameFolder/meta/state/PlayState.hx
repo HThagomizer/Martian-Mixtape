@@ -1640,10 +1640,13 @@ class PlayState extends MusicBeatState
 
 			switch (curBeat)
 			{
-				case 24:
+				case 20:
 					spawnDistraction('/hardcoded/start');
 				case 31:
 					dadOpponent.playAnim("cough");
+				case 100:
+					egomaniaRandom == true;
+					spawnDistraction('/hardcoded/random');
 				case 157:
 					dadOpponent.playAnim("puppet");
 				case 160:
