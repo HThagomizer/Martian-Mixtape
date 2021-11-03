@@ -142,6 +142,7 @@ class PlayState extends MusicBeatState
 	public var repositionTime:Float = 0.0;
 	public var hudPositionX:Int = 0;
 	public var hudPositionY:Int = 0;
+	public var egomaniaRandom:Bool = false;
 
 	// strumlines
 	private var dadStrums:Strumline;
@@ -1645,7 +1646,7 @@ class PlayState extends MusicBeatState
 				case 31:
 					dadOpponent.playAnim("cough");
 				case 100:
-					egomaniaRandom == true;
+					egomaniaRandom = true;
 					spawnDistraction('/hardcoded/random');
 				case 157:
 					dadOpponent.playAnim("puppet");
@@ -2211,13 +2212,17 @@ class PlayState extends MusicBeatState
 
 		dialogueBox.destroy();
 
-		var pressKey:String = String.fromCharCode(
-			FlxG.random.int(
-				65,
-				90,
-				[65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
-			)
-		);
+		var pressKey:String = "SPACE";
+		
+		if (egomaniaRandom) {
+			pressKey = String.fromCharCode(
+				FlxG.random.int(
+					65,
+					90,
+					[65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
+				)
+			);
+		}
 
 		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath), pressKey);
