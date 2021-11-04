@@ -92,7 +92,7 @@ class Alphabet extends FlxSpriteGroup
 			}
 			else
 			{
-				if (isDialogue) 
+				if (isDialogue)
 				{
 					addDialogueText();
 				}
@@ -176,7 +176,7 @@ class Alphabet extends FlxSpriteGroup
 				lastSprite = letter;
 			}
 		}
-	}	
+	}
 
 	public function addDialogueText()
 	{

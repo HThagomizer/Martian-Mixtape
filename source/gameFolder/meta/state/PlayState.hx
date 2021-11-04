@@ -10,12 +10,14 @@ import flixel.FlxSubState;
 import flixel.addons.effects.FlxTrail;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.input.keyboard.FlxKey;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRandom;
 import flixel.math.FlxRect;
 import flixel.system.FlxAssets.FlxSoundAsset;
 import flixel.system.FlxSound;
+import flixel.system.FlxSoundGroup;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
@@ -36,9 +38,8 @@ import gameFolder.meta.subState.*;
 import openfl.events.KeyboardEvent;
 import openfl.media.Sound;
 import openfl.utils.Assets;
-import sys.io.File;
-import flixel.input.keyboard.FlxKey;
 import sys.FileSystem;
+import sys.io.File;
 
 using StringTools;
 
@@ -75,6 +76,7 @@ class PlayState extends MusicBeatState
 	public static var changeableSkin:String = 'default';
 
 	private var unspawnNotes:Array<Note> = [];
+	private var secondUnspawn:Array<Note> = [];
 	private var ratingArray:Array<String> = [];
 	private var allSicks:Bool = true;
 
@@ -153,6 +155,9 @@ class PlayState extends MusicBeatState
 	private var isCutscene:Bool = false;
 	private var isStationaryCam:Bool = false;
 
+	var egoSongPushed:FlxSound;
+	var egoVocalsPushed:FlxSound;
+
 	// at the beginning of the playstate
 	override public function create()
 	{
@@ -191,6 +196,9 @@ class PlayState extends MusicBeatState
 		// default song
 		if (SONG == null)
 			SONG = Song.loadFromJson('test', 'test');
+		// reset egomania lmfao
+		if (SONG.song.toLowerCase() == 'egomania')
+			SONG = Song.loadFromJson('egomania', 'egomania');
 
 		Conductor.mapBPMChanges(SONG);
 		Conductor.changeBPM(SONG.bpm);
@@ -339,6 +347,31 @@ class PlayState extends MusicBeatState
 		dialogueHUD.bgColor.alpha = 0;
 		FlxG.cameras.add(dialogueHUD);
 
+		// preload egomania shit
+		if (curSong == 'Egomania')
+		{
+			var egoPreload:FlxSprite = new FlxSprite().loadGraphic(Paths.image("dialogue/portraits/hank"));
+			add(egoPreload);
+			egoPreload.visible = false;
+			var textboxPreload:FlxSprite = new FlxSprite().loadGraphic(Paths.image("dialogue/boxes/speech_bubble_talking/speech_bubble_talking"));
+			add(textboxPreload);
+			textboxPreload.visible = false;
+
+			// evil hank
+			var rageHank:FlxSprite = new FlxSprite().loadGraphic(Paths.image("characters/secret character/hank-RAGE"));
+			add(rageHank);
+			rageHank.visible = false;
+
+			var tempSong = Song.loadFromJson('egomania-2', 'egomania');
+			Conductor.changeBPM(tempSong.bpm);
+			secondUnspawn = ChartLoader.generateChartType(tempSong, determinedChartType);
+			Conductor.changeBPM(SONG.bpm);
+			secondUnspawn.sort(sortByShit);
+
+			egoSongPushed = new FlxSound().loadEmbedded(Sound.fromFile('./' + 'assets/songs/egomania/Inst-2.ogg'), false, true);
+			egoVocalsPushed = new FlxSound().loadEmbedded(Sound.fromFile('./' + 'assets/songs/egomania/Voices-2.ogg'), false, true);
+		}
+
 		if (isStoryMode)
 			songIntroCutscene();
 		else
@@ -389,38 +422,44 @@ class PlayState extends MusicBeatState
 		if (health > 2)
 			health = 2;
 
-		if (repositionTime > 0) {
+		if (repositionTime > 0)
+		{
 			camHUD.x = FlxMath.lerp(camHUD.x, hudPositionX, elapsed * 2);
 			camHUD.y = FlxMath.lerp(camHUD.y, hudPositionY, elapsed * 2);
 			repositionTime -= elapsed;
-			if (repositionTime <= 0) {
+			if (repositionTime <= 0)
+			{
 				repositionTime = 0;
-			} 
+			}
 		}
-		else {
+		else
+		{
 			camHUD.x = FlxMath.lerp(camHUD.x, 0, elapsed * 2);
 			camHUD.y = FlxMath.lerp(camHUD.y, 0, elapsed * 2);
 		}
 
-		if (mutingTime > 0) {
+		if (mutingTime > 0)
+		{
 			mutingTime -= elapsed;
-			if (mutingTime <= 0) {
+			if (mutingTime <= 0)
+			{
 				mutingTime = 0;
-			} 
+			}
 		}
-			
+
 		// dialogue checks
-		if (dialogueBox != null && dialogueBox.alive) {
+		if (dialogueBox != null && dialogueBox.alive)
+		{
 			// the change I made was just so that it would only take accept inputs
 			if (FlxG.keys.anyJustPressed([dialogueBox.pressKey]) && dialogueBox.textStarted)
 			{
-				if (dialogueBox.finishedTyping) 
+				if (dialogueBox.finishedTyping)
 				{
 					FlxG.sound.play(Paths.sound('cancelMenu'));
 					dialogueBox.curPage += 1;
-					
+
 					if (dialogueBox.curPage == dialogueBox.dialogueData.dialogue.length)
-					{			
+					{
 						dialogueBox.closeDialog();
 						volumeMultiplier = 1;
 
@@ -433,13 +472,12 @@ class PlayState extends MusicBeatState
 					}
 					else
 						dialogueBox.updateDialog();
-					}
+				}
 				else
 				{
 					dialogueBox.finishTyping();
 				}
 			}
-
 		}
 
 		// pause the game if the game is allowed to pause and enter is pressed
@@ -556,7 +594,8 @@ class PlayState extends MusicBeatState
 				//*/
 			}
 
-			if (curStage == 'sky') {
+			if (curStage == 'sky')
+			{
 				var char = gf;
 
 				var getCenterX = char.getMidpoint().x + 75;
@@ -1538,13 +1577,15 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'Crack')
 		{
-			if (mutingTime > 0) {
-				if ((curBeat % 1) == 0) {
+			if (mutingTime > 0)
+			{
+				if ((curBeat % 1) == 0)
+				{
 					FlxG.sound.changeVolume(-0.1);
 				}
 			}
 
-			if ((curBeat % 32) == 0) 
+			if ((curBeat % 32) == 0)
 			{
 				switch (FlxG.random.int(0, 3))
 				{
@@ -1633,9 +1674,12 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Egomania' && (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
+		if (curSong == 'Egomania'
+			&& !hasEgomaniad
+			&& (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
 		{
-			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible1) {
+			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible1)
+			{
 				spawnDistraction();
 			}
 
@@ -1665,6 +1709,14 @@ class PlayState extends MusicBeatState
 					dadOpponent.y -= 9;
 					add(dadOpponent);
 			}
+		}
+
+		// egomania part 2
+		if (curSong == 'Egomania'
+			&& hasEgomaniad
+			&& (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
+		{
+			//
 		}
 
 		if (curStage == 'lab' || curStage == 'breakout')
@@ -1812,29 +1864,19 @@ class PlayState extends MusicBeatState
 		//
 	}
 
+	var hasEgomaniad:Bool = false;
+
 	private function songEndSpecificActions()
 	{
 		switch (SONG.song.toLowerCase())
 		{
-			case 'eggnog':
-				// make the lights go out
-				var blackShit:FlxSprite = new FlxSprite(-FlxG.width * FlxG.camera.zoom,
-					-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
-				blackShit.scrollFactor.set();
-				add(blackShit);
-				camHUD.visible = false;
-
-				// oooo spooky
-				FlxG.sound.play(Paths.sound('Lights_Shut_off'));
-
-				// call the song end
-				var eggnogEndTimer:FlxTimer = new FlxTimer().start(Conductor.crochet / 1000, function(timer:FlxTimer)
-				{
-					callDefaultSongEnd();
-				}, 1);
-			
 			case 'egomania':
-				callTextbox(Paths.json('egomania/dialogue2'));
+				if (!hasEgomaniad)
+				{
+					callTextbox(Paths.json('egomania/dialogue2'), true);
+				}
+				else
+					callDefaultSongEnd();
 
 			default:
 				callDefaultSongEnd();
@@ -1844,7 +1886,7 @@ class PlayState extends MusicBeatState
 	private function callDefaultSongEnd()
 	{
 		uiHUD.staticSound.stop();
-		if (isStoryMode) 
+		if (isStoryMode)
 		{
 			var difficulty:String = '-' + CoolUtil.difficultyFromNumber(storyDifficulty).toLowerCase();
 			difficulty = difficulty.replace('-normal', '');
@@ -1858,12 +1900,12 @@ class PlayState extends MusicBeatState
 			// deliberately did not use the main.switchstate as to not unload the assets
 			FlxG.switchState(new PlayState());
 		}
-		else 
+		else
 		{
 			Main.switchState(this, new FreeplayState());
 		}
 	}
-	
+
 	var dialogueBox:DialogueBox;
 	var distractionVisible1 = false;
 
@@ -2173,16 +2215,17 @@ class PlayState extends MusicBeatState
 				});
 			default:
 				callTextbox();
-				
 		}
 		//
 	}
-	
-	function callTextbox(dialogPath:String = "") {
-		if (dialogPath == "") {
+
+	function callTextbox(dialogPath:String = "", ?egomaniaEnd:Bool = false)
+	{
+		if (dialogPath == "")
+		{
 			dialogPath = Paths.json(SONG.song.toLowerCase() + '/dialogue');
 		}
-		
+
 		if (sys.FileSystem.exists(dialogPath))
 		{
 			if (dialogueBox != null)
@@ -2193,7 +2236,10 @@ class PlayState extends MusicBeatState
 
 			dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 			dialogueBox.cameras = [dialogueHUD];
-			dialogueBox.whenDaFinish = startCountdown;
+			if (!egomaniaEnd)
+				dialogueBox.whenDaFinish = startCountdown;
+			else
+				dialogueBox.whenDaFinish = egomania2;
 
 			add(dialogueBox);
 		}
@@ -2201,27 +2247,50 @@ class PlayState extends MusicBeatState
 			startCountdown();
 	}
 
-	function spawnDistraction(path:String = "") {
+	function egomania2()
+	{
+		hasEgomaniad = true;
+		SONG = Song.loadFromJson('egomania-2', 'egomania');
+		dadOpponent.generateCharacter(dadOpponent.x, dadOpponent.y, SONG.player2);
+		Conductor.mapBPMChanges(SONG);
+		Conductor.changeBPM(SONG.bpm);
+		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
+		songDetails = 'Egomania!!?? - ' + CoolUtil.difficultyFromNumber(storyDifficulty);
+		detailsPausedText = "Paused - " + songDetails;
+		detailsSub = "";
+		//
+		Conductor.songPosition = -(Conductor.crochet * 5);
+		songMusic = egoSongPushed;
+		vocals = egoVocalsPushed;
+		FlxG.sound.list.add(songMusic);
+		FlxG.sound.list.add(vocals);
+		unspawnNotes = secondUnspawn;
+		startSong();
+	};
+
+	var egomaniaExclusions:Array<Int> = [8];
+
+	function spawnDistraction(path:String = "")
+	{
 		volumeMultiplier = 0.25;
 		songMusic.volume = 1 * volumeMultiplier;
 		vocals.volume = 1 * volumeMultiplier;
 
-		if (path == "") {
-			path = ('/distractions/' + FlxG.random.int(0, 12, [8]));
+		if (path == "")
+		{
+			var egoInteger:Int = FlxG.random.int(0, 12, egomaniaExclusions);
+			path = ('/distractions/' + egoInteger);
+			egomaniaExclusions.push(egoInteger);
 		}
 
 		dialogueBox.destroy();
 
 		var pressKey:String = "SPACE";
-		
-		if (egomaniaRandom) {
-			pressKey = String.fromCharCode(
-				FlxG.random.int(
-					65,
-					90,
-					[65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
-				)
-			);
+
+		if (egomaniaRandom)
+		{
+			pressKey = String.fromCharCode(FlxG.random.int(65, 90, [65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
+			));
 		}
 
 		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
@@ -2231,7 +2300,6 @@ class PlayState extends MusicBeatState
 		distractionVisible1 = true;
 		add(dialogueBox);
 	}
-
 
 	public static var swagCounter:Int = 0;
 
