@@ -93,11 +93,12 @@ class DialogueBox extends FlxSpriteGroup
 	public var textStarted:Bool = false;
 
 	public var pressKey:String;
+	public var isTop:Bool = false;
 
-	public static function createDialogue(thisDialogue:String, setKey:String = "SPACE"):DialogueBox
+	public static function createDialogue(thisDialogue:String, setKey:String = "SPACE", onTop:Bool = false):DialogueBox
 	{
 		//
-		var newDialogue = new DialogueBox(false, thisDialogue, setKey);
+		var newDialogue = new DialogueBox(false, thisDialogue, setKey, onTop);
 		return newDialogue;
 	}
 
@@ -113,13 +114,14 @@ class DialogueBox extends FlxSpriteGroup
 			return truePath;
 	}
 
-	public function new(?talkingRight:Bool = false, ?daDialogue:String, setKey:String = "SPACE")
+	public function new(?talkingRight:Bool = false, ?daDialogue:String, setKey:String = "SPACE", onTop:Bool = false)
 	{
 		super();
 
 		trace("start");
 
 		pressKey = setKey;
+		isTop = onTop;
 
 		// get dialog data from dialogue.json
 		dialogueData = haxe.Json.parse(daDialogue);
@@ -166,6 +168,14 @@ class DialogueBox extends FlxSpriteGroup
 
 		skipText.screenCenter(X);
 		add(skipText);
+
+		if (isTop) {
+			portrait.flipY = true;
+			box.y -= 360;
+			box.flipY = true;
+			alphabetText.y -= 425;
+			skipText.y -= 425;
+		}
 	}
 
 	public function updateDialog(force:Bool = false)

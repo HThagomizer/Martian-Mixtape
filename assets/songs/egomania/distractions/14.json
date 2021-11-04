@@ -1,0 +1,15 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Hey uhh, do you speak English? \nI haven't learned dial-up speech yet."
+        },
+        {
+            "expression": "normal",
+            "text": "It's not a big deal if you can't, my \nguesses are probably close enough anyways."
+        }
+    ]
+}

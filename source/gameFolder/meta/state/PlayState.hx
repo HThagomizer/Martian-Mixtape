@@ -2305,7 +2305,7 @@ class PlayState extends MusicBeatState
 
 	var egomaniaExclusions:Array<Int> = [8];
 
-	function spawnDistraction(path:String = "")
+	function spawnDistraction(path:String = "", isTop:Bool = false)
 	{
 		volumeMultiplier = 0.25;
 		songMusic.volume = 1 * volumeMultiplier;
@@ -2313,7 +2313,7 @@ class PlayState extends MusicBeatState
 
 		if (path == "")
 		{
-			var egoInteger:Int = FlxG.random.int(0, 12, egomaniaExclusions);
+			var egoInteger:Int = FlxG.random.int(0, 14, egomaniaExclusions);
 			path = ('/distractions/' + egoInteger);
 			egomaniaExclusions.push(egoInteger);
 		}
@@ -2328,8 +2328,11 @@ class PlayState extends MusicBeatState
 			));
 		}
 
+		if (Init.trueSettings.get('Downscroll'))
+			isTop = !isTop;
+
 		var dialogPath = Paths.json(SONG.song.toLowerCase() + path);
-		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath), pressKey);
+		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath), pressKey, isTop);
 		dialogueBox.cameras = [dialogueHUD];
 
 		distractionVisible1 = true;
