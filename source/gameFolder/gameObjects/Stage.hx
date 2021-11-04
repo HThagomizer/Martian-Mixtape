@@ -1,5 +1,6 @@
 package gameFolder.gameObjects;
 
+import flash.display.BlendMode;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -39,6 +40,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var fbiSpin1:FlxSprite;
 	public var fbiSpin2:FlxSprite;
 	public var fbiScreen:FlxSprite;
+
+	public var beatglow:FlxSprite;
 
 	var clouds:FlxSprite;
 	var mountainfg:FlxSprite;
@@ -515,14 +518,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					skybg.antialiasing = true;
 					skybg.updateHitbox();
 					skybg.scrollFactor.set(1, 1);
-					skybg.active = false;
 					add(skybg);
 
 					mountainbg = new FlxSprite(-1075, -850).loadGraphic(Paths.image('backgrounds/$curStage/mountain2'));
 					mountainbg.antialiasing = true;
 					mountainbg.updateHitbox();
 					mountainbg.scrollFactor.set(1, 1);
-					mountainbg.active = false;
 					add(mountainbg);
 					mountainbg2 = mountainbg.clone();
 					mountainbg2.x = mountainbg.x + mountainbg.width;
@@ -534,7 +535,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					mountainfg.antialiasing = true;
 					mountainfg.updateHitbox();
 					mountainfg.scrollFactor.set(1, 1);
-					mountainfg.active = false;
 					add(mountainfg);
 					mountainfg2 = mountainfg.clone();
 					mountainfg2.x = mountainfg.x + mountainfg.width;
@@ -546,7 +546,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					trees.antialiasing = true;
 					trees.updateHitbox();
 					trees.scrollFactor.set(1, 1);
-					trees.active = false;
 					add(trees);
 					trees2 = trees.clone();
 					trees2.x = trees.x + trees.width;
@@ -558,7 +557,6 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					clouds.antialiasing = true;
 					clouds.updateHitbox();
 					clouds.scrollFactor.set(1, 1);
-					clouds.active = false;
 					add(clouds);
 					clouds2 = clouds.clone();
 					clouds2.x = clouds.x + clouds.width;
@@ -570,8 +568,15 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					ufo.antialiasing = true;
 					ufo.updateHitbox();
 					ufo.scrollFactor.set(1, 1);
-					ufo.active = false;
 					add(ufo);
+
+					beatglow = new FlxSprite(-1075, -550).loadGraphic(Paths.image('backgrounds/$curStage/beatglow'));
+					beatglow.antialiasing = true;
+					beatglow.updateHitbox();
+					beatglow.scrollFactor.set(1, 1);
+					beatglow.alpha = 0;
+					beatglow.blend = BlendMode.ADD;
+					add(beatglow);
 
 				}
 			case 'mooninites':
@@ -782,8 +787,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				}
 				var posThreshold:Int = -1075;
 
-				mountainbg.x -= 15 * (elapsed * 20 * moveMult);
-				mountainbg2.x -= 15 * (elapsed * 20 * moveMult);
+				mountainbg.x -= 5 * (elapsed * 20 * moveMult);
+				mountainbg2.x -= 5 * (elapsed * 20 * moveMult);
 
 				if (mountainbg2.x <= posThreshold)
 				{
@@ -791,8 +796,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					mountainbg2.x = mountainbg.x + mountainbg2.width;
 				}
 
-				mountainfg.x -= 75 * (elapsed * 20 * moveMult);
-				mountainfg2.x -= 75 * (elapsed * 20 * moveMult);
+				mountainfg.x -= 35 * (elapsed * 20 * moveMult);
+				mountainfg2.x -= 35 * (elapsed * 20 * moveMult);
 
 				if (mountainfg2.x <= posThreshold)
 					{
@@ -800,8 +805,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						mountainfg2.x = mountainfg.x + mountainfg2.width;
 					}
 
-				trees.x -= 150 * (elapsed * 20 * moveMult);
-				trees2.x -= 150 * (elapsed * 20 * moveMult);
+				trees.x -= 200 * (elapsed * 20 * moveMult);
+				trees2.x -= 200 * (elapsed * 20 * moveMult);
 
 				if (trees2.x <= posThreshold)
 				{

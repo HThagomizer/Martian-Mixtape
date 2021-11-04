@@ -145,6 +145,8 @@ class PlayState extends MusicBeatState
 	public var hudPositionX:Int = 0;
 	public var hudPositionY:Int = 0;
 	public var egomaniaRandom:Bool = false;
+	public var showBeatGlow:Bool = false;
+	public var beatGlowAlpha:Float = 0;
 
 	// strumlines
 	private var dadStrums:Strumline;
@@ -659,6 +661,15 @@ class PlayState extends MusicBeatState
 
 		if (!isCutscene)
 			noteCalls();
+		
+		if (curStage == 'sky') {
+			if (showBeatGlow) {
+				beatGlowAlpha = FlxMath.lerp(beatGlowAlpha, 1, elapsed * 8);
+			} else {
+				beatGlowAlpha = FlxMath.lerp(beatGlowAlpha, 0, elapsed * 8);
+			}
+			stageBuild.beatglow.alpha = FlxMath.roundDecimal((beatGlowAlpha * 2), 1) / 2;
+		}
 	}
 
 	function noteCalls()
@@ -1775,6 +1786,9 @@ class PlayState extends MusicBeatState
 				}
 			}
 		}
+
+		if (curStage == 'sky')
+			showBeatGlow = ((curBeat % 4) == 0 || (curBeat % 4) == 1);
 	}
 
 	//
