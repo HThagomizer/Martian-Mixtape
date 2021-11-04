@@ -369,7 +369,13 @@ class PlayState extends MusicBeatState
 			secondUnspawn.sort(sortByShit);
 
 			egoSongPushed = new FlxSound().loadEmbedded(Sound.fromFile('./' + 'assets/songs/egomania/Inst-2.ogg'), false, true);
+			egoSongPushed.play();
+			egoSongPushed.pause();
+			egoSongPushed.time = 0;
 			egoVocalsPushed = new FlxSound().loadEmbedded(Sound.fromFile('./' + 'assets/songs/egomania/Voices-2.ogg'), false, true);
+			egoVocalsPushed.play();
+			egoVocalsPushed.pause();
+			egoSongPushed.time = 0;
 		}
 
 		if (isStoryMode)
@@ -410,6 +416,7 @@ class PlayState extends MusicBeatState
 	}
 
 	var staticDisplace:Int = 0;
+	var immuneTest:Bool = false;
 
 	override public function update(elapsed:Float)
 	{
@@ -421,6 +428,9 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
+
+		if (FlxG.keys.justPressed.X)
+			endSong();
 
 		if (repositionTime > 0)
 		{
@@ -614,7 +624,7 @@ class PlayState extends MusicBeatState
 		FlxG.camera.angle = FlxMath.lerp(0 + forceZoom[2], FlxG.camera.angle, easeLerp);
 		camHUD.angle = FlxMath.lerp(0 + forceZoom[3], camHUD.angle, easeLerp);
 
-		if (health <= 0 && startedCountdown)
+		if (health <= 0 && !immuneTest && startedCountdown)
 		{
 			// startTimer.active = false;
 			persistentUpdate = false;
@@ -2236,9 +2246,7 @@ class PlayState extends MusicBeatState
 
 			dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath));
 			dialogueBox.cameras = [dialogueHUD];
-			if (!egomaniaEnd)
-				dialogueBox.whenDaFinish = startCountdown;
-			else
+			if (egomaniaEnd)
 				dialogueBox.whenDaFinish = egomania2;
 
 			add(dialogueBox);
@@ -2265,6 +2273,8 @@ class PlayState extends MusicBeatState
 		FlxG.sound.list.add(songMusic);
 		FlxG.sound.list.add(vocals);
 		unspawnNotes = secondUnspawn;
+		//
+		canPause = true;
 		startSong();
 	};
 

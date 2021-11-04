@@ -4,6 +4,7 @@ import flixel.FlxBasic;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup;
+import flixel.input.keyboard.FlxKey;
 import flixel.math.FlxPoint;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
@@ -12,7 +13,6 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import gameFolder.meta.data.dependency.FNFSprite;
 import gameFolder.meta.data.font.Alphabet;
-import flixel.input.keyboard.FlxKey;
 
 typedef PortraitDataDef =
 {
@@ -118,7 +118,7 @@ class DialogueBox extends FlxSpriteGroup
 		super();
 
 		trace("start");
-		
+
 		pressKey = setKey;
 
 		// get dialog data from dialogue.json
@@ -155,8 +155,6 @@ class DialogueBox extends FlxSpriteGroup
 		add(text);
 
 		add(alphabetText);
-
-
 
 		// skip text
 		var skipText = new FlxText(100, 670, 1000, "PRESS [" + pressKey + "] TO CONTINUE", 20);
@@ -496,7 +494,8 @@ class DialogueBox extends FlxSpriteGroup
 		}
 	}
 
-	public function finishTyping() {
+	public function finishTyping()
+	{
 		var pageData = dialogueData.dialogue[curPage];
 		var textToDisplay = "lol u need text for dialog";
 
@@ -509,16 +508,17 @@ class DialogueBox extends FlxSpriteGroup
 		alphabetText.x = 25;
 
 		new FlxTimer().start(0.025, function(tmr:FlxTimer)
-			{
-				alphabetText.textSpeed = 0.045;
-			});
+		{
+			alphabetText.textSpeed = 0.045;
+		});
 	}
 
 	// mario
 	// WOAH THE CODIST I LOVE MARIO!!!
 	public function closeDialog()
 	{
-		//whenDaFinish();
+		if (whenDaFinish != null)
+			whenDaFinish();
 		alphabetText.playSounds = false;
 		kill();
 	}
