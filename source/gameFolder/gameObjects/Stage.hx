@@ -54,6 +54,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
+	var moveMult:Float = 0;
+
 	var defaultCamZoom:Float = 1.05;
 
 	public var curStage:String;
@@ -768,14 +770,20 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					});
 				}
 			case 'breakout':
-				PlayState.bgCloneSpawner.update(elapsed);
-				PlayState.bgCloneSpawner2.update(elapsed);
+				if (!Init.trueSettings.get('Photosensitivity Tweaks')){
+					PlayState.bgCloneSpawner.update(elapsed);
+					PlayState.bgCloneSpawner2.update(elapsed);
+				}
 			case 'sky':
-
+				if (!Init.trueSettings.get('Reduced Movements')){
+					moveMult = 1;
+				} else {
+					moveMult = 0.5;
+				}
 				var posThreshold:Int = -1075;
 
-				mountainbg.x -= 15 * (elapsed * 20);
-				mountainbg2.x -= 15 * (elapsed * 20);
+				mountainbg.x -= 15 * (elapsed * 20 * moveMult);
+				mountainbg2.x -= 15 * (elapsed * 20 * moveMult);
 
 				if (mountainbg2.x <= posThreshold)
 				{
@@ -783,8 +791,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					mountainbg2.x = mountainbg.x + mountainbg2.width;
 				}
 
-				mountainfg.x -= 75 * (elapsed * 20);
-				mountainfg2.x -= 75 * (elapsed * 20);
+				mountainfg.x -= 75 * (elapsed * 20 * moveMult);
+				mountainfg2.x -= 75 * (elapsed * 20 * moveMult);
 
 				if (mountainfg2.x <= posThreshold)
 					{
@@ -792,8 +800,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						mountainfg2.x = mountainfg.x + mountainfg2.width;
 					}
 
-				trees.x -= 150 * (elapsed * 20);
-				trees2.x -= 150 * (elapsed * 20);
+				trees.x -= 150 * (elapsed * 20 * moveMult);
+				trees2.x -= 150 * (elapsed * 20 * moveMult);
 
 				if (trees2.x <= posThreshold)
 				{
@@ -801,8 +809,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					trees2.x = trees.x + trees2.width;
 				}
 
-				clouds.x -= 3 * (elapsed * 20);
-				clouds2.x -= 3 * (elapsed * 20);
+				clouds.x -= 3 * (elapsed * 20 * moveMult);
+				clouds2.x -= 3 * (elapsed * 20 * moveMult);
 
 				if (clouds2.x <= posThreshold)
 				{
@@ -810,14 +818,16 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					clouds2.x = clouds.x + clouds2.width;
 				}
 			case 'mylair':
-				var basePos = -500;
+				if (!Init.trueSettings.get('Reduced Movements')){
+					var basePos = -500;
 
-				face.x += 5 * (elapsed * 20);
-				face.y += 5 * (elapsed * 20);
+					face.x += 5 * (elapsed * 20);
+					face.y += 5 * (elapsed * 20);
 
-				if (face.x > (basePos + 150)) {
-					face.x = basePos;
-					face.y = basePos;
+					if (face.x > (basePos + 150)) {
+						face.x = basePos;
+						face.y = basePos;
+					}
 				}
 		}
 	}

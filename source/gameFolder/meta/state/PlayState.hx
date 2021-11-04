@@ -267,8 +267,10 @@ class PlayState extends MusicBeatState
 		// once again fuck you haxe layering
 		if (curStage == 'breakout')
 		{
-			bgCloneSpawner = new BackgroundCloneSpawner(false);
-			add(bgCloneSpawner);
+			if (!Init.trueSettings.get('Photosensitivity Tweaks')){
+				bgCloneSpawner = new BackgroundCloneSpawner(false);
+				add(bgCloneSpawner);
+			}
 		}
 		//
 
@@ -278,8 +280,10 @@ class PlayState extends MusicBeatState
 		// death
 		if (curStage == 'breakout')
 		{
-			bgCloneSpawner2 = new BackgroundCloneSpawner(true);
-			add(bgCloneSpawner2);
+			if (!Init.trueSettings.get('Photosensitivity Tweaks')){
+				bgCloneSpawner2 = new BackgroundCloneSpawner(true);
+				add(bgCloneSpawner2);
+			}
 		}
 		///
 
@@ -1432,8 +1436,11 @@ class PlayState extends MusicBeatState
 					FlxG.camera.zoom = 1.2;
 					remove(dadOpponent);
 					var yellow:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.YELLOW);
-					yellow.scrollFactor.set();
-					add(yellow);
+						yellow.scrollFactor.set();
+						add(yellow);
+					if (Init.trueSettings.get('Photosensitivity Tweaks')){
+						yellow.alpha = 0;
+					}
 					dadOpponent.generateCharacter(100, 100, 'bones-cool');
 					dadOpponent.x += 320;
 					dadOpponent.y += 220;
@@ -1443,12 +1450,14 @@ class PlayState extends MusicBeatState
 					// thank you shubs :)
 					uiHUD.iconP2.updateIcon('bones-cool');
 					dadOpponent.playAnim('singUP');
-					FlxTween.tween(yellow, {alpha: 0}, 1, {
-						onComplete: function(twn:FlxTween)
-						{
-							FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.5);
-						}
-					});
+					if (!Init.trueSettings.get('Photosensitivity Tweaks')){
+						FlxTween.tween(yellow, {alpha: 0}, 1, {
+							onComplete: function(twn:FlxTween)
+							{
+								FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.5);
+							}
+						});
+					}
 				// FlxG.log.add('FLIP');
 
 				case 50 | 54 | 58 | 62:
@@ -1592,7 +1601,12 @@ class PlayState extends MusicBeatState
 					case 0:
 						mutingTime = 5.0;
 					case 1:
-						uiHUD.noiseTime = 8.0;
+						if (!Init.trueSettings.get('Photosensitivity Tweaks')){
+							uiHUD.noiseTime = 8.0;
+						}
+						repositionTime = 8.0;
+						hudPositionX = FlxG.random.int(-300, 300);
+						hudPositionY = FlxG.random.int(-300, 300);
 					case 2:
 						repositionTime = 8.0;
 						hudPositionX = FlxG.random.int(-300, 300);
