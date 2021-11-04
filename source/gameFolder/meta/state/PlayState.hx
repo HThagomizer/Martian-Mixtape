@@ -433,9 +433,6 @@ class PlayState extends MusicBeatState
 		if (health > 2)
 			health = 2;
 
-		if (FlxG.keys.justPressed.X)
-			endSong();
-
 		if (repositionTime > 0)
 		{
 			camHUD.x = FlxMath.lerp(camHUD.x, hudPositionX, elapsed * 2);
