@@ -85,6 +85,7 @@ class OptionsMenuState extends MusicBeatState
 					['', null],
 					['Filter', getFromOption],
 					['Reduced Movements', getFromOption],
+					['Photosensitivity Tweaks', getFromOption],
 					// this shouldn't be get from option, just testing
 					['', null],
 					['User Interface', null],
