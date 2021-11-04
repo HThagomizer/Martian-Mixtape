@@ -58,7 +58,7 @@ class Init extends FlxState
 		'Photosensitivity Tweaks' => [
 			false,
 			0,
-			'Whether to remove or reduce certain visual effects. Recommended for people with epilepsy or those prone to seizures.',
+			'Whether to remove or reduce certain visual effects. Recommended for those prone to seizures.',
 			NOT_FORCED
 		],
 		'Display Accuracy' => [true, 0, 'Whether to display your accuracy on screen.', NOT_FORCED],
