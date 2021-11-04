@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "NEXT TIME, I'M ADDING GUNS TO THE MOD"
+        },
+        {
+            "text": "TRY BEEP BOOPING THAT, NONCE!!!"
+        }
+    ]
+}

@@ -1744,11 +1744,12 @@ class PlayState extends MusicBeatState
 		}
 
 		// egomania part 2
-		if (curSong == 'Egomania'
-			&& hasEgomaniad
-			&& (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
+		if (curSong == 'Egomania' && hasEgomaniad)
 		{
-			//
+			if (((curBeat % 24) == 0) && !distractionVisible1)
+			{
+				spawnDistraction();
+			}
 		}
 
 		if (curStage == 'lab' || curStage == 'breakout')
@@ -1908,6 +1909,7 @@ class PlayState extends MusicBeatState
 			case 'egomania':
 				if (!hasEgomaniad)
 				{
+					egomaniaExclusions = [];
 					callTextbox(Paths.json('egomania/dialogue2'), true);
 				}
 				else
@@ -2314,7 +2316,11 @@ class PlayState extends MusicBeatState
 		if (path == "")
 		{
 			var egoInteger:Int = FlxG.random.int(0, 14, egomaniaExclusions);
-			path = ('/distractions/' + egoInteger);
+			var suffix:String = '';
+			if (hasEgomaniad)
+				suffix = '-2';
+				egoInteger = FlxG.random.int(0, 7, egomaniaExclusions);
+			path = ('/distractions' + suffix + '/' + egoInteger);
 			egomaniaExclusions.push(egoInteger);
 		}
 

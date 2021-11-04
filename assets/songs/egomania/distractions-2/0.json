@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "normal",
+            "text": "Tip:"
+        },
+        {
+            "text": "I am so fucking mad"
+        }
+    ]
+}

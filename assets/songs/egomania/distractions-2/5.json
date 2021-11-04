@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "ugh",
+            "text": "JUST BECAUSE MY HAIR IS RED"
+        },
+        {
+            "text": "THAT DOESN'T MAKE ME A GINGER, MIDGET!!!"
+        }
+    ]
+}
