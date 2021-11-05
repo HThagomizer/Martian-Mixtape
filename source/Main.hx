@@ -117,7 +117,7 @@ class Main extends Sprite
 			"Martian Mistake"
 		],
 		[
-			['Rude', 'Extermination', 'Craniotomy', 'Meltdown'],
+			['Rude', 'Extermination', 'Craniotomy', 'Eradication'],
 			['alien-rude', 'alien-rude', 'alien-rude', 'alien-rude'],
 			[FlxColor.fromRGB(255, 50, 50)],
 			"Mean Green Man"
