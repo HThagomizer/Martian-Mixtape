@@ -1622,9 +1622,11 @@ class PlayState extends MusicBeatState
 						if (!Init.trueSettings.get('Photosensitivity Tweaks')){
 							uiHUD.noiseTime = 8.0;
 						}
-						repositionTime = 8.0;
-						hudPositionX = FlxG.random.int(-300, 300);
-						hudPositionY = FlxG.random.int(-300, 300);
+						else {
+							repositionTime = 8.0;
+							hudPositionX = FlxG.random.int(-300, 300);
+							hudPositionY = FlxG.random.int(-300, 300);
+						}
 					case 2:
 						repositionTime = 8.0;
 						hudPositionX = FlxG.random.int(-300, 300);
