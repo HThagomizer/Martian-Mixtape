@@ -78,7 +78,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			// custom stage stuffs will come with forever charts
 			switch (PlayState.SONG.song.toLowerCase())
 			{
-				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'rude' | 'extermination' | 'craniotomy' | 'meltdown':
+				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'rude' | 'extermination' | 'craniotomy' | 'eradication':
 					curStage = 'park';
 				case 'confidential' | 'aegis' | 'crack' | 'enforcement':
 					curStage = 'fbi';
