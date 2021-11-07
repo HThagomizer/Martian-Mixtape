@@ -412,12 +412,14 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN', 'AeroDown', 24);
 				animation.addByPrefix('singLEFT', 'AeroLeft', 24);
 				animation.addByPrefix('singRIGHT', 'AeroRight', 24);
+				animation.addByPrefix('shoot', 'AeroShoot', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -21, 36);
-				addOffset("singRIGHT", -5, 5);
-				addOffset("singLEFT", 12);
-				addOffset("singDOWN", 9, -13);
+				addOffset("singUP", 0, 36);
+				addOffset("singRIGHT", -16, 5);
+				addOffset("singLEFT", 44);
+				addOffset("singDOWN", 5, -16);
+				addOffset('idle', -119, 3);
 
 				playAnim('idle');
 

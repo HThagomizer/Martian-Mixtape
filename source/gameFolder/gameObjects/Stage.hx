@@ -678,6 +678,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				dad.y += 80;
 			case 'alien-air':
 				dad.y += 295;
+				dad.x -= 165;
 			case 'bones':
 				dad.x += 200;
 				dad.y += 130;
