@@ -419,7 +419,7 @@ class Character extends FNFSprite
 				addOffset("singRIGHT", -16, 5);
 				addOffset("singLEFT", 44);
 				addOffset("singDOWN", 5, -16);
-				addOffset('idle', -119, 3);
+				addOffset('shoot', -119, 3);
 
 				playAnim('idle');
 
