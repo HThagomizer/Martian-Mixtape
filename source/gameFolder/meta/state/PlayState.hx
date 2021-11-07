@@ -2264,7 +2264,7 @@ class PlayState extends MusicBeatState
 				add(black);
 				dadOpponent.visible = false;
 				//boyfriend.visible = false;
-				//gf.visible = false;
+				gf.visible = false;
 				stageBuild.gtubes.visible = false;
 				stageBuild.ctubes.visible = true;
 				stageBuild.xigtube.visible = true;
@@ -2293,6 +2293,7 @@ class PlayState extends MusicBeatState
 												new FlxTimer().start(2, function(tmr:FlxTimer)
 												{
 													dadOpponent.visible = true;
+													gf.visible = true;
 													stageBuild.gtubes.visible = true;
 													stageBuild.ctubes.visible = false;
 													stageBuild.xigtube.visible = false;
