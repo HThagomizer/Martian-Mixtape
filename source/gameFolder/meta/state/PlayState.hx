@@ -2258,6 +2258,65 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
+			case 'boing':
+				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+				black.scrollFactor.set();
+				add(black);
+				dadOpponent.visible = false;
+				//boyfriend.visible = false;
+				//gf.visible = false;
+				stageBuild.gtubes.visible = false;
+				stageBuild.ctubes.visible = true;
+				stageBuild.xigtube.visible = true;
+
+				isCutscene = true;
+				isStationaryCam = true;
+				camHUD.visible = false;
+
+				FlxG.sound.play(Paths.sound('xigman_jingle'), 1.5, false, null, true);
+
+				FlxTween.tween(black, {alpha: 0}, 1, {
+					onComplete: function(twn:FlxTween)
+					{
+						new FlxTimer().start(1.5, function(tmr:FlxTimer)
+						{
+							stageBuild.xigtube.animation.play("rise");
+							new FlxTimer().start(2.184, function(tmr:FlxTimer)
+							{
+									FlxG.sound.play(Paths.sound('glass_break'), 1.5, false, null, true);
+									stageBuild.xigtube.animation.play("out");
+									new FlxTimer().start(2, function(tmr:FlxTimer)
+									{
+										FlxTween.tween(black, {alpha: 1}, 1, {
+											onComplete: function(twn:FlxTween)
+											{
+												new FlxTimer().start(2, function(tmr:FlxTimer)
+												{
+													dadOpponent.visible = true;
+													stageBuild.gtubes.visible = true;
+													stageBuild.ctubes.visible = false;
+													stageBuild.xigtube.visible = false;
+													camHUD.visible = true;
+													
+													isCutscene = false;
+													isStationaryCam = false;
+
+													startCountdown();
+
+													FlxTween.tween(black, {alpha: 0}, 0.5, {
+														onComplete: function(twn:FlxTween)
+														{
+															remove(black);
+														}
+													});
+												});
+											}
+										});
+									});
+							});
+						});
+					}
+				});
 			default:
 				callTextbox();
 		}

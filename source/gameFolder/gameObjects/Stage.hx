@@ -41,6 +41,10 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var fbiSpin2:FlxSprite;
 	public var fbiScreen:FlxSprite;
 
+	public var gtubes:FlxSprite;
+	public var ctubes:FlxSprite;
+	public var xigtube:FlxSprite;
+
 	public var beatglow:FlxSprite;
 
 	var clouds:FlxSprite;
@@ -444,12 +448,33 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.active = false;
 					add(floor);
 
-					var tubes:FlxSprite = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
-					tubes.antialiasing = true;
-					tubes.updateHitbox();
-					tubes.scrollFactor.set(1, 1);
-					tubes.active = false;
-					add(tubes);
+					gtubes = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
+					gtubes.antialiasing = true;
+					gtubes.updateHitbox();
+					gtubes.scrollFactor.set(1, 1);
+					gtubes.active = false;
+					add(gtubes);
+
+					ctubes = new FlxSprite(-560, -120).loadGraphic(Paths.image('cutscenes/$curStage/tubes cscene'));
+					ctubes.antialiasing = true;
+					ctubes.updateHitbox();
+					ctubes.scrollFactor.set(1, 1);
+					ctubes.active = false;
+					ctubes.visible = false;
+					add(ctubes);
+
+					xigtube = new FlxSprite(-12, -116);
+					xigtube.frames = Paths.getSparrowAtlas('cutscenes/$curStage/xigman tube');
+					xigtube.animation.addByPrefix('idle', 'tube xigman still', 24);
+					xigtube.animation.addByPrefix('rise', 'tube xigman  rise', 24, false);
+					xigtube.animation.addByPrefix('out', 'tube xigman OUT', 24, false);
+					xigtube.animation.play("idle");
+					
+					xigtube.antialiasing = true;
+					xigtube.updateHitbox();
+					xigtube.scrollFactor.set(1, 1);
+					xigtube.visible = false;
+					add(xigtube);
 				}
 			case 'breakout':
 				{
