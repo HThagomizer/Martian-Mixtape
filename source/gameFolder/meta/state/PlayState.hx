@@ -52,7 +52,8 @@ class PlayState extends MusicBeatState
 	// fuck you haxe layering
 	public static var bgCloneSpawner:BackgroundCloneSpawner;
 	public static var bgCloneSpawner2:BackgroundCloneSpawner;
-
+	public var xigchad:FlxSprite;
+	public var xigchadMoves:Bool = false;
 	//
 	public static var startTimer:FlxTimer;
 
@@ -272,6 +273,17 @@ class PlayState extends MusicBeatState
 			if (!Init.trueSettings.get('Photosensitivity Tweaks')){
 				bgCloneSpawner = new BackgroundCloneSpawner(false);
 				add(bgCloneSpawner);
+
+				xigchad = new FlxSprite(-1000, 160);
+				xigchad.frames = Paths.getSparrowAtlas('backgrounds/$curStage/clones/chad');
+				xigchad.animation.addByPrefix('walk', 'magnificent runner', 12);
+				xigchad.animation.play("walk");
+
+				xigchad.antialiasing = true;
+				xigchad.color = 0xFF9999;
+				xigchad.updateHitbox();
+				xigchad.scrollFactor.set(1, 1);
+				add(xigchad);
 			}
 		}
 		//
@@ -675,6 +687,14 @@ class PlayState extends MusicBeatState
 				beatGlowAlpha = FlxMath.lerp(beatGlowAlpha, 0, elapsed * 8);
 			}
 			stageBuild.beatglow.alpha = FlxMath.roundDecimal((beatGlowAlpha * 2), 1) / 2;
+		}
+
+		if (curStage == 'breakout' && xigchadMoves)
+		{
+			if (!Init.trueSettings.get('Photosensitivity Tweaks'))
+			{
+				xigchad.x += 240 * elapsed;
+			}
 		}
 	}
 
@@ -1768,6 +1788,13 @@ class PlayState extends MusicBeatState
 				stageBuild.fbiSpin2.animation.play("idle");
 				stageBuild.fbiScreen.animation.play("idle");
 			}
+		}
+
+		if (curStage == 'breakout')
+		{
+			if (curBeat == 128 && FlxG.random.bool(25)) {
+				xigchadMoves = true;
+			}	
 		}
 
 		if (curStage == 'fbi')
