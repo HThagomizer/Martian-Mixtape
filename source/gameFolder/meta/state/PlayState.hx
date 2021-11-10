@@ -1524,7 +1524,8 @@ class PlayState extends MusicBeatState
 		if ((!dadOpponent.animation.curAnim.name.startsWith("sing"))
 			&& (!dadOpponent.animation.curAnim.name.endsWith("death"))
 			&& (!dadOpponent.animation.curAnim.name.endsWith("swig"))
-			&& (!dadOpponent.animation.curAnim.name.endsWith("puppet")))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("puppet"))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("rage")))
 			dadOpponent.dance();
 	}
 
@@ -1774,6 +1775,11 @@ class PlayState extends MusicBeatState
 		// egomania part 2
 		if (curSong == 'Egomania' && hasEgomaniad)
 		{
+			//bad code lol im so lazy. doesnt work. pls fix
+			// if (((curBeat == 0) || (curBeat == 1)) && (dadOpponent.curCharacter == 'hagomizer-rage'))
+			// {
+			// 	dadOpponent.playAnim('rage');
+			// }
 			if (((curBeat % 24) == 0) && !distractionVisible1)
 			{
 				spawnDistraction();

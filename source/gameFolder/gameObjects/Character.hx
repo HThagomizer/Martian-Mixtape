@@ -676,12 +676,14 @@ class Character extends FNFSprite
 				animation.addByPrefix('singRIGHT', 'hank RAGE singRIGHT', 24);
 				animation.addByPrefix('singDOWN', 'hank RAGE singDOWN', 24);
 				animation.addByPrefix('singLEFT', 'hank RAGE singLEFT', 24);
+				animation.addByPrefix('rage', 'hank BECOME RAGE', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP", 136, 71);
 				addOffset("singRIGHT", 7, 64);
 				addOffset("singLEFT", 87, 58);
 				addOffset("singDOWN", 54, -104);
+				addOffset('rage');
 
 				playAnim('idle');
 		}
