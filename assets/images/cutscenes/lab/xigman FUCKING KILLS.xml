@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="xigman FUCKING KILLS.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="xigman ENTRANCE0000" x="0" y="0" width="737" height="906" frameX="-369" frameY="0" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0001" x="0" y="0" width="737" height="906" frameX="-369" frameY="0" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0002" x="737" y="0" width="719" height="800" frameX="-153" frameY="-380" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0003" x="737" y="0" width="719" height="800" frameX="-153" frameY="-380" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0004" x="1456" y="0" width="375" height="552" frameX="0" frameY="-763" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0005" x="1456" y="0" width="375" height="552" frameX="0" frameY="-763" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0006" x="1831" y="0" width="326" height="596" frameX="-66" frameY="-719" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0007" x="1831" y="0" width="326" height="596" frameX="-66" frameY="-719" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0008" x="2157" y="0" width="337" height="596" frameX="-49" frameY="-719" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman ENTRANCE0009" x="2157" y="0" width="337" height="596" frameX="-49" frameY="-719" frameWidth="1106" frameHeight="1315"/>
+	<SubTexture name="xigman KILL0000" x="2494" y="0" width="337" height="596" frameX="-821" frameY="-176" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0001" x="2494" y="0" width="337" height="596" frameX="-821" frameY="-176" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0002" x="2831" y="0" width="355" height="563" frameX="-799" frameY="-204" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0003" x="2831" y="0" width="355" height="563" frameX="-799" frameY="-204" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0004" x="3186" y="0" width="853" height="461" frameX="-431" frameY="-136" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0005" x="3186" y="0" width="853" height="461" frameX="-431" frameY="-136" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0006" x="0" y="906" width="791" height="530" frameX="-413" frameY="-30" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0007" x="0" y="906" width="791" height="530" frameX="-413" frameY="-30" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0008" x="791" y="906" width="791" height="529" frameX="-324" frameY="0" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0009" x="791" y="906" width="791" height="529" frameX="-324" frameY="0" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0010" x="1582" y="906" width="791" height="529" frameX="-260" frameY="0" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0011" x="1582" y="906" width="791" height="529" frameX="-260" frameY="0" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0012" x="2373" y="906" width="791" height="530" frameX="-167" frameY="-21" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0013" x="2373" y="906" width="791" height="530" frameX="-167" frameY="-21" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0014" x="3164" y="906" width="790" height="530" frameX="-103" frameY="-57" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0015" x="3164" y="906" width="790" height="530" frameX="-103" frameY="-57" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0016" x="0" y="1436" width="791" height="530" frameX="-50" frameY="-88" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0017" x="0" y="1436" width="791" height="530" frameX="-50" frameY="-88" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman KILL0018" x="791" y="1436" width="791" height="529" frameX="0" frameY="-126" frameWidth="1284" frameHeight="772"/>
+	<SubTexture name="xigman SHAKE0000" x="1582" y="1436" width="336" height="597" frameX="-4" frameY="-1" frameWidth="340" frameHeight="599"/>
+	<SubTexture name="xigman SHAKE0001" x="1918" y="1436" width="337" height="599" frameX="-3" frameY="0" frameWidth="340" frameHeight="599"/>
+	<SubTexture name="xigman SHAKE0002" x="2255" y="1436" width="337" height="598" frameX="-2" frameY="-1" frameWidth="340" frameHeight="599"/>
+	<SubTexture name="xigman SHAKE0003" x="2592" y="1436" width="336" height="596" frameX="-4" frameY="-3" frameWidth="340" frameHeight="599"/>
+	<SubTexture name="xigman SHAKE0004" x="2928" y="1436" width="339" height="598" frameX="0" frameY="0" frameWidth="340" frameHeight="599"/>
+	<SubTexture name="xigman SHAKE0005" x="3267" y="1436" width="339" height="594" frameX="-1" frameY="-4" frameWidth="340" frameHeight="599"/>
+</TextureAtlas>
