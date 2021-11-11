@@ -4,11 +4,11 @@
     "dialogue": [
         {
             "portrait": "hank",
-            "expression": "normal",
-            "text": "Tip:"
+            "expression": "rage",
+            "text": "You have NO IDEA how mad I am right now."
         },
         {
-            "text": "I am so fucking mad"
+            "text": "Maybe you do, actually, because my skin is red, \nbut FUCK YOU!!!"
         }
     ]
 }

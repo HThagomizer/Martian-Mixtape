@@ -4,11 +4,11 @@
     "dialogue": [
         {
             "portrait": "hank",
-            "expression": "ugh",
-            "text": "WHY ARE YOU STILL LOOKING SO SMUG"
+            "expression": "rage",
+            "text": "WHY ARE YOU STILL SMIRKING LIKE THAT"
         },
         {
-            "text": "CAN'T YOU SEE I'M PISSED RIGHT NOW"
+            "text": "CAN'T YOU SEE I'M PISSED OFF RIGHT NOW"
         }
     ]
 }

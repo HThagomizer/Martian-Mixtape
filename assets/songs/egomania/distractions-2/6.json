@@ -4,10 +4,11 @@
     "dialogue": [
         {
             "portrait": "hank",
-            "expression": "ugh",
+            "expression": "rage",
             "text": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         },
         {
+            "expression": "normal",
             "text": "...Felt good to let that out. \nBut I'm STILL ANGRY!!!"
         }
     ]

@@ -3,7 +3,8 @@
     "expressions": {
         "normal": "hank dialogue normal",
         "laugh": "hank dialogue laugh",
-        "ugh": "hank dialogue nugh"
+        "ugh": "hank dialogue nugh",
+        "rage": "hank dialogue RAGE"
     },
     "position": [0, 100],
     "flipX": true,
