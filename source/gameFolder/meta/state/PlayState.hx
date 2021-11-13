@@ -1840,7 +1840,7 @@ class PlayState extends MusicBeatState
 			// {
 			// 	dadOpponent.playAnim('rage');
 			// }
-			if (((curBeat % 16) == 0) && !distractionVisible)
+			if (((curBeat % 16) == 0) && !distractionVisible && (curBeat < 135))
 			{
 				spawnDistraction();
 			}
@@ -2091,6 +2091,8 @@ class PlayState extends MusicBeatState
 	private function callDefaultSongEnd()
 	{
 		uiHUD.staticSound.stop();
+		volumeMultiplier = 1;
+		vocals.volume = 1;
 		if (isStoryMode)
 		{
 			var difficulty:String = '-' + CoolUtil.difficultyFromNumber(storyDifficulty).toLowerCase();
