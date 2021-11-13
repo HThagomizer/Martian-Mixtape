@@ -1622,12 +1622,12 @@ class PlayState extends MusicBeatState
 			{
 				case 55:
 					remove(dadOpponent);
+					dadOpponent.color = 0xFFFFFF
 					remove(boyfriend);
 					var black:FlxSprite = new FlxSprite(-250, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 					black.scrollFactor.set();
 					add(black);
 					add(dadOpponent);
-					FlxTween.tween(dadOpponent, {color: 0xFFFFFF}, 0.0000001);
 					isCutscene = true;
 					camHUD.visible = false;
 					dadOpponent.playAnim('xigdeath', true);
@@ -1650,6 +1650,42 @@ class PlayState extends MusicBeatState
 					dadOpponent.x += 80;
 					dadOpponent.y += 80;
 					add(dadOpponent);
+			}
+		}
+
+		if (curSong == 'Craniotomy') {
+			switch (curBeat){
+				case 94:
+					//fade to black
+					var black:FlxSprite = new FlxSprite(-250, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+					black.scrollFactor.set();
+					black.alpha = 0;
+					add(black);
+					FlxTween.tween(black, {alpha: 1}, 0.5);
+				case 95:
+					//xigmund fade in
+					remove(dadOpponent);
+					dadOpponent.alpha = 0;
+					dadOpponent.color = 0xFF0000;
+					add(dadOpponent);
+					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
+				case 96:
+					//hardcoded zooms every beat like in milf
+				case 104:
+					//bf fade in
+				case 128:
+					//hardcoded zooms stop
+				case 190:
+					//bf and xigmund fade back to black
+				case 192:
+					//fade back in to normal stuff
+					// FlxTween.tween(black, {alpha: 0}, 0.5);
+				case 255:
+					//fade back to black again, xigmund and bf red and blue automatically
+					// FlxTween.tween(black, {alpha: 1}, 0.5);
+				case 288:
+					//back to normal again
+					// FlxTween.tween(black, {alpha: 0}, 0.5);
 			}
 		}
 
