@@ -1825,6 +1825,11 @@ class PlayState extends MusicBeatState
 			if (curBeat == 128 && FlxG.random.bool(25)) {
 				xigchadMoves = true;
 			}	
+
+			switch (curBeat){
+				case 147 | 187 | 311:
+					gf.playAnim('cheer');
+			}
 		}
 
 		if (curStage == 'fbi')
