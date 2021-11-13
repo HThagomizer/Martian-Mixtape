@@ -397,11 +397,17 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN', 'xigmund singDOWN', 24);
 				animation.addByPrefix('singLEFT', 'xigmund singLEFT', 24, false);
 
+				animation.addByPrefix('fuck', 'xigmund alt singDOWN', 24);
+				animation.addByPrefix('pain', 'xigmund pain', 24);
+
 				addOffset('idle');
 				addOffset("singUP");
 				addOffset("singRIGHT", 0, -6);
 				addOffset("singLEFT", 33, -5);
 				addOffset("singDOWN", 55, -55);
+
+				addOffset("fuck", -4, -58);
+				addOffset("pain", 53, -75);
 
 				playAnim('idle');
 

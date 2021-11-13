@@ -1544,7 +1544,9 @@ class PlayState extends MusicBeatState
 			&& (!dadOpponent.animation.curAnim.name.endsWith("death"))
 			&& (!dadOpponent.animation.curAnim.name.endsWith("swig"))
 			&& (!dadOpponent.animation.curAnim.name.endsWith("puppet"))
-			&& (!dadOpponent.animation.curAnim.name.endsWith("rage")))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("rage"))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("fuck"))
+			&& (!dadOpponent.animation.curAnim.name.endsWith("pain")))
 			dadOpponent.dance();
 	}
 
@@ -1632,19 +1634,22 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Annihilation')
+		if (curSong == 'Extermination' && dadOpponent.curCharacter == 'alien-rude' || dadOpponent.curCharacter == 'alien-ouch')
 		{
-			switch (curBeat)
+				switch (curBeat)
 			{
-				case 1:
-					if (storyDifficulty == 1 || storyDifficulty == 0)
-					{
-						health = 0;
-						new FlxTimer().start(1, function(swagTimer:FlxTimer)
-						{
-							FlxG.sound.play(Paths.sound('coward'), 1, false, null, true);
-						});
-					}
+				case 31:
+					boyfriend.playAnim('hey', true);
+				case 158:
+					dadOpponent.playAnim('pain', true);
+				case 159:
+					dadOpponent.playAnim('fuck', true);
+				case 320:
+					remove(dadOpponent);
+					dadOpponent.generateCharacter(100, 100, 'alien-ouch');
+					dadOpponent.x += 80;
+					dadOpponent.y += 80;
+					add(dadOpponent);
 			}
 		}
 
