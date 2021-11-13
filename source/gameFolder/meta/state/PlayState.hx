@@ -1622,7 +1622,7 @@ class PlayState extends MusicBeatState
 			{
 				case 55:
 					remove(dadOpponent);
-					dadOpponent.color = 0xFFFFFF
+					dadOpponent.color = 0xFFFFFF;
 					remove(boyfriend);
 					var black:FlxSprite = new FlxSprite(-250, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 					black.scrollFactor.set();
