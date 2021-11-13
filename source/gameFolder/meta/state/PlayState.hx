@@ -522,7 +522,7 @@ class PlayState extends MusicBeatState
 		}
 
 		// pause the game if the game is allowed to pause and enter is pressed
-		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause && !isCutscene)
+		if (FlxG.keys.justPressed.ENTER && startedCountdown && canPause && !isCutscene && !distractionVisible)
 		{
 			// update drawing stuffs
 			persistentUpdate = false;
