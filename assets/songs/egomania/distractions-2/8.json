@@ -1,0 +1,14 @@
+{
+    "box": "speech_bubble_talking",
+    "boxState": "normal",
+    "dialogue": [
+        {
+            "portrait": "hank",
+            "expression": "rage",
+            "text": "My rage is like SWEAT. It SEEPS through \nmy PORES."
+        },
+        {
+            "text": "TASTE THE RAGE SWEAT!!!!!!"
+        }
+    ]
+}
