@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="alienpower_assets.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="xiggod down0000" x="0" y="0" width="313" height="658" frameX="0" frameY="-4" frameWidth="314" frameHeight="662"/>
+	<SubTexture name="xiggod down0001" x="0" y="0" width="313" height="658" frameX="0" frameY="-4" frameWidth="314" frameHeight="662"/>
+	<SubTexture name="xiggod down0002" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0003" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0004" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0005" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0006" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0007" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0008" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0009" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0010" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0011" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0012" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0013" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0014" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0015" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0016" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0017" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0018" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0019" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0020" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0021" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0022" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0023" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0024" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0025" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0026" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0027" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0028" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0029" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0030" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0031" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0032" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0033" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0034" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0035" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0036" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0037" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0038" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0039" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0040" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0041" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0042" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0043" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0044" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0045" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0046" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0047" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0048" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0049" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0050" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0051" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0052" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0053" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0054" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0055" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0056" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0057" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0058" x="313" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0059" x="627" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0060" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod down0061" x="941" y="0" width="314" height="662"/>
+	<SubTexture name="xiggod idle0000" x="1255" y="0" width="296" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0001" x="1255" y="0" width="296" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0002" x="1551" y="0" width="297" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0003" x="1551" y="0" width="297" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0004" x="1848" y="0" width="300" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0005" x="2148" y="0" width="300" height="662" frameX="0" frameY="0" frameWidth="301" frameHeight="662"/>
+	<SubTexture name="xiggod idle0006" x="2448" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0007" x="2749" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0008" x="2749" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0009" x="3050" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0010" x="2448" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0011" x="2448" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0012" x="2749" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod idle0013" x="2749" y="0" width="301" height="662"/>
+	<SubTexture name="xiggod left0000" x="3351" y="0" width="328" height="662"/>
+	<SubTexture name="xiggod left0001" x="3351" y="0" width="328" height="662"/>
+	<SubTexture name="xiggod left0002" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0003" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0004" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0005" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0006" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0007" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0008" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0009" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0010" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0011" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0012" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0013" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0014" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0015" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0016" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0017" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0018" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0019" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0020" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0021" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0022" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0023" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0024" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0025" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0026" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0027" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0028" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0029" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0030" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0031" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0032" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0033" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0034" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0035" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0036" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0037" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0038" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0039" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0040" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0041" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0042" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0043" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0044" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0045" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0046" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0047" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0048" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0049" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0050" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0051" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0052" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0053" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0054" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0055" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0056" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0057" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0058" x="3679" y="0" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0059" x="0" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0060" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod left0061" x="324" y="662" width="324" height="662" frameX="-4" frameY="0" frameWidth="328" frameHeight="662"/>
+	<SubTexture name="xiggod right0000" x="648" y="662" width="301" height="662" frameX="-2" frameY="0" frameWidth="304" frameHeight="662"/>
+	<SubTexture name="xiggod right0001" x="648" y="662" width="301" height="662" frameX="-2" frameY="0" frameWidth="304" frameHeight="662"/>
+	<SubTexture name="xiggod right0002" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0003" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0004" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0005" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0006" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0007" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0008" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0009" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0010" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0011" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0012" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0013" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0014" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0015" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0016" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0017" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0018" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0019" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0020" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0021" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0022" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0023" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0024" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0025" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0026" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0027" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0028" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0029" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0030" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0031" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0032" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0033" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0034" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0035" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0036" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0037" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0038" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0039" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0040" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0041" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0042" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0043" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0044" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0045" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0046" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0047" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0048" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0049" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0050" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0051" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0052" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0053" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0054" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0055" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0056" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0057" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0058" x="949" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0059" x="1253" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0060" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod right0061" x="1557" y="662" width="304" height="662"/>
+	<SubTexture name="xiggod up0000" x="1861" y="662" width="322" height="670"/>
+	<SubTexture name="xiggod up0001" x="1861" y="662" width="322" height="670"/>
+	<SubTexture name="xiggod up0002" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0003" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0004" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0005" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0006" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0007" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0008" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0009" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0010" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0011" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0012" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0013" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0014" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0015" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0016" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0017" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0018" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0019" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0020" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0021" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0022" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0023" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0024" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0025" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0026" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0027" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0028" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0029" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0030" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0031" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0032" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0033" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0034" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0035" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0036" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0037" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0038" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0039" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0040" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0041" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0042" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0043" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0044" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0045" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0046" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0047" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0048" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0049" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0050" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0051" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0052" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0053" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0054" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0055" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0056" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0057" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0058" x="2183" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0059" x="2505" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0060" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+	<SubTexture name="xiggod up0061" x="2827" y="662" width="322" height="662" frameX="0" frameY="-3" frameWidth="322" frameHeight="670"/>
+</TextureAtlas>

@@ -422,6 +422,23 @@ class Character extends FNFSprite
 
 				playAnim('idle');
 
+			case 'alien-power':
+				tex = Paths.getSparrowAtlas('characters/xigmund/alienpower_assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'xiggod idle', 24);
+				animation.addByPrefix('singUP', 'xiggod up', 24, false);
+				animation.addByPrefix('singRIGHT', 'xiggod right', 24, false);
+				animation.addByPrefix('singDOWN', 'xiggod down', 24);
+				animation.addByPrefix('singLEFT', 'xiggod left', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+
 			case 'alien-air':
 				frames = Paths.getSparrowAtlas('characters/xigmund/alienair_assets');
 				animation.addByPrefix('idle', 'AeroIdle', 24, false);

@@ -8,6 +8,7 @@ alien-pissed
 alien-psychic
 alien-rude
 alien-ouch
+alien-power
 bones
 bones-cool
 bones-spectral
