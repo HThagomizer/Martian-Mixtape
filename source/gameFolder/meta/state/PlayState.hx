@@ -158,6 +158,8 @@ class PlayState extends MusicBeatState
 	private var isCutscene:Bool = false;
 	private var isStationaryCam:Bool = false;
 
+	public var xigkill:FlxSprite;
+
 	var egoSongPushed:FlxSound;
 	var egoVocalsPushed:FlxSound;
 
@@ -263,6 +265,20 @@ class PlayState extends MusicBeatState
 
 		// reposition characters
 		stageBuild.repositionPlayers(curStage, boyfriend, dadOpponent, gf);
+
+		if (curStage == 'lab')
+		{
+			xigkill = new FlxSprite(1200, -600);
+			xigkill.frames = Paths.getSparrowAtlas('cutscenes/lab/xigman FUCKING KILLS');
+			xigkill.animation.addByPrefix('entrance', 'xigman ENTRANCE', 24);
+			xigkill.animation.addByPrefix('shake', 'xigman SHAKE', 24, true);
+			xigkill.animation.addByPrefix('kill', 'xigman KILL', 42);
+			xigkill.antialiasing = true;
+			xigkill.updateHitbox();
+			xigkill.scrollFactor.set(1, 1);
+			xigkill.visible = false;
+			add(xigkill);
+		}
 
 		// add characters
 		add(gf);
@@ -1958,7 +1974,69 @@ class PlayState extends MusicBeatState
 				}
 				else
 					callDefaultSongEnd();
+			case 'freak':
+				if (!isStoryMode)
+				{
+					callDefaultSongEnd();
+				}
+				else
+				{
+					var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.RED);
+					red.scrollFactor.set();
+					red.alpha = 0;
+					add(red);
 
+					//xigkill.addOffset("shake", -39, -718);
+					//xigkill.addOffset("kill", 754, -545);
+
+					isCutscene = true;
+					camFollow.setPosition(gf.getMidpoint().x + 250, gf.getMidpoint().y - 50);
+					camHUD.visible = false;
+
+					new FlxTimer().start(1.5, function(tmr:FlxTimer)
+					{
+						FlxG.sound.play(Paths.sound('fwoosh'), 1.5, false, null, true);
+
+						xigkill.visible = true;
+						xigkill.animation.play("entrance");
+						new FlxTimer().start(0.4, function(tmr:FlxTimer)
+						{
+							xigkill.x += 39;
+							xigkill.y += 718;
+							xigkill.animation.play("shake");
+							new FlxTimer().start(1.5, function(tmr:FlxTimer)
+							{
+								xigkill.x -= 39;
+								xigkill.y -= 718;
+
+								xigkill.x -= 780;
+								xigkill.y += 545;
+								xigkill.animation.play("kill");
+
+								FlxG.sound.play(Paths.sound('xigman_scream'), 1.5, false, null, true);
+								new FlxTimer().start(0.2, function(tmr:FlxTimer)
+									{
+
+									FlxG.sound.play(Paths.sound('fbihit'), 1.5, false, null, true);
+									FlxTween.tween(red, {alpha: 1}, 0.125, {
+										onComplete: function(twn:FlxTween)
+										{
+											new FlxTimer().start(0.2, function(tmr:FlxTimer)
+												{
+												FlxG.sound.play(Paths.sound('fbipwned'), 1.5, false, null, true);
+
+												new FlxTimer().start(2, function(tmr:FlxTimer)
+												{
+													callDefaultSongEnd();
+												});
+											});
+										}
+									});
+								});
+							});
+						});
+					});
+				}
 			default:
 				callDefaultSongEnd();
 		}
