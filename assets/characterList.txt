@@ -1,4 +1,5 @@
 bf
+bf-hominid
 gf
 dad
 alien
@@ -6,6 +7,7 @@ alien-alt
 alien-pissed
 alien-psychic
 alien-rude
+alien-ouch
 bones
 bones-cool
 bones-spectral
