@@ -506,7 +506,7 @@ class PlayState extends MusicBeatState
 
 						songMusic.volume = 1 * volumeMultiplier;
 						vocals.volume = 1 * volumeMultiplier;
-						distractionVisible1 = false;
+						distractionVisible = false;
 
 						isCutscene = false;
 						startedCountdown = true;
@@ -1758,7 +1758,7 @@ class PlayState extends MusicBeatState
 			&& !hasEgomaniad
 			&& (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
 		{
-			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible1)
+			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible)
 			{
 				spawnDistraction();
 			}
@@ -1799,7 +1799,7 @@ class PlayState extends MusicBeatState
 			// {
 			// 	dadOpponent.playAnim('rage');
 			// }
-			if (((curBeat % 24) == 0) && !distractionVisible1)
+			if (((curBeat % 16) == 0) && !distractionVisible)
 			{
 				spawnDistraction();
 			}
@@ -2066,7 +2066,7 @@ class PlayState extends MusicBeatState
 	}
 
 	var dialogueBox:DialogueBox;
-	var distractionVisible1 = false;
+	var distractionVisible = false;
 
 	public function songIntroCutscene()
 	{
@@ -2515,7 +2515,9 @@ class PlayState extends MusicBeatState
 			pressKey = String.fromCharCode(FlxG.random.int(65, 90, [65, 68, 70, 74, 75, 87, 83] // WASD and DFJK
 			));
 		}
-
+		
+		if (hasEgomaniad)
+			isTop = FlxG.random.bool(50);
 		if (Init.trueSettings.get('Downscroll'))
 			isTop = !isTop;
 
@@ -2523,7 +2525,7 @@ class PlayState extends MusicBeatState
 		dialogueBox = DialogueBox.createDialogue(sys.io.File.getContent(dialogPath), pressKey, isTop);
 		dialogueBox.cameras = [dialogueHUD];
 
-		distractionVisible1 = true;
+		distractionVisible = true;
 		add(dialogueBox);
 	}
 
