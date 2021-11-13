@@ -2220,8 +2220,8 @@ class PlayState extends MusicBeatState
 				black.scrollFactor.set();
 				add(black);
 
-				camFollow.x += 500;
-				camFollow.y += 300;
+				camFollow.x = 800;
+				camFollow.y = 600;
 
 				isCutscene = true;
 				camHUD.visible = false;
@@ -2328,7 +2328,7 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
-			case 'itch':
+			case 'jitter':
 				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 				black.scrollFactor.set();
 				add(black);

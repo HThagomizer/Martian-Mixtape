@@ -448,14 +448,14 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					floor.active = false;
 					add(floor);
 
-					gtubes = new FlxSprite(-560, -120).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
+					gtubes = new FlxSprite(-560, -100).loadGraphic(Paths.image('backgrounds/$curStage/tubes'));
 					gtubes.antialiasing = true;
 					gtubes.updateHitbox();
 					gtubes.scrollFactor.set(1, 1);
 					gtubes.active = false;
 					add(gtubes);
 
-					ctubes = new FlxSprite(-560, -120).loadGraphic(Paths.image('cutscenes/$curStage/tubes cscene'));
+					ctubes = new FlxSprite(-560, -100).loadGraphic(Paths.image('cutscenes/$curStage/tubes cscene'));
 					ctubes.antialiasing = true;
 					ctubes.updateHitbox();
 					ctubes.scrollFactor.set(1, 1);
