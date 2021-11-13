@@ -2517,6 +2517,7 @@ class PlayState extends MusicBeatState
 		hasEgomaniad = true;
 		SONG = Song.loadFromJson('egomania-2', 'egomania');
 		dadOpponent.generateCharacter(dadOpponent.x, dadOpponent.y, SONG.player2);
+		dadOpponent.animation.play("rage");
 		Conductor.mapBPMChanges(SONG);
 		Conductor.changeBPM(SONG.bpm);
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
