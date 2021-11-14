@@ -151,7 +151,8 @@ class PlayState extends MusicBeatState
 	public var dadOriginX:Float = 0;
 	public var dadOriginY:Float = 0;
 	public var timeElapsed:Float = 0;
-
+	public var zoomBeat:Bool = false;
+	
 	// strumlines
 	private var dadStrums:Strumline;
 	private var boyfriendStrums:Strumline;
@@ -1570,7 +1571,7 @@ class PlayState extends MusicBeatState
 	{
 		super.beatHit();
 
-		if ((FlxG.camera.zoom < 1.35 && curBeat % 4 == 0) && (!Init.trueSettings.get('Reduced Movements')))
+		if ((FlxG.camera.zoom < 1.35 && ((curBeat % 4 == 0) || zoomBeat)) && (!Init.trueSettings.get('Reduced Movements')))
 		{
 			FlxG.camera.zoom += 0.015;
 			camHUD.zoom += 0.05;
@@ -1673,35 +1674,66 @@ class PlayState extends MusicBeatState
 			switch (curBeat){
 				case 94:
 					//fade to black
-					var black:FlxSprite = new FlxSprite(-250, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
-					black.scrollFactor.set();
-					black.alpha = 0;
-					add(black);
-					FlxTween.tween(black, {alpha: 1}, 0.5);
+					stageBuild.black.alpha = 0;
+					FlxTween.tween(stageBuild.black, {alpha: 1}, 0.5);
+
+					FlxTween.tween(gf, {alpha: 0}, 0.5);
+					FlxTween.tween(boyfriend, {alpha: 0}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 0}, 0.5);
 				case 95:
 					//xigmund fade in
-					remove(dadOpponent);
-					dadOpponent.alpha = 0;
 					dadOpponent.color = 0xFF0000;
-					add(dadOpponent);
 					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
 				case 96:
 					//hardcoded zooms every beat like in milf
+					zoomBeat = true;
 				case 104:
 					//bf fade in
+					boyfriend.color = 0x0000FF;
+					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
 				case 128:
 					//hardcoded zooms stop
+					zoomBeat = false;
 				case 190:
 					//bf and xigmund fade back to black
+					FlxTween.tween(boyfriend, {alpha: 0}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 0}, 0.5);
 				case 192:
 					//fade back in to normal stuff
-					// FlxTween.tween(black, {alpha: 0}, 0.5);
-				case 255:
+					FlxTween.tween(stageBuild.black, {alpha: 0}, 0.5);
+
+					boyfriend.color = 0xFFFFFF;
+					dadOpponent.color = 0xFFFFFF;
+					FlxTween.tween(gf, {alpha: 1}, 0.5);
+					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
+				case 254:
 					//fade back to black again, xigmund and bf red and blue automatically
-					// FlxTween.tween(black, {alpha: 1}, 0.5);
+					stageBuild.black.alpha = 0;
+					FlxTween.tween(stageBuild.black, {alpha: 1}, 0.5);
+
+					FlxTween.tween(gf, {alpha: 0}, 0.5);
+					FlxTween.tween(boyfriend, {alpha: 0}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 0}, 0.5);
+				case 256:
+					//xig and bf fade in
+					dadOpponent.color = 0xFF0000;
+					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
+					boyfriend.color = 0x0000FF;
+					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
+				case 286:
+					//xig and bf back to black
+					FlxTween.tween(boyfriend, {alpha: 0}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 0}, 0.5);
 				case 288:
 					//back to normal again
-					// FlxTween.tween(black, {alpha: 0}, 0.5);
+					FlxTween.tween(stageBuild.black, {alpha: 0}, 0.5);
+
+					boyfriend.color = 0xFFFFFF;
+					dadOpponent.color = 0xFFFFFF;
+					FlxTween.tween(gf, {alpha: 1}, 0.5);
+					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
+					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
 			}
 		}
 

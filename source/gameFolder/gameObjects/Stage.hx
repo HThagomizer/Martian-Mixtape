@@ -15,6 +15,7 @@ import flixel.math.FlxPoint;
 import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
 import gameFolder.gameObjects.background.*;
 import gameFolder.meta.state.PlayState;
 
@@ -46,6 +47,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	public var xigtube:FlxSprite;
 
 	public var beatglow:FlxSprite;
+	public var black:FlxSprite;
 
 	var clouds:FlxSprite;
 	var mountainfg:FlxSprite;
@@ -159,6 +161,11 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					park_ground.scrollFactor.set(0.9, 0.9);
 					park_ground.active = false;
 					add(park_ground);
+
+					black = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+					black.scrollFactor.set();
+					black.alpha = 0;
+					add(black);
 				}
 			case 'fbi':
 				{
