@@ -1680,7 +1680,7 @@ class PlayState extends MusicBeatState
 					FlxTween.tween(gf, {alpha: 0}, 0.5);
 					FlxTween.tween(boyfriend, {alpha: 0}, 0.5);
 					FlxTween.tween(dadOpponent, {alpha: 0}, 0.5);
-				case 95:
+				case 96:
 					//xigmund fade in
 					dadOpponent.color = 0xFF0000;
 					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
