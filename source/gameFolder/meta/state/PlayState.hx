@@ -2548,6 +2548,13 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
+			case 'breakout':
+				var red:FlxSprite = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.RED);
+				red.scrollFactor.set();
+				red.alpha = 1;
+				add(red);
+
+				FlxTween.tween(red, {alpha: 0}, 0.5);
 			default:
 				callTextbox();
 		}
