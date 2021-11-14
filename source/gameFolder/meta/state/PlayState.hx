@@ -2159,7 +2159,7 @@ class PlayState extends MusicBeatState
 				black.scrollFactor.set();
 				add(black);
 
-				camFollow.x -= 300;
+				camFollow.x = (dadOpponent.getMidpoint().x + 150);
 
 				isCutscene = true;
 				camHUD.visible = false;
@@ -2203,17 +2203,21 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
-			case 'annihilation-lol':
+			case 'annihilation-lol' | 'eradication':
 				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 				black.scrollFactor.set();
 				add(black);
 				remove(dadOpponent);
-				dadOpponent.generateCharacter(100, 100, 'alien-pissed');
+				if (curSong == 'annihilation-lol') {
+					dadOpponent.generateCharacter(100, 100, 'alien-pissed');
+				} else {
+					dadOpponent.generateCharacter(100, 100, 'alien-ouch');
+				}
 				add(dadOpponent);
 				dadOpponent.color = 0xa99dc9;
 				dadOpponent.x += 160;
 				dadOpponent.y += 110;
-				camFollow.x -= 300;
+				camFollow.x = (dadOpponent.getMidpoint().x + 150);
 
 				isCutscene = true;
 				camHUD.visible = false;
@@ -2235,7 +2239,11 @@ class PlayState extends MusicBeatState
 									onComplete: function(twn:FlxTween)
 									{
 										remove(dadOpponent);
-										dadOpponent.generateCharacter(100, 100, 'alien-psychic');
+										if (curSong == 'annihilation-lol') {
+											dadOpponent.generateCharacter(100, 100, 'alien-psychic');
+										} else {
+											dadOpponent.generateCharacter(100, 100, 'alien-power');
+										}
 										add(dadOpponent);
 										dadOpponent.color = 0xa99dc9;
 										new FlxTimer().start(1, function(swagTimer:FlxTimer)

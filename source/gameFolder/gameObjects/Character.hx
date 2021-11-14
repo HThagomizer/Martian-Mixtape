@@ -420,11 +420,15 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN', 'xigmouch down', 24);
 				animation.addByPrefix('singLEFT', 'xigmouch left', 24, false);
 
+				animation.addByPrefix('charging', 'xigmouch charge', 24, false);
+
 				addOffset('idle');
 				addOffset("singUP", 45, -46);
 				addOffset("singRIGHT", -9, -144);
 				addOffset("singLEFT", 120, -216);
 				addOffset("singDOWN", 68, -230);
+
+				addOffset("charge", 68, -46);
 
 				playAnim('idle');
 
