@@ -724,7 +724,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (dadOpponent.curCharacter == "alien-power" && curBeat < 128) {
+		if (dadOpponent.curCharacter == "alien-power" && !isCutscene && curBeat < 128) {
 			var char = dadOpponent;
 			char.y = (dadOriginY + (Math.sin(timeElapsed * 2) * 100)) - 75;
 
