@@ -1935,6 +1935,9 @@ class PlayState extends MusicBeatState
 
 		if (vocals != null)
 			vocals.stop();
+	
+		if (uiHUD != null)
+			uiHUD.staticSound.stop();
 	}
 
 	override function openSubState(SubState:FlxSubState)
@@ -1947,6 +1950,7 @@ class PlayState extends MusicBeatState
 				//	trace('nulled song');
 				songMusic.pause();
 				vocals.pause();
+				uiHUD.staticSound.pause();
 				//	trace('nulled song finished');
 			}
 
@@ -1966,6 +1970,7 @@ class PlayState extends MusicBeatState
 		{
 			if (songMusic != null && !startingSong)
 				resyncVocals();
+				uiHUD.staticSound.play();
 
 			if ((startTimer != null) && (!startTimer.finished))
 				startTimer.active = true;

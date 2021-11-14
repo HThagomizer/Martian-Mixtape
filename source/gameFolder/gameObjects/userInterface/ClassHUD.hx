@@ -119,6 +119,8 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		staticSound = new FlxSound().loadEmbedded(Sound.fromFile(Paths.sound("static")), true, false);
 		staticSound.volume = 0;
 		staticSound.play();
+
+		FlxG.sound.list.add(staticSound);
 	}
 
 	override public function update(elapsed:Float)
