@@ -1670,7 +1670,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Craniotomy') {
+		if ((curSong == 'Craniotomy') && (!Init.trueSettings.get('Photosensitivity Tweaks'))) {
 			switch (curBeat){
 				case 94:
 					//fade to black
