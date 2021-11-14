@@ -148,6 +148,9 @@ class PlayState extends MusicBeatState
 	public var egomaniaRandom:Bool = false;
 	public var showBeatGlow:Bool = false;
 	public var beatGlowAlpha:Float = 0;
+	public var dadOriginX:Float = 0;
+	public var dadOriginY:Float = 0;
+	public var timeElapsed:Float = 0;
 
 	// strumlines
 	private var dadStrums:Strumline;
@@ -265,6 +268,8 @@ class PlayState extends MusicBeatState
 
 		// reposition characters
 		stageBuild.repositionPlayers(curStage, boyfriend, dadOpponent, gf);
+		dadOriginX = dadOpponent.x;
+		dadOriginY = dadOpponent.y;
 
 		if (curStage == 'lab')
 		{
@@ -458,6 +463,7 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
+		timeElapsed += elapsed;
 		FlxG.camera.followLerp = elapsed * 2;
 
 		if (health > 2)
@@ -612,6 +618,8 @@ class PlayState extends MusicBeatState
 				{
 					case 'annihilation' | 'annihilation-lol':
 						forceZoom[0] = -0.15;
+					case 'eradication':
+						forceZoom[0] = -0.075;
 					case 'enforcement':
 						forceZoom[0] = -0.85;
 				}
@@ -627,7 +635,7 @@ class PlayState extends MusicBeatState
 				///*
 				switch (SONG.song.toLowerCase())
 				{
-					case 'annihilation' | 'annihilation-lol':
+					case 'annihilation' | 'annihilation-lol' | 'eradication':
 						forceZoom[0] = 0;
 					case 'enforcement':
 						forceZoom[0] = -0.65;
@@ -714,6 +722,14 @@ class PlayState extends MusicBeatState
 			{
 				xigchad.x += 240 * elapsed;
 			}
+		}
+
+		if (dadOpponent.curCharacter == "alien-power" && curBeat < 128) {
+			var char = dadOpponent;
+			char.y = (dadOriginY + (Math.sin(timeElapsed * 2) * 100)) - 75;
+
+			if (curBeat > 63)
+				char.x = (dadOriginX + (Math.sin(timeElapsed * 4) * 50)) - 25;
 		}
 	}
 
