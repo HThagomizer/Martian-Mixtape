@@ -436,12 +436,14 @@ class Character extends FNFSprite
 				animation.addByPrefix('singRIGHT', 'xiggod right', 24, false);
 				animation.addByPrefix('singDOWN', 'xiggod down', 24);
 				animation.addByPrefix('singLEFT', 'xiggod left', 24, false);
+				animation.addByPrefix('death', 'xiggod FUCKING DIES', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP");
 				addOffset("singRIGHT");
 				addOffset("singLEFT");
 				addOffset("singDOWN");
+				addOffset("death", 29, 58);
 
 				playAnim('idle');
 

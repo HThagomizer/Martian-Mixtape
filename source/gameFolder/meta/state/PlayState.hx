@@ -1689,6 +1689,13 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		if (curSong == 'Eradication') {
+			switch (curBeat){
+				case 128:
+					dadOpponent.playAnim('death');
+			}
+		}
+
 		if (curSong == 'Crack')
 		{
 			if (mutingTime > 0)
