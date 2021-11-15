@@ -162,7 +162,7 @@ class PlayState extends MusicBeatState
 	private var isCutscene:Bool = false;
 	private var isStationaryCam:Bool = false;
 
-	var jitterspeed:Float = 0;
+	public var jitterspeed:Float = 0;
 
 	public var xigkill:FlxSprite;
 
@@ -689,13 +689,11 @@ class PlayState extends MusicBeatState
 			var dunceNote:Note = unspawnNotes[0];
 			if (curSong == 'Jitter')
 			{
-				var funkySteps:Float = (unspawnNotes[0].strumTime / Conductor.stepCrochet);
-				switch(funkySteps){
-					case 192 | 320 | 448 | 576 | 704 | 960 | 1216 | 1280 | 1344 | 1408:
-						//scroll speed only changes once for some reason
-						//fix soon
-						jitterspeed += 0.1;
-				}
+				var funkySteps:Int = Std.int(unspawnNotes[0].strumTime / Conductor.stepCrochet);
+				var speedupBeats:Array<Int> = [192, 320, 448, 576, 704, 960, 1216, 1280, 1344, 1408];
+				if (speedupBeats.contains(funkySteps))
+					jitterspeed += 0.3;
+				
 				dunceNote.noteSpeed += jitterspeed;
 			}
 			if (curSong == 'Exclusion Zone')
