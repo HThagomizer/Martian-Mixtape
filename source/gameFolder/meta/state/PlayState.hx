@@ -1702,8 +1702,8 @@ class PlayState extends MusicBeatState
 					//fade back in to normal stuff
 					FlxTween.tween(stageBuild.black, {alpha: 0}, 0.5);
 
-					boyfriend.color = 0xFFFFFF;
-					dadOpponent.color = 0xFFFFFF;
+					boyfriend.color = 0xa99dc9;
+					dadOpponent.color = 0xa99dc9;
 					FlxTween.tween(gf, {alpha: 1}, 0.5);
 					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
 					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
@@ -1729,8 +1729,8 @@ class PlayState extends MusicBeatState
 					//back to normal again
 					FlxTween.tween(stageBuild.black, {alpha: 0}, 0.5);
 
-					boyfriend.color = 0xFFFFFF;
-					dadOpponent.color = 0xFFFFFF;
+					boyfriend.color = 0xa99dc9;
+					dadOpponent.color = 0xa99dc9;
 					FlxTween.tween(gf, {alpha: 1}, 0.5);
 					FlxTween.tween(boyfriend, {alpha: 1}, 0.5);
 					FlxTween.tween(dadOpponent, {alpha: 1}, 0.5);
