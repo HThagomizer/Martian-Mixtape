@@ -2280,7 +2280,7 @@ class PlayState extends MusicBeatState
 				black.scrollFactor.set();
 				add(black);
 				remove(dadOpponent);
-				if (curSong == 'annihilation-lol') {
+				if (curSong == 'Annihilation-lol') {
 					dadOpponent.generateCharacter(100, 100, 'alien-pissed');
 				} else {
 					dadOpponent.generateCharacter(100, 100, 'alien-ouch');
@@ -2311,7 +2311,7 @@ class PlayState extends MusicBeatState
 									onComplete: function(twn:FlxTween)
 									{
 										remove(dadOpponent);
-										if (curSong == 'annihilation-lol') {
+										if (curSong == 'Annihilation-lol') {
 											dadOpponent.generateCharacter(100, 100, 'alien-psychic');
 										} else {
 											dadOpponent.generateCharacter(100, 100, 'alien-power');
