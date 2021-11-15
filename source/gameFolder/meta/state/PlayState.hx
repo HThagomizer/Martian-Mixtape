@@ -162,6 +162,8 @@ class PlayState extends MusicBeatState
 	private var isCutscene:Bool = false;
 	private var isStationaryCam:Bool = false;
 
+	var jitterspeed:Float = 0;
+
 	public var xigkill:FlxSprite;
 
 	var egoSongPushed:FlxSound;
@@ -685,6 +687,17 @@ class PlayState extends MusicBeatState
 		if ((unspawnNotes[0] != null) && ((unspawnNotes[0].strumTime - Conductor.songPosition) < 3500))
 		{
 			var dunceNote:Note = unspawnNotes[0];
+			if (curSong == 'Jitter')
+			{
+				var funkySteps:Float = (unspawnNotes[0].strumTime / Conductor.stepCrochet);
+				switch(funkySteps){
+					case 192 | 320 | 448 | 576 | 704 | 960 | 1216 | 1280 | 1344 | 1408:
+						//scroll speed only changes once for some reason
+						//fix soon
+						jitterspeed += 0.1;
+				}
+				dunceNote.noteSpeed += jitterspeed;
+			}
 			if (curSong == 'Exclusion Zone')
 			{
 				var funkySteps:Float = (unspawnNotes[0].strumTime / Conductor.stepCrochet);
@@ -1665,7 +1678,7 @@ class PlayState extends MusicBeatState
 					remove(dadOpponent);
 					dadOpponent.generateCharacter(100, 100, 'alien-ouch');
 					dadOpponent.x += 80;
-					dadOpponent.y += 80;
+					dadOpponent.y += 100;
 					add(dadOpponent);
 			}
 		}
