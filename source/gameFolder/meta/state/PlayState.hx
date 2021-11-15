@@ -2180,7 +2180,7 @@ class PlayState extends MusicBeatState
 	{
 		switch (curSong.toLowerCase())
 		{
-			case 'probed':
+			case 'probed' | 'rude':
 				remove(dadOpponent);
 				remove(gf);
 
@@ -2190,11 +2190,19 @@ class PlayState extends MusicBeatState
 
 				var xigIntro:FlxSprite = new FlxSprite(100, -100);
 				var cutsceneUfo:FlxSprite = new FlxSprite(100, -100);
-				xigIntro.frames = Paths.getSparrowAtlas('cutscenes/opening');
+				if(curSong == 'Probed') {
+					xigIntro.frames = Paths.getSparrowAtlas('cutscenes/opening');
+				} else {
+					xigIntro.frames = Paths.getSparrowAtlas('cutscenes/opening alt');
+				}
 				xigIntro.antialiasing = true;
 				cutsceneUfo.frames = Paths.getSparrowAtlas('cutscenes/UFOempty');
 				cutsceneUfo.antialiasing = true;
-				xigIntro.animation.addByPrefix('idle', 'repairing', 24, false);
+				if(curSong == 'Probed') {
+					xigIntro.animation.addByPrefix('idle', 'repairing', 24, false);
+				} else {
+					xigIntro.animation.addByPrefix('idle', 'xigmund cscene1', 24, false);
+				}
 				cutsceneUfo.animation.addByPrefix('idle', 'Symbol 2 instance ', 24, false);
 				add(cutsceneUfo);
 				add(xigIntro);
