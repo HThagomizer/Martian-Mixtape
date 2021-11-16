@@ -73,7 +73,7 @@ class ChartLoader
 						var swagNote:Note = ForeverAssets.generateArrow(PlayState.assetModifier, daStrumTime, daNoteData, 0, daNoteAlt);
 						// set note speed
 						swagNote.noteSpeed = songData.speed;
-						if (songData.song == 'Exclusion Zone')
+						if (songData.song.toLowerCase() == 'exclusion zone')
 						{
 							var funkySteps:Float = (swagNote.strumTime / Conductor.stepCrochet);
 							var coffeeSpeed:Float = 2.7;
@@ -82,14 +82,14 @@ class ChartLoader
 							else if (funkySteps >= 920 && funkySteps <= 1312)
 								swagNote.noteSpeed = coffeeSpeed + 0.3;
 						}
-						if (songData.song == 'Eradication')
+						if (songData.song.toLowerCase() == 'eradication')
 						{
-							if (swagNote.mustPress)
+							if (gottaHitNote)
 								swagNote.noteSpeed = 2.0;
 						}
-						if (songData.song == 'Jitter')
+						if (songData.song.toLowerCase() == 'jitter')
 						{
-							var funkySteps:Int = Std.int(unspawnNotes[0].strumTime / Conductor.stepCrochet);
+							var funkySteps:Int = Std.int(swagNote.strumTime / Conductor.stepCrochet);
 							var speedupBeats:Array<Int> = [192, 320, 448, 576, 704, 960, 1216, 1280, 1344, 1408];
 							if (speedupBeats.contains(funkySteps))
 								jitterspeed += 0.3;
@@ -105,8 +105,9 @@ class ChartLoader
 						// adjust sustain length
 						susLength = susLength / Conductor.stepCrochet;
 						// push the note to the array we'll push later to the playstate
+
 						unspawnNotes.push(swagNote);
-						// STOP POSTING ABOUT AMONG US
+
 						// basically said push the sustain notes to the array respectively
 						for (susNote in 0...Math.floor(susLength))
 						{
