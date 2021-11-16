@@ -59,7 +59,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 	var mountainbg2:FlxSprite;
 	var trees2:FlxSprite;
 
-	var face:FlxTiledSprite;
+	public var face:FlxTiledSprite;
+	public var face2:FlxTiledSprite;
 
 	var lazerzfromlazerz:FlxTypedGroup<FlxSprite>;
 
@@ -257,12 +258,21 @@ class Stage extends FlxTypedGroup<FlxBasic>
 						add(van);
 					}
 
-					tank = new FlxSprite(1100, 100);
-					tank.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tank');
-					tank.animation.addByPrefix('idle', 'tank', 24, false);
-					tank.scrollFactor.set(1, 1);
-					tank.animation.play("idle");
-					add(tank);
+					if(PlayState.SONG.song.toLowerCase() != 'enforcement') {
+						tank = new FlxSprite(1100, 100);
+						tank.frames = Paths.getSparrowAtlas('backgrounds/$curStage/tank');
+						tank.animation.addByPrefix('idle', 'tank', 24, false);
+						tank.scrollFactor.set(1, 1);
+						tank.animation.play("idle");
+						add(tank);
+					} else{
+						tank = new FlxSprite(1100, 373).loadGraphic(Paths.image('backgrounds/$curStage/tank empty'));
+						tank.antialiasing = true;
+						tank.updateHitbox();
+						tank.scrollFactor.set(1, 1);
+						tank.active = false;
+						add(tank);
+					}
 				}
 			case 'raveyard':
 				{
@@ -635,6 +645,14 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				face.scrollFactor.set(0.3, 0.3);
 				add(face);
 
+				face2 = new FlxTiledSprite(null, 10000, 1400, true, true);
+				face2.loadGraphic(Paths.image('backgrounds/$curStage/me2'));
+				face2.x -= 500;
+				face2.y -= 500;
+				face2.alpha = 0;
+				face2.scrollFactor.set(0.3, 0.3);
+				add(face2);
+
 			default:
 				PlayState.defaultCamZoom = 0.9;
 				curStage = 'stage';
@@ -689,6 +707,12 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gfVersion = 'gf-gold';
 		}
 
+		switch (PlayState.SONG.song.toLowerCase())
+		{
+			case 'enforcement':
+				gfVersion = 'gf-hominid';
+		}
+
 		return gfVersion;
 	}
 
@@ -731,7 +755,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				dad.x += 60;
 			case 'FBImech':
 				dad.y -= 1350;
-				dad.x -= 1600;
+				dad.x -= 1800;
 			case 'FBIbodyguard':
 				dad.y -= 70;
 				dad.x -= 200;
@@ -866,10 +890,14 @@ class Stage extends FlxTypedGroup<FlxBasic>
 
 					face.x += 5 * (elapsed * 20);
 					face.y += 5 * (elapsed * 20);
+					face2.x += 5 * (elapsed * 20);
+					face2.y += 5 * (elapsed * 20);
 
 					if (face.x > (basePos + 150)) {
 						face.x = basePos;
 						face.y = basePos;
+						face2.x = basePos;
+						face2.y = basePos;
 					}
 				}
 		}

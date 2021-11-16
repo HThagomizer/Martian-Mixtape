@@ -1879,6 +1879,8 @@ class PlayState extends MusicBeatState
 				case 96:
 					egomaniaRandom = true;
 					spawnDistraction('/hardcoded/random');
+					stageBuild.face.alpha = 0;
+					stageBuild.face2.alpha = 1;
 				case 157:
 					dadOpponent.playAnim("puppet");
 				case 160:
@@ -1895,6 +1897,9 @@ class PlayState extends MusicBeatState
 					dadOpponent.x -= 16;
 					dadOpponent.y -= 9;
 					add(dadOpponent);
+
+					stageBuild.face.alpha = 1;
+					stageBuild.face2.alpha = 0;
 			}
 		}
 
