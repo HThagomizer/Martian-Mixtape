@@ -626,7 +626,7 @@ class PlayState extends MusicBeatState
 				{
 					case 'annihilation' | 'annihilation-lol':
 						forceZoom[0] = -0.15;
-					case 'eradication':
+					case 'aneurysmia':
 						forceZoom[0] = -0.075;
 					case 'enforcement':
 						forceZoom[0] = -0.85;
@@ -643,7 +643,7 @@ class PlayState extends MusicBeatState
 				///*
 				switch (SONG.song.toLowerCase())
 				{
-					case 'annihilation' | 'annihilation-lol' | 'eradication':
+					case 'annihilation' | 'annihilation-lol' | 'aneurysmia':
 						forceZoom[0] = 0;
 					case 'enforcement':
 						forceZoom[0] = -0.65;
@@ -1737,7 +1737,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Eradication')
+		if (curSong == 'Aneurysmia')
 		{
 			switch (curBeat)
 			{
@@ -2280,7 +2280,7 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
-			case 'annihilation-lol' | 'eradication':
+			case 'annihilation-lol' | 'aneurysmia':
 				var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 				black.scrollFactor.set();
 				add(black);

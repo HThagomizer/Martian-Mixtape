@@ -82,7 +82,7 @@ class ChartLoader
 							else if (funkySteps >= 920 && funkySteps <= 1312)
 								swagNote.noteSpeed = coffeeSpeed + 0.3;
 						}
-						if (songData.song.toLowerCase() == 'eradication')
+						if (songData.song.toLowerCase() == 'aneurysmia')
 						{
 							if (gottaHitNote)
 								swagNote.noteSpeed = 2.0;
