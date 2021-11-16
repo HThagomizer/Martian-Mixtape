@@ -2284,12 +2284,8 @@ class PlayState extends MusicBeatState
 				black.scrollFactor.set();
 				add(black);
 				remove(dadOpponent);
-<<<<<<< Updated upstream
-				if (curSong.toLowerCase() == 'annihilation-lol') {
-=======
-				if (curSong == 'annihilation-lol')
+				if (curSong.toLowerCase() == 'annihilation-lol')
 				{
->>>>>>> Stashed changes
 					dadOpponent.generateCharacter(100, 100, 'alien-pissed');
 				}
 				else
@@ -2322,7 +2318,8 @@ class PlayState extends MusicBeatState
 									onComplete: function(twn:FlxTween)
 									{
 										remove(dadOpponent);
-										if (curSong.toLowerCase() == 'annihilation-lol') {
+										if (curSong.toLowerCase() == 'annihilation-lol')
+										{
 											dadOpponent.generateCharacter(100, 100, 'alien-psychic');
 										}
 										else
