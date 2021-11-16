@@ -181,6 +181,7 @@ class PlayState extends MusicBeatState
 		combo = 0;
 		health = 1;
 		misses = 0;
+		volumeMultiplier = 1;
 
 		defaultCamZoom = 1.05;
 		forceZoom = [0, 0, 0, 0];
