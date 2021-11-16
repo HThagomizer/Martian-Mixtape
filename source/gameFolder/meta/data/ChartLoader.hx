@@ -24,6 +24,7 @@ class ChartLoader
 	{
 		var unspawnNotes:Array<Note> = [];
 		var noteData:Array<SwagSection>;
+		var jitterspeed:Float = 0;
 
 		noteData = songData.notes;
 		switch (typeOfChart)
@@ -72,6 +73,29 @@ class ChartLoader
 						var swagNote:Note = ForeverAssets.generateArrow(PlayState.assetModifier, daStrumTime, daNoteData, 0, daNoteAlt);
 						// set note speed
 						swagNote.noteSpeed = songData.speed;
+						if (songData.song == 'Exclusion Zone')
+						{
+							var funkySteps:Float = (swagNote.strumTime / Conductor.stepCrochet);
+							var coffeeSpeed:Float = 2.7;
+							if (funkySteps >= 380 && funkySteps <= 640)
+								swagNote.noteSpeed = coffeeSpeed;
+							else if (funkySteps >= 920 && funkySteps <= 1312)
+								swagNote.noteSpeed = coffeeSpeed + 0.3;
+						}
+						if (songData.song == 'Eradication')
+						{
+							if (swagNote.mustPress)
+								swagNote.noteSpeed = 2.0;
+						}
+						if (songData.song == 'Jitter')
+						{
+							var funkySteps:Int = Std.int(unspawnNotes[0].strumTime / Conductor.stepCrochet);
+							var speedupBeats:Array<Int> = [192, 320, 448, 576, 704, 960, 1216, 1280, 1344, 1408];
+							if (speedupBeats.contains(funkySteps))
+								jitterspeed += 0.3;
+
+							swagNote.noteSpeed += jitterspeed;
+						}
 
 						// set the note's length (sustain note)
 						swagNote.sustainLength = songNotes[2];
