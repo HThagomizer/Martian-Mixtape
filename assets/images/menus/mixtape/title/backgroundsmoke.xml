@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="backgroundsmoke.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SmokeBackground0000" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0001" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0002" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0003" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0004" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0005" x="0" y="0" width="1487" height="1049" frameX="0" frameY="0" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0006" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0007" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0008" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0009" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0010" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0011" x="1487" y="0" width="1423" height="1047" frameX="-76" frameY="-19" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0012" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0013" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0014" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0015" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0016" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0017" x="0" y="1049" width="1408" height="1030" frameX="-70" frameY="-24" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0018" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0019" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0020" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0021" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0022" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+	<SubTexture name="SmokeBackground0023" x="1408" y="1049" width="1505" height="1065" frameX="-21" frameY="-9" frameWidth="1526" frameHeight="1074"/>
+</TextureAtlas>

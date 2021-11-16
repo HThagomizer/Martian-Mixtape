@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="belltower.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BellTower0000" x="0" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0001" x="0" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0002" x="175" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0003" x="175" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0004" x="350" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0005" x="350" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0006" x="525" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0007" x="525" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0008" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0009" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0010" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0011" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0012" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0013" x="875" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0014" x="875" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0015" x="1050" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0016" x="1050" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0017" x="1225" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0018" x="1225" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0019" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0020" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0021" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0022" x="700" y="0" width="175" height="549"/>
+	<SubTexture name="BellTower0023" x="700" y="0" width="175" height="549"/>
+</TextureAtlas>
