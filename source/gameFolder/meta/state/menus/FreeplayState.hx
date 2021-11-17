@@ -35,6 +35,7 @@ class FreeplayState extends MusicBeatState
 	var curSongPlaying:Int = -1;
 	var curDifficulty:Int = 1;
 
+	var blurbText:FlxText;
 	var scoreText:FlxText;
 	var diffText:FlxText;
 	var lerpScore:Int = 0;
@@ -51,6 +52,7 @@ class FreeplayState extends MusicBeatState
 	private var mainColor = FlxColor.WHITE;
 
 	private var behind:FlxSprite;
+	private var sides:FlxSprite;
 	private var hologram:FlxSprite;
 	private var marker:FlxSprite;
 
@@ -68,6 +70,47 @@ class FreeplayState extends MusicBeatState
 
 	private var selectingCategory:Bool = true;
 	private var selectedCategory:Int = 0;
+
+	public static var songBlurbs:Map<String, String> = [
+		// week 1
+		"probed" => "lets hope it doesnt go THERE",
+		"lazerz" => "cowboy alien music",
+		"brainfuck" => "saying what the masses are afraid to",
+		"annihilation-lol" => "this is top notch charting",
+
+		// week 2
+		"confidential" => "[REDACTED]",
+		"aegis" => "hes kinda built though",
+		"crack" => "like hacking or like drugs?",
+		"enforcement" => "everything is fine and aliens are not real",
+
+		// week 3
+		"marrow" => "like bone juice",
+		"pelvic" => "jet set who?",
+		"spinal tap" => "SKELETON GUITAR",
+
+		// week 4
+		"tinfoil" => "he seems like a well adjusted individual",
+		"jitter" => "wheres the screenshake",
+		"exclusion zone" => "unchill beats to evade the FBI to",
+
+		// week 5
+		"boing" => "google eyed weirdo",
+		"freak" => "those teeth could bite someones head off",
+		"breakout" => "i dont feel safe",
+
+		// week 1-alt
+		"rude" => "why are you being mean to me",
+		"extermination" => "official yoshubs statement: banger alert",
+		"craniotomy" => "maybe some aspirin would help",
+		"aneurysmia" => "we did the same joke again",
+
+		// bonus songs
+		"annihilation" => "you asked for it",
+		"aerodynamix" => "wait who's driving",
+		"spacecataz" => "jumping... is useless",
+		"egomania" => "you got your dialogue alright"
+	];
 
 	override function create()
 	{
@@ -92,6 +135,7 @@ class FreeplayState extends MusicBeatState
 		// LOAD CHARACTERS
 
 		behind = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/behind'));
+		sides = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/sides'));
 		hologram = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/holonogram'));
 		marker = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/marker'));
 
@@ -127,12 +171,16 @@ class FreeplayState extends MusicBeatState
 
 		add(grayBox);
 
+		add(sides);
 		add(buttonGroup);
 
 		add(topButtonsFrame);
 		add(bottom);
 
-		scoreText = new FlxText(0, 230, 0, "", 32);
+		blurbText = new FlxText(0, 230, 0, "", 16);
+		blurbText.setFormat(Paths.font("vcr.ttf"), 24, FlxColor.WHITE, RIGHT);
+
+		scoreText = new FlxText(0, blurbText.y + 28, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 
 		scoreBG = new FlxSprite(scoreText.x - scoreText.width, 0).makeGraphic(Std.int(FlxG.width * 0.35), 66, 0xFF000000);
@@ -146,6 +194,8 @@ class FreeplayState extends MusicBeatState
 		add(diffText);
 
 		add(scoreText);
+
+		add(blurbText);
 
 		changeSelection();
 		changeDiff();
@@ -218,6 +268,7 @@ class FreeplayState extends MusicBeatState
 			else if (downP)
 				changeSelection(1);
 
+			blurbText.alpha = 1;
 			scoreText.alpha = 1;
 
 			if (selectedCategory == 0)
@@ -281,6 +332,7 @@ class FreeplayState extends MusicBeatState
 			
 			diffText.alpha = 0;
 			scoreText.alpha = 0;
+			blurbText.alpha = 0;
 
 			var buttonIdx = 0;
 			for (item in buttonGroup.members)
@@ -295,7 +347,11 @@ class FreeplayState extends MusicBeatState
 		}
 
 		// Adhere the position of all the things (I'm sorry it was just so ugly before I had to fix it Shubs)
+		var blurb:String = songBlurbs[songs[curSelected].songName.toLowerCase()];
+		blurbText.text = '"' + blurb + '"';
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
+
+		blurbText.x = FlxG.width - blurbText.width - 80;
 		scoreText.x = FlxG.width - scoreText.width - 80;
 		diffText.x = FlxG.width - diffText.width - 80;
 	}
