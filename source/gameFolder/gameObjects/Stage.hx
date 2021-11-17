@@ -218,6 +218,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							gruntbopper = new FlxSprite(150, 50);
 							gruntbopper.frames = Paths.getSparrowAtlas('backgrounds/$curStage/fbi boppers');
 							gruntbopper.animation.addByPrefix('idle', 'grunt bopper', 24, false);
+							gruntbopper.animation.addByPrefix('woh', 'grunt woh', 24, false);
 							gruntbopper.scrollFactor.set(1, 1);
 							gruntbopper.animation.play('idle');
 							add(gruntbopper);
@@ -245,6 +246,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 							}
 							bodyguardbopper.frames = Paths.getSparrowAtlas('backgrounds/$curStage/fbi boppers');
 							bodyguardbopper.animation.addByPrefix('idle', 'bodyguard bopper', 24, false);
+							bodyguardbopper.animation.addByPrefix('woh', 'bodyguard woh', 24, false);
 							bodyguardbopper.scrollFactor.set(1, 1);
 							bodyguardbopper.animation.play('idle');
 							add(bodyguardbopper);

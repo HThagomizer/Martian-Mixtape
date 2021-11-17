@@ -108,16 +108,16 @@ class MainMenuState extends MusicBeatState
 		options.setPosition(590, 520);
 		menuItems.add(options);
 
-		creditsButton = new FlxSprite();
-		creditsButton.frames = Paths.getSparrowAtlas('menus/mixtape/MENU');
-		creditsButton.animation.addByPrefix('unpress', 'Credits2', 24, false);
-		creditsButton.animation.addByIndices('press', 'Credits2', [9, 8, 7, 6, 5, 4, 3, 2, 1, 0], '', 24, false);
-		creditsButton.animation.play('unpress');
-		creditsButton.setGraphicSize(Std.int(creditsButton.width * (2 / 3)));
-		creditsButton.updateHitbox();
-		creditsButton.antialiasing = true;
-		menuItems.add(creditsButton);
-		creditsButton.setPosition(-50, (FlxG.height - creditsButton.height) + 50);
+		// creditsButton = new FlxSprite();
+		// creditsButton.frames = Paths.getSparrowAtlas('menus/mixtape/MENU');
+		// creditsButton.animation.addByPrefix('unpress', 'Credits2', 24, false);
+		// creditsButton.animation.addByIndices('press', 'Credits2', [9, 8, 7, 6, 5, 4, 3, 2, 1, 0], '', 24, false);
+		// creditsButton.animation.play('unpress');
+		// creditsButton.setGraphicSize(Std.int(creditsButton.width * (2 / 3)));
+		// creditsButton.updateHitbox();
+		// creditsButton.antialiasing = true;
+		// menuItems.add(creditsButton);
+		// creditsButton.setPosition(-50, (FlxG.height - creditsButton.height) + 50);
 
 		//
 		var versionShit:FlxText = new FlxText(20, 20, 0, "Forever Engine v" + Main.gameVersion, 24);

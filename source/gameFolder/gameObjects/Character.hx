@@ -624,12 +624,14 @@ class Character extends FNFSprite
 				animation.addByPrefix('singDOWN', 'hacker singDOWN', 24, false);
 				animation.addByPrefix('singLEFT', 'hacker singLEFT', 24, false);
 				animation.addByPrefix('singRIGHT', 'hacker singRIGHT', 24, false);
+				animation.addByPrefix('woh', 'hacker woh', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP", -76, 34);
 				addOffset("singRIGHT", -36, -13);
 				addOffset("singLEFT", -35, -12);
 				addOffset("singDOWN", -20, -16);
+				addOffset('woh');
 
 				playAnim('idle');
 			case 'FBImech':
