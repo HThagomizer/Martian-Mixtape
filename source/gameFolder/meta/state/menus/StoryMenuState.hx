@@ -253,8 +253,10 @@ class StoryMenuState extends MusicBeatState
 					changeDifficulty(0);
 
 					FlxG.sound.play(Paths.sound('confirmMenu'));
-
-					changeFlash.alpha = 1.2;
+					if (!Init.trueSettings.get('Photosensitivity Tweaks'))
+					{
+						changeFlash.alpha = 1.2;
+					}
 					curWeek	= 0;
 					addWeeks();
 					updateText();
