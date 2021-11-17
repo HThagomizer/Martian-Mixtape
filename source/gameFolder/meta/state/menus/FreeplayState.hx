@@ -405,7 +405,7 @@ class FreeplayState extends MusicBeatState
 
 			if (iconIndex == curSelected)
 				icon.alpha = 1;
-			
+
 			if (songs[iconIndex].songName == "egomania")
 				icon.alpha = 0.01;
 
@@ -445,6 +445,11 @@ class FreeplayState extends MusicBeatState
 	function changeCategorySelection(change:Int = 0)
 	{
 		selectedCategory += change;
+
+		if (selectedCategory > 2)
+			selectedCategory = 0;
+		else if (selectedCategory < 0)
+			selectedCategory = 2;
 
 		addWeeks();
 
