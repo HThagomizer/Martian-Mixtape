@@ -26,13 +26,12 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['alien', 'bf', 'gf'],
-		['fbi', 'bf', 'gf'],
-		['bones', 'bf', 'gf'],
-		['harold', 'bf', 'gf'],
-		['xigman', 'bf', 'gf'],
-		['alien-rude', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		[['alien', 'alien-rude'], 'bf', 'gf'],
+		[['fbi', ''], 'bf', 'gf'],
+		[['bones', ''], 'bf', 'gf'],
+		[['harold', ''], 'bf', 'gf'],
+		[['xigman', ''], 'bf', 'gf'],
+		[['', ''], 'bf', 'gf']
 	];
 
 	var txtWeekTitle:FlxText;
@@ -109,24 +108,26 @@ class StoryMenuState extends MusicBeatState
 
 		for (char in 0...3)
 		{
-			var weekCharacterThing:MenuCharacter = new MenuCharacter((FlxG.width * 0.25) * (1 + char) - 150, weekCharacters[curWeek][char]);
+			var character = weekCharacters[curWeek][char];
+			var alt = '';
+
+			if (char == 0)
+			{
+				character = weekCharacters[curWeek][char][0];
+				alt = weekCharacters[curWeek][char][1];
+			}
+
+			var weekCharacterThing:MenuCharacter = new MenuCharacter((FlxG.width * 0.25) * (1 + char) - 150, character, alt);
 			weekCharacterThing.antialiasing = (!Init.trueSettings.get('Disable Antialiasing'));
+
 			switch (weekCharacterThing.character)
 			{
-				case 'dad':
-					weekCharacterThing.setGraphicSize(Std.int(weekCharacterThing.width * 0.5));
-					weekCharacterThing.updateHitbox();
 				case 'bf':
 					weekCharacterThing.setGraphicSize(Std.int(weekCharacterThing.width * 0.9));
 					weekCharacterThing.updateHitbox();
 					weekCharacterThing.x -= 80;
 				case 'gf':
 					weekCharacterThing.setGraphicSize(Std.int(weekCharacterThing.width * 0.5));
-					weekCharacterThing.updateHitbox();
-				case 'pico':
-					weekCharacterThing.flipX = true;
-				case 'parents-christmas':
-					weekCharacterThing.setGraphicSize(Std.int(weekCharacterThing.width * 0.9));
 					weekCharacterThing.updateHitbox();
 			}
 
@@ -405,7 +406,7 @@ class StoryMenuState extends MusicBeatState
 
 	function updateText()
 	{
-		grpWeekCharacters.members[0].createCharacter(weekCharacters[curWeek][0], true);
+		grpWeekCharacters.members[0].createCharacter(weekCharacters[curWeek][0][currentCategory], true);
 		// grpWeekCharacters.members[1].createCharacter(weekCharacters[curWeek][1]);
 		// grpWeekCharacters.members[2].createCharacter(weekCharacters[curWeek][2]);
 		txtTracklist.text = "Tracks\n";

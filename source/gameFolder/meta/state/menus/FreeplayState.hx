@@ -74,7 +74,7 @@ class FreeplayState extends MusicBeatState
 	public static var songBlurbs:Map<String, String> = [
 		// week 1
 		"probed" => "lets hope it doesnt go THERE",
-		"lazerz" => "smooth jazz for channeling your inner psychokinesis",
+		"lazerz" => "cowboy alien music",
 		"brainfuck" => "saying what the masses are afraid to",
 		"annihilation-lol" => "this is top notch charting",
 
@@ -116,8 +116,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.create();
 
-		// make sure the music is playing
-		ForeverTools.resetMenuMusic();
+		selectedCategory = 0;
 
 		/**
 			Wanna add songs? They're in the Main state now, you can just find the week array and add a song there to a specific week.

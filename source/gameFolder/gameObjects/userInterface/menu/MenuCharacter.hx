@@ -6,6 +6,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 class MenuCharacter extends FlxSprite
 {
 	public var character:String = '';
+	public var alt:String = '';
 
 	var curCharacterMap:Map<String, Array<Dynamic>> = [
 		// the format is currently
@@ -24,7 +25,7 @@ class MenuCharacter extends FlxSprite
 	var baseX:Float = 0;
 	var baseY:Float = 0;
 
-	public function new(x:Float, newCharacter:String = 'bf')
+	public function new(x:Float, newCharacter:String = 'bf', newAlt:String = '')
 	{
 		super(x);
 		y += 70;
@@ -32,24 +33,29 @@ class MenuCharacter extends FlxSprite
 		baseX = x;
 		baseY = y;
 
-		createCharacter(newCharacter);
+		createCharacter(newCharacter, newAlt);
 		updateHitbox();
 	}
 
-	public function createCharacter(newCharacter:String, canChange:Bool = false)
+	public function createCharacter(newCharacter:String, canChange:Bool = false, newAlt:String = '')
 	{
 		var tex = Paths.getSparrowAtlas('menus/base/storymenu/campaign_menu_UI_characters');
 		frames = tex;
 		var assortedValues = curCharacterMap.get(newCharacter);
+		var assortedAltValues = curCharacterMap.get(newAlt);
 		if (assortedValues != null)
 		{
 			if (!visible)
 				visible = true;
 
 			// animation
-			animation.addByPrefix(newCharacter, assortedValues[0], assortedValues[1], assortedValues[2]);
+			animation.addByPrefix("main", assortedValues[0], assortedValues[1], assortedValues[2]);
+
+			if (newAlt != '')
+				animation.addByPrefix("alt", assortedAltValues[0], assortedAltValues[1], assortedAltValues[2]);
+
 			// if (character != newCharacter)
-			animation.play(newCharacter);
+			animation.play("main");
 
 			if (canChange)
 			{
@@ -68,5 +74,6 @@ class MenuCharacter extends FlxSprite
 			visible = false;
 
 		character = newCharacter;
+		alt = newAlt;
 	}
 }
