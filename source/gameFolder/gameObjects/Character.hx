@@ -443,7 +443,7 @@ class Character extends FNFSprite
 				addOffset("singLEFT", 120, -216);
 				addOffset("singDOWN", 68, -230);
 
-				addOffset("charge", 68, -46);
+				addOffset("charge", 38, -26);
 
 				playAnim('idle');
 
