@@ -33,7 +33,7 @@ class CreditsState extends MusicBeatState
 
 	override function create()
 	{
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menus/base/menuDesat'));
 		add(bg);
 
 		grpOptions = new FlxTypedGroup<Alphabet>();
@@ -42,7 +42,7 @@ class CreditsState extends MusicBeatState
 		// should be updated with the actual team later
 		var pisspoop = [ //Name - Icon name - Description - Link - BG Color
 			['MM Team'],
-			['HThagomizer',		    'hagomizer',		    'Project Lead and Artist/Animator/Programmer',	'https://twitter.com/HThagomizer/'],
+			['HThagomizer',		    'hagomizer',		    'Project Lead and Artist/Animator/Programmer',	'https://twitter.com/HThagomizer'],
 			[''],
 			["Other Contributors"],
 			[''],
