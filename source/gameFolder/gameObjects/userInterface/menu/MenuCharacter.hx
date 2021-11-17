@@ -14,12 +14,12 @@ class MenuCharacter extends FlxSprite
 		'bf' => ["BF idle dance white", 24, true, 0.9, 100, 100],
 		'bfConfirm' => ['BF HEY!!', 24, false, 0.9, 100, 100],
 		'gf' => ["GF Dancing Beat WHITE", 24, true, 1, 100, 100],
-		'alien' => ["xigmund greendance", 24, true, 1 * 0.5, 0, 0],
-		'fbi' => ["grunt greendance", 24, true, 1 * 0.5, 0, 90],
-		'bones' => ["bones greendance", 24, true, 1 * 0.5, 0, 100],
-		'harold' => ["harold greendance", 24, true, 1 * 0.5, 0, -20],
-		'xigman' => ["xigman greendance", 24, true, 0.8, -100, 50],
-		'alien-rude' => ["rude bluedance", 24, true, 1.4 * 0.5, -50, 100],
+		'alien' => ["xigmund greendance", 24, true, 1 * 0.45, -20, 0],
+		'fbi' => ["grunt greendance", 24, true, 1 * 0.8, -70, 20],
+		'bones' => ["bones greendance", 24, true, 1 * 0.4, 0, 20],
+		'harold' => ["harold greendance", 24, true, 1 * 0.5, 0, 10],
+		'xigman' => ["xigman greendance", 24, true, 1 * 0.45, 0, 0],
+		'alien-rude' => ["rude bluedance", 24, true, 1 * 0.4, -20, 0],
 	];
 
 	var baseX:Float = 0;
