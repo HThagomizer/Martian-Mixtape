@@ -26,13 +26,13 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
-		['spooky', 'bf', 'gf'],
-		['pico', 'bf', 'gf'],
-		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
+		['alien', 'bf', 'gf'],
+		['fbi', 'bf', 'gf'],
+		['bones', 'bf', 'gf'],
+		['harold', 'bf', 'gf'],
+		['xigman', 'bf', 'gf'],
+		['alien-rude', 'bf', 'gf'],
+		['', 'bf', 'gf']
 	];
 
 	var txtWeekTitle:FlxText;

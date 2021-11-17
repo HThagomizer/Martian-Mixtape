@@ -72,58 +72,88 @@
 	<SubTexture name="GF Dancing Beat WHITE0027" x="0" y="1285" width="699" height="642" frameX="-2" frameY="-6" frameWidth="703" frameHeight="648"/>
 	<SubTexture name="GF Dancing Beat WHITE0028" x="699" y="1285" width="699" height="642" frameX="-2" frameY="-6" frameWidth="703" frameHeight="648"/>
 	<SubTexture name="GF Dancing Beat WHITE0029" x="699" y="1285" width="699" height="642" frameX="-2" frameY="-6" frameWidth="703" frameHeight="648"/>
-	<SubTexture name="MM bonesidle0000" x="1398" y="1285" width="265" height="566" frameX="-4" frameY="-12" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0001" x="1398" y="1285" width="265" height="566" frameX="-4" frameY="-12" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0002" x="1663" y="1285" width="270" height="563" frameX="0" frameY="-15" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0003" x="1663" y="1285" width="270" height="563" frameX="0" frameY="-15" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0004" x="1933" y="1285" width="265" height="569" frameX="-3" frameY="-9" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0005" x="1933" y="1285" width="265" height="569" frameX="-3" frameY="-9" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0006" x="2198" y="1285" width="260" height="574" frameX="-7" frameY="-5" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0007" x="2198" y="1285" width="260" height="574" frameX="-7" frameY="-5" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0008" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0009" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0010" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0011" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0012" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM bonesidle0013" x="2458" y="1285" width="259" height="579" frameX="-6" frameY="0" frameWidth="270" frameHeight="579"/>
-	<SubTexture name="MM goon idle0000" x="2717" y="1285" width="570" height="628" frameX="-7" frameY="0" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0001" x="2717" y="1285" width="570" height="628" frameX="-7" frameY="0" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0002" x="3287" y="1285" width="584" height="621" frameX="0" frameY="-6" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0003" x="3287" y="1285" width="584" height="621" frameX="0" frameY="-6" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0004" x="3871" y="1285" width="584" height="614" frameX="-1" frameY="-13" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0005" x="3871" y="1285" width="584" height="614" frameX="-1" frameY="-13" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0006" x="4455" y="1285" width="580" height="619" frameX="-3" frameY="-8" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0007" x="4455" y="1285" width="580" height="619" frameX="-3" frameY="-8" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0008" x="5035" y="1285" width="573" height="625" frameX="-5" frameY="-3" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0009" x="5035" y="1285" width="573" height="625" frameX="-5" frameY="-3" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0010" x="5035" y="1285" width="573" height="625" frameX="-5" frameY="-3" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0011" x="5035" y="1285" width="573" height="625" frameX="-5" frameY="-3" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM goon idle0012" x="5035" y="1285" width="573" height="625" frameX="-5" frameY="-3" frameWidth="585" frameHeight="628"/>
-	<SubTexture name="MM harold idle0000" x="5608" y="1285" width="370" height="613" frameX="-2" frameY="-5" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0001" x="5978" y="1285" width="371" height="613" frameX="-3" frameY="-5" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0002" x="6349" y="1285" width="369" height="600" frameX="-2" frameY="-17" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0003" x="6718" y="1285" width="370" height="601" frameX="-3" frameY="-16" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0004" x="7088" y="1285" width="369" height="595" frameX="-2" frameY="-22" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0005" x="7457" y="1285" width="370" height="596" frameX="-3" frameY="-21" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0006" x="0" y="1927" width="369" height="610" frameX="-2" frameY="-8" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0007" x="369" y="1927" width="370" height="611" frameX="-3" frameY="-7" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0008" x="739" y="1927" width="369" height="615" frameX="-2" frameY="-3" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0009" x="1108" y="1927" width="370" height="616" frameX="-3" frameY="-2" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0010" x="1478" y="1927" width="371" height="618" frameX="-1" frameY="0" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0011" x="1849" y="1927" width="372" height="618" frameX="-2" frameY="0" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0012" x="2221" y="1927" width="367" height="617" frameX="-2" frameY="-1" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM harold idle0013" x="2588" y="1927" width="372" height="618" frameX="0" frameY="0" frameWidth="374" frameHeight="618"/>
-	<SubTexture name="MM xigidle0000" x="2960" y="1927" width="294" height="623" frameX="-8" frameY="-3" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0001" x="3254" y="1927" width="298" height="622" frameX="-4" frameY="-3" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0002" x="3552" y="1927" width="311" height="608" frameX="-1" frameY="-16" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0003" x="3863" y="1927" width="311" height="608" frameX="-1" frameY="-16" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0004" x="4174" y="1927" width="315" height="609" frameX="0" frameY="-14" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0005" x="4489" y="1927" width="314" height="608" frameX="-1" frameY="-14" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0006" x="4803" y="1927" width="314" height="610" frameX="-2" frameY="-12" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0007" x="4803" y="1927" width="314" height="610" frameX="-2" frameY="-12" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0008" x="5117" y="1927" width="304" height="612" frameX="-7" frameY="-10" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0009" x="5117" y="1927" width="304" height="612" frameX="-7" frameY="-10" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0010" x="5421" y="1927" width="288" height="626" frameX="-6" frameY="0" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0011" x="5421" y="1927" width="288" height="626" frameX="-6" frameY="0" frameWidth="316" frameHeight="626"/>
-	<SubTexture name="MM xigidle0012" x="5421" y="1927" width="288" height="626" frameX="-6" frameY="0" frameWidth="316" frameHeight="626"/>
+	<SubTexture name="bones greendance0000" x="1398" y="1285" width="158" height="339" frameX="-3" frameY="-7" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0001" x="1398" y="1285" width="158" height="339" frameX="-3" frameY="-7" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0002" x="1556" y="1285" width="162" height="337" frameX="0" frameY="-9" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0003" x="1556" y="1285" width="162" height="337" frameX="0" frameY="-9" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0004" x="1718" y="1285" width="159" height="341" frameX="-2" frameY="-5" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0005" x="1718" y="1285" width="159" height="341" frameX="-2" frameY="-5" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0006" x="1877" y="1285" width="156" height="344" frameX="-4" frameY="-3" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0007" x="1877" y="1285" width="156" height="344" frameX="-4" frameY="-3" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0008" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0009" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0010" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0011" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0012" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="bones greendance0013" x="2033" y="1285" width="156" height="347" frameX="-3" frameY="0" frameWidth="162" frameHeight="347"/>
+	<SubTexture name="grunt greendance0000" x="2189" y="1285" width="662" height="689" frameX="-14" frameY="-4" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0001" x="2189" y="1285" width="662" height="689" frameX="-14" frameY="-4" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0002" x="2851" y="1285" width="683" height="679" frameX="-5" frameY="-14" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0003" x="2851" y="1285" width="683" height="679" frameX="-5" frameY="-14" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0004" x="3534" y="1285" width="693" height="678" frameX="0" frameY="-15" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0005" x="3534" y="1285" width="693" height="678" frameX="0" frameY="-15" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0006" x="4227" y="1285" width="671" height="691" frameX="-7" frameY="-2" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0007" x="4227" y="1285" width="671" height="691" frameX="-7" frameY="-2" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0008" x="4898" y="1285" width="665" height="694" frameX="-9" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0009" x="4898" y="1285" width="665" height="694" frameX="-9" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0010" x="5563" y="1285" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0011" x="5563" y="1285" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0012" x="5563" y="1285" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0013" x="5563" y="1285" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="grunt greendance0014" x="5563" y="1285" width="663" height="694" frameX="-11" frameY="0" frameWidth="693" frameHeight="694"/>
+	<SubTexture name="harold greendance0000" x="6226" y="1285" width="212" height="352" frameX="-1" frameY="-3" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0001" x="6438" y="1285" width="213" height="352" frameX="-2" frameY="-3" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0002" x="6651" y="1285" width="212" height="345" frameX="-1" frameY="-10" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0003" x="6863" y="1285" width="212" height="346" frameX="-2" frameY="-9" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0004" x="7075" y="1285" width="212" height="342" frameX="-1" frameY="-13" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0005" x="7287" y="1285" width="212" height="343" frameX="-2" frameY="-12" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0006" x="7499" y="1285" width="212" height="350" frameX="-1" frameY="-5" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0007" x="7711" y="1285" width="212" height="351" frameX="-2" frameY="-4" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0008" x="7923" y="1285" width="212" height="354" frameX="-1" frameY="-2" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0009" x="0" y="1979" width="212" height="355" frameX="-2" frameY="-1" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0010" x="212" y="1979" width="212" height="356" frameX="-1" frameY="0" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0011" x="424" y="1979" width="213" height="356" frameX="-2" frameY="0" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0012" x="637" y="1979" width="211" height="355" frameX="-1" frameY="-1" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="harold greendance0013" x="848" y="1979" width="214" height="356" frameX="0" frameY="0" frameWidth="215" frameHeight="356"/>
+	<SubTexture name="rude bluedance0000" x="1062" y="1979" width="162" height="354" frameX="0" frameY="-9" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0001" x="1062" y="1979" width="162" height="354" frameX="0" frameY="-9" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0002" x="1224" y="1979" width="162" height="352" frameX="0" frameY="-11" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0003" x="1224" y="1979" width="162" height="352" frameX="0" frameY="-11" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0004" x="1386" y="1979" width="162" height="354" frameX="-1" frameY="-9" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0005" x="1386" y="1979" width="162" height="354" frameX="-1" frameY="-9" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0006" x="1548" y="1979" width="161" height="361" frameX="-1" frameY="-2" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0007" x="1548" y="1979" width="161" height="361" frameX="-1" frameY="-2" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0008" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0009" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0010" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0011" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0012" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="rude bluedance0013" x="1709" y="1979" width="159" height="362" frameX="-3" frameY="0" frameWidth="163" frameHeight="363"/>
+	<SubTexture name="xigman greendance0000" x="1868" y="1979" width="191" height="370" frameX="-9" frameY="-25" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0001" x="2059" y="1979" width="191" height="370" frameX="-9" frameY="-25" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0002" x="2250" y="1979" width="197" height="364" frameX="0" frameY="-31" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0003" x="2447" y="1979" width="197" height="364" frameX="0" frameY="-31" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0004" x="2644" y="1979" width="182" height="383" frameX="-17" frameY="-13" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0005" x="2826" y="1979" width="182" height="383" frameX="-17" frameY="-13" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0006" x="3008" y="1979" width="178" height="395" frameX="-24" frameY="-2" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0007" x="3186" y="1979" width="178" height="395" frameX="-24" frameY="-2" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0008" x="3364" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0009" x="3535" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0010" x="3706" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0011" x="3877" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0012" x="4048" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigman greendance0013" x="4219" y="1979" width="171" height="395" frameX="-31" frameY="0" frameWidth="202" frameHeight="397"/>
+	<SubTexture name="xigmund greendance0000" x="4390" y="1979" width="166" height="350" frameX="-4" frameY="-2" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0001" x="4556" y="1979" width="168" height="349" frameX="-2" frameY="-2" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0002" x="4724" y="1979" width="175" height="342" frameX="0" frameY="-9" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0003" x="4899" y="1979" width="175" height="342" frameX="0" frameY="-9" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0004" x="5074" y="1979" width="177" height="342" frameX="0" frameY="-8" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0005" x="5251" y="1979" width="177" height="342" frameX="0" frameY="-8" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0006" x="5428" y="1979" width="176" height="343" frameX="-1" frameY="-7" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0007" x="5428" y="1979" width="176" height="343" frameX="-1" frameY="-7" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0008" x="5604" y="1979" width="171" height="344" frameX="-4" frameY="-6" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0009" x="5604" y="1979" width="171" height="344" frameX="-4" frameY="-6" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0010" x="5775" y="1979" width="162" height="352" frameX="-3" frameY="0" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0011" x="5775" y="1979" width="162" height="352" frameX="-3" frameY="0" frameWidth="177" frameHeight="352"/>
+	<SubTexture name="xigmund greendance0012" x="5775" y="1979" width="162" height="352" frameX="-3" frameY="0" frameWidth="177" frameHeight="352"/>
 </TextureAtlas>
