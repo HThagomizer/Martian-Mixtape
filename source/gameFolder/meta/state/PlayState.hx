@@ -2035,6 +2035,12 @@ class PlayState extends MusicBeatState
 
 	function endSong():Void
 	{
+		mutingTime = 0;
+		repositionTime = 0;
+
+		if (uiHUD.noiseTime > 0.5)
+			uiHUD.noiseTime = 0.5;
+
 		canPause = false;
 		songMusic.volume = 0;
 		vocals.volume = 0;
@@ -2091,6 +2097,18 @@ class PlayState extends MusicBeatState
 				}
 				else
 					callDefaultSongEnd();
+			case 'crack':
+				stageBuild.bodyguardbopper.animation.play("woh");
+				stageBuild.gruntbopper.animation.play("woh");
+				dadOpponent.animation.play("woh");
+
+				var gfX = gf.x;
+				var gfY = gf.y;
+				remove(gf);
+				gf.generateCharacter(gfX, gfY, 'gf-hominid');
+				add(gf);
+
+				gf.animation.play('land');
 			case 'freak':
 				if (!isStoryMode)
 				{

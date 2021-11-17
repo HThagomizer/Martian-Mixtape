@@ -838,7 +838,7 @@ class Character extends FNFSprite
 			switch (curCharSimplified)
 			{
 				case 'gf':
-					if ((!animation.curAnim.name.startsWith('hair')) && (!animation.curAnim.name.startsWith('sad')))
+					if ((!animation.curAnim.name.startsWith('hair')) && (!animation.curAnim.name.startsWith('sad'))&& (!animation.curAnim.name.startsWith('land')))
 					{
 						danced = !danced;
 
