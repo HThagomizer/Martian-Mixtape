@@ -83,44 +83,50 @@ class Main extends Sprite
 		this system will eventually be overhauled in favor of using actual week folders within the 
 		assets.
 		Enough of that, here's how it works
-		[ [songs to use], [characters in songs], [color of week], name of week ]
+		[ [songs to use], [characters in songs], [color of week], name of week, category]
 	**/
 	public static var gameWeeks:Array<Dynamic> = [
 		[
 			['Probed', 'Lazerz', 'Brainfuck', 'Annihilation-LOL'],
 			['alien', 'alien', 'alien-pissed', 'alien-psychic'],
 			[FlxColor.fromRGB(129, 100, 223)],
-			'Martian Mixtape'
+			'Martian Mixtape',
+			0
 		],
 		[
 			['Confidential', 'Aegis', 'Crack', 'Enforcement'],
 			['FBI', 'FBIbodyguard', 'FBIhacker', 'FBImech'],
 			[FlxColor.fromRGB(20, 20, 20)],
-			'Men in Black'
+			'Men in Black',
+			0
 		],
 		[
 			['Marrow', "Pelvic", "Spinal Tap"],
 			['bones', 'bones-cool', 'bones-spectral'],
 			[FlxColor.fromRGB(200, 225, 200)],
-			"Boneyard Bash"
+			"Boneyard Bash",
+			0
 		],
 		[
 			['Tinfoil', 'Jitter', "Exclusion Zone"],
 			['harold', 'harold-caffeinated', 'harold-caffeinated'],
 			[FlxColor.fromRGB(50, 50, 200)],
-			"I Don't Want To Believe"
+			"I Don't Want To Believe",
+			0
 		],
 		[
 			['Boing', 'Freak', "Breakout"],
 			['xigman', 'xigman', 'xigman'],
 			[FlxColor.fromRGB(10, 255, 10)],
-			"Martian Mistake"
+			"Martian Mistake",
+			0
 		],
 		[
 			['Rude', 'Extermination', 'Craniotomy', 'Aneurysmia'],
 			['alien-rude', 'alien-rude', 'alien-rude', 'alien-rude'],
 			[FlxColor.fromRGB(255, 50, 50)],
-			"Mean Green Man"
+			"Mean Green Man",
+			1
 		]
 	];
 

@@ -46,14 +46,28 @@ class FreeplayState extends MusicBeatState
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
 
-	private var iconArray:Array<HealthIcon> = [];
+	private var iconGroup:FlxTypedGroup<HealthIcon>;
 
 	private var mainColor = FlxColor.WHITE;
-	private var bg:FlxSprite;
+
+	private var behind:FlxSprite;
+	private var hologram:FlxSprite;
+	private var marker:FlxSprite;
+
+	private var grayBox:FlxSprite;
+
+	private var topButtonsFrame:FlxSprite;
+	private var bottom:FlxSprite;
+
+	private var buttonGroup:FlxTypedGroup<FlxSprite>;
+
 	private var scoreBG:FlxSprite;
 
 	private var existingSongs:Array<String> = [];
 	private var existingDifficulties:Array<Array<String>> = [];
+
+	private var selectingCategory:Bool = true;
+	private var selectedCategory:Int = 0;
 
 	override function create()
 	{
@@ -64,33 +78,9 @@ class FreeplayState extends MusicBeatState
 			Alternatively, you can make a folder in the Songs folder and put your songs there, however, this gives you less
 			control over what you can display about the song (color, icon, etc) since it will be pregenerated for you instead.
 		**/
-		// load in all songs that exist in folder
-		var folderSongs:Array<String> = CoolUtil.returnAssetsLibrary('songs', 'assets');
-
-		///*
-		for (i in 0...Main.gameWeeks.length)
-		{
-			addWeek(Main.gameWeeks[i][0], i, Main.gameWeeks[i][1], Main.gameWeeks[i][2]);
-			for (j in cast(Main.gameWeeks[i][0], Array<Dynamic>))
-				existingSongs.push(j.toLowerCase());
-		}
-
-		// */
-
-		for (i in folderSongs)
-		{
-			if (!existingSongs.contains(i.toLowerCase()))
-			{
-				var icon:String = 'gf';
-				var chartExists:Bool = FileSystem.exists(Paths.songJson(i, i));
-				if (chartExists)
-				{
-					var castSong:SwagSong = Song.loadFromJson(i, i);
-					icon = (castSong != null) ? castSong.player2 : 'gf';
-					addSong(CoolUtil.spaceToDash(castSong.song), 1, icon, FlxColor.WHITE);
-				}
-			}
-		}
+		grpSongs = new FlxTypedGroup<Alphabet>();
+		iconGroup = new FlxTypedGroup<HealthIcon>();
+		addWeeks();
 
 		// LOAD MUSIC
 		// ForeverTools.resetMenuMusic();
@@ -101,36 +91,52 @@ class FreeplayState extends MusicBeatState
 
 		// LOAD CHARACTERS
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menus/base/menuDesat'));
-		add(bg);
+		behind = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/behind'));
+		hologram = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/holonogram'));
+		marker = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/marker'));
 
-		grpSongs = new FlxTypedGroup<Alphabet>();
+		topButtonsFrame = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/freeplay_top_buttons'));
+		bottom = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/freeplay_bottom'));
+		bottom.setPosition(0, 560);
+
+		buttonGroup = new FlxTypedGroup<FlxSprite>();
+
+		var buttonY = 12;
+
+		var buttonStory = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/button_storymode'));
+		buttonStory.setPosition(47, buttonY);
+		buttonGroup.add(buttonStory);
+
+		var buttonAlt = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/button_alt'));
+		buttonAlt.setPosition(463, buttonY);
+		buttonGroup.add(buttonAlt);
+
+		var buttonBonus = new FlxSprite().loadGraphic(Paths.image('menus/mixtape/freeplay/button_bonus'));
+		buttonBonus.setPosition(860, buttonY);
+		buttonGroup.add(buttonBonus);
+
+		grayBox = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, 0xFF000000);
+		grayBox.alpha = 0;
+
+		add(behind);
+		add(hologram);
+		add(marker);
+
 		add(grpSongs);
+		add(iconGroup);
 
-		for (i in 0...songs.length)
-		{
-			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
-			songText.isMenuItem = true;
-			songText.targetY = i;
-			grpSongs.add(songText);
+		add(grayBox);
 
-			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
-			icon.sprTracker = songText;
+		add(buttonGroup);
 
-			// using a FlxGroup is too much fuss!
-			iconArray.push(icon);
-			add(icon);
+		add(topButtonsFrame);
+		add(bottom);
 
-			// songText.x += 40;
-			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
-			// songText.screenCenter(X);
-		}
-
-		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
+		scoreText = new FlxText(0, 230, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 
 		scoreBG = new FlxSprite(scoreText.x - scoreText.width, 0).makeGraphic(Std.int(FlxG.width * 0.35), 66, 0xFF000000);
-		scoreBG.alpha = 0.6;
+		scoreBG.alpha = 0;
 		add(scoreBG);
 
 		diffText = new FlxText(scoreText.x, scoreText.y + 36, 0, "", 24);
@@ -192,7 +198,7 @@ class FreeplayState extends MusicBeatState
 	{
 		super.update(elapsed);
 
-		FlxTween.color(bg, 0.35, bg.color, mainColor);
+		FlxTween.color(hologram, 0.35, hologram.color, mainColor);
 
 		var lerpVal = Main.framerateAdjust(0.1);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, lerpVal));
@@ -204,48 +210,94 @@ class FreeplayState extends MusicBeatState
 		var downP = controls.DOWN_P;
 		var accepted = controls.ACCEPT;
 
-		if (upP)
-			changeSelection(-1);
-		else if (downP)
-			changeSelection(1);
+		if (!selectingCategory) {
+			grayBox.alpha = 0;
 
-		if (controls.LEFT_P)
-			changeDiff(-1);
-		if (controls.RIGHT_P)
-			changeDiff(1);
+			if (upP)
+				changeSelection(-1);
+			else if (downP)
+				changeSelection(1);
 
-		if (controls.BACK)
-		{
-			threadActive = false;
-			Main.switchState(this, new MainMenuState());
+			scoreText.alpha = 1;
+
+			if (selectedCategory == 0)
+			{
+				diffText.alpha = 1;
+
+				if (controls.LEFT_P)
+					changeDiff(-1);
+				if (controls.RIGHT_P)
+					changeDiff(1);
+			}
+			else
+			{
+				diffText.alpha = 0;
+				curDifficulty = 1;
+			}
+
+			if (controls.BACK)
+			{
+				selectingCategory = true;
+			}
+
+			if (accepted)
+			{
+				var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(),
+					CoolUtil.difficultyArray.indexOf(existingDifficulties[curSelected][curDifficulty]));
+
+				PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = curDifficulty;
+
+				PlayState.storyWeek = songs[curSelected].week;
+				trace('CUR WEEK' + PlayState.storyWeek);
+
+				if (FlxG.sound.music != null)
+					FlxG.sound.music.stop();
+
+				threadActive = false;
+
+				Main.switchState(this, new PlayState());
+			}
 		}
+		else {
+			grayBox.alpha = 0.6;
 
-		if (accepted)
-		{
-			var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(),
-				CoolUtil.difficultyArray.indexOf(existingDifficulties[curSelected][curDifficulty]));
+			if (controls.LEFT_P)
+				changeCategorySelection(-1);
+			if (controls.RIGHT_P)
+				changeCategorySelection(1);
 
-			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
-			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = curDifficulty;
+			if (controls.BACK)
+			{
+				threadActive = false;
+				Main.switchState(this, new MainMenuState());
+			}
 
-			PlayState.storyWeek = songs[curSelected].week;
-			trace('CUR WEEK' + PlayState.storyWeek);
+			if (accepted)
+			{
+				selectingCategory = false;
+			}
+			
+			diffText.alpha = 0;
+			scoreText.alpha = 0;
 
-			if (FlxG.sound.music != null)
-				FlxG.sound.music.stop();
-
-			threadActive = false;
-
-			Main.switchState(this, new PlayState());
+			var buttonIdx = 0;
+			for (item in buttonGroup.members)
+			{
+				item.color = 0x808080;
+				if (buttonIdx == selectedCategory)
+				{
+					item.color = 0xFFFFFF;
+				}
+				buttonIdx++;
+			}
 		}
 
 		// Adhere the position of all the things (I'm sorry it was just so ugly before I had to fix it Shubs)
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
-		scoreText.x = FlxG.width - scoreText.width - 5;
-		scoreBG.width = scoreText.width + 8;
-		scoreBG.x = FlxG.width - scoreBG.width;
-		diffText.x = scoreBG.x + (scoreBG.width / 2) - (diffText.width / 2);
+		scoreText.x = FlxG.width - scoreText.width - 80;
+		diffText.x = FlxG.width - diffText.width - 80;
 	}
 
 	var lastDifficulty:String;
@@ -290,12 +342,19 @@ class FreeplayState extends MusicBeatState
 
 		var bullShit:Int = 0;
 
-		for (i in 0...iconArray.length)
+		var iconIndex:Int = 0;
+		for (icon in iconGroup.members)
 		{
-			iconArray[i].alpha = 0.6;
-		}
+			icon.alpha = 0.6;
 
-		iconArray[curSelected].alpha = 1;
+			if (iconIndex == curSelected)
+				icon.alpha = 1;
+			
+			if (songs[iconIndex].songName == "egomania")
+				icon.alpha = 0.01;
+
+			iconIndex++;
+		}
 
 		for (item in grpSongs.members)
 		{
@@ -303,20 +362,38 @@ class FreeplayState extends MusicBeatState
 			bullShit++;
 
 			item.alpha = 0.6;
+			item.xTo = 120;
 			// item.setGraphicSize(Std.int(item.width * 0.8));
 
 			if (item.targetY == 0)
 			{
+				item.xTo = 160;
 				item.alpha = 1;
 				// item.setGraphicSize(Std.int(item.width));
 			}
+
+			if (item.text == "egomania")
+				item.alpha = 0.01;
+			
 		}
 		//
 
 		trace("curSelected: " + curSelected);
 
 		changeDiff();
-		changeSongPlaying();
+		
+		// was told to remove it so thats what ima dooooooooooooooooooo
+		//changeSongPlaying();
+	}
+
+	function changeCategorySelection(change:Int = 0)
+	{
+		selectedCategory += change;
+
+		addWeeks();
+
+		curSelected = 0;
+		changeSelection();
 	}
 
 	function changeSongPlaying()
@@ -365,6 +442,85 @@ class FreeplayState extends MusicBeatState
 		}
 
 		songThread.sendMessage(curSelected);
+	}
+
+	function addWeeks()
+	{
+		songs = [];
+
+		///*
+		for (i in 0...Main.gameWeeks.length)
+		{
+			if (selectedCategory == Main.gameWeeks[i][4]) {
+				addWeek(Main.gameWeeks[i][0], i, Main.gameWeeks[i][1], Main.gameWeeks[i][2]);
+				for (j in cast(Main.gameWeeks[i][0], Array<Dynamic>))
+					existingSongs.push(j.toLowerCase());
+			}
+		}
+
+		// load in all songs that exist in folder
+		// for bonus songs (this may be a problem with alt stuff)
+		
+		var folderSongs:Array<String> = CoolUtil.returnAssetsLibrary('songs', 'assets');
+
+		// hardcoding egomania secret because im tired,
+		// a little bit of programming - codist
+		var egoIsReal = false;
+
+		if (selectedCategory == 2) {
+
+			for (i in folderSongs)
+			{
+				if (!existingSongs.contains(i.toLowerCase()))
+				{
+					var icon:String = 'gf';
+					var chartExists:Bool = FileSystem.exists(Paths.songJson(i, i));
+
+					if (chartExists)
+					{
+						var castSong:SwagSong = Song.loadFromJson(i, i);
+
+						if (castSong.song == "Egomania") {
+							egoIsReal = true;
+							continue;
+						}
+
+						icon = (castSong != null) ? castSong.player2 : 'gf';
+						addSong(CoolUtil.spaceToDash(castSong.song), 1, icon, FlxColor.WHITE);
+					}
+				}
+			}
+		
+		}
+
+		if (egoIsReal)
+			addSong("egomania", 1, "hagomizer", FlxColor.WHITE);
+
+		grpSongs.clear();
+		iconGroup.clear();
+
+		for (i in 0...songs.length)
+		{
+			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
+			songText.isMenuItem = true;
+			songText.disableX = true;
+			songText.targetY = i;
+			grpSongs.add(songText);
+
+			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
+			icon.sprTracker = songText;
+
+			// using a FlxGroup is too much fuss!
+			// haha not anymore
+			iconGroup.add(icon);
+
+			songText.ySpacing = 100;
+			songText.yOffset = 60;
+
+			// songText.x += 40;
+			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
+			// songText.screenCenter(X);
+		}
 	}
 
 	var playingSongs:Array<FlxSound> = [];
