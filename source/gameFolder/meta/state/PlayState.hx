@@ -2471,6 +2471,15 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
+			case 'pelvic':
+				uiHUD.iconP2.updateIcon('bones');
+				remove(dadOpponent);
+				dadOpponent.generateCharacter(100, 100, 'bones');
+				add(dadOpponent);
+				dadOpponent.x += 320;
+				dadOpponent.y += 260;
+				FlxTween.tween(dadOpponent, {color: 0x000000}, 0.1);
+				startCountdown();
 			case 'spinal tap':
 				remove(dadOpponent);
 
