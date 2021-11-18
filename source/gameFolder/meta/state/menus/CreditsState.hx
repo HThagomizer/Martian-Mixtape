@@ -28,29 +28,56 @@ class CreditsState extends MusicBeatState
 
 	var bg:FlxSprite;
 	var descText:FlxText;
-	var intendedColor:Int;
-	var colorTween:FlxTween;
 
 	override function create()
 	{
+		super.create();
+		
 		bg = new FlxSprite().loadGraphic(Paths.image('menus/base/menuDesat'));
+		bg.color = 0xCE64DF;
 		add(bg);
 
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
 
 		// should be updated with the actual team later
-		var pisspoop = [ //Name - Icon name - Description - Link - BG Color
-			['MM Team'],
-			['HThagomizer',		    'hagomizer',		    'Project Lead and Artist/Animator/Programmer',	'https://twitter.com/HThagomizer'],
+		var pisspoop = [ //Name - Icon name - Description - Link
+			['Active dev team'],
+			['HThagomizer',		    'hagomizer',		    'Project lead, artist, animator, programmer',	'https://twitter.com/HThagomizer'],
+			['Simply EJ',		    'ej',		    		'Artist, composer',								''],
+			['SaltySkkulls',		'salty',		    	'Artist, composer',								''],
+			['LuckiiBean',		    'luckii',		    	'Composer',										''],
+			['KrystalPhantasm',		'krystal',		    	'Artist, composer',								''],
+			['Begwhi02',		    'begwhi',		    	'Composer',										''],
+			['Zavemann',		    'zavemann',		    	'Composer, concept art',						''],
+			['Zack the Nerd',		'zack',		    		'Artist, animator',								''],
+			['FreshWoomy',		    'fresh',		    	'Artist, animator',								''],
+			['Baqly',		    	'baqly',		    	'Menu artist, promo art',						''],
+			['Yoshubs',		    	'yoshubs',		    	'Forever Engine, programmer',					''],
+			['SuperMakerPlayer',	'maker',		    	'Programmer',									'https://twitter.com/SuperMakerPlaye/'],
+			['codist',		    	'codist',		    	'Programmer',									''],
 			[''],
-			["Other Contributors"],
+			["Previous devs"],
+			['kevenandsoki',		'',		    			'Composer',										''],
+			['Commander Cello',		'',		    			'Composer',										''],
+			['Bryanjo97527502',		'',		    			'Composer',										'https://twitter.com/bryanjo97527502'],
+			['Lolman',				'',		   				'Composer',										''],
 			[''],
-			["Funkin' Crew"],
-			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",				'https://twitter.com/ninja_muffin99'],
-			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",					'https://twitter.com/PhantomArcade3K'],
-			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",					'https://twitter.com/evilsk8r'],
-			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",					'https://twitter.com/kawaisprite']
+			["Contributors"],
+			['HeavenArtist2006',	'',		    			'Icons',										'https://gamebanana.com/members/1725165'],
+			['Junkgle',				'',		    			'Concept artist',								''],
+			['Crow at a Computer',	'',		    			'Concept artist',								''],
+			['IronB',				'',		   				'3.0 trailer editor',							''],
+			[''],
+			["Special thanks"],
+			['spaghettitron',		'',		    			'Beta tester, cool guy',						''],
+			['BestrJestr',		'',		    				'Eta',											''],
+			[''],
+			["Funkin' crew"],
+			['ninjamuffin99',		'',						"Programmer of Friday Night Funkin'",			'https://twitter.com/ninja_muffin99'],
+			['PhantomArcade',		'',						"Animator of Friday Night Funkin'",				'https://twitter.com/PhantomArcade3K'],
+			['evilsk8r',			'',						"Artist of Friday Night Funkin'",				'https://twitter.com/evilsk8r'],
+			['kawaisprite',			'',						"Composer of Friday Night Funkin'",				'https://twitter.com/kawaisprite']
 		];
 		
 		for(i in pisspoop){
@@ -71,7 +98,7 @@ class CreditsState extends MusicBeatState
 			optionText.targetY = i;
 			grpOptions.add(optionText);
 
-			if(isSelectable && false) {
+			if(isSelectable && (creditsStuff[i][1] != '')) {
 				var icon:AttachedSprite = new AttachedSprite('credits/' + creditsStuff[i][1]);
 				icon.xAdd = optionText.width + 10;
 				icon.sprTracker = optionText;
@@ -88,14 +115,13 @@ class CreditsState extends MusicBeatState
 		descText.borderSize = 2.4;
 		add(descText);
 
-		bg.color = Std.parseInt(creditsStuff[curSelected][4]);
-		intendedColor = bg.color;
 		changeSelection();
-		super.create();
 	}
 
 	override function update(elapsed:Float)
 	{
+		super.update(elapsed);
+
 		if (FlxG.sound.music.volume < 0.7)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -115,16 +141,12 @@ class CreditsState extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			Main.switchState(this, new MainMenuState());
 		}
-		if(controls.ACCEPT) {
+		if(controls.ACCEPT && (creditsStuff[curSelected][3] != '')) {
 			CoolUtil.browserLoad(creditsStuff[curSelected][3]);
 		}
-		super.update(elapsed);
 	}
 
 	function changeSelection(change:Int = 0)
@@ -137,19 +159,6 @@ class CreditsState extends MusicBeatState
 			if (curSelected >= creditsStuff.length)
 				curSelected = 0;
 		} while(unselectableCheck(curSelected));
-
-		var newColor:Int =  Std.parseInt(creditsStuff[curSelected][4]);
-		if(newColor != intendedColor) {
-			if(colorTween != null) {
-				colorTween.cancel();
-			}
-			intendedColor = newColor;
-			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
-				onComplete: function(twn:FlxTween) {
-					colorTween = null;
-				}
-			});
-		}
 
 		var bullShit:Int = 0;
 
