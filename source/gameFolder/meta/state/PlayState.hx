@@ -2098,17 +2098,41 @@ class PlayState extends MusicBeatState
 				else
 					callDefaultSongEnd();
 			case 'crack':
-				stageBuild.bodyguardbopper.animation.play("woh");
-				stageBuild.gruntbopper.animation.play("woh");
-				dadOpponent.animation.play("woh");
+				if (!isStoryMode)
+				{
+					callDefaultSongEnd();
+				}
+				else
+				{
+					var black:FlxSprite = new FlxSprite(-FlxG.width / 2, -FlxG.height / 2).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+					black.scrollFactor.set();
+					black.alpha = 0;
+					add(black);
 
-				var gfX = gf.x;
-				var gfY = gf.y;
-				remove(gf);
-				gf.generateCharacter(gfX, gfY, 'gf-hominid');
-				add(gf);
+					camHUD.visible = false;
+					stageBuild.bodyguardbopper.animation.play("woh");
+					stageBuild.gruntbopper.animation.play("woh");
+					dadOpponent.animation.play("woh");
+	
+					var gfX = gf.x;
+					var gfY = gf.y;
+					remove(gf);
+					gf.generateCharacter(gfX, gfY, 'gf-hominid');
+					gf.y -= 253;
+					add(gf);
+	
+					gf.animation.play('land');
 
-				gf.animation.play('land');
+					new FlxTimer().start(2, function(tmr:FlxTimer)
+					{
+						FlxTween.tween(black, {alpha: 1}, 0.5, {
+							onComplete: function(twn:FlxTween)
+							{
+								callDefaultSongEnd();
+							}
+						});
+					});
+				}
 			case 'freak':
 				if (!isStoryMode)
 				{
