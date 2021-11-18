@@ -105,7 +105,6 @@ class TitleState extends MusicBeatState
 		belltower.frames = Paths.getSparrowAtlas('menus/mixtape/title/belltower');
 		belltower.antialiasing = true;
 		belltower.animation.addByPrefix('bump', 'BellTower', 18, true);
-		belltower.animation.play('bump');
 		belltower.updateHitbox();
 		add(belltower);
 
@@ -116,7 +115,7 @@ class TitleState extends MusicBeatState
 		bgsmoke = new FlxSprite(473 + offsetX, -93 + offsetY);
 		bgsmoke.frames = Paths.getSparrowAtlas('menus/mixtape/title/backgroundsmoke');
 		bgsmoke.antialiasing = true;
-		bgsmoke.animation.addByPrefix('bump', 'SmokeBackground', 18, true);
+		bgsmoke.animation.addByPrefix('bump', 'SmokeBackground', 22, true);
 		bgsmoke.animation.play('bump');
 		bgsmoke.updateHitbox();
 		add(bgsmoke);
@@ -125,14 +124,13 @@ class TitleState extends MusicBeatState
 		ufo.frames = Paths.getSparrowAtlas('menus/mixtape/title/ship');
 		ufo.antialiasing = true;
 		ufo.animation.addByPrefix('bump', 'Ship', 18, true);
-		ufo.animation.play('bump');
 		ufo.updateHitbox();
 		add(ufo);
 
 		fgsmoke = new FlxSprite(900 + offsetX, 868 + offsetY);
 		fgsmoke.frames = Paths.getSparrowAtlas('menus/mixtape/title/foregroundsmoke');
 		fgsmoke.antialiasing = true;
-		fgsmoke.animation.addByPrefix('bump', 'SmokeForeground', 18, true);
+		fgsmoke.animation.addByPrefix('bump', 'SmokeForeground', 22, true);
 		fgsmoke.animation.play('bump');
 		fgsmoke.updateHitbox();
 		add(fgsmoke);
@@ -145,7 +143,6 @@ class TitleState extends MusicBeatState
 		logoBl.frames = Paths.getSparrowAtlas('menus/mixtape/title/logobump');
 		logoBl.antialiasing = true;
 		logoBl.animation.addByPrefix('bump', 'LogoBump', 18, true);
-		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
@@ -160,7 +157,7 @@ class TitleState extends MusicBeatState
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
 		titleText.screenCenter();
-		// it should be properly centered on the x axis but i'm too tired to figure that out rn
+		titleText.x += (320 - 100);
 		titleText.y += 400;
 		add(titleText);
 
@@ -171,6 +168,8 @@ class TitleState extends MusicBeatState
 		// to preload the song
 		FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 		FlxG.sound.pause();
+
+		FlxG.sound.playMusic(Paths.music('freakyAmbience'), 0.7);
 
 		// we should have like ambient sounds playing or smth so it doesn't sound empty before you press enter
 	}
@@ -216,6 +215,9 @@ class TitleState extends MusicBeatState
 		if (pressedEnter && !transitioning)
 		{
 			titleText.animation.play('press');
+			belltower.animation.play('bump');
+			ufo.animation.play('bump');
+			logoBl.animation.play('bump');
 
 			FlxG.camera.flash(FlxColor.WHITE, 1);
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
