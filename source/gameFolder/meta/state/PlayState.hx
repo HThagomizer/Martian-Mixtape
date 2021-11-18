@@ -394,6 +394,14 @@ class PlayState extends MusicBeatState
 		dialogueHUD.bgColor.alpha = 0;
 		FlxG.cameras.add(dialogueHUD);
 
+		// preload crack cutscene shit
+		if (curSong == 'Crack')
+		{
+				var crackPreload:FlxSprite = new FlxSprite().loadGraphic(Paths.image('characters/hominid/alien_hominid'));
+				add(crackPreload);
+				crackPreload.visible = false;
+		}
+
 		// preload egomania shit
 		if (curSong == 'Egomania')
 		{
