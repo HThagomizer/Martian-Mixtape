@@ -46,7 +46,7 @@ class CreditsState extends MusicBeatState
 			['HThagomizer',		    'hagomizer',		    'Project lead, artist, animator, programmer',	'https://twitter.com/HThagomizer'],
 			['Simply EJ',		    'ej',		    		'Artist, composer',								'https://twitter.com/ESimplyJ'],
 			['SaltySkkulls',		'salty',		    	'Artist, composer',								'https://twitter.com/post_my_salt'],
-			['LuckiiBean',		    'luckii',		    	'Composer',										'https://twitter.com/LuckiiBean'],
+			['LuckiiBean',		    'luckii',		    	'Composer, dumb bitch',							'https://twitter.com/LuckiiBean'],
 			['KrystalPhantasm',		'krystal',		    	'Artist, composer',								'https://twitter.com/RuwangaRoosara'],
 			['Begwhi02',		    'begwhi',		    	'Composer',										'https://twitter.com/Begwhi02'],
 			['Zavemann',		    'zavemann',		    	'Composer, concept art',						'https://twitter.com/ZavemannVA'],
