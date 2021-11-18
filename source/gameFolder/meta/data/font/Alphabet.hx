@@ -464,6 +464,8 @@ class AlphaCharacter extends FlxSprite
 
 	public function createNumber(letter:String):Void
 	{
+		y += 58;
+
 		animation.addByPrefix(letter, letter, 24);
 		animation.play(letter);
 

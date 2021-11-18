@@ -98,6 +98,7 @@ class CreditsState extends MusicBeatState
 			//optionText.xTo = Std.int(optionText.x);
 			//optionText.yMult = 90;
 			optionText.targetY = i;
+			optionText.ySpacing = 100;
 			grpOptions.add(optionText);
 
 			if(isSelectable && (creditsStuff[i][1] != '')) {
