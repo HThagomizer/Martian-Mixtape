@@ -72,7 +72,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8));
 		healthBar.scrollFactor.set();
-		if (PlayState.dadOpponent.curCharacter != 'FBIbodyguard')
+		if (PlayState.dadOpponent.curCharacter != 'FBIbodyguard' || (Init.trueSettings.get('Disable Gimmicks')))
 			healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
 		else
 			healthBar.createFilledBar(0xFF444444, 0xFF66FF33);
@@ -146,7 +146,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		else
 			iconP1.animation.curAnim.curFrame = 0;
 
-		if (healthBar.percent > 60 && PlayState.dadOpponent.curCharacter == 'FBI')
+		if (healthBar.percent > 60 && PlayState.dadOpponent.curCharacter == 'FBI' && (!Init.trueSettings.get('Disable Gimmicks')))
 			iconP2.animation.curAnim.curFrame = 1;
 		else if (healthBar.percent > 80)
 			iconP2.animation.curAnim.curFrame = 1;

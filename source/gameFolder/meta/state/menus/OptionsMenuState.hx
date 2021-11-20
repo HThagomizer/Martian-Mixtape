@@ -61,6 +61,7 @@ class OptionsMenuState extends MusicBeatState
 					['Game Settings', null],
 					['', null],
 					['Downscroll', getFromOption],
+					['Disable Gimmicks', getFromOption],
 					['Centered Notefield', getFromOption],
 					['Ghost Tapping', getFromOption],
 					['Display Accuracy', getFromOption],

@@ -40,6 +40,12 @@ class Init extends FlxState
 			'Whether to have the strumline vertically flipped in gameplay.',
 			NOT_FORCED
 		],
+		'Disable Gimmicks' => [
+			false,
+			0,
+			'Whether to disable gameplay quirks in certain songs or weeks.',
+			NOT_FORCED
+		],
 		'Auto Pause' => [true, 0, '', NOT_FORCED],
 		'FPS Counter' => [true, 0, 'Whether to display the FPS counter.', NOT_FORCED],
 		'Memory Counter' => [

@@ -1070,7 +1070,7 @@ class PlayState extends MusicBeatState
 				altString = '';
 		}
 
-		if (character == dadOpponent && dadOpponent.curCharacter == 'FBI' && health > 1.2)
+		if (character == dadOpponent && dadOpponent.curCharacter == 'FBI' && health > 1.2 && (!Init.trueSettings.get('Disable Gimmicks')))
 			altString = '-alt';
 
 		if ((curSong == 'Annihilation-Lol') && (character == dadOpponent))
@@ -1088,7 +1088,7 @@ class PlayState extends MusicBeatState
 
 		character.playAnim(stringArrow, true);
 
-		if (character == dadOpponent && uiHUD.healthBar.percent > 50 && dadOpponent.curCharacter == 'FBI')
+		if (character == dadOpponent && uiHUD.healthBar.percent > 50 && dadOpponent.curCharacter == 'FBI' && (!Init.trueSettings.get('Disable Gimmicks')))
 			health -= 0.03;
 
 		character.holdTimer = 0;
@@ -1403,7 +1403,7 @@ class PlayState extends MusicBeatState
 		var healthBase:Float = 0.06;
 		var additiveHealth:Float = (healthBase * (ratingMultiplier / 100));
 
-		if (additiveHealth < 0 || dadOpponent.curCharacter != 'FBIbodyguard')
+		if (additiveHealth < 0 || (dadOpponent.curCharacter != 'FBIbodyguard' && (!Init.trueSettings.get('Disable Gimmicks'))))
 			health += additiveHealth;
 	}
 
@@ -1754,7 +1754,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curSong == 'Crack')
+		if (curSong == 'Crack' && (!Init.trueSettings.get('Disable Gimmicks')))
 		{
 			if (mutingTime > 0)
 			{
@@ -1866,7 +1866,7 @@ class PlayState extends MusicBeatState
 			&& !hasEgomaniad
 			&& (dadOpponent.curCharacter == 'hagomizer' || dadOpponent.curCharacter == 'hagomizer-puppet'))
 		{
-			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible)
+			if ((((curBeat % 24) == 0) && (curBeat > 25) && (curBeat != 96)) && !distractionVisible && (!Init.trueSettings.get('Disable Gimmicks')))
 			{
 				spawnDistraction();
 			}
@@ -1874,14 +1874,20 @@ class PlayState extends MusicBeatState
 			switch (curBeat)
 			{
 				case 14:
-					spawnDistraction('/hardcoded/start');
+					if (!Init.trueSettings.get('Disable Gimmicks'))
+					{
+						spawnDistraction('/hardcoded/start');
+					}
 				case 31:
 					dadOpponent.playAnim("cough");
 				case 96:
-					egomaniaRandom = true;
-					spawnDistraction('/hardcoded/random');
-					stageBuild.face.alpha = 0;
-					stageBuild.face2.alpha = 1;
+					if (!Init.trueSettings.get('Disable Gimmicks'))
+					{
+						egomaniaRandom = true;
+						spawnDistraction('/hardcoded/random');
+					}
+						stageBuild.face.alpha = 0;
+						stageBuild.face2.alpha = 1;
 				case 157:
 					dadOpponent.playAnim("puppet");
 				case 160:
@@ -1891,7 +1897,10 @@ class PlayState extends MusicBeatState
 					dadOpponent.y -= 9;
 					add(dadOpponent);
 
-					spawnDistraction('/hardcoded/puppet');
+					if (!Init.trueSettings.get('Disable Gimmicks'))
+					{
+						spawnDistraction('/hardcoded/puppet');
+					}
 				case 192:
 					remove(dadOpponent);
 					dadOpponent.generateCharacter(100, 100, 'hagomizer');
@@ -1905,7 +1914,7 @@ class PlayState extends MusicBeatState
 		}
 
 		// egomania part 2
-		if (curSong == 'Egomania' && hasEgomaniad)
+		if (curSong == 'Egomania' && hasEgomaniad && (!Init.trueSettings.get('Disable Gimmicks')))
 		{
 			// bad code lol im so lazy. doesnt work. pls fix
 			// if (((curBeat == 0) || (curBeat == 1)) && (dadOpponent.curCharacter == 'hagomizer-rage'))

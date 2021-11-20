@@ -73,7 +73,7 @@ class ChartLoader
 						var swagNote:Note = ForeverAssets.generateArrow(PlayState.assetModifier, daStrumTime, daNoteData, 0, daNoteAlt);
 						// set note speed
 						swagNote.noteSpeed = songData.speed;
-						if (songData.song.toLowerCase() == 'exclusion zone')
+						if (songData.song.toLowerCase() == 'exclusion zone' && (!Init.trueSettings.get('Disable Gimmicks')))
 						{
 							var funkySteps:Float = (swagNote.strumTime / Conductor.stepCrochet);
 							var coffeeSpeed:Float = 2.7;
@@ -87,7 +87,7 @@ class ChartLoader
 							if (gottaHitNote)
 								swagNote.noteSpeed = 2.0;
 						}
-						if (songData.song.toLowerCase() == 'jitter')
+						if (songData.song.toLowerCase() == 'jitter' && (!Init.trueSettings.get('Disable Gimmicks')))
 						{
 							var funkySteps:Int = Std.int(swagNote.strumTime / Conductor.stepCrochet);
 							var speedupBeats:Array<Int> = [192, 320, 448, 576, 704, 960, 1216, 1280, 1344, 1408];
