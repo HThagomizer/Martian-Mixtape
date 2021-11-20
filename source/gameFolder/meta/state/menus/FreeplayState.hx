@@ -74,7 +74,7 @@ class FreeplayState extends MusicBeatState
 	public static var songBlurbs:Map<String, String> = [
 		// week 1
 		"probed" => "lets hope it doesnt go THERE",
-		"lazerz" => "cowboy alien music",
+		"lazerz" => "smooth jazz for channeling your inner psychokinesis",
 		"brainfuck" => "saying what the masses are afraid to",
 		"annihilation-lol" => "this is top notch charting",
 

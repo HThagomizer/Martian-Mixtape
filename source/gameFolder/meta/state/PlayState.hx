@@ -1403,7 +1403,11 @@ class PlayState extends MusicBeatState
 		var healthBase:Float = 0.06;
 		var additiveHealth:Float = (healthBase * (ratingMultiplier / 100));
 
-		if (additiveHealth < 0 || (dadOpponent.curCharacter != 'FBIbodyguard' && (!Init.trueSettings.get('Disable Gimmicks'))))
+		var healthGainDisabled = false;
+		if (dadOpponent.curCharacter == 'FBIbodyguard' && !(Init.trueSettings.get('Disable Gimmicks')))
+			healthGainDisabled = true;
+
+		if (additiveHealth < 0 || !healthGainDisabled)
 			health += additiveHealth;
 	}
 

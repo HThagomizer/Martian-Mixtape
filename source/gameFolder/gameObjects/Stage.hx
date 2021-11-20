@@ -761,7 +761,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'FBIbodyguard':
 				dad.y -= 70;
 				dad.x -= 200;
-				PlayState.health = 2;
+				if (!Init.trueSettings.get('Disable Gimmicks'))
+					PlayState.health = 2;
 			case 'FBIhacker':
 				dad.x -= 168;
 				dad.y -= 20;
