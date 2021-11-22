@@ -123,7 +123,7 @@ class Main extends Sprite
 		],
 		[
 			['Rude', 'Extermination', 'Craniotomy', 'Aneurysmia'],
-			['alien-rude', 'alien-rude', 'alien-rude', 'alien-rude'],
+			['alien-rude', 'alien-rude', 'alien-ouch', 'alien-power'],
 			[FlxColor.fromRGB(255, 50, 50)],
 			"Mean Green Man",
 			1
