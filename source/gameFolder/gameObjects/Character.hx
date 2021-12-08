@@ -406,7 +406,7 @@ class Character extends FNFSprite
 			case 'alien-rude':
 				tex = Paths.getSparrowAtlas('characters/xigmund/alienrude_assets');
 				frames = tex;
-				animation.addByPrefix('idle', 'xigmund idle', 24);
+				animation.addByPrefix('idle', 'xigmund idle', 24, false);
 				animation.addByPrefix('singUP', 'xigmund singUP', 24, false);
 				animation.addByPrefix('singRIGHT', 'xigmund singRIGHT', 24, false);
 				animation.addByPrefix('singDOWN', 'xigmund singDOWN', 24);
@@ -429,7 +429,7 @@ class Character extends FNFSprite
 			case 'alien-ouch':
 				tex = Paths.getSparrowAtlas('characters/xigmund/alienouch_assets');
 				frames = tex;
-				animation.addByPrefix('idle', 'xigmouch idle', 24);
+				animation.addByPrefix('idle', 'xigmouch idle', 24, false);
 				animation.addByPrefix('singUP', 'xigmouch up', 24, false);
 				animation.addByPrefix('singRIGHT', 'xigmouch Right', 24, false);
 				animation.addByPrefix('singDOWN', 'xigmouch down', 24);
@@ -487,7 +487,7 @@ class Character extends FNFSprite
 			case 'bones':
 				tex = Paths.getSparrowAtlas('characters/bones/own_bones');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByPrefix('singUP', 'singUP', 24);
 				animation.addByPrefix('singRIGHT', 'singRIGHT', 24);
 				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
@@ -503,7 +503,7 @@ class Character extends FNFSprite
 			case 'bones-cool':
 				tex = Paths.getSparrowAtlas('characters/bones/cool_bones');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle cool', 24);
+				animation.addByPrefix('idle', 'idle cool', 24, false);
 				animation.addByPrefix('singUP', 'cool singUP', 24);
 				animation.addByPrefix('singRIGHT', 'cool singRIGHT', 24);
 				animation.addByPrefix('singDOWN', 'cool singDOWN', 24, false);
@@ -519,7 +519,7 @@ class Character extends FNFSprite
 			case 'bones-spectral':
 				tex = Paths.getSparrowAtlas('characters/bones/spectral_bones');
 				frames = tex;
-				animation.addByPrefix('idle', 'idle', 24);
+				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByPrefix('singUP', 'singUP spectral', 24);
 				animation.addByPrefix('singRIGHT', 'singRIGHT spectral', 24);
 				animation.addByPrefix('singDOWN', 'singDOWN spectral', 24, false);
@@ -636,7 +636,7 @@ class Character extends FNFSprite
 				playAnim('idle');
 			case 'FBImech':
 				frames = Paths.getSparrowAtlas('characters/FBI/FBImech');
-				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('idle', 'idle', 24);
 				animation.addByPrefix('singUP', 'singUP', 24, false);
 				animation.addByPrefix('singDOWN', 'singDOWN', 24, false);
 				animation.addByPrefix('singLEFT', 'singLEFT', 24, false);
@@ -747,6 +747,22 @@ class Character extends FNFSprite
 				addOffset("singLEFT", 87, 58);
 				addOffset("singDOWN", 54, -104);
 				addOffset('rage');
+
+				playAnim('idle');
+			case 'uberkid':
+				tex = Paths.getSparrowAtlas('characters/uber/UberKid');
+				frames = tex;
+				animation.addByPrefix('idle', 'uber idle', 24, false);
+				animation.addByPrefix('singUP', 'uber singUP', 24);
+				animation.addByPrefix('singRIGHT', 'uber singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'uber singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'uber singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 36, 28);
+				addOffset("singRIGHT", -25, 1);
+				addOffset("singLEFT", 19, 2);
+				addOffset("singDOWN", -36, -13);
 
 				playAnim('idle');
 		}

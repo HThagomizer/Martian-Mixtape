@@ -773,6 +773,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'hagomizer' | 'hagomizer-rage':
 				dad.y -= 16;
 				dad.x -= 9;
+			case 'uberkid':
+				dad.y += 364;
 		}
 	}
 

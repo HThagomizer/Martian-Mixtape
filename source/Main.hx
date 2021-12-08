@@ -122,6 +122,13 @@ class Main extends Sprite
 			0
 		],
 		[
+			['Uber'],
+			['uberkid'],
+			[FlxColor.fromRGB(200, 0, 244)],
+			"Rock Paper Rap Battle",
+			0
+		],
+		[
 			['Rude', 'Extermination', 'Craniotomy', 'Aneurysmia'],
 			['alien-rude', 'alien-rude', 'alien-ouch', 'alien-power'],
 			[FlxColor.fromRGB(255, 50, 50)],

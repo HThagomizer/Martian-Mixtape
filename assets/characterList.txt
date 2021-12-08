@@ -24,3 +24,4 @@ mooninites
 hagomizer
 hagomizer-puppet
 hagomizer-rage
+uberkid
