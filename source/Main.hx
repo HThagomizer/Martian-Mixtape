@@ -134,6 +134,20 @@ class Main extends Sprite
 			[FlxColor.fromRGB(255, 50, 50)],
 			"Mean Green Man",
 			1
+		],
+		[
+			[],
+			[],
+			[FlxColor.fromRGB(255, 191, 0)],
+			"Your Best Friends!",
+			1
+		],
+		[
+			['Rot', 'Reanimate'],
+			['bones', 'bones-cool'],
+			[FlxColor.fromRGB(60, 191, 60)],
+			"Rotten Revenge",
+			1
 		]
 	];
 

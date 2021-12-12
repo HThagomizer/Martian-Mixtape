@@ -89,7 +89,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'park';
 				case 'confidential' | 'aegis' | 'crack' | 'enforcement':
 					curStage = 'fbi';
-				case 'marrow' | 'pelvic' | 'spinal tap':
+				case 'marrow' | 'pelvic' | 'spinal tap' | 'rot' | 'reanimate':
 					curStage = 'raveyard';
 				case 'tinfoil' | 'itch' | 'jitter' | 'exclusion zone':
 					curStage = 'freak';
