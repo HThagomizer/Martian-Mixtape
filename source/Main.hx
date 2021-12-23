@@ -136,15 +136,15 @@ class Main extends Sprite
 			1
 		],
 		[
-			[],
-			[],
+			['Buddy-Buddy'],
+			['FBI'],
 			[FlxColor.fromRGB(255, 191, 0)],
 			"Your Best Friends!",
 			1
 		],
 		[
-			['Rot', 'Reanimate'],
-			['bones', 'bones-cool'],
+			['Rot', 'Necrotics', 'Reanimate'],
+			['bones', 'bones', 'bones-cool'],
 			[FlxColor.fromRGB(60, 191, 60)],
 			"Rotten Revenge",
 			1

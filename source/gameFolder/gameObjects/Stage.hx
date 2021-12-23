@@ -87,9 +87,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			{
 				case 'probed' | 'lazerz' | 'brainfuck' | 'annihilation' | 'annihilation-lol' | 'rude' | 'extermination' | 'craniotomy' | 'aneurysmia':
 					curStage = 'park';
-				case 'confidential' | 'aegis' | 'crack' | 'enforcement':
+				case 'confidential' | 'aegis' | 'crack' | 'enforcement' | 'buddy-buddy':
 					curStage = 'fbi';
-				case 'marrow' | 'pelvic' | 'spinal tap' | 'rot' | 'reanimate':
+				case 'marrow' | 'pelvic' | 'spinal tap' | 'rot' | 'necrotics' | 'reanimate':
 					curStage = 'raveyard';
 				case 'tinfoil' | 'itch' | 'jitter' | 'exclusion zone':
 					curStage = 'freak';
