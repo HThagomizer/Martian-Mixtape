@@ -103,6 +103,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'mylair';
 				case 'aerodynamix':
 					curStage = 'sky';
+				case 'uber':
+					curStage = 'icecream';
 				default:
 					curStage = 'stage';
 			}
@@ -654,6 +656,22 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				face2.alpha = 0;
 				face2.scrollFactor.set(0.3, 0.3);
 				add(face2);
+			
+			case 'icecream':
+				PlayState.defaultCamZoom = 0.9;
+				var back:FlxSprite = new FlxSprite(-1500, 100).loadGraphic(Paths.image('backgrounds/$curStage/back'));
+				back.antialiasing = true;
+				back.updateHitbox();
+				back.scrollFactor.set(0.85, 0.85);
+				back.active = false;
+				add(back);
+
+				var counter:FlxSprite = new FlxSprite(-1500, 100).loadGraphic(Paths.image('backgrounds/$curStage/counter'));
+				counter.antialiasing = true;
+				counter.updateHitbox();
+				counter.scrollFactor.set(0.95, 0.95);
+				counter.active = false;
+				add(counter);
 
 			default:
 				PlayState.defaultCamZoom = 0.9;
