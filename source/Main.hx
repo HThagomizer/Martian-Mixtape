@@ -122,8 +122,8 @@ class Main extends Sprite
 			0
 		],
 		[
-			['Uber'],
-			['uberkid'],
+			['Uberfunk', 'Uberjam'],
+			['uberkid', 'uberkid'],
 			[FlxColor.fromRGB(200, 0, 244)],
 			"Rock Paper Rap Battle",
 			0

@@ -317,22 +317,22 @@ class Character extends FNFSprite
 			case 'alien':
 				tex = Paths.getSparrowAtlas('characters/xigmund/alien_assets');
 				frames = tex;
-				animation.addByPrefix('idle', 'xigidle', 24);
-				animation.addByPrefix('singUP', 'xigup', 24, false);
-				animation.addByPrefix('singRIGHT', 'xigright', 24, false);
-				animation.addByPrefix('singDOWN', 'xigdown', 24);
-				animation.addByPrefix('singLEFT', 'xigleft', 24, false);
+				animation.addByPrefix('idle', 'xigmund idle', 24, false);
+				animation.addByPrefix('singUP', 'xigmund singUP', 24, false);
+				animation.addByPrefix('singRIGHT', 'xigmund singRIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'xigmund singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'xigmund singLEFT', 24, false);
 
-				animation.addByPrefix('OUCH', 'xigOUCH', 24);
-				animation.addByPrefix('psychic', 'xigpsiionic', 24);
+				animation.addByPrefix('OUCH', 'xigmund ouch', 24);
+				animation.addByPrefix('psychic', 'xigmund ouch', 24);
 
 				addOffset('idle');
-				addOffset("singUP", -6, 14);
-				addOffset("singRIGHT", 0, 8);
-				addOffset("singLEFT", 0, 0);
-				addOffset("singDOWN", 29, -62);
-				addOffset("OUCH", 65, -74);
-				addOffset("psychic", -5, 0);
+				addOffset("singUP", -37, 59);
+				addOffset("singRIGHT", -28, 0);
+				addOffset("singLEFT", -21, 0);
+				addOffset("singDOWN", 29, -90);
+				addOffset("OUCH", -10, 0);
+				addOffset("psychic", -10, 0);
 
 				playAnim('idle');
 

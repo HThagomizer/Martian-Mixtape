@@ -103,7 +103,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 					curStage = 'mylair';
 				case 'aerodynamix':
 					curStage = 'sky';
-				case 'uber':
+				case 'uberfunk' | 'uberjam':
 					curStage = 'icecream';
 				default:
 					curStage = 'stage';
@@ -659,14 +659,14 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			
 			case 'icecream':
 				PlayState.defaultCamZoom = 0.9;
-				var back:FlxSprite = new FlxSprite(-1500, 100).loadGraphic(Paths.image('backgrounds/$curStage/back'));
+				var back:FlxSprite = new FlxSprite(-1500, -600).loadGraphic(Paths.image('backgrounds/$curStage/back'));
 				back.antialiasing = true;
 				back.updateHitbox();
 				back.scrollFactor.set(0.85, 0.85);
 				back.active = false;
 				add(back);
 
-				var counter:FlxSprite = new FlxSprite(-1500, 100).loadGraphic(Paths.image('backgrounds/$curStage/counter'));
+				var counter:FlxSprite = new FlxSprite(-1500, -600).loadGraphic(Paths.image('backgrounds/$curStage/counter'));
 				counter.antialiasing = true;
 				counter.updateHitbox();
 				counter.scrollFactor.set(0.95, 0.95);
@@ -747,8 +747,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'gf-gold':
 				gf.y -= 20;
 			case 'alien' | 'alien-pissed' | 'alien-alt':
-				dad.x += 160;
-				dad.y += 110;
+				dad.x += 23;
+				dad.y += 123;
 			case 'alien-rude':
 				dad.x += 64;
 				dad.y += 90;
@@ -806,6 +806,8 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				gf.y -= 300;
 				boyfriend.y -= 30;
 				boyfriend.color = 0xa99dc9;
+				dad.x += 100;
+				dad.y -= 50;
 				dad.color = 0xa99dc9;
 			case 'sky':
 				dad.x -= 100;
