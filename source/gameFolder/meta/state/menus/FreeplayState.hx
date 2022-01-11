@@ -99,15 +99,29 @@ class FreeplayState extends MusicBeatState
 		"freak" => "those teeth could bite someones head off",
 		"breakout" => "i dont feel safe",
 
+		// week 6
+		"uberfunk" => "my name is uberjon and i am here to engage in rap",
+		"uberjam" => "my name is ubersam and i am here to engage in rap",
+
 		// week 1-alt
 		"rude" => "why are you being mean to me",
 		"extermination" => "official yoshubs statement: banger alert",
 		"craniotomy" => "maybe some aspirin would help",
 		"aneurysmia" => "we did the same joke again",
 
+		// week 2-alt
+		"buddy-buddy" => "you can have my icecream if you want :)",
+		"biceptual" => "HRRRGNNHHHHHHH",
+
+		// week 3-alt
+		"rot" => "dont let him bite you",
+		"necrotics" => "the whole gang joins in",
+		"reanimate" => "it's party time",
+
 		// bonus songs
 		"annihilation" => "you asked for it",
 		"aerodynamix" => "wait who's driving",
+		"bogos" => "an r/paranormal encounter FT. Bogus",
 		"spacecataz" => "jumping... is useless",
 		"egomania" => "you got your dialogue alright"
 	];
