@@ -757,12 +757,53 @@ class Character extends FNFSprite
 				animation.addByPrefix('singRIGHT', 'uber singRIGHT', 24);
 				animation.addByPrefix('singDOWN', 'uber singDOWN', 24);
 				animation.addByPrefix('singLEFT', 'uber singLEFT', 24);
+				animation.addByPrefix('singUPmiss', 'uber miss singUP', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'uber miss singLEFT', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'uber miss singRIGHT', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'uber miss singDOWN', 24, false);
+				animation.addByPrefix('hey', 'uber SCISSORS', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP", 36, 28);
 				addOffset("singRIGHT", -25, 1);
 				addOffset("singLEFT", 19, 2);
 				addOffset("singDOWN", -36, -13);
+				addOffset("singUPmiss", 36, 28);
+				addOffset("singRIGHTmiss", -25, 1);
+				addOffset("singLEFTmiss", 19, 2);
+				addOffset("singDOWNmiss", -36, -13);
+
+				playAnim('idle');
+
+			case 'bogus':
+				frames = Paths.getSparrowAtlas('characters/bogus/Bogus');
+				// var idleToUse = curCharacter == 'bogus' ? "Bogus Bogus idle" : "Bogus Bogus angry";
+				// if (curCharacter == 'bogus')
+				// 	animation.addByPrefix('idle', "Bogus Bogus idle", 12);
+				// else
+				animation.addByPrefix('idle', "Bogus Bogus idle", 12);
+
+				animation.addByPrefix('singUP', "Bogus Bogus up", 24, false);
+				animation.addByPrefix('singRIGHT', "Bogus Bogus right", 24, false);
+				animation.addByPrefix('singLEFT', "Bogus Bogus left", 24, false);
+				animation.addByPrefix('singDOWN', "Bogus Bogus down", 24, false);
+
+				animation.addByPrefix('rose', "Bogus Bogus rose", 12, false);
+
+				// if (curCharacter == 'bogus-annoyed')
+				// 	animation.addByPrefix('hey', "Bogus Bogus rose", 12);
+
+				addOffset('idle');
+				// addOffset("singUP", -6, 50);
+				// addOffset("singRIGHT", 0, 27);
+				// addOffset("singLEFT", -10, 10);
+				// addOffset("singDOWN", 0, -30);
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				addOffset("rose", 0, 0);
 
 				playAnim('idle');
 		}

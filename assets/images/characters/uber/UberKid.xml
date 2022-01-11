@@ -1,75 +1,289 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="UberKid.png">
-	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="uber idle0000" x="2" y="2" width="345" height="388" frameX="0" frameY="-12" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0001" x="2" y="2" width="345" height="388" frameX="0" frameY="-12" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0002" x="353" y="2" width="341" height="391" frameX="-1" frameY="-10" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0003" x="353" y="2" width="341" height="391" frameX="-1" frameY="-10" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0004" x="700" y="2" width="327" height="396" frameX="-1" frameY="-5" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0005" x="700" y="2" width="327" height="396" frameX="-1" frameY="-5" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0006" x="1033" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0007" x="1033" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0008" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0009" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0010" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0011" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0012" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber idle0013" x="1364" y="2" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
-	<SubTexture name="uber singDOWN0000" x="1695" y="2" width="323" height="385" frameX="0" frameY="-4" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0001" x="1695" y="2" width="323" height="385" frameX="0" frameY="-4" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0002" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0003" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0004" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0005" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0006" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0007" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0008" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0009" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0010" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0011" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0012" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singDOWN0013" x="2" y="409" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
-	<SubTexture name="uber singLEFT0000" x="330" y="409" width="350" height="403" frameX="0" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0001" x="330" y="409" width="350" height="403" frameX="0" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0002" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0003" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0004" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0005" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0006" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0007" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0008" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0009" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0010" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0011" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0012" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singLEFT0013" x="686" y="409" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
-	<SubTexture name="uber singRIGHT0000" x="1041" y="409" width="389" height="398" frameX="-6" frameY="-2" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0001" x="1041" y="409" width="389" height="398" frameX="-6" frameY="-2" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0002" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0003" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0004" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0005" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0006" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0007" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0008" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0009" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0010" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0011" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0012" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singRIGHT0013" x="1436" y="409" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
-	<SubTexture name="uber singUP0000" x="2" y="818" width="419" height="432"/>
-	<SubTexture name="uber singUP0001" x="2" y="818" width="419" height="432"/>
-	<SubTexture name="uber singUP0002" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0003" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0004" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0005" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0006" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0007" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0008" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0009" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0010" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0011" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0012" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
-	<SubTexture name="uber singUP0013" x="427" y="818" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber PAPER0000" x="2" y="2" width="388" height="402"/>
+	<SubTexture name="uber PAPER0001" x="2" y="2" width="388" height="402"/>
+	<SubTexture name="uber PAPER0002" x="396" y="2" width="373" height="399" frameX="-14" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0003" x="396" y="2" width="373" height="399" frameX="-14" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0004" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0005" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0006" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0007" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0008" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0009" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0010" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0011" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0012" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0013" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0014" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0015" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0016" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0017" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0018" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0019" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0020" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0021" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0022" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0023" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0024" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber PAPER0025" x="775" y="2" width="376" height="399" frameX="-11" frameY="-3" frameWidth="388" frameHeight="402"/>
+	<SubTexture name="uber ROCK0000" x="1157" y="2" width="373" height="402"/>
+	<SubTexture name="uber ROCK0001" x="1157" y="2" width="373" height="402"/>
+	<SubTexture name="uber ROCK0002" x="1536" y="2" width="357" height="399" frameX="-16" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0003" x="1536" y="2" width="357" height="399" frameX="-16" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0004" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0005" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0006" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0007" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0008" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0009" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0010" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0011" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0012" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0013" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0014" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0015" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0016" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0017" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0018" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0019" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0020" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0021" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0022" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0023" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0024" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber ROCK0025" x="1899" y="2" width="361" height="399" frameX="-12" frameY="-3" frameWidth="373" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0000" x="2266" y="2" width="372" height="402"/>
+	<SubTexture name="uber SCISSORS0001" x="2266" y="2" width="372" height="402"/>
+	<SubTexture name="uber SCISSORS0002" x="2644" y="2" width="358" height="399" frameX="-14" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0003" x="2644" y="2" width="358" height="399" frameX="-14" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0004" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0005" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0006" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0007" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0008" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0009" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0010" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0011" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0012" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0013" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0014" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0015" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0016" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0017" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0018" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0019" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0020" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0021" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0022" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0023" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0024" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber SCISSORS0025" x="3008" y="2" width="361" height="399" frameX="-11" frameY="-3" frameWidth="372" frameHeight="402"/>
+	<SubTexture name="uber idle0000" x="3375" y="2" width="345" height="388" frameX="0" frameY="-12" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0001" x="3375" y="2" width="345" height="388" frameX="0" frameY="-12" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0002" x="3726" y="2" width="341" height="391" frameX="-1" frameY="-10" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0003" x="3726" y="2" width="341" height="391" frameX="-1" frameY="-10" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0004" x="2" y="410" width="327" height="396" frameX="-1" frameY="-5" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0005" x="2" y="410" width="327" height="396" frameX="-1" frameY="-5" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0006" x="335" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0007" x="335" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0008" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0009" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0010" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0011" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0012" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber idle0013" x="666" y="410" width="325" height="401" frameX="-1" frameY="0" frameWidth="345" frameHeight="401"/>
+	<SubTexture name="uber miss singDOWN0000" x="997" y="410" width="323" height="385" frameX="-2" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0001" x="1326" y="410" width="327" height="374" frameX="-1" frameY="-7" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0002" x="1326" y="410" width="327" height="374" frameX="-1" frameY="-7" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0003" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0004" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0005" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0006" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0007" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0008" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0009" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0010" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0011" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0012" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0013" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0014" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0015" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0016" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0017" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0018" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0019" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0020" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0021" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0022" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0023" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0024" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0025" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0026" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0027" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0028" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0029" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0030" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0031" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0032" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singDOWN0033" x="1659" y="410" width="325" height="382" frameX="0" frameY="0" frameWidth="328" frameHeight="385"/>
+	<SubTexture name="uber miss singLEFT0000" x="1990" y="410" width="350" height="403" frameX="0" frameY="0" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0001" x="2346" y="410" width="350" height="400" frameX="-7" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0002" x="2346" y="410" width="350" height="400" frameX="-7" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0003" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0004" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0005" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0006" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0007" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0008" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0009" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0010" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0011" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0012" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0013" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0014" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0015" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0016" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0017" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0018" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0019" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0020" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0021" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0022" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0023" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0024" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0025" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0026" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0027" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0028" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0029" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0030" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0031" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0032" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singLEFT0033" x="2702" y="410" width="349" height="400" frameX="-4" frameY="-2" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber miss singRIGHT0000" x="3057" y="410" width="389" height="398" frameX="-3" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0001" x="3452" y="410" width="389" height="396" frameX="0" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0002" x="3452" y="410" width="389" height="396" frameX="0" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0003" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0004" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0005" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0006" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0007" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0008" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0009" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0010" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0011" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0012" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0013" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0014" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0015" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0016" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0017" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0018" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0019" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0020" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0021" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0022" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0023" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0024" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0025" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0026" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0027" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0028" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0029" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0030" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0031" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0032" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singRIGHT0033" x="2" y="819" width="387" height="396" frameX="-6" frameY="0" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber miss singUP0000" x="395" y="819" width="419" height="432" frameX="-2" frameY="-1" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0001" x="820" y="819" width="423" height="425" frameX="0" frameY="-7" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0002" x="820" y="819" width="423" height="425" frameX="0" frameY="-7" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0003" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0004" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0005" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0006" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0007" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0008" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0009" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0010" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0011" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0012" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0013" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0014" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0015" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0016" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0017" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0018" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0019" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0020" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0021" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0022" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0023" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0024" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0025" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0026" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0027" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0028" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0029" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0030" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0031" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0032" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber miss singUP0033" x="1249" y="819" width="413" height="432" frameX="-5" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber singDOWN0000" x="1668" y="819" width="323" height="385" frameX="0" frameY="-4" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0001" x="1668" y="819" width="323" height="385" frameX="0" frameY="-4" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0002" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0003" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0004" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0005" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0006" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0007" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0008" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0009" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0010" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0011" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0012" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singDOWN0013" x="1997" y="819" width="322" height="389" frameX="-2" frameY="0" frameWidth="324" frameHeight="389"/>
+	<SubTexture name="uber singLEFT0000" x="1990" y="410" width="350" height="403" frameX="0" frameY="0" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0001" x="1990" y="410" width="350" height="403" frameX="0" frameY="0" frameWidth="357" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0002" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0003" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0004" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0005" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0006" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0007" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0008" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0009" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0010" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0011" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0012" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singLEFT0013" x="2325" y="819" width="349" height="403" frameX="-3" frameY="0" frameWidth="352" frameHeight="403"/>
+	<SubTexture name="uber singRIGHT0000" x="3057" y="410" width="389" height="398" frameX="-6" frameY="-2" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber singRIGHT0001" x="3057" y="410" width="389" height="398" frameX="-6" frameY="-2" frameWidth="393" frameHeight="398"/>
+	<SubTexture name="uber singRIGHT0002" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0003" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0004" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0005" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0006" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0007" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0008" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0009" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0010" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0011" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0012" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singRIGHT0013" x="2680" y="819" width="393" height="400" frameX="0" frameY="0" frameWidth="395" frameHeight="400"/>
+	<SubTexture name="uber singUP0000" x="395" y="819" width="419" height="432" frameX="0" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber singUP0001" x="395" y="819" width="419" height="432" frameX="0" frameY="0" frameWidth="423" frameHeight="433"/>
+	<SubTexture name="uber singUP0002" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0003" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0004" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0005" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0006" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0007" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0008" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0009" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0010" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0011" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0012" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
+	<SubTexture name="uber singUP0013" x="3079" y="819" width="418" height="429" frameX="-1" frameY="-2" frameWidth="419" frameHeight="432"/>
 </TextureAtlas>

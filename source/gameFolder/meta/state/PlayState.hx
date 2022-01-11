@@ -625,6 +625,8 @@ class PlayState extends MusicBeatState
 					case 'alien-ouch':
 						getCenterY = char.getMidpoint().y + 80;
 						getCenterX = char.getMidpoint().x - 50;
+					case 'bogus':
+						getCenterY = char.getMidpoint().y + 50;
 				}
 
 				camFollow.setPosition(getCenterX + (camDisplaceX * 8), getCenterY);

@@ -25,3 +25,4 @@ hagomizer
 hagomizer-puppet
 hagomizer-rage
 uberkid
+bogus
