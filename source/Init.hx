@@ -74,7 +74,12 @@ class Init extends FlxState
 			'Whether to disable Anti-aliasing. Helps improve performance in FPS.',
 			NOT_FORCED
 		],
-		'No Camera Note Movement' => [true, 0, 'When enabled, left and right notes no longer move the camera.', FORCED],
+		'No Camera Note Movement' => [
+			true,
+			0,
+			'When enabled, left and right notes no longer move the camera.',
+			NOT_FORCED
+		],
 		'Use Forever Chart Editor' => [false, 0, 'When enabled, uses the custom Forever Engine chart editor!', FORCED],
 		'Disable Note Splashes' => [
 			false,
@@ -90,6 +95,13 @@ class Init extends FlxState
 			'Choose a filter for colorblindness.',
 			NOT_FORCED,
 			['none', 'Deuteranopia', 'Protanopia', 'Tritanopia']
+		],
+		"Clip Style" => [
+			'stepmania',
+			1,
+			"Chooses a style for hold note clippings; StepMania: Holds under Receptors; FNF: Holds over receptors",
+			NOT_FORCED,
+			['StepMania', 'FNF']
 		],
 		"UI Skin" => ['default', 1, 'Choose a UI Skin for judgements, combo, etc.', NOT_FORCED, ''],
 		"Note Skin" => ['default', 1, 'Choose a note skin.', NOT_FORCED, ''],
@@ -115,20 +127,23 @@ class Init extends FlxState
 			"Fixes the judgements to the camera instead of to the world itself, making them easier to read.",
 			NOT_FORCED
 		],
+		'Counter' => [
+			'None',
+			1,
+			'Choose whether you want somewhere to display your judgements, and where you want it.',
+			NOT_FORCED,
+			['None', 'Left', 'Right']
+		],
 	];
 
 	public static var trueSettings:Map<String, Dynamic> = [];
 	public static var settingsDescriptions:Map<String, String> = [];
 
 	public static var gameControls:Map<String, Dynamic> = [
-		'UP' => [[FlxKey.UP, W], 2],
-		'DOWN' => [[FlxKey.DOWN, S], 1],
-		'LEFT' => [[FlxKey.LEFT, A], 0],
-		'RIGHT' => [[FlxKey.RIGHT, D], 3],
-		'ACCEPT' => [[FlxKey.SPACE, Z, FlxKey.ENTER], 4],
-		'BACK' => [[FlxKey.BACKSPACE, X, FlxKey.ESCAPE], 5],
-		'PAUSE' => [[FlxKey.ENTER, P], 6],
-		'RESET' => [[R, null], 7]
+		'UP' => [[FlxKey.UP, W], 2], 'DOWN' => [[FlxKey.DOWN, S], 1], 'LEFT' => [[FlxKey.LEFT, A], 0], 'RIGHT' => [[FlxKey.RIGHT, D], 3],
+		'ACCEPT' => [[FlxKey.SPACE, Z, FlxKey.ENTER], 4], 'BACK' => [[FlxKey.BACKSPACE, X, FlxKey.ESCAPE], 5], 'PAUSE' => [[FlxKey.ENTER, P], 6],
+		'RESET' => [[R, null], 13], 'UI_UP' => [[FlxKey.UP, W], 8], 'UI_DOWN' => [[FlxKey.DOWN, S], 9], 'UI_LEFT' => [[FlxKey.LEFT, A], 10],
+		'UI_RIGHT' => [[FlxKey.RIGHT, D], 11],
 	];
 
 	public static var filters:Array<BitmapFilter> = []; // the filters the game has active
@@ -183,6 +198,7 @@ class Init extends FlxState
 		FlxG.fixedTimestep = false; // This ensures that the game is not tied to the FPS
 		FlxG.mouse.useSystemCursor = true; // Use system cursor because it's prettier
 		FlxG.mouse.visible = false; // Hide mouse on start
+		FlxGraphic.defaultPersist = true;
 
 		// Main.switchState(this, new ChartingState());
 		gotoTitleScreen();

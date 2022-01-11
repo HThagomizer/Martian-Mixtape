@@ -179,6 +179,8 @@ class StoryMenuState extends MusicBeatState
 
 		// very unprofessional yoshubs!
 
+		// WHAT DID I DO BITCH
+
 		buttonHint = new FlxSprite(900, 600);
 		buttonHint.frames = ui_tex;
 		buttonHint.animation.addByPrefix('alt', 'altbutton');
@@ -217,26 +219,26 @@ class StoryMenuState extends MusicBeatState
 		{
 			if (!selectedWeek)
 			{
-				if (controls.UP_P)
+				if (controls.UI_UP_P)
 					changeWeek(-1);
-				else if (controls.DOWN_P)
+				else if (controls.UI_DOWN_P)
 					changeWeek(1);
 
-				if (controls.RIGHT)
+				if (controls.UI_RIGHT)
 					rightArrow.animation.play('press')
 				else
 					rightArrow.animation.play('idle');
 
-				if (controls.LEFT)
+				if (controls.UI_LEFT)
 					leftArrow.animation.play('press');
 				else
 					leftArrow.animation.play('idle');
 
 				if (currentCategory == 0)
 				{
-					if (controls.RIGHT_P)
+					if (controls.UI_RIGHT_P)
 						changeDifficulty(1);
-					if (controls.LEFT_P)
+					if (controls.UI_LEFT_P)
 						changeDifficulty(-1);
 				}
 
@@ -258,7 +260,7 @@ class StoryMenuState extends MusicBeatState
 					{
 						changeFlash.alpha = 1.2;
 					}
-					curWeek	= 0;
+					curWeek = 0;
 					addWeeks();
 					updateText();
 				}
@@ -427,7 +429,7 @@ class StoryMenuState extends MusicBeatState
 	function addWeeks()
 	{
 		var ui_tex = Paths.getSparrowAtlas('menus/base/storymenu/campaign_menu_UI_assets');
-		
+
 		grpWeekText.clear();
 		grpLocks.clear();
 
@@ -436,11 +438,11 @@ class StoryMenuState extends MusicBeatState
 		var weekIndex = 0;
 		for (i in 0...Main.gameWeeks.length)
 		{
-			if (Main.gameWeeks[i][4] != currentCategory) 
+			if (Main.gameWeeks[i][4] != currentCategory)
 				continue;
 
 			weeksList.push(i);
-			
+
 			var weekThing:MenuItem = new MenuItem(0, yellowBG.y + yellowBG.height + 10, weekIndex);
 			weekThing.y += ((weekThing.height + 20) * weekIndex);
 			weekThing.targetY = weekIndex;

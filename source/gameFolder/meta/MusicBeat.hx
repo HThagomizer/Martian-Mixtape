@@ -34,9 +34,10 @@ class MusicBeatState extends FNFUIState
 	// class create event
 	override function create()
 	{
-		// dump the cache if you're going elsewhere
-		if (Main.lastState != this)
-			Main.dumpCache();
+		Paths.clearStoredMemory();
+		if ((!Std.isOfType(this, gameFolder.meta.state.PlayState))
+			&& (!Std.isOfType(this, gameFolder.meta.state.charting.OriginalChartingState)))
+			Paths.clearUnusedMemory();
 
 		if (transIn != null)
 			trace('reg ' + transIn.region);

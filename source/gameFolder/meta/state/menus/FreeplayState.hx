@@ -77,47 +77,38 @@ class FreeplayState extends MusicBeatState
 		"lazerz" => "smooth jazz for channeling your inner psychokinesis",
 		"brainfuck" => "saying what the masses are afraid to",
 		"annihilation-lol" => "this is top notch charting",
-
 		// week 2
 		"confidential" => "[REDACTED]",
 		"aegis" => "hes kinda built though",
 		"crack" => "like hacking or like drugs?",
 		"enforcement" => "everything is fine and aliens are not real",
-
 		// week 3
 		"marrow" => "like bone juice",
 		"pelvic" => "jet set who?",
 		"spinal tap" => "SKELETON GUITAR",
-
 		// week 4
 		"tinfoil" => "he seems like a well adjusted individual",
 		"jitter" => "wheres the screenshake",
 		"exclusion zone" => "unchill beats to evade the FBI to",
-
 		// week 5
 		"boing" => "google eyed weirdo",
 		"freak" => "those teeth could bite someones head off",
 		"breakout" => "i dont feel safe",
-
 		// week 6
 		"uberfunk" => "my name is uberjon and i am here to engage in rap",
 		"uberjam" => "my name is ubersam and i am here to engage in rap",
-
 		// week 1-alt
 		"rude" => "why are you being mean to me",
 		"extermination" => "official yoshubs statement: banger alert",
 		"craniotomy" => "maybe some aspirin would help",
 		"aneurysmia" => "we did the same joke again",
-
 		// week 2-alt
 		"buddy-buddy" => "you can have my icecream if you want :)",
 		"biceptual" => "HRRRGNNHHHHHHH",
-
 		// week 3-alt
 		"rot" => "dont let him bite you",
 		"necrotics" => "the whole gang joins in",
 		"reanimate" => "it's party time",
-
 		// bonus songs
 		"annihilation" => "you asked for it",
 		"aerodynamix" => "wait who's driving",
@@ -138,6 +129,7 @@ class FreeplayState extends MusicBeatState
 			control over what you can display about the song (color, icon, etc) since it will be pregenerated for you instead.
 		**/
 		grpSongs = new FlxTypedGroup<Alphabet>();
+
 		iconGroup = new FlxTypedGroup<HealthIcon>();
 		addWeeks();
 
@@ -272,11 +264,12 @@ class FreeplayState extends MusicBeatState
 		if (Math.abs(lerpScore - intendedScore) <= 10)
 			lerpScore = intendedScore;
 
-		var upP = controls.UP_P;
-		var downP = controls.DOWN_P;
+		var upP = controls.UI_UP_P;
+		var downP = controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
 
-		if (!selectingCategory) {
+		if (!selectingCategory)
+		{
 			grayBox.alpha = 0;
 
 			if (upP)
@@ -291,9 +284,9 @@ class FreeplayState extends MusicBeatState
 			{
 				diffText.alpha = 1;
 
-				if (controls.LEFT_P)
+				if (controls.UI_LEFT_P)
 					changeDiff(-1);
-				if (controls.RIGHT_P)
+				if (controls.UI_RIGHT_P)
 					changeDiff(1);
 			}
 			else
@@ -327,12 +320,13 @@ class FreeplayState extends MusicBeatState
 				Main.switchState(this, new PlayState());
 			}
 		}
-		else {
+		else
+		{
 			grayBox.alpha = 0.6;
 
-			if (controls.LEFT_P)
+			if (controls.UI_LEFT_P)
 				changeCategorySelection(-1);
-			if (controls.RIGHT_P)
+			if (controls.UI_RIGHT_P)
 				changeCategorySelection(1);
 
 			if (controls.BACK)
@@ -345,7 +339,7 @@ class FreeplayState extends MusicBeatState
 			{
 				selectingCategory = false;
 			}
-			
+
 			diffText.alpha = 0;
 			scoreText.alpha = 0;
 			blurbText.alpha = 0;
@@ -363,6 +357,8 @@ class FreeplayState extends MusicBeatState
 		}
 
 		// Adhere the position of all the things (I'm sorry it was just so ugly before I had to fix it Shubs)
+
+		// fuck u!
 		var blurb:String = songBlurbs[songs[curSelected].songName.toLowerCase()];
 		blurbText.text = '"' + blurb + '"';
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
@@ -446,16 +442,15 @@ class FreeplayState extends MusicBeatState
 
 			if (item.text == "egomania")
 				item.alpha = 0.01;
-			
 		}
 		//
 
 		trace("curSelected: " + curSelected);
 
 		changeDiff();
-		
+
 		// was told to remove it so thats what ima dooooooooooooooooooo
-		//changeSongPlaying();
+		// changeSongPlaying();
 	}
 
 	function changeCategorySelection(change:Int = 0)
@@ -528,7 +523,8 @@ class FreeplayState extends MusicBeatState
 		///*
 		for (i in 0...Main.gameWeeks.length)
 		{
-			if (selectedCategory == Main.gameWeeks[i][4]) {
+			if (selectedCategory == Main.gameWeeks[i][4])
+			{
 				addWeek(Main.gameWeeks[i][0], i, Main.gameWeeks[i][1], Main.gameWeeks[i][2]);
 				for (j in cast(Main.gameWeeks[i][0], Array<Dynamic>))
 					existingSongs.push(j.toLowerCase());
@@ -537,15 +533,15 @@ class FreeplayState extends MusicBeatState
 
 		// load in all songs that exist in folder
 		// for bonus songs (this may be a problem with alt stuff)
-		
+
 		var folderSongs:Array<String> = CoolUtil.returnAssetsLibrary('songs', 'assets');
 
 		// hardcoding egomania secret because im tired,
 		// a little bit of programming - codist
 		var egoIsReal = false;
 
-		if (selectedCategory == 2) {
-
+		if (selectedCategory == 2)
+		{
 			for (i in folderSongs)
 			{
 				if (!existingSongs.contains(i.toLowerCase()))
@@ -557,7 +553,8 @@ class FreeplayState extends MusicBeatState
 					{
 						var castSong:SwagSong = Song.loadFromJson(i, i);
 
-						if (castSong.song == "Egomania") {
+						if (castSong.song == "Egomania")
+						{
 							egoIsReal = true;
 							continue;
 						}
@@ -567,7 +564,6 @@ class FreeplayState extends MusicBeatState
 					}
 				}
 			}
-		
 		}
 
 		if (egoIsReal)

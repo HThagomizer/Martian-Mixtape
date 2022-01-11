@@ -58,44 +58,18 @@ class OptionsMenuState extends MusicBeatState
 			],
 			'preferences' => [
 				[
-					['Game Settings', null],
-					['', null],
-					['Downscroll', getFromOption],
-					['Disable Gimmicks', getFromOption],
-					['Centered Notefield', getFromOption],
-					['Ghost Tapping', getFromOption],
-					['Display Accuracy', getFromOption],
-					//
-					['', null],
-					['Meta Settings', null],
-					['', null],
-					["Framerate Cap", getFromOption],
-					['FPS Counter', getFromOption],
-					['Memory Counter', getFromOption],
-					['Debug Info', getFromOption],
+					['Game Settings', null], ['', null], ['Downscroll', getFromOption], ['Centered Notefield', getFromOption], ['Ghost Tapping', getFromOption],
+					['Display Accuracy', getFromOption], ['', null], ['Meta Settings', null], ['', null], ["Framerate Cap", getFromOption],
+					['FPS Counter', getFromOption], ['Memory Counter', getFromOption], ['Debug Info', getFromOption],
 				]
 			],
 			'appearance' => [
 				[
-					['Common Settings', null],
-					['', null],
-					['Disable Antialiasing', getFromOption],
-					['Fixed Judgements', getFromOption],
-					['', null],
-					['Accessibility Settings', null],
-					['', null],
-					['Filter', getFromOption],
+					['Judgements', null], ['', null], ["UI Skin", getFromOption], ['Fixed Judgements', getFromOption], ['Counter', getFromOption], ['', null],
+					['Notes', null], ['', null], ["Note Skin", getFromOption], ["Clip Style", getFromOption], ['No Camera Note Movement', getFromOption],
+					['Disable Note Splashes', getFromOption], ['Opaque Arrows', getFromOption], ['Opaque Holds', getFromOption], ['', null],
+					['Accessibility Settings', null], ['', null], ['Filter', getFromOption], ['Disable Antialiasing', getFromOption],
 					['Reduced Movements', getFromOption],
-					['Photosensitivity Tweaks', getFromOption],
-					// this shouldn't be get from option, just testing
-					['', null],
-					['User Interface', null],
-					['', null],
-					["UI Skin", getFromOption],
-					["Note Skin", getFromOption],
-					['Disable Note Splashes', getFromOption],
-					['Opaque Arrows', getFromOption],
-					['Opaque Holds', getFromOption],
 				]
 			]
 		];
@@ -309,10 +283,10 @@ class OptionsMenuState extends MusicBeatState
 
 	function updateSelections()
 	{
-		var up = controls.UP;
-		var down = controls.DOWN;
-		var up_p = controls.UP_P;
-		var down_p = controls.DOWN_P;
+		var up = controls.UI_UP;
+		var down = controls.UI_DOWN;
+		var up_p = controls.UI_UP_P;
+		var down_p = controls.UI_DOWN_P;
 		var controlArray:Array<Bool> = [up, down, up_p, down_p];
 
 		if (controlArray.contains(true))
@@ -427,14 +401,14 @@ class OptionsMenuState extends MusicBeatState
 					#if !html5
 					var selector:Selector = currentAttachmentMap.get(activeSubgroup.members[curSelection]);
 
-					if (!controls.LEFT)
+					if (!controls.UI_LEFT)
 						selector.selectorPlay('left');
-					if (!controls.RIGHT)
+					if (!controls.UI_RIGHT)
 						selector.selectorPlay('right');
 
-					if (controls.RIGHT_P)
+					if (controls.UI_RIGHT_P)
 						updateSelector(selector, 1);
-					else if (controls.LEFT_P)
+					else if (controls.UI_LEFT_P)
 						updateSelector(selector, -1);
 					#end
 				default:

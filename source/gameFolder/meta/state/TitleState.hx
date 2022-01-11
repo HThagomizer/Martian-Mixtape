@@ -74,7 +74,7 @@ class TitleState extends MusicBeatState
 
 	function startIntro()
 	{
-		var offsetX = -338; 
+		var offsetX = -338;
 		var offsetY = -190;
 		if (!initialized)
 		{
@@ -212,7 +212,7 @@ class TitleState extends MusicBeatState
 			#end
 		}
 
-		if (pressedEnter && !transitioning)
+		if (pressedEnter && initialized && !transitioning)
 		{
 			titleText.animation.play('press');
 			belltower.animation.play('bump');

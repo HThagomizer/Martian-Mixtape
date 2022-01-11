@@ -9,13 +9,14 @@ import flixel.FlxState;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.group.FlxSpriteGroup;
 import flixel.math.FlxMath;
+import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
 import flixel.util.FlxColor;
+import flixel.util.FlxSort;
 import flixel.util.FlxTimer;
-import flixel.system.FlxSound;
 import gameFolder.meta.CoolUtil;
 import gameFolder.meta.InfoHud;
 import gameFolder.meta.data.Conductor;
@@ -96,7 +97,7 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		// small info bar, kinda like the KE watermark
 		// based on scoretxt which I will set up as well
 		var infoDisplay:String = CoolUtil.dashToSpace(PlayState.SONG.song) + ' - ' + CoolUtil.difficultyFromNumber(PlayState.storyDifficulty);
-		var engineDisplay:String = "Forever Engine BETA v" + Main.gameVersion;
+		var engineDisplay:String = "Forever Engine";
 		var engineBar:FlxText = new FlxText(0, FlxG.height - 30, 0, engineDisplay, 16);
 		engineBar.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		engineBar.updateHitbox();
@@ -109,6 +110,30 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		infoBar.scrollFactor.set();
 		add(infoBar);
 
+		// counter
+		if (Init.trueSettings.get('Counter') != 'None')
+		{
+			var judgementNameArray:Array<String> = [];
+			for (i in Timings.judgementsMap.keys())
+				judgementNameArray.insert(Timings.judgementsMap.get(i)[0], i);
+			judgementNameArray.sort(sortByShit);
+			for (i in 0...judgementNameArray.length)
+			{
+				var textAsset:FlxText = new FlxText(5
+					+ (!left ? (FlxG.width - 10) : 0),
+					(FlxG.height / 2)
+					- (counterTextSize * (judgementNameArray.length / 2))
+					+ (i * counterTextSize), 0, '', counterTextSize);
+				if (!left)
+					textAsset.x -= textAsset.text.length * counterTextSize;
+				textAsset.setFormat(Paths.font("vcr.ttf"), counterTextSize, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				textAsset.scrollFactor.set();
+				timingsMap.set(judgementNameArray[i], textAsset);
+				add(textAsset);
+			}
+		}
+		updateScoreText();
+
 		noise = new FlxSprite(0, 0).loadGraphic(Paths.image('backgrounds/fbi/noise'), true, 1280, 720);
 		noise.scrollFactor.set(0, 0);
 		noise.animation.add("static", [0, 1, 2, 3], 16, true);
@@ -116,12 +141,20 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		noise.alpha = 0;
 		add(noise);
 
-		staticSound = new FlxSound().loadEmbedded(Sound.fromFile(Paths.sound("static")), true, false);
+		staticSound = new FlxSound().loadEmbedded(Paths.sound("static"), true, false);
 		staticSound.volume = 0;
 		staticSound.play();
 
 		FlxG.sound.list.add(staticSound);
 	}
+
+	var counterTextSize:Int = 18;
+	private var timingsMap:Map<String, FlxText> = [];
+
+	function sortByShit(Obj1:String, Obj2:String):Int
+		return FlxSort.byValues(FlxSort.ASCENDING, Timings.judgementsMap.get(Obj1)[0], Timings.judgementsMap.get(Obj2)[0]);
+
+	var left = (Init.trueSettings.get('Counter') == 'Left');
 
 	override public function update(elapsed:Float)
 	{
@@ -152,16 +185,19 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 			iconP2.animation.curAnim.curFrame = 1;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
-		
-		if (noiseTime > 0) {
+
+		if (noiseTime > 0)
+		{
 			noise.alpha = FlxMath.lerp(noise.alpha, 0.9, elapsed * 4);
 			staticSound.volume = FlxMath.lerp(staticSound.volume, 0.2, elapsed * 4);
 			noiseTime -= elapsed;
-			if (noiseTime <= 0) {
+			if (noiseTime <= 0)
+			{
 				noiseTime = 0;
-			} 
+			}
 		}
-		else {
+		else
+		{
 			noise.alpha = FlxMath.lerp(noise.alpha, 0, elapsed * 4);
 			staticSound.volume = FlxMath.lerp(staticSound.volume, 0, elapsed * 4);
 		}
@@ -185,6 +221,16 @@ class ClassHUD extends FlxTypedGroup<FlxBasic>
 		}
 
 		scoreBar.x = ((FlxG.width / 2) - (scoreBar.width / 2));
+
+		// update counter
+		if (Init.trueSettings.get('Counter') != 'None')
+		{
+			for (i in timingsMap.keys())
+			{
+				timingsMap[i].text = '${(i.charAt(0).toUpperCase() + i.substring(1, i.length))}: ${Timings.gottenJudgements.get(i)}';
+				timingsMap[i].x = (5 + (!left ? (FlxG.width - 10) : 0) - (!left ? (6 * counterTextSize) : 0));
+			}
+		}
 
 		// update playstate
 		PlayState.detailsSub = scoreBar.text;

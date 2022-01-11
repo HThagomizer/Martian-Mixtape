@@ -120,7 +120,7 @@ class MainMenuState extends MusicBeatState
 		creditsButton.setPosition(-50, (FlxG.height - creditsButton.height) + 50);
 
 		//
-		var versionShit:FlxText = new FlxText(20, 20, 0, "Forever Engine v" + Main.gameVersion, 24);
+		var versionShit:FlxText = new FlxText(20, 20, 0, "Forever Engine", 24);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -138,17 +138,17 @@ class MainMenuState extends MusicBeatState
 		// colorTest += 0.125;
 		// bg.color = FlxColor.fromHSB(colorTest, 100, 100, 0.5);
 
-		var up = controls.UP;
-		var down = controls.DOWN;
-		var up_p = controls.UP_P;
-		var down_p = controls.DOWN_P;
+		var up = controls.UI_UP;
+		var down = controls.UI_DOWN;
+		var up_p = controls.UI_UP_P;
+		var down_p = controls.UI_DOWN_P;
 		if (!selectedSomethin)
 		{
 			if (up_p)
 				updateSelection(-1);
 			else if (down_p)
 				updateSelection(1);
-			if (controls.LEFT_P || controls.RIGHT_P)
+			if (controls.UI_LEFT_P || controls.UI_RIGHT_P)
 				horizontalSelection();
 			if (controls.ACCEPT)
 			{

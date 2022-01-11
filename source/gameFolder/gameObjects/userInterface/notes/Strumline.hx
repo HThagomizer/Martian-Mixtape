@@ -129,6 +129,8 @@ class Strumline extends FlxTypedGroup<FlxBasic>
 	public var receptors:FlxTypedGroup<UIStaticArrow>;
 	public var splashNotes:FlxTypedGroup<NoteSplash>;
 	public var notesGroup:FlxTypedGroup<Note>;
+	public var holdsGroup:FlxTypedGroup<Note>;
+	public var allNotes:FlxTypedGroup<Note>;
 
 	public var autoplay:Bool = true;
 	public var character:Character;
@@ -143,6 +145,9 @@ class Strumline extends FlxTypedGroup<FlxBasic>
 		receptors = new FlxTypedGroup<UIStaticArrow>();
 		splashNotes = new FlxTypedGroup<NoteSplash>();
 		notesGroup = new FlxTypedGroup<Note>();
+		holdsGroup = new FlxTypedGroup<Note>();
+
+		allNotes = new FlxTypedGroup<Note>();
 
 		this.autoplay = autoplay;
 		this.character = character;
@@ -174,7 +179,11 @@ class Strumline extends FlxTypedGroup<FlxBasic>
 			}
 		}
 
+		if (Init.trueSettings.get("Clip Style").toLowerCase() == 'stepmania')
+			add(holdsGroup);
 		add(receptors);
+		if (Init.trueSettings.get("Clip Style").toLowerCase() == 'fnf')
+			add(holdsGroup);
 		add(notesGroup);
 		if (splashNotes != null)
 			add(splashNotes);
@@ -190,8 +199,9 @@ class Strumline extends FlxTypedGroup<FlxBasic>
 	public function push(newNote:Note)
 	{
 		//
-		notesGroup.add(newNote);
-		// thanks sammu I have no idea how this line works lmao
-		notesGroup.sort(FlxSort.byY, (!Init.trueSettings.get('Downscroll')) ? FlxSort.DESCENDING : FlxSort.ASCENDING);
+		var chosenGroup = (newNote.isSustainNote ? holdsGroup : notesGroup);
+		chosenGroup.add(newNote);
+		allNotes.add(newNote);
+		chosenGroup.sort(FlxSort.byY, (!Init.trueSettings.get('Downscroll')) ? FlxSort.DESCENDING : FlxSort.ASCENDING);
 	}
 }
