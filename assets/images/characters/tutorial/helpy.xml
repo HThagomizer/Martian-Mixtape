@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="helpy.png">
+	<!-- Created with Adobe Animate version 22.0.1.105 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="helpy singDOWN0000" x="2" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0001" x="2" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0002" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0003" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0004" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0005" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0006" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0007" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0008" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0009" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0010" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0011" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0012" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singDOWN0013" x="104" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0000" x="206" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0001" x="206" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0002" x="308" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0003" x="308" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0004" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0005" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0006" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0007" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0008" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0009" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0010" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0011" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0012" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singLEFT0013" x="410" y="2" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0000" x="2" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0001" x="2" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0002" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0003" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0004" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0005" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0006" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0007" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0008" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0009" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0010" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0011" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0012" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singRIGHT0013" x="104" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0000" x="206" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0001" x="206" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0002" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0003" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0004" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0005" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0006" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0007" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0008" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0009" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0010" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0011" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0012" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpy singUP0013" x="308" y="88" width="96" height="80"/>
+	<SubTexture name="helpyidle0000" x="410" y="88" width="96" height="80"/>
+	<SubTexture name="helpyidle0001" x="410" y="88" width="96" height="80"/>
+	<SubTexture name="helpyidle0002" x="2" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0003" x="2" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0004" x="104" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0005" x="104" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0006" x="206" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0007" x="206" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0008" x="308" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0009" x="308" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0010" x="410" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0011" x="410" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0012" x="410" y="174" width="96" height="80"/>
+	<SubTexture name="helpyidle0013" x="410" y="174" width="96" height="80"/>
+</TextureAtlas>

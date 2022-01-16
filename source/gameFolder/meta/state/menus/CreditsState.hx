@@ -50,7 +50,6 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/HThagomizer'
 			],
 			['Simply EJ', 'ej', 'Artist, composer', 'https://twitter.com/ESimplyJ'],
-			['SaltySkkulls', 'salty', 'Artist, composer', 'https://twitter.com/post_my_salt'],
 			['LuckiiBean', 'luckii', 'Composer, dumb bitch', 'https://twitter.com/LuckiiBean'],
 			[
 				'KrystalPhantasm',
@@ -81,6 +80,7 @@ class CreditsState extends MusicBeatState
 				'https://twitter.com/SuperMakerPlaye/'
 			],
 			['codist', 'codist', 'Programmer', 'https://twitter.com/ImCodist'],
+			['pixloen', '', 'Charting, pixel art', 'https://twitter.com/neolixn'],
 			[''],
 			["Previous devs"],
 			['kevenandsoki', '', 'Composer', 'https://twitter.com/kevenandsoki'],
@@ -99,6 +99,8 @@ class CreditsState extends MusicBeatState
 			],
 			[''],
 			["Contributors"],
+			['BestrJestr', '', 'Voice acting (Fat Kid)', 'https://twitter.com/BestrJestr46'],
+			['Jacaris', '', 'Voice acting (Uberkid)', 'https://twitter.com/JaceyAmaris'],
 			['HeavenArtist2006', '', 'Icons', 'https://gamebanana.com/members/1725165'],
 			['Junkgle', '', 'Concept artist', 'https://twitter.com/junkgle_'],
 			['Crow at a Computer', '', 'Concept artist', 'https://twitter.com/CrowComputer'],
@@ -106,12 +108,17 @@ class CreditsState extends MusicBeatState
 			[''],
 			["Special thanks"],
 			[
+				'RileyVerse',
+				'',
+				'Drew one fucking arm I couldnt get right im so mad',
+				'https://twitter.com/RileyVerse'
+			],
+			[
 				'spaghettitron',
 				'',
 				'Beta tester, cool guy',
 				'https://twitter.com/spaghettitron'
 			],
-			['BestrJestr', '', 'Eta', 'https://twitter.com/Ethanness46'],
 			[
 				'Shadow Mario',
 				'',

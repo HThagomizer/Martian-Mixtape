@@ -666,13 +666,20 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				back.active = false;
 				add(back);
 
+				var floor:FlxSprite = new FlxSprite(-1500, -600).loadGraphic(Paths.image('backgrounds/$curStage/floor'));
+				floor.antialiasing = true;
+				floor.updateHitbox();
+				floor.scrollFactor.set(1, 1);
+				floor.active = false;
+				add(floor);
+
 				var counter:FlxSprite = new FlxSprite(-1500, -600).loadGraphic(Paths.image('backgrounds/$curStage/counter'));
 				counter.antialiasing = true;
 				counter.updateHitbox();
 				counter.scrollFactor.set(0.95, 0.95);
 				counter.active = false;
 				add(counter);
-
+				
 			default:
 				PlayState.defaultCamZoom = 0.9;
 				curStage = 'stage';

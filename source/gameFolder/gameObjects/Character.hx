@@ -303,6 +303,47 @@ class Character extends FNFSprite
 
 				flipX = true;
 
+			case 'bf-pixel':
+				var tex = Paths.getSparrowAtlas('characters/tutorial/bf-pixel');
+				frames = tex;
+				animation.addByPrefix('idle', 'bf idle', 24, false);
+				animation.addByPrefix('singUP', 'bf singUP', 24, false);
+				animation.addByPrefix('singLEFT', 'bf singLEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'bf singRIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'bf singDOWN', 24, false);
+				animation.addByPrefix('singUPmiss', 'bf miss singUP', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'bf miss singLEFT', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'bf miss singRIGHT', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'bf miss singDOWN', 24, false);
+				animation.addByPrefix('hey', 'bf hey', 24, false);
+
+				animation.addByPrefix('firstDeath', "bf gameover", 24, false);
+				animation.addByPrefix('deathLoop', "bf loop gameover", 24, true);
+				animation.addByPrefix('deathConfirm', "bf retry", 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset("singUPmiss");
+				addOffset("singRIGHTmiss");
+				addOffset("singLEFTmiss");
+				addOffset("singDOWNmiss");
+				addOffset("hey");
+				addOffset('firstDeath');
+				addOffset('deathLoop');
+				addOffset('deathConfirm');
+
+				playAnim('idle');
+
+				setGraphicSize(Std.int(width * 6));
+				updateHitbox();
+
+				antialiasing = false;
+
+				flipX = true;
+
 			case 'bf-dead':
 				frames = Paths.getSparrowAtlas('characters/BF_DEATH');
 
@@ -806,6 +847,29 @@ class Character extends FNFSprite
 				addOffset("rose", 0, 0);
 
 				playAnim('idle');
+
+			case 'helpy':
+				tex = Paths.getSparrowAtlas('characters/tutorial/helpy');
+				frames = tex;
+				animation.addByPrefix('idle', 'helpy idle', 24, false);
+				animation.addByPrefix('singUP', 'helpy singUP', 24);
+				animation.addByPrefix('singRIGHT', 'helpy singRIGHT', 24);
+				animation.addByPrefix('singDOWN', 'helpy singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'helpy singLEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+
+				playAnim('idle');
+
+				setGraphicSize(Std.int(width * 6));
+				updateHitbox();
+
+				antialiasing = false;
+
 		}
 
 		// set up offsets cus why not
