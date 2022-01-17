@@ -679,7 +679,7 @@ class Stage extends FlxTypedGroup<FlxBasic>
 				counter.scrollFactor.set(0.95, 0.95);
 				counter.active = false;
 				add(counter);
-				
+
 			default:
 				PlayState.defaultCamZoom = 0.9;
 				curStage = 'stage';
@@ -791,6 +791,9 @@ class Stage extends FlxTypedGroup<FlxBasic>
 			case 'FBIhacker':
 				dad.x -= 168;
 				dad.y -= 20;
+			case 'fatkid':
+				dad.y += 336;
+				dad.x -= 28;
 			case 'xigman':
 				dad.y -= 50;
 			case 'mooninites':

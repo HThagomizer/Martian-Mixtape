@@ -870,6 +870,23 @@ class Character extends FNFSprite
 
 				antialiasing = false;
 
+			case 'fatkid':
+				tex = Paths.getSparrowAtlas('characters/fatkids/fatkid');
+				frames = tex;
+				animation.addByPrefix('idle', 'fat kid idle', 24);
+				animation.addByPrefix('singUP', 'fat kid singUP', 24, false);
+				animation.addByPrefix('singRIGHT', 'fat kid singRIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'fat kid singDOWN', 24);
+				animation.addByPrefix('singLEFT', 'fat kid singLEFT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 57, 27);
+				addOffset("singRIGHT", 18, -8);
+				addOffset("singLEFT", 12, -4);
+				addOffset("singDOWN", -17, -24);
+
+				playAnim('idle');
+
 		}
 
 		// set up offsets cus why not

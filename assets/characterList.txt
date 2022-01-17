@@ -1,5 +1,6 @@
 bf
 bf-hominid
+bf-pixel
 gf
 dad
 alien
@@ -18,9 +19,11 @@ FBI
 FBIbodyguard
 FBIhacker
 FBImech
+fatkid
 bf-hominid
 xigman
 mooninites
+helpy
 hagomizer
 hagomizer-puppet
 hagomizer-rage

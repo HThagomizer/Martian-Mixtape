@@ -57,7 +57,7 @@ class MainMenuState extends MusicBeatState
 
 		// background
 		bg = new FlxSprite();
-		bg.loadGraphic(Paths.image('menus/mixtape/bgs/' + Std.string(FlxG.random.int(1, 2))));
+		bg.loadGraphic(Paths.image('menus/mixtape/bgs/' + Std.string(FlxG.random.int(1, 3))));
 		bg.setGraphicSize(Std.int(bg.width * (2 / 3)));
 		bg.updateHitbox();
 		bg.screenCenter();
