@@ -58,7 +58,7 @@ class OptionsMenuState extends MusicBeatState
 			],
 			'preferences' => [
 				[
-					['Game Settings', null], ['', null], ['Downscroll', getFromOption], ['Centered Notefield', getFromOption], ['Ghost Tapping', getFromOption],
+					['Game Settings', null], ['', null], ['Downscroll', getFromOption], ['Disable Gimmicks', getFromOption], ['Centered Notefield', getFromOption], ['Ghost Tapping', getFromOption],
 					['Display Accuracy', getFromOption], ['', null], ['Meta Settings', null], ['', null], ["Framerate Cap", getFromOption],
 					['FPS Counter', getFromOption], ['Memory Counter', getFromOption], ['Debug Info', getFromOption],
 				]

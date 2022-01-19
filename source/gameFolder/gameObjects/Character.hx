@@ -873,7 +873,7 @@ class Character extends FNFSprite
 			case 'fatkid':
 				tex = Paths.getSparrowAtlas('characters/fatkids/fatkid');
 				frames = tex;
-				animation.addByPrefix('idle', 'fat kid idle', 24);
+				animation.addByPrefix('idle', 'fat kid idle', 24, false);
 				animation.addByPrefix('singUP', 'fat kid singUP', 24, false);
 				animation.addByPrefix('singRIGHT', 'fat kid singRIGHT', 24, false);
 				animation.addByPrefix('singDOWN', 'fat kid singDOWN', 24);
